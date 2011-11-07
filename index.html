@@ -18,73 +18,142 @@
       margin: 32px 32px;
     }
     
-    h1 { font-size: 3.8em; color: #250736; margin-bottom: 3px; }
-    h1 a { text-decoration: none }
+    h1 { font-size: 3.8em; margin-bottom: -20px; margin-top: 0px }
+    h1 a { text-decoration: none; color: #250736; }
     h2 { font-size: 1.5em; color: #250736 }
-    h3 { text-align: center; color: #250736; width:100%; background-color:#b9d6a6; border:0px }
-    a { color: #250736; }
+    h3 { font-size: 1.4em; text-align: center; margin-top: 0px; clear: both; color: #250736; width:100%; background-color:#b9d6a6; border:0px }
+    h4 { font-size: 1.3em; margin-bottom: 0.5ex }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    hr { border: 0; width: 100%; border-bottom: 1px solid #aaa; clear: both}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
-    th { background-color:#a8c595; width: 132px; text-align: center; vertical-align: top; }
+    th { background-color:#a8c595; width: 145px; text-align: center; vertical-align: top; }
     td { padding-left: 16px }
+    div.app { clear: both }
+    div.links { margin-top: 1em; margin-bottom: 1em }
+    div.status { font-style: italic; padding-bottom: 0.5ex }
+    img.app_icon { width: 128; height: 128; float: left; margin-right: 32px; margin-bottom: 32px }
     </style>
     
 </head>
 
 <body>
   <div id="container">
-
-    <h1><a href="http://github.com/Spooner">Spooner</a></h1>   
+    
     
     <div class="description">       
-        <a href="http://github.com/Spooner"><img src="images/spooner_pixels_large.png" width="128" height="128" alt="Actual photo of Spooner" style="float:left;margin-right:32px;border:2px solid black"></a>
-        <a href="http://github.com/Spooner"><img src="images/bagpuss_large.png" width="128" height="128" alt="Bagpuss" style="float:right;margin-left:32px;border:2px solid black"></a>
+      <a href="http://github.com/Spooner"><img src="images/spooner_pixels_large.png" width="128" height="128" alt="Actual photo of Spooner" style="float:left;margin-right:32px;border:2px solid black;margin-bottom:64px"></a>
+      <a href="http://github.com/Spooner"><img src="images/bagpuss_large.png" width="128" height="128" alt="Bagpuss" style="float:right;margin-left:32px;border:2px solid black"></a>
+      <div>
+        <h1><a style="color: black" href="http://github.com/Spooner">Spooner</a></h1>   
         <p style="padding:20px">A Ruby developer with completely random skill levels, perhaps based on the current phase of Phobos.</p>
-        <br style="clear: left" />
+      </div>
     </div>
+    
     <table cellpadding="0" cellspacing="0" style="width: 100%">
-    <tr>
-    <th>
-    <h2>Projects</h2>
-    </th>
-    
-    <td>
-    <h3 style="margin-top: 0px">Complete</h3>
-    <ul>        
-      <li><img src="images/alpha_channel.png" width="32" height="32" alt="Hoops icon"> <em><strong>Alpha Channel</strong></em> - A game developed in 48 hours <a href="http://www.ludumdare.com/compo/ludum-dare-18/?action=rate&uid=2552">for Ludum Dare #18</a> - Theme was "Enemies as Weapons" (single player) [<a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=453">Gosu forum</a> | <a href="http://github.com/Spooner/alpha_channel">Github project</a>]</li>      
-      <li><img src="images/flipped.png" width="32" height="32" alt="Hoops icon"> <em><strong>Flipped</strong></em> - A flip-book editing/viewing tool for <a href="http://sleepisdeath.net">Sleep Is Death</a> [<a href="http://github.com/Spooner/flipped">Github project</a>]</li>
-      <li><img src="images/hoops.png" width="32" height="32" alt="Hoops icon"> <em><strong>An Indeterminate Number of HOOPS</strong></em> - A dancing game with added cats. 2 players, locally.[<a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=582">Gosu forum</a> | <a href="http://github.com/Spooner/hoops">Github project</a>]</li>
-    </ul>
-
-    
-    <h3>Beta</h3>
-    <ul>
-      <li><em><strong>Fidgit</strong></em></a> - A GUI toolkit built on Gosu/Chingu. [<a href="http://github.com/Spooner/fidgit">Github project</a>]</li> 
-      
-      <li><img src="images/wrath.png" alt="Wrath icon" width="32" height="32"> <em><strong>Wrath: Appease or Die!</strong></em> - A game of sacrifice and wearing a chicken on your head. 2 players, locally or networked. [<a href="http://forums.tigsource.com/index.php?topic=19459.msg557507">TIGSource forum</a> | <a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=554">Gosu forum</a> | <a href="http://github.com/Spooner/wrath">Github project</a>]</li>
-      <li><img src="images/zed_and_ginger.png" alt="Wrath icon" width="32" height="32"> <em><strong>Zed and Ginger</strong></em> - A cat runs! Why does the cat run? (1 or 2 player, non-networked, game based on <a href="http://en.wikipedia.org/wiki/Metro-Cross">Metro-Cross</a>). [<a href="http://forums.tigsource.com/index.php?topic=20797.0">TIGSource forum</a> | <a href="http://github.com/Spooner/zed_and_ginger">Github project</a>]</li>                    
-    </ul>    
-    
-    <h3>Alpha</h3>
-    <ul> 
-      <li><img src="images/smash_and_grab.png" alt="Wrath icon" width="32" height="32"> <em><strong>Smash and Grab</strong></em> - A turn-based isometric game of supervillains pulling off daring heists (single player) [<a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=659">Gosu forum</a> | <a href="http://github.com/Spooner/smash_and_grab">Github project</a>]</li>                        
-      <li><img src="images/sidney.png" width="32" height="32" alt="Hoops icon"> <em><strong>Sidney</strong></em></a> - A spiritual successor to <a href="http://sleepisdeath.net">Sleep Is Death</a> - ABANDONED [<a href="http://spooner.github.com/sidney">Github project</a>]</li> 
-    </ul>
-
-    </td>
-    </tr> 
-    <tr> 
-    <th style="background-color:#97b484"> 
-
-    <h2>Contact</h2>
-    </th>
-    <td>
-    <p><a href="http://github.com/Spooner">Bil Bas</a> (bil dot bagpuss {at} gmail dot com)</p>
-    </td>
-    </tr>
+      <tr>
+        <th>
+        <h2>Projects</h2>
+        </th>
+        
+        <td>
+          <h3>Games</h3>
+          <div class="app">
+            <img src="images/alpha_channel.png" class="app_icon" width="128" height="128" alt="Hoops icon" >
+            <h4>Alpha Channel</h4>
+            <div class="status">Complete</div>
+            A game developed in 48 hours <a href="http://www.ludumdare.com/compo/ludum-dare-18/?action=rate&uid=2552">for Ludum Dare #18</a> - Theme was "Enemies as Weapons" (single player)
+            <div class="links">[<a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=453">Gosu forum</a> | <a href="http://github.com/Spooner/alpha_channel">Github project</a>]</div>
+          </div>
+          
+          <hr />
+          
+          <div class="app">
+            <img src="images/hoops.png" class="app_icon" width="128" height="128" alt="Hoops icon">
+            <h4>An Indeterminate Number of HOOPS</h4>
+            <div class="status">Complete</div>
+            A dancing game with added cats. 2 players, locally.
+            <div class="links">[<a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=582">Gosu forum</a> | <a href="http://github.com/Spooner/hoops">Github project</a>]</div>
+          </div>
+          
+          <hr />
+          
+          <div class="app">
+            <img src="images/sidney.png" class="app_icon" width="128" height="128" alt="Hoops icon"> 
+            <h4>Sidney</h4>
+            <div class="status">Abandoned in Alpha</div>
+            A spiritual successor to <a href="http://sleepisdeath.net">Sleep Is Death</a>
+            <div class="links">[<a href="http://spooner.github.com/sidney">Github project</a>]</li> 
+          </div>
+          
+          <hr />
+          
+          <div class="app">
+            <img src="images/smash_and_grab.png" class="app_icon"  width="128" height="128">
+            <h4>Smash and Grab</h4>
+            <div class="status">Alpha</div>
+            A turn-based isometric game of supervillains pulling off daring heists (single player)
+            <div class="links">[<a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=659">Gosu forum</a> | <a href="http://github.com/Spooner/smash_and_grab">Github project</a>]</div>                        
+          </div>
+          
+          <hr />
+          
+          <div class="app">
+            <img src="images/wrath.png" class="app_icon"  width="128" height="128"> 
+            <h4>Wrath: Appease or Die!</h4>
+            <div class="status">Beta</div>
+            A game of sacrifice and wearing a chicken on your head. 2 players, locally or networked.
+            <div class="links">[<a href="http://forums.tigsource.com/index.php?topic=19459.msg557507">TIGSource forum</a> | <a href="http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=554">Gosu forum</a> | <a href="http://github.com/Spooner/wrath">Github project</a>]</div>
+          </div>
+          
+          <hr />
+          
+          <div class="app">
+            <img src="images/zed_and_ginger.png" class="app_icon"  width="128" height="128"> 
+            <h4>Zed and Ginger</h4>
+            <div class="status">Beta</div>
+            A cat runs! Why does the cat run? (1 or 2 player, non-networked, game based on <a href="http://en.wikipedia.org/wiki/Metro-Cross">Metro-Cross</a>).
+            <div class="links">[<a href="http://forums.tigsource.com/index.php?topic=20797.0">TIGSource forum</a> | <a href="http://github.com/Spooner/zed_and_ginger">Github project</a>]</div>                  
+          </div>
+          
+          <h3 style="margin-top: 3ex">Utilities</h3>
+          <div class="app">
+            <img src="images/flipped.png" class="app_icon" width="128" height="128" alt="Hoops icon">
+            <h4>Flipped</h4>
+            <div class="status">Complete</div>
+            A flip-book editing/viewing tool for <a href="http://sleepisdeath.net">Sleep Is Death</a>
+            <div class="links">[<a href="http://github.com/Spooner/flipped">Github project</a>]</div>
+           </div>
+            
+          <h3>Libraries</h3>
+          <div class="app" style="margin-left: 160px">
+            <h4>Fidgit</h4>            
+            <div class="status">Beta</div>
+            A GUI toolkit built on Gosu/Chingu.
+            <div class="links">[<a href="http://github.com/Spooner/fidgit">Github project</a>]</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th style="background-color:#97b484">
+          <h2>Miscellanea</h2>
+        </th>
+        <td>
+          <h3>Links</h3>
+          <div class="app">
+            <ul>
+              <li><a href="http://www.youtube.com/user/spoonerspon">YouTube</a></li>
+              <li><a href="http://lemonsails.deviantart.com/">Deviant Art</a></li>
+            </ul>
+          </div>
+          
+          <h3>Contact</h3>
+          <div class="app" style="text-align: center">
+            <a href="http://github.com/Spooner">Bil Bas</a> (bil dot bagpuss {at} gmail dot com)
+          </div>
+        </td> 
+      </tr>
     </table>
 
     <div class="footer">

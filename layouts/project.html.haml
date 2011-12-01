@@ -1,0 +1,15 @@
+%div.app
+  %h4
+    %a{href: @item.path}= @item[:title]
+
+  %a{href: @item.path}
+    %img.app_icon{width: 128, height: 128, alt: "#{@item[:title]} icon", src: "/images/#{File.basename(@item.identifier)}.png"}
+
+  %p.status= @item[:status]
+
+  - if @summary
+    %p= link_to("Read more...", @item.path)
+  - else
+    %p= @item.compiled_content
+
+

@@ -21,10 +21,21 @@ compile '*' do
   if item.binary?
     # don't filter binary items
   else
-    filter :erb
-    layout 'default'
+    case item[:extension]
+      when 'md'
+        filter :kramdown
+        layout 'default'
+      when 'html.erb'
+        filter :erb
+        layout 'default'
+      when 'html.haml'
+        filter :haml
+        layout 'default'
+    end
   end
 end
+
+# --------------------------------------------------
 
 route '/stylesheet/' do
   '/style.css'
@@ -40,4 +51,6 @@ route '*' do
   end
 end
 
-layout '*', :erb
+# -----------------------------------
+
+layout '*', :haml

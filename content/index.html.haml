@@ -1,0 +1,6 @@
+
+%p A Ruby developer with completely random skill levels, perhaps based on the current phase of Phobos.
+
+%div
+  - @item.children.each do |item|
+    %li= link_to("#{item[:title]} (#{item.children.size})", item.identifier)

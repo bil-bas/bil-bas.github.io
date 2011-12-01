@@ -1,0 +1,4 @@
+
+%div
+  - @item.children.sort_by {|item| item[:title].downcase }.each do |item|
+    = render 'post', item: item, summary: true

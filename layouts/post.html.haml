@@ -1,0 +1,9 @@
+%div.app
+  %h4
+    %a{href: @item.path}= @item[:title]
+
+  - if @summary
+    %a{ href: @item.path } "Read more..."
+
+  - else
+    %p= @item.compiled_content

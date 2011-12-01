@@ -1,0 +1,42 @@
+body {
+    margin-top: 1.0em;
+    background-color: #daf8c9;
+    font-family: Helvetica,Arial,FreeSans;
+    color: #000000;
+}
+
+#container {
+  margin: 32px 32px;
+}
+
+h1 { font-size: 3.8em; margin-bottom: -20px; margin-top: 0px; text-align: center }
+h1 a { text-decoration: none; color: #250736; }
+
+h2 { font-size: 1.5em; color: #250736 }
+
+h3 { font-size: 1.7em; text-align: center; margin-top: 0px; clear: both; color: #daf8c9; width:100%;  background: #1a3009; border:0px; padding: 4px 0px }
+
+h4 { font-size: 1.2em; margin-bottom: 0.5ex; background-color:#b9d6a6; padding: 8px 0px 8px 160px }
+
+.description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+
+.download { float: right; }
+
+pre { background: #000; color: #fff; padding: 15px;}
+
+hr { border: 0; width: 100%; border-bottom: 1px solid #aaa; clear: both}
+
+.footer { text-align:center; padding-top:30px; font-style: italic; }
+
+th { background-color:#a8c595; width: 145px; text-align: center; vertical-align: top; }
+
+td { padding-left: 16px }
+
+div.app { clear: both }
+
+div.links { margin-top: 1em; margin-bottom: 1em }
+
+div.status { font-style: italic; padding-bottom: 0.5ex }
+
+img.app_icon { width: 128; height: 128; float: left; margin-right: 32px; margin-bottom: 32px; margin-top: -21px }
+ 

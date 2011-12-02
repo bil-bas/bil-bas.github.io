@@ -6,7 +6,7 @@ status: Beta / CURRENT PROJECT
 
 A cat runs! Why does the cat run? (1 or 2 players locally; game based on [Metro-Cross])
 
-This game was quite a departure for me, since I chose to implement using the [Ray] game library. Although this enabled certain special features, such as access to GPU shaders via GLSL, it isn't widely used as more usual library, Gosu.
+This game was quite a departure for me, since I chose to implement using the [Ray] game library. Although this enabled certain special features, such as access to GPU shaders via GLSL, it isn't widely used as more usual library, [Gosu].
 
 When played with two players, they share the screen if they are close together, but otherwise the screen automagically splits:
 
@@ -17,3 +17,4 @@ When played with two players, they share the screen if they are close together, 
 
 [Metro-cross]: http://en.wikipedia.org/wiki/Metro-Cross
 [Ray]: http://mon-ouie.github.com/projects/ray.html
+[Gosu]: http://http://www.libgosu.org/

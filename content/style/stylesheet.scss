@@ -80,10 +80,6 @@ pre {
 
 .app {
     clear:left;
-
-    h3 {
-        padding:.5em 0 .5em 160px;
-    }
 }
 
 .links {
@@ -212,10 +208,11 @@ ul {
 img.app_icon {
     width:128px;
     height:128px;
-    float:left;
-    margin-right:32px;
-    margin-bottom:32px;
-    margin-top:-21px;
+    float:right;
+    margin-left:2em;
+    margin-right:1em;
+    margin-bottom:2em;
+    margin-top:-16px;
 }
 
 img.banner_left {

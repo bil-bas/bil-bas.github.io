@@ -3,11 +3,13 @@
 
 %html{ xmlns: "http://www.w3.org/1999/xhtml", "xml:lang" => "en", lang: "en" }
   %head
-    %meta{ "http-equiv" => "Content-Type", content: "text/html; charset=utf-8" }
-    %meta{ charset: "utf-8" }
+    %meta{ "http-equiv" => "Content-Type", content: "text/html; charset=UTF-8" }
+    %meta{ charset: "UTF-8" }
     %meta{ name: "generator", content: "nanoc 3.2.3" }
-    %link{ rel: "stylesheet", type: "text/css", href: "/style/stylesheet.css", media: "screen" }
+    - %w[stylesheet code_highlighting].each do |stylesheet|
+      %link{ rel: "stylesheet", type: "text/css", href: "/style/#{stylesheet}.css", media: "screen" }
 
+    %link{ href: '/blog/feed.xml', rel: 'alternate', title: 'The Spooner Blog', type: 'application/atom+xml' }
     %title= "Spooner - #{@item[:title]}"
 
 

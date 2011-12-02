@@ -6,3 +6,9 @@ tags: [ 'website' ]
 ---
 
 Got sick of my website. Wonder what can be done about it?
+
+    #!ruby
+    100.times do |x|
+      puts x + 'frog' + :cheese =>
+      ->{|y| puts y }.call 12
+    end

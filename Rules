@@ -29,6 +29,12 @@ compile '*' do
       when 'md'
         filter :kramdown
         layout 'default'
+
+        if item[:kind] == 'article'
+          filter :colorize_syntax,
+              colorizers: { ruby: :coderay }
+        end
+
       when 'html.haml'
         filter :haml
         layout 'default'
@@ -57,5 +63,5 @@ route '*' do
 end
 
 # -----------------------------------
-
-layout '*', :haml
+# Ugly is required, lest code blocks don't indent properly.
+layout '*', :haml, format: :html5, ugly: true

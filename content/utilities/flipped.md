@@ -1,6 +1,7 @@
 ---
 title: Flipped
 status: Complete
+summary: A flip-book editing/viewing tool for Sleep Is Death.
 ---
 
 A flip-book editing/viewing tool for [Sleep Is Death](http://sleepisdeath.net)

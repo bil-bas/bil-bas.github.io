@@ -1,0 +1,9 @@
+
+%div
+  - @item.children.sort_by(&:identifier).reverse_each do |year|
+    %h4
+      = link_to File.basename(year.identifier), year.identifier
+
+    - year.children.sort_by(&:identifier).reverse_each do |post|
+      %p
+        = link_to "[#{pretty_date File.basename(post.identifier)}] #{post[:title]}", post.identifier

@@ -1,9 +1,10 @@
-%div.app
+%div
   %h4
-    %a{href: @item.path}= @item[:title]
+    %a{href: @item.path} [#{pretty_date File.basename(@item.identifier)}] #{@item[:title]}
 
-  - if @summary
-    %a{ href: @item.path } "Read more..."
+  %p= @item.compiled_content
 
-  - else
-    %p= @item.compiled_content
+  - if false and @summary
+    %a{ href: @item.path } Read more...
+
+

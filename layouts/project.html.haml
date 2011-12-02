@@ -7,6 +7,8 @@
 
   %p.status= @item[:status]
 
+  %p.status= @item[:summary]
+
   - if @summary
     %p= link_to("Read more...", @item.path)
   - else

@@ -33,7 +33,11 @@ h4 {
     font-size:1.2em;
     margin-bottom:.5ex;
     background-color:#b9d6a6;
-    padding:8px 0 8px 160px;
+    padding:.5em;
+}
+
+.app h4 {
+    padding:.5em 0 .5em 160px;
 }
 
 .description {
@@ -133,4 +137,9 @@ img.app_icon {
 h1 a,h2 a, h3 a,h4 a {
     text-decoration:none;
     color:#250736;
+}
+
+.breadcrumbs a {
+    text-decoration:none;
+    font-size:80%;
 }

@@ -1,0 +1,4 @@
+
+%div
+  - @item.children.sort_by(&:identifier).reverse_each do |item|
+    = render 'post', item: item, summary: true

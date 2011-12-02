@@ -28,8 +28,8 @@
         %div.contents_wrap
           %div.contents
             - unless @item.identifier == '/'
-              %div.breadcrumb
-                = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" > ")
+              %div.breadcrumbs
+                = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" &raquo; ")
 
             = yield
 
@@ -41,8 +41,12 @@
               %li
                 = link_to(item[:title], item.identifier)
                 %ul
-                  - item.children.each do |item|
-                    %li= link_to(item[:title], item.identifier)
+                  - if item.identifier == '/blog/'
+                    - item.children.reverse_each do |item|
+                      %li= link_to("#{item[:title]} (#{item.children.size})", item.identifier)
+                  - else
+                    - item.children.each do |item|
+                      %li= link_to(item[:title], item.identifier)
 
 
     %div.footer

@@ -1,6 +1,7 @@
 ---
 title: Hoops
 status: Complete
+summary: A rhythm-based dancing game with added cats.
 ---
 
 Full title: An Indeterminate number of HOOPS

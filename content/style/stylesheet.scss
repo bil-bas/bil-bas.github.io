@@ -95,6 +95,14 @@ pre {
     font-style:italic;
 }
 
+hr {
+  background-color:$light_color;
+  height: 2px;
+  border:none;
+  width: 100%;
+  margin-top: 2em;
+}
+
 .col_mask {
     position:relative;		// This fixes the IE7 overflow hidden bug and stops the layout jumping out of place
     clear:both;

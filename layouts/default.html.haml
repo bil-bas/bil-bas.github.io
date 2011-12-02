@@ -58,7 +58,6 @@
                   = link_to item[:title], item.identifier
 
                 %ul
-                  -
                   - if item.identifier == '/blog/'
                     - items = item.children.select {|i| i[:kind] == 'year' }.reverse
                     - items << item.children.find {|i| i.identifier =~ /tags/ }
@@ -76,6 +75,8 @@
                         - else
                           = link_to item[:title], item.identifier
 
+            %li= link_to "deviantART", "http://lemonsails.deviantart.com"
+            %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"
 
     %div.footer
       %p

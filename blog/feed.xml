@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://spooner.github.com/</id>
+  <title>Spooner's Blog</title>
+  <updated>2011-12-02T00:00:00Z</updated>
+  <link rel="alternate" href="http://spooner.github.com/"/>
+  <link rel="self" href="http://spooner.github.com/blog/feed.xml"/>
+  <author>
+    <name>Spooner</name>
+    <uri>http://spooner.github.com</uri>
+  </author>
+  <entry>
+    <id>tag:spooner.github.com,2011-12-02:/blog/2011/new_website/</id>
+    <title type="html">Set up new website</title>
+    <published>2011-12-02T00:00:00Z</published>
+    <updated>2011-12-02T00:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/blog/2011/new_website/"/>
+    <content type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site.
+Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasn’t useful as a showcase.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; seems to be pretty good overall and I think it was a better choice for me than Jekyll, which I’d used previously.
+It isn’t too complicated and manages HAML for layout, kramdown for content and SASS for style quite nicely.
+One thing that dismays me a little is that you have to manually manage rules for compilation and routing, when it could have much more reasonable defaults set up and a bit more assumption of standard practice.&lt;/p&gt;
+</content>
+    <summary type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site.
+Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasnÔÇÖt useful as a showcase.&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <id>tag:spooner.github.com,2011-12-01:/blog/2011/sick_of_website/</id>
+    <title type="html">Sick of website</title>
+    <published>2011-12-01T00:00:00Z</published>
+    <updated>2011-12-01T00:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/blog/2011/sick_of_website/"/>
+    <content type="html">&lt;p&gt;Got sick of my website. Wonder what can be done about it?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!ruby
+# I might want to put code in later.
+100.times do |x|
+  puts x + 'frog' + :cheese =&amp;gt;
+  -&amp;gt;{|y| puts y }.call 12
+end
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    <summary type="html">&lt;p&gt;Got sick of my website. Wonder what can be done about it?&lt;/p&gt;</summary>
+  </entry>
+</feed>

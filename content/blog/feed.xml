@@ -1,1 +1,7 @@
-<%= atom_feed(title: "Article", author_name: "Spooner", author_uri: @config[:base_url]) %>
+<%= atom_feed(
+        title: "Spooner's Blog",
+        author_name: "Spooner",
+        author_uri: @config[:base_url],
+        excerpt_proc: lambda {|article| article.summary }
+    )
+ %>

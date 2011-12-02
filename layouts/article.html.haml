@@ -4,7 +4,7 @@
     %h3
       %a{href: @item.path}  #{@item[:title]} - #{pretty_date @item[:created_at]}
 
-    = first_paragraph(@item)
+    = @item.summary
     %a{ href: @item.path } Read more...
 
   - else

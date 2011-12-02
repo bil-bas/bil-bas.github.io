@@ -6,7 +6,7 @@
     %h3
       = link_to File.basename(year.identifier), year.identifier
 
-    - year.children.sort_by(&:identifier).reverse_each do |article|
+    - year.children.sort_by {|i| i[:created_at] }.reverse_each do |article|
       %p
         = link_to "#{article[:title]} - #{pretty_date article[:created_at]}", article.identifier
 

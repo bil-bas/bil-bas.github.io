@@ -23,6 +23,8 @@ pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 
 .status { font-style: italic; }
 
+hr { background-color: #c9e6b6; height: 2px; border: none; width: 100%; margin-top: 2em; }
+
 .col_mask { position: relative; clear: both; float: left; width: 100%; overflow: hidden; }
 
 .right_menu .col_left { float: left; width: 200%; margin-left: -12em; position: relative; right: 100%; }

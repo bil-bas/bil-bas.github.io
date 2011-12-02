@@ -2,7 +2,6 @@
 kind: project
 title: Fidgit
 status: Beta
-summary: A GUI toolkit built on Gosu/Chingu.
 ---
 
 A GUI toolkit built on Gosu/Chingu.

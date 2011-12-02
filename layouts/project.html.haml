@@ -7,10 +7,9 @@
 
   %p.status= @item[:status]
 
-  %p= @item[:summary]
-
   - if @summary
-    %p= link_to("Read more...", @item.path)
+    = first_paragraph @item
+    %p= link_to "More...", @item.path
   - else
     %p= @item.compiled_content
 

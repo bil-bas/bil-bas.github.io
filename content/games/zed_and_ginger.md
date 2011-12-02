@@ -1,8 +1,7 @@
 ---
 kind: project
 title: Zed and Ginger
-status: Beta
-summary: Feline race in a spaceship (1 or 2 players)
+status: Beta / CURRENT PROJECT
 ---
 
 A cat runs! Why does the cat run? (1 or 2 players locally; game based on [Metro-Cross](http://en.wikipedia.org/wiki/Metro-Cross))

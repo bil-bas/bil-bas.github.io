@@ -1,11 +1,8 @@
 ---
 kind: project
 title: Smash and Grab
-status: Alpha
-summary: A turn-based isometric game of supervillains pulling off daring heists!
+status: Alpha / CURRENT PROJECT
 ---
-
-_[Current project]_
 
 A turn-based isometric game of supervillains pulling off daring heists (Single player; hoping to add 2-player later).
 

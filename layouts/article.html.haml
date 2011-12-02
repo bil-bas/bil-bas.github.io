@@ -1,11 +1,15 @@
 %div
-  %h3
-    %a{href: @item.path}  #{@item[:title]} - #{pretty_date @item[:created_at]}
 
-  %p= @item.compiled_content
+  - if @summary
+    %h3
+      %a{href: @item.path}  #{@item[:title]} - #{pretty_date @item[:created_at]}
 
-  - if false and @summary
+    = first_paragraph(@item)
     %a{ href: @item.path } Read more...
+
+  - else
+    %p= "Posted: #{pretty_date @item[:created_at]}"
+    %p= @item.compiled_content
 
   %p Tags: #{@site.tags_for(@item, base_url: '/tags/')}
 

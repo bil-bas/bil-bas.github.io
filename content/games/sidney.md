@@ -1,8 +1,7 @@
 ---
 kind: project
 title: Sidney
-status: Alpha / Abandoned
-summary: A spiritual successor to Sleep Is Death.
+status: Alpha / ABANDONED
 ---
 
 

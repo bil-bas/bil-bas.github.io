@@ -2,7 +2,6 @@
 kind: project
 title: Wrath
 status: Beta
-summary: A game of sacrifice and wearing a chicken on your head.
 ---
 
 A game of sacrifice and wearing a chicken on your head (2 players, locally or networked).

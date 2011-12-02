@@ -2,8 +2,8 @@
 kind: project
 title: Alpha Channel
 status: Complete
-summary: A game developed in 48 hours for Ludum Dare 18.
 ---
+
 
 A game developed in 48 hours for [Ludum Dare #18](http://www.ludumdare.com/compo/ludum-dare-18/?action=rate&uid=2552) - Theme was "Enemies as Weapons" (Single player).
 An extended version was created after the competition (adding boss fights and improved visuals).

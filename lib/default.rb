@@ -13,3 +13,8 @@ end
 def link_for_tag(tag, base_url)
   %[<a href="#{h base_url}#{h tag}/" rel="tag">#{h tag}</a>]
 end
+
+
+def first_paragraph(item)
+  Hpricot(item.compiled_content).at("p").to_html
+end

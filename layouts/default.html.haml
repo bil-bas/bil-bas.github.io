@@ -34,9 +34,7 @@
       %div.col_left
         %div.contents_wrap
           %div.contents
-
-            - unless @item.identifier == '/'
-              %h2= link_to @item[:title], @item.identifier
+            %h2= link_to ((@item.identifier == '/') ? "News" : @item[:title]), @item.identifier
 
             = yield
 

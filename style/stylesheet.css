@@ -37,6 +37,8 @@ ul ul .active { font-size: 100%; margin-bottom: 1em; }
 ul a { font-size: 120%; text-decoration: none; margin-bottom: 1em; }
 ul .active { font-size: 120%; margin-bottom: 1em; }
 
+.posted { font-style: italic; font-size: 80%; }
+
 .tags { font-size: 80%; }
 
 .footer { text-align: center; margin-top: 4em; padding: 0.25em 0; font-style: italic; clear: both; float: left; background-color: #a8c595; width: 100%; }

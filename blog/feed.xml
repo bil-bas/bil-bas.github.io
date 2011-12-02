@@ -24,22 +24,4 @@
 </content>
     <summary type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site. Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasnÔÇÖt useful as a showcase of my projects and I quite liked the idea of having my own blog. Whether IÔÇÖll blog more than once a year or not, is another question.&lt;/p&gt;</summary>
   </entry>
-  <entry>
-    <id>tag:spooner.github.com,2011-12-01:/blog/2011/sick_of_website/</id>
-    <title type="html">Sick of website</title>
-    <published>2011-12-01T00:00:00Z</published>
-    <updated>2011-12-01T00:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/blog/2011/sick_of_website/"/>
-    <content type="html">&lt;p&gt;Got sick of my website. Wonder what can be done about it?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!ruby
-# I might want to put code in later.
-100.times do |x|
-  puts x + 'frog' + :cheese =&amp;gt;
-  -&amp;gt;{|y| puts y }.call 12
-end
-&lt;/code&gt;&lt;/pre&gt;
-</content>
-    <summary type="html">&lt;p&gt;Got sick of my website. Wonder what can be done about it?&lt;/p&gt;</summary>
-  </entry>
 </feed>

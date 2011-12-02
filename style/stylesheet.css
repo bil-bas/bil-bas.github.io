@@ -1,6 +1,6 @@
-body { margin-top: 1em; background-color: #daf8c9; font-family: Helvetica,Arial,FreeSans; color: black; margin: 0 5%; }
+body { background-color: #daf8c9; font-family: Helvetica,Arial,FreeSans; color: black; margin: 0.5em 5% 4em 5%; }
 
-h1 { font-size: 3.8em; margin-bottom: -20px; margin-top: 0; text-align: center; }
+h1 { font-size: 3.8em; margin-bottom: -20px; margin-top: 0; text-align: center; font-style: italic; }
 
 h2 { font-size: 1.7em; text-align: center; margin-top: 0; color: #daf8c9; width: 100%; background: #1a3009; border: 0; padding: 4px 0; }
 
@@ -8,7 +8,9 @@ h3 { font-size: 1.2em; margin-bottom: .5ex; background-color: #b9d6a6; padding: 
 
 h1 a, h2 a, h3 a { text-decoration: none; color: #250736; }
 
-.description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic; }
+.banner { height: 130px; background-color: #b9d6a6; border: 2px solid black; }
+.banner a { font-size: 1.2em; }
+.banner p { padding-top: 1.25em; text-align: center; font-size: 80%; }
 
 pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 
@@ -27,8 +29,9 @@ pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 .right_menu .sidebar { float: right; width: 12em; position: relative; left: 13em; margin: 0 0 4em 32px; background-color: #a8c595; }
 
 ul ul a { font-size: 100%; }
+ul ul .active { font-size: 100%; margin-bottom: 1em; }
 ul a { font-size: 120%; text-decoration: none; margin-bottom: 1em; }
-ul span { font-size: 120%; margin-bottom: 1em; }
+ul .active { font-size: 120%; margin-bottom: 1em; }
 
 .footer { text-align: center; margin-top: 4em; padding: 0.25em 0; font-style: italic; clear: both; float: left; background-color: #a8c595; width: 100%; }
 
@@ -40,6 +43,6 @@ ul ul { padding-left: 1.5em; padding-bottom: 1em; }
 
 img.app_icon { width: 128px; height: 128px; float: left; margin-right: 32px; margin-bottom: 32px; margin-top: -21px; }
 
-img.banner_left { float: left; border: 2px solid black; }
+img.banner_left { float: left; margin-bottom: 0.5em; border: 2px solid black; }
 
 img.banner_right { float: right; border: 2px solid black; }

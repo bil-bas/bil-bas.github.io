@@ -11,6 +11,6 @@
     %p= "Posted: #{pretty_date @item[:created_at]}"
     %p= @item.compiled_content
 
-  %p Tags: #{@site.tags_for(@item, base_url: '/tags/')}
+  %p Tags: #{@site.tags_for(@item, base_url: '/blog/tags/')}
 
 

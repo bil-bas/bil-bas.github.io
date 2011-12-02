@@ -7,10 +7,13 @@
     = @item.summary
     %a{ href: @item.path } Read more...
 
+    %p.tags #{@site.tags_for(@item, base_url: '/blog/tags/')}
+
   - else
     %p= "Posted: #{pretty_date @item[:created_at]}"
     %p= @item.compiled_content
 
-  %p Tags: #{@site.tags_for(@item, base_url: '/blog/tags/')}
+    %p.tags #{@site.tags_for(@item, base_url: '/blog/tags/')}
 
+    = render "comments", item: @item
 

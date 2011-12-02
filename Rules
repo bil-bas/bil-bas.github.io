@@ -17,6 +17,10 @@ compile '/blog/feed/' do
   filter :erb
 end
 
+compile '/sitemap/' do
+  filter :erb
+end
+
 compile '/style/*/' do
   filter :sass, :syntax => :scss, :style => :compact
 end
@@ -46,6 +50,10 @@ end
 
 route '/blog/feed/' do
   '/blog/feed.xml'
+end
+
+route '/sitemap/' do
+  '/sitemap.xml'
 end
 
 route '/style/*/' do

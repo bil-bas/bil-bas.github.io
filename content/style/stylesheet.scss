@@ -136,6 +136,11 @@ ul {
         a {
             font-size:$normal_font_size;
         }
+
+        .active {
+            font-size:$normal_font_size;
+            margin-bottom:1em;
+        }
     }
 
     a {
@@ -144,7 +149,7 @@ ul {
         margin-bottom:1em;
     }
 
-    span {
+    .active {
         font-size:$large_font_size;
         margin-bottom:1em;
     }

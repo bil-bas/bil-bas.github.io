@@ -53,10 +53,7 @@
             - @base_item.children.select {|i| i[:title] }.each do |item|
 
               %li
-                - if item == @item
-                  %span= item[:title]
-                - else
-                  = link_to item[:title], item.identifier
+                = link_to_unless_current item[:title], item.identifier
 
                 %ul
                   - if item.identifier == '/blog/'
@@ -64,17 +61,11 @@
                     - items << item.children.find {|i| i.identifier =~ /tags/ }
                     - items.each do |item|
                       %li
-                        - if item == @item
-                          #{item[:title]} (#{item.children.size})
-                        - else
-                          = link_to "#{item[:title]} (#{item.children.size})", item.identifier
+                        = link_to_unless_current "#{item[:title]} (#{item.children.size})", item.identifier
                   - else
                     - item.children.each do |item|
                       %li
-                        - if item == @item
-                          = item[:title]
-                        - else
-                          = link_to item[:title], item.identifier
+                        = link_to_unless_current item[:title], item.identifier
 
             %li= link_to "deviantART", "http://lemonsails.deviantart.com"
             %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"

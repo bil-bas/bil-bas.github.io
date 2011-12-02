@@ -48,9 +48,8 @@
               - else
                 = link_to "Home", '/'
 
-            - @base_item = @item
-            - @base_item = @base_item.parent while @base_item.parent
-            - @base_item.children.select {|i| i[:title] }.each do |item|
+            - home = @items.find {|i| i.identifier == "/" }
+            - home.children.select {|i| i[:title] }.each do |item|
 
               %li
                 = link_to_unless_current item[:title], item.identifier

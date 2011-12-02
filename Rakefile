@@ -16,7 +16,6 @@ desc "Compile everything"
 task :compile do
   system "nanoc compile"
   create_tags
-  create_feed
 end
 
 # http://www.h3rald.com/articles/take-back-your-site-with-nanoc/
@@ -62,20 +61,6 @@ title: #{tag}
 count: #{count}
 ---
 END
-  end
-end
-
-task :create_feed do
- create_feed
-end
-
-def create_feed
-  include Nanoc3::Helpers::Blogging
-
-  site = Nanoc3::Site.new('.')
-
-  File.open("content/blog.xml", "w") do |file|
-    file.puts site.atom_feed
   end
 end
 

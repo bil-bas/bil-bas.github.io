@@ -196,10 +196,10 @@ ul {
 
 ul {
     list-style:none;
-    padding-left:1em;
+    padding-left:0.75em;
 
     ul {
-        padding-left:1.5em;
+        padding-left:1em;
         padding-bottom:1em;
     }
 }
@@ -213,6 +213,12 @@ img.app_icon {
     margin-right:1em;
     margin-bottom:2em;
     margin-top:-16px;
+}
+
+img.app_icon_small {
+    width:16px;
+    height:16px;
+    margin: 0;
 }
 
 img.banner_left {

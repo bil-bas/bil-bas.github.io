@@ -59,6 +59,8 @@
                   - else
                     - item.children.each do |item|
                       %li
+                        %a{href: item.identifier}
+                          %img.app_icon_small{alt: "#{item[:title]}", src: "/images/small_icon/#{File.basename(item.identifier)}.png"}
                         = link_to_unless_current item[:title], item.identifier
 
             %li= link_to "deviantART", "http://lemonsails.deviantart.com"

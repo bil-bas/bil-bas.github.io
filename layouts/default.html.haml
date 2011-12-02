@@ -22,7 +22,7 @@
 
       %h1= link_to "Spooner", "/"
 
-      %p Ruby addict and maker of retro games
+      %p Ruby addict and maker of games with outrageously large pixels
 
     %div.breadcrumbs
       - if @item.identifier == '/'
@@ -36,7 +36,7 @@
           %div.contents
 
             - unless @item.identifier == '/'
-              %h2 #{@item[:title]}
+              %h2= link_to @item[:title], @item.identifier
 
             = yield
 

@@ -41,10 +41,7 @@
         %div.sidebar
           %ul
             %li{ style: "margin-bottom:1em;" }
-              - if @item.identifier == '/'
-                %span Home
-              - else
-                = link_to "Home", '/'
+              = link_to_unless_current "Home", '/'
 
             - home = @items.find {|i| i.identifier == "/" }
             - home.children.select {|i| i[:title] }.each do |item|

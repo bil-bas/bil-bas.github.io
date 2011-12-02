@@ -60,6 +60,10 @@ route '/style/*/' do
   item.identifier.chop + '.css' # so that the /assets/style/screen/ item is compiled to /assets/style/screen.css
 end
 
+route "/errors/404/" do
+  "/404.html"
+end
+
 route '*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext

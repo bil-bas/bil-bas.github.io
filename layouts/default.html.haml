@@ -25,7 +25,7 @@
       %p Ruby addict and maker of games with outrageously large pixels
 
     %div.breadcrumbs
-      - if @item.identifier == '/'
+      - if %w[/ /errors/404/].include? @item.identifier
         &nbsp;
       - else
         = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" &raquo; ")

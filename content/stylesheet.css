@@ -14,11 +14,6 @@ h1 {
 }
 
 h2 {
-    font-size:1.5em;
-    color:#250736;
-}
-
-h3 {
     font-size:1.7em;
     text-align:center;
     margin-top:0;
@@ -116,6 +111,16 @@ pre {
     width:100%;
 }
 
+div.breadcrumbs {
+    clear: both;
+    margin-bottom: 1em;
+}
+
+.breadcrumbs a {
+    text-decoration:none;
+    font-size:80%;
+}
+
 ul {
     list-style:none;
     padding-left:1em;
@@ -137,9 +142,4 @@ img.app_icon {
 h1 a,h2 a, h3 a,h4 a {
     text-decoration:none;
     color:#250736;
-}
-
-.breadcrumbs a {
-    text-decoration:none;
-    font-size:80%;
 }

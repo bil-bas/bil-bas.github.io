@@ -21,15 +21,19 @@
       %h1
         %a{ href: "/" } Spooner
 
-    %div{ style: "clear:both" }
+    %div.breadcrumbs
+      - if @item.identifier == '/'
+        &nbsp;
+      - else
+        = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" &raquo; ")
 
     %div{ class: "col_mask right_menu" }
       %div.col_left
         %div.contents_wrap
           %div.contents
+
             - unless @item.identifier == '/'
-              %div.breadcrumbs
-                = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" &raquo; ")
+              %h2 #{@item[:title]}
 
             = yield
 
@@ -47,13 +51,15 @@
                 %ul
                   -
                   - if item.identifier == '/blog/'
-                    - item.children.reverse_each do |item|
+                    - items = item.children.select {|i| i[:kind] == 'year' }.reverse
+                    - items << item.children.find {|i| i.identifier =~ /tags/ }
+                    - items.each do |item|
                       %li
                         - if item == @item
                           #{item[:title]} (#{item.children.size})
                         - else
                           = link_to("#{item[:title]} (#{item.children.size})", item.identifier)
-                  - elsif item.identifier != '/tags/'
+                  - else
                     - item.children.each do |item|
                       %li
                         - if item == @item

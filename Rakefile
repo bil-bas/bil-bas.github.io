@@ -21,7 +21,7 @@ end
 # http://www.h3rald.com/articles/take-back-your-site-with-nanoc/
 def create_tags
   site = Nanoc3::Site.new('.')
-  dir = File.expand_path('content/tags', Pathname(Dir.pwd))
+  dir = File.expand_path('content/blog/tags', Pathname(Dir.pwd))
   FileUtils.rmtree dir if File.exists?(dir)
   FileUtils.mkdir_p dir
   tags = Hash.new 0
@@ -57,7 +57,7 @@ END
 
     file.puts <<END
 ---
-title: #{tag}
+title: Tag -  #{tag}
 count: #{count}
 ---
 END

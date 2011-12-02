@@ -1,4 +1,3 @@
-
 %div
   - @item.children.sort_by(&:identifier).reverse_each do |article|
     = render 'article', item: article, summary: true

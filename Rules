@@ -17,7 +17,7 @@ compile '/stylesheet/' do
   # don't filter or layout
 end
 
-compile '/feed/' do
+compile '/blog/feed/' do
   filter :erb
 end
 
@@ -42,8 +42,8 @@ route '/stylesheet/' do
   '/style.css'
 end
 
-route '/feed/' do
-  '/feed.xml'
+route '/blog/feed/' do
+  '/blog/feed.xml'
 end
 
 route '*' do

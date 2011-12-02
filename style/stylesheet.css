@@ -17,7 +17,6 @@ h2 a { text-decoration: none; color: #daf8c9; }
 pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 
 .app { clear: left; }
-.app h3 { padding: .5em 0 .5em 160px; }
 
 .links { margin-top: 1em; margin-bottom: 1em; }
 
@@ -49,7 +48,7 @@ ul .active { font-size: 120%; margin-bottom: 1em; }
 ul { list-style: none; padding-left: 1em; }
 ul ul { padding-left: 1.5em; padding-bottom: 1em; }
 
-img.app_icon { width: 128px; height: 128px; float: left; margin-right: 32px; margin-bottom: 32px; margin-top: -21px; }
+img.app_icon { width: 128px; height: 128px; float: right; margin-left: 2em; margin-right: 1em; margin-bottom: 2em; margin-top: -16px; }
 
 img.banner_left { float: left; margin-bottom: 0.5em; border: 2px solid black; }
 

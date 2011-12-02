@@ -1,7 +1,9 @@
 ---
-title: An Indeterminate Number of HOOPS
+title: Hoops
 status: Complete
 ---
+
+Full title: An Indeterminate number of HOOPS
 
 A rhythm-based dancing game with added cats. (2 players, locally)
 

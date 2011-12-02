@@ -12,23 +12,38 @@
 
 
   %body
-    %div#container
-      %div.description
-        %a{ href: '/' }
-          %img{ src: "/images/spooner_pixels_large.png", width: "128", height: "128", alt: "Actual photo of Spooner", style: "float:left;margin-right:32px;border:2px solid black;margin-bottom:64px" }
-        %a{ href: '/' }
-          %img{ src: "/images/bagpuss_large.png", width: "128", height: "128", alt: "Bagpuss", style: "float:right;margin-left:32px;border:2px solid black" }
+    %div.description
+      %a{ href: '/' }
+        %img{ src: "/images/spooner_pixels_large.png", width: "128", height: "128", alt: "Actual photo of Spooner", style: "float:left;margin-right:32px;border:2px solid black;margin-bottom:64px" }
+      %a{ href: '/' }
+        %img{ src: "/images/bagpuss_large.png", width: "128", height: "128", alt: "Bagpuss", style: "float:right;margin-left:32px;border:2px solid black" }
 
-        %div
-          %h1
-            %a{ href: "/" } Spooner
+      %h1
+        %a{ href: "/" } Spooner
 
-        %div{ style: "clear:both" }
+    %div{ style: "clear:both" }
 
-        - unless @item.identifier == '/'
-          %div.breadcrumb
-            = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" > ")
+    %div{ class: "col_mask right_menu" }
+      %div.col_left
+        %div.contents_wrap
+          %div.contents
+            - unless @item.identifier == '/'
+              %div.breadcrumb
+                = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" > ")
 
-        = yield
+            = yield
 
-        %div#footer
+        %div.sidebar
+          - @base_item = @item
+          - @base_item = @base_item.parent while @base_item.parent
+          - @base_item.children.select {|i| i[:title] }.each do |item|
+            %ul
+              %li
+                = link_to(item[:title], item.identifier)
+                %ul
+                  - item.children.each do |item|
+                    %li= link_to(item[:title], item.identifier)
+
+
+    %div.footer
+      %p Spooner was brought to you by the letter oo

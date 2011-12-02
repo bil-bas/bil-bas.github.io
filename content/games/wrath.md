@@ -3,6 +3,8 @@ title: Wrath
 status: Beta
 ---
 
+Full title: Wrath: Appease or Die!
+
 A game of sacrifice and wearing a chicken on your head (2 players, locally or networked).
 
 [![TIGSource forum](/images/tigsource.png)](http://forums.tigsource.com/index.php?topic=19459)

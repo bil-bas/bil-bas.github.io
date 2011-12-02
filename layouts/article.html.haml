@@ -10,8 +10,8 @@
     %p.tags #{@site.tags_for(@item, base_url: '/blog/tags/')}
 
   - else
-    %p= "Posted: #{pretty_date @item[:created_at]}"
-    %p= @item.compiled_content
+    %p.posted= "Posted: #{pretty_date @item[:created_at]}"
+    = yield
 
     %p.tags #{@site.tags_for(@item, base_url: '/blog/tags/')}
 

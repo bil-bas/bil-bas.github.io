@@ -32,6 +32,8 @@ compile '*' do
     case item[:extension]
       when 'md'
         filter :kramdown
+        layout item[:kind]
+        snapshot :guts
         layout 'default'
 
         if item[:kind] == 'article'

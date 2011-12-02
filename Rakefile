@@ -8,8 +8,13 @@ end
 require 'FileUtils'
 
 desc "Create tag pages"
-task :tags do
+task :create_tags do
   create_tags
+end
+
+desc "Serve up the pages and auto-update them"
+task :serve do
+  system "nanoc aco"
 end
 
 desc "Compile everything"

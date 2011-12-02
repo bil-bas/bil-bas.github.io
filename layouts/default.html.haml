@@ -14,14 +14,15 @@
 
 
   %body
-    %div.description
+    %div.banner
       %a{ href: '/' }
         %img.banner_left{ src: "/images/spooner_pixels_large.png", width: "128", height: "128", alt: "Actual photo of Spooner" }
       %a{ href: '/' }
         %img.banner_right{ src: "/images/bagpuss_large.png", width: "128", height: "128", alt: "Bagpuss" }
 
-      %h1
-        %a{ href: "/" } Spooner
+      %h1= link_to "Spooner", "/"
+
+      %p Ruby addict and maker of retro games
 
     %div.breadcrumbs
       - if @item.identifier == '/'

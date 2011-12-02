@@ -13,11 +13,10 @@ $normal_font_size: 100%;
 $small_font_size: 80%;
 
 body {
-    margin-top:1em;
     background-color:$background_color;
     font-family:Helvetica,Arial,FreeSans;
     color:$text_color;
-    margin:0 5%;
+    margin:0.5em 5% 4em 5%;
 }
 
 
@@ -27,6 +26,7 @@ h1 {
     margin-bottom:-20px;
     margin-top:0;
     text-align:center;
+    font-style:italic;
 }
 
 h2 {
@@ -53,11 +53,18 @@ h1 a, h2 a, h3 a {
 }
 
 
-.description {
-    font-size:1.2em;
-    margin-bottom:30px;
-    margin-top:30px;
-    font-style:italic;
+.banner {
+    height:128 + 2px;
+    background-color:$light_color;
+    border:$image_border;
+    a {
+      font-size:1.2em;
+    }
+    p {
+      padding-top:1.25em;
+      text-align:center;
+      font-size:$small_font_size;
+    }
 }
 
 pre {

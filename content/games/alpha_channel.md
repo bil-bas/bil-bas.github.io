@@ -1,4 +1,5 @@
 ---
+kind: project
 title: Alpha Channel
 status: Complete
 summary: A game developed in 48 hours for Ludum Dare 18.

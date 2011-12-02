@@ -1,0 +1,16 @@
+GEM
+  remote: http://gemcutter.org/
+  specs:
+    cri (2.0.2)
+    haml (3.1.4)
+    hpricot (0.8.5)
+    nanoc3 (3.2.3)
+      cri (~> 2.0)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  haml (~> 3.1.4)
+  hpricot (~> 0.8.5)
+  nanoc3 (~> 3.2.3)

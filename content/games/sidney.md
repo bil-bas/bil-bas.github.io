@@ -1,4 +1,5 @@
 ---
+kind: project
 title: Sidney
 status: Alpha
 summary: A spiritual successor to Sleep Is Death.

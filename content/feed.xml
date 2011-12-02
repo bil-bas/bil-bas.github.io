@@ -1,0 +1,1 @@
+<%= atom_feed(title: "Article", author_name: "Spooner", author_uri: @config[:base_url]) %>

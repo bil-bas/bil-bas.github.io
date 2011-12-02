@@ -39,15 +39,28 @@
           - @base_item.children.select {|i| i[:title] }.each do |item|
             %ul
               %li
-                = link_to(item[:title], item.identifier)
+                - if item == @item
+                  = item[:title]
+                - else
+                  = link_to(item[:title], item.identifier)
+
                 %ul
+                  -
                   - if item.identifier == '/blog/'
                     - item.children.reverse_each do |item|
-                      %li= link_to("#{item[:title]} (#{item.children.size})", item.identifier)
-                  - else
+                      %li
+                        - if item == @item
+                          #{item[:title]} (#{item.children.size})
+                        - else
+                          = link_to("#{item[:title]} (#{item.children.size})", item.identifier)
+                  - elsif item.identifier != '/tags/'
                     - item.children.each do |item|
-                      %li= link_to(item[:title], item.identifier)
+                      %li
+                        - if item == @item
+                          = item[:title]
+                        - else
+                          = link_to(item[:title], item.identifier)
 
 
     %div.footer
-      %p Spooner was brought to you by the letter oo
+      %p Today, Spooner was brought to you by the letter 'oo'

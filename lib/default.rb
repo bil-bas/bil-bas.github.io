@@ -2,7 +2,8 @@
 # before nanoc starts compiling.
 
 require 'date'
+require 'hpricot'
 
 def pretty_date(date)
-  Date.parse(date).strftime("%a, %e %b %Y")
+  date.strftime("%a, %e %b %Y")
 end

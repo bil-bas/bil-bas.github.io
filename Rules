@@ -17,6 +17,10 @@ compile '/stylesheet/' do
   # don't filter or layout
 end
 
+compile '/feed/' do
+  filter :erb
+end
+
 compile '*' do
   if item.binary?
     # don't filter binary items
@@ -24,9 +28,6 @@ compile '*' do
     case item[:extension]
       when 'md'
         filter :kramdown
-        layout 'default'
-      when 'html.erb'
-        filter :erb
         layout 'default'
       when 'html.haml'
         filter :haml
@@ -39,6 +40,10 @@ end
 
 route '/stylesheet/' do
   '/style.css'
+end
+
+route '/feed/' do
+  '/feed.xml'
 end
 
 route '*' do

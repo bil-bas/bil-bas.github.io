@@ -1,0 +1,4 @@
+
+%div
+  - @item.children.sort_by(&:identifier).each do |tag|
+    = link_to "#{File.basename(tag.identifier)} (#{tag[:count]})", tag.identifier

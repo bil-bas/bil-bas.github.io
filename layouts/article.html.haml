@@ -1,0 +1,12 @@
+%div
+  %h4
+    %a{href: @item.path}  #{@item[:title]} - #{pretty_date @item[:created_at]}
+
+  %p= @item.compiled_content
+
+  - if false and @summary
+    %a{ href: @item.path } Read more...
+
+  %p Tags: #{@site.tags_for(@item, base_url: '/tags/')}
+
+

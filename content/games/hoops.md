@@ -1,4 +1,5 @@
 ---
+kind: project
 title: Hoops
 status: Complete
 summary: A rhythm-based dancing game with added cats.

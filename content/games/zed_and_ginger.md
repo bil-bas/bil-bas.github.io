@@ -1,4 +1,5 @@
 ---
+kind: project
 title: Zed and Ginger
 status: Beta
 summary: Feline race in a spaceship (1 or 2 players)

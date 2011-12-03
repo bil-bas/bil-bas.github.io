@@ -16,174 +16,174 @@ $normal_font_size: 100%;
 $small_font_size: 80%;
 
 body {
-    background-color:$background_color;
-    font-family:Helvetica,Arial,FreeSans;
-    color:$text_color;
-    margin:0.5em 5% 4em 5%;
+    background-color: $background_color;
+    font-family: Helvetica,Arial,FreeSans;
+    color: $text_color;
+    margin: 0.5em 5% 4em 5%;
 }
 
 
 // Headings
 h1 {
-    font-size:3.8em;
-    margin-bottom:-20px;
-    margin-top:0;
-    text-align:center;
-    font-style:italic;
+    font-size: 3.8em;
+    margin-bottom: -20px;
+    margin-top: 0;
+    text-align: center;
+    font-style: italic;
 }
 
 h2 {
-    font-size:1.7em;
-    text-align:center;
-    margin-top:0;
-    background-color:$dark_color;
-    width:100%;
-    border:0;
-    padding:4px 0;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 0;
+    background-color: $dark_color;
+    width: 100%;
+    border: 0;
+    padding: 4px 0;
 }
 
 h3 {
-    font-size:1.2em;
-    margin-bottom:.5ex;
-    background-color:$light_color;
-    padding:.5em;
+    font-size: 1.2em;
+    margin-bottom: .5ex;
+    background-color: $light_color;
+    padding: .5em;
 }
 
 h1 a, h3 a {
-    text-decoration:none;
-    color:#250736;
+    text-decoration: none;
+    color: #250736;
 }
 
 h2 a {
-    text-decoration:none;
-    color:$inverted_text_color;
+    text-decoration: none;
+    color: $inverted_text_color;
 }
 
 
 .banner {
-    height:128 + 2px;
-    background-color:$light_color;
-    border:$image_border;
+    height: 128 + 2px;
+    background-color: $light_color;
+    border: $image_border;
     a {
-      font-size:1.2em;
+      font-size: 1.2em;
     }
     p {
-      padding-top:1.25em;
-      text-align:center;
-      font-size:$small_font_size;
+      padding-top: 1.25em;
+      text-align: center;
+      font-size: $small_font_size;
     }
 }
 
 pre {
-    background:#000;
-    color:#fff;
-    padding:15px;
-    margin-left:2em;
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    margin-left: 2em;
 }
 
 .app {
-    clear:left;
+    clear: left;
 }
 
 .links {
-    margin-top:1em;
-    margin-bottom:1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .status {
-    font-style:italic;
+    font-style: italic;
 }
 
 hr {
-  background-color:$light_color;
+  background-color: $light_color;
   height: 2px;
-  border:none;
+  border: none;
   width: 100%;
   margin-top: 2em;
 }
 
 .col_mask {
-    position:relative;		// This fixes the IE7 overflow hidden bug and stops the layout jumping out of place
-    clear:both;
-    float:left;
-    width:100%;
-    overflow:hidden;
+    position: relative;		// This fixes the IE7 overflow hidden bug and stops the layout jumping out of place
+    clear: both;
+    float: left;
+    width: 100%;
+    overflow: hidden;
 }
 
 .right_menu {
     .col_left {
-        float:left;
-        width:200%;
-        margin-left:-12em;
-        position:relative;
-        right:100%;
+        float: left;
+        width: 200%;
+        margin-left: -12em;
+        position: relative;
+        right: 100%;
     }
 
     .contents_wrap {
-        float:left;
-        width:50%;
-        position:relative;
-        left:50%;
-        padding-bottom:1em;
+        float: left;
+        width: 50%;
+        position: relative;
+        left: 50%;
+        padding-bottom: 1em;
     }
 
     .contents {
-        margin:0 1em 0 12em;
-        overflow:hidden;
+        margin: 0 1em 0 12em;
+        overflow: hidden;
      }
 
     .sidebar {
-        float:right;
-        width:12em;
-        position:relative;
-        left:13em;
-        margin:0 0 4em 32px;
-        background-color:$medium_color;
+        float: right;
+        width: 12em;
+        position: relative;
+        left: 13em;
+        margin: 0 0 4em 32px;
+        background-color: $medium_color;
     }
 }
 
 ul {
     ul {
         a {
-            font-size:$normal_font_size;
+            font-size: $normal_font_size;
         }
 
         .active {
-            font-size:$normal_font_size;
-            margin-bottom:1em;
+            font-size: $normal_font_size;
+            margin-bottom: 1em;
         }
     }
 
     a {
-        font-size:$large_font_size;
-        text-decoration:none;
-        margin-bottom:1em;
+        font-size: $large_font_size;
+        text-decoration: none;
+        margin-bottom: 1em;
     }
 
     .active {
-        font-size:$large_font_size;
-        margin-bottom:1em;
+        font-size: $large_font_size;
+        margin-bottom: 1em;
     }
 }
 
 .posted {
   font-style: italic;
-  font-size:$small_font_size;
+  font-size: $small_font_size;
 }
 
 .tags {
-    font-size:$small_font_size;
+    font-size: $small_font_size;
 }
 
 .footer {
-    text-align:center;
-    margin-top:4em;
-    padding:0.25em 0;
-    font-style:italic;
-    clear:both;
-    float:left;
-    background-color:#a8c595;
-    width:100%;
+    text-align: center;
+    margin-top: 2em;
+    padding: 0.25em 0;
+    font-style: italic;
+    clear: both;
+    float: left;
+    background-color: #a8c595;
+    width: 100%;
 }
 
 .breadcrumbs {
@@ -191,47 +191,54 @@ ul {
     margin-bottom: 1em;
 
     a {
-        text-decoration:none;
-        font-size:80%;
+        text-decoration: none;
+        font-size: 80%;
     }
 }
 
 
 ul {
-    list-style:none;
-    padding-left:0.75em;
+    list-style: none;
+    padding-left: 0.75em;
 
     ul {
-        padding-left:1em;
-        padding-bottom:1em;
+        padding-left: 1em;
+        padding-bottom: 1em;
     }
 }
 
 
 img.app_icon {
-    width:128px;
-    height:128px;
-    float:right;
-    margin-left:2em;
-    margin-right:1em;
-    margin-bottom:2em;
-    margin-top:-16px;
+    width: 128px;
+    height: 128px;
+    float: right;
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: -16px;
 }
 
 img.app_icon_small {
-    width:16px;
-    height:16px;
+    width: 16px;
+    height: 16px;
     margin: 0;
 }
 
 img.banner_left {
-    float:left;
-    margin-bottom:0.5em;
-    border:$image_border;
+    float: left;
+    margin-bottom: 0.5em;
+    border: $image_border;
 }
 img.banner_right {
-    float:right;
-    border:$image_border;
+    float: right;
+    border: $image_border;
+}   
+
+.comments {
+  float: right;
+}
+
+.more {
 }
 
 nav {
@@ -239,7 +246,7 @@ nav {
     align: center;
 
     ul {
-        list-style:none;
+        list-style: none;
         padding: 0;
 
         li {

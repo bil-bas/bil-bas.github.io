@@ -6,7 +6,7 @@ require 'hpricot'
 
 def pretty_date(date)
   return "bad date" unless date
-  date.strftime("%a, %e %b %Y")
+  date.strftime("%A, %e %b %Y")
 end
 
 # Needed so we get a trailing /

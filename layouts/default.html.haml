@@ -10,27 +10,26 @@
       %link{ rel: "stylesheet", type: "text/css", href: "/style/#{stylesheet}.css", media: "screen" }
 
     %link{ href: '/blog/feed.xml', rel: 'alternate', title: "Spooner's Blog", type: 'application/atom+xml' }
-    %title= "Spooner - #{@item[:title]}"
-
-
   %body
-    %div.banner
-      %a{ href: '/' }
-        %img.banner_left{ src: "/images/spooner_pixels_large.png", width: "128", height: "128", alt: "Actual photo of Spooner" }
-      %a{ href: '/' }
-        %img.banner_right{ src: "/images/bagpuss_large.png", width: "128", height: "128", alt: "Bagpuss" }
+    %header
+      %div.banner
+        %a{ href: '/' }
+          %img.banner_left{ src: "/images/spooner_pixels_large.png", width: "128", height: "128", alt: "Actual photo of Spooner" }
+        %a{ href: '/' }
+          %img.banner_right{ src: "/images/bagpuss_large.png", width: "128", height: "128", alt: "Bagpuss" }
 
-      %h1= link_to "Spooner", "/"
+        %h1= link_to "Spooner", "/"
 
-      %p Ruby addict and maker of games with outrageously large pixels
+        %p Ruby addict and maker of games with outrageously large pixels
 
-    %div.breadcrumbs
-      - if %w[/ /errors/404/].include? @item.identifier
-        &nbsp;
-      - else
-        = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" &raquo; ")
+      %div.breadcrumbs
+        - if %w[/ /errors/404/].include? @item.identifier
+          &nbsp;
+        - else
+          = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" &raquo; ")
 
-    = render 'navbar', item: @item
+      = render 'navbar', item: @item
+
 
     %div{ class: "col_mask right_menu" }
       %div.col_left
@@ -65,12 +64,26 @@
                           %img.app_icon_small{alt: "#{item[:title]}", src: "/images/small_icon/#{File.basename(item.identifier)}.png"}
                         = link_to_unless_current item[:title], item.identifier
 
+            %li= link_to "Github", "http://github.com/Spooner"
             %li= link_to "deviantART", "http://lemonsails.deviantart.com"
             %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"
 
-    = render 'navbar', item: @item
+    %footer
+      = render 'navbar', item: @item
 
-    %div.footer
-      %p
-        Today, Spooner was brought to you by the letter 'oo'<br />
-        bil dot bagpuss {at} gmail dot com
+      %div.footer
+        %p
+          Today, Spooner was brought to you by the letter 'oo'<br />
+          bil dot bagpuss {at} gmail dot com
+
+    -# Script to replace special links with number of comments.
+    :javascript
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'spooner'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());

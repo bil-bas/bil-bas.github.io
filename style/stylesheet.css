@@ -59,6 +59,6 @@ img.banner_right { float: right; border: 2px solid black; }
 nav { clear: both; align: center; }
 nav ul { list-style: none; padding: 0; }
 nav ul li { display: inline; padding: 0; margin: 0 0.25em 0 0; }
-nav ul li a { text-align: center; background-color: #c9e6b6; color: black; border: 3px solid #1a3009; padding: .25em 2em; width: 10em; }
+nav ul li a { text-align: center; background-color: #c9e6b6; color: black; border: 3px solid #a8c595; padding: .25em 2em; width: 10em; }
 nav ul li a:hover { background-color: #e9ffd6; }
-nav ul li span { text-align: center; background-color: #daf8c9; color: black; border: 3px solid #1a3009; padding: .25em 2em; width: 9em; }
+nav ul li span { text-align: center; background-color: #daf8c9; color: black; border: 3px solid #a8c595; padding: .25em 2em; width: 9em; }

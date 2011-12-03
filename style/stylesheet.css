@@ -28,7 +28,7 @@ hr { background-color: #c9e6b6; height: 2px; border: none; width: 100%; margin-t
 
 .right_menu .col_left { float: left; width: 200%; margin-left: -12em; position: relative; right: 100%; }
 .right_menu .contents_wrap { float: left; width: 50%; position: relative; left: 50%; padding-bottom: 1em; }
-.right_menu .contents { margin: 0 1em 0 13em; overflow: hidden; }
+.right_menu .contents { margin: 0 1em 0 12em; overflow: hidden; }
 .right_menu .sidebar { float: right; width: 12em; position: relative; left: 13em; margin: 0 0 4em 32px; background-color: #a8c595; }
 
 ul ul a { font-size: 100%; }
@@ -45,11 +45,20 @@ ul .active { font-size: 120%; margin-bottom: 1em; }
 .breadcrumbs { clear: both; margin-bottom: 1em; }
 .breadcrumbs a { text-decoration: none; font-size: 80%; }
 
-ul { list-style: none; padding-left: 1em; }
-ul ul { padding-left: 1.5em; padding-bottom: 1em; }
+ul { list-style: none; padding-left: 0.75em; }
+ul ul { padding-left: 1em; padding-bottom: 1em; }
 
 img.app_icon { width: 128px; height: 128px; float: right; margin-left: 2em; margin-right: 1em; margin-bottom: 2em; margin-top: -16px; }
+
+img.app_icon_small { width: 16px; height: 16px; margin: 0; }
 
 img.banner_left { float: left; margin-bottom: 0.5em; border: 2px solid black; }
 
 img.banner_right { float: right; border: 2px solid black; }
+
+nav { clear: both; align: center; }
+nav ul { list-style: none; padding: 0; }
+nav ul li { display: inline; padding: 0; margin: 0 0.25em 0 0; }
+nav ul li a { text-align: center; background-color: #c9e6b6; color: black; border: 3px solid #1a3009; padding: .25em 2em; width: 10em; }
+nav ul li a:hover { background-color: #e9ffd6; }
+nav ul li span { text-align: center; background-color: #daf8c9; color: black; border: 3px solid #1a3009; padding: .25em 2em; width: 9em; }

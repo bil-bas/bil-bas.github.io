@@ -18,15 +18,15 @@
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/nanoc/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/ruby/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/website/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/</loc>
@@ -35,6 +35,10 @@
   <url>
     <loc>http://spooner.github.com/blog/</loc>
     <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/favicon.ico</loc>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/alpha_channel/</loc>
@@ -65,23 +69,43 @@
     <lastmod>2011-12-01</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/images/alpha_channel.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/images/bagpuss_large.png</loc>
     <lastmod>2011-05-06</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/flipped.png</loc>
-    <lastmod>2011-11-07</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/images/github.png</loc>
     <lastmod>2011-11-08</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/images/hoops.png</loc>
+    <loc>http://spooner.github.com/images/icon/alpha_channel.png</loc>
+    <lastmod>2011-11-07</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/icon/fidgit.png</loc>
+    <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/icon/flipped.png</loc>
+    <lastmod>2011-11-07</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/icon/hoops.png</loc>
+    <lastmod>2011-11-07</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/icon/sidney.png</loc>
+    <lastmod>2011-11-07</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/icon/smash_and_grab.png</loc>
+    <lastmod>2011-11-07</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/icon/wrath.png</loc>
+    <lastmod>2011-11-07</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/icon/zed_and_ginger.png</loc>
     <lastmod>2011-11-07</lastmod>
   </url>
   <url>
@@ -125,12 +149,36 @@
     <lastmod>2011-08-02</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/images/sidney.png</loc>
-    <lastmod>2011-11-07</lastmod>
+    <loc>http://spooner.github.com/images/small_icon/alpha_channel.png</loc>
+    <lastmod>2011-12-02</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/images/smash_and_grab.png</loc>
-    <lastmod>2011-11-07</lastmod>
+    <loc>http://spooner.github.com/images/small_icon/fidgit.png</loc>
+    <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/small_icon/flipped.png</loc>
+    <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/small_icon/hoops.png</loc>
+    <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/small_icon/sidney.png</loc>
+    <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/small_icon/smash_and_grab.png</loc>
+    <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/small_icon/wrath.png</loc>
+    <lastmod>2011-12-02</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/small_icon/zed_and_ginger.png</loc>
+    <lastmod>2011-12-02</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/images/spooner_pixels_large.png</loc>
@@ -139,14 +187,6 @@
   <url>
     <loc>http://spooner.github.com/images/tigsource.png</loc>
     <lastmod>2011-11-08</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/wrath.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/zed_and_ginger.png</loc>
-    <lastmod>2011-11-07</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/</loc>
@@ -170,7 +210,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/style/stylesheet.css</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/utilities/flipped/</loc>

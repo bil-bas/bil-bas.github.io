@@ -1,12 +1,12 @@
 body { background-color: #daf8c9; font-family: Helvetica,Arial,FreeSans; color: black; margin: 0.5em 5% 4em 5%; }
 
-h2 { font-size: 1.7em; text-align: center; margin-top: 0; background-color: #1a3009; width: 100%; border: 0; padding: 4px 0; }
+h1 { font-size: 1.7em; text-align: center; margin-top: 0; background-color: #1a3009; width: 100%; border: 0; padding: 4px 0; }
 
-h3 { font-size: 1.2em; margin-bottom: .5ex; background-color: #c9e6b6; padding: .5em; }
+h2 { font-size: 1.2em; margin-bottom: .5ex; background-color: #c9e6b6; padding: .5em; }
 
-h1 a, h3 a, h4 a { text-decoration: none; color: #250736; }
+h2 a, h3 a { text-decoration: none; color: #250736; }
 
-h2 a { text-decoration: none; color: #daf8c9; }
+h1 a { text-decoration: none; color: #daf8c9; }
 
 .banner { height: 130px; background-image: url(/images/banner_background.png); background-repeat: repeat-x; background-color: #c9e6b6; border: 2px solid black; text-align: center; }
 .banner img.title { margin-top: 21px; margin-bottom: 0; width: 397px; height: 64px; }
@@ -23,7 +23,7 @@ pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 
 .status { font-style: italic; }
 
-hr { background-color: #c9e6b6; height: 2px; border: none; width: 100%; margin-top: 2em; }
+hr { background-color: #c9e6b6; height: 4px; border: none; width: 100%; margin-top: 2em; }
 
 span.date { float: right; }
 
@@ -44,7 +44,7 @@ nav.menu ul .active { font-size: 120%; margin-bottom: 1em; width: 10em; margin-b
 
 .posted { font-style: italic; font-size: 80%; }
 
-.tags { font-size: 80%; }
+.tags { font-size: 80%; margin-top: .5em; }
 
 .footer { text-align: center; margin-top: 2em; padding: 0.25em 0; font-style: italic; clear: both; float: left; background-color: #a8c595; width: 100%; }
 

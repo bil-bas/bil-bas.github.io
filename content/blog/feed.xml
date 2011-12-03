@@ -1,6 +1,6 @@
 <%= atom_feed(
         title: "Spooner's Blog",
-        author_name: "Spooner",
+        author_name: "Spooner (Bil Bas)",
         author_uri: @config[:base_url],
         excerpt_proc: lambda {|article| article.summary }
     )

@@ -1,6 +1,7 @@
 $background_color: #daf8c9;
 
 $dark_color: #1a3009;
+$medium_color: #a8c595;
 $light_color: #c9e6b6;
 
 $text_color: #000;
@@ -137,7 +138,7 @@ hr {
         position:relative;
         left:13em;
         margin:0 0 4em 32px;
-        background-color:#a8c595;
+        background-color:$medium_color;
     }
 }
 
@@ -250,7 +251,7 @@ nav {
                 text-align: center;
                 background-color: $light_color;
                 color: $text_color;
-                border: 3px solid $dark_color;
+                border: 3px solid $medium_color;
                 padding: .25em 2em;
                 width: 10em;
 
@@ -263,7 +264,7 @@ nav {
                 text-align: center;
                 background-color: $background_color;
                 color: $text_color;
-                border: 3px solid $dark_color;
+                border: 3px solid $medium_color;
                 padding: .25em 2em;
                 width: 9em;
             }

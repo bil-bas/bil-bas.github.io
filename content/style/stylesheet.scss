@@ -24,7 +24,7 @@ body {
 
 
 // Headings
-h2 {
+h1 {
     font-size: 1.7em;
     text-align: center;
     margin-top: 0;
@@ -34,19 +34,19 @@ h2 {
     padding: 4px 0;
 }
 
-h3 {
+h2 {
     font-size: 1.2em;
     margin-bottom: .5ex;
     background-color: $light_color;
     padding: .5em;
 }
 
-h1 a, h3 a, h4 a {
+h2 a, h3 a {
     text-decoration: none;
     color: #250736;
 }
 
-h2 a {
+h1 a {
     text-decoration: none;
     color: $inverted_text_color;
 }
@@ -111,7 +111,7 @@ pre {
 
 hr {
   background-color: $light_color;
-  height: 2px;
+  height: 4px;
   border: none;
   width: 100%;
   margin-top: 2em;
@@ -204,10 +204,6 @@ nav.menu {
     }
 }
 
-ul.tags {
-
-}
-
 .posted {
   font-style: italic;
   font-size: $small_font_size;
@@ -215,6 +211,7 @@ ul.tags {
 
 .tags {
     font-size: $small_font_size;
+    margin-top: .5em;
 }
 
 .footer {

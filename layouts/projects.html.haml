@@ -1,6 +1,6 @@
 -# A list of projects.
 
-%h2
+%h1
   = link_to @item.title, @item.path
 
 - @item.children.sort_by {|item| item.title.downcase }.each do |item|

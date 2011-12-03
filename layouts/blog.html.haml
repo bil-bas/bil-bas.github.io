@@ -1,6 +1,6 @@
 -# List of all posts by year.
 
-%h2
+%h1
   = link_to @item.title, @item.path
 
 .feed
@@ -11,7 +11,7 @@
 - @item.children.reverse_each do |year|
   - next unless year.kind == 'year'
 
-  %h3
+  %h2
     = link_to year.title, year.path
 
   - previous_month = nil
@@ -19,7 +19,7 @@
     - sorted_articles.select {|i| i.year.to_s == year.name }.each do |article|
       - if article.month != previous_month
         - previous_month = article.month
-        %h4
+        %h3
           =link_to article.month_name, article.parent.path
 
       %li

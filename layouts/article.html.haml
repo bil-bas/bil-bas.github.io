@@ -2,7 +2,7 @@
 
 - if @summary
   %summary
-    %h3
+    %h2
       %a{ href: @item.path }
         = @item.title
         %span.date= pretty_date @item.created_at
@@ -16,7 +16,7 @@
 
 - else
   %article
-    %h2= link_to @item.title, @item.path
+    %h1= link_to @item.title, @item.path
 
     %p.posted= "Posted on #{pretty_date @item.created_at}"
 

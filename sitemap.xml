@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://spooner.github.com/blog/2011/new_website/</loc>
+    <loc>http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/</loc>
+    <lastmod>2011-12-03</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/blog/2011/12/</loc>
     <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/2011/</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2012/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/feed.xml</loc>
@@ -30,11 +30,11 @@
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/favicon.ico</loc>
@@ -66,11 +66,19 @@
   </url>
   <url>
     <loc>http://spooner.github.com/games/</loc>
-    <lastmod>2011-12-01</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/images/bagpuss_large.png</loc>
     <lastmod>2011-05-06</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/feed-icon-14x14.png</loc>
+    <lastmod>2006-07-27</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/feed-icon-28x28.png</loc>
+    <lastmod>2006-07-27</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/images/github.png</loc>
@@ -190,7 +198,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/fidgit/</loc>
@@ -198,7 +206,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/</loc>
-    <lastmod>2011-12-01</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/sitemap.xml</loc>
@@ -206,7 +214,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/style/code_highlighting.css</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/style/stylesheet.css</loc>
@@ -218,7 +226,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/utilities/</loc>
-    <lastmod>2011-12-01</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
 </urlset>
 

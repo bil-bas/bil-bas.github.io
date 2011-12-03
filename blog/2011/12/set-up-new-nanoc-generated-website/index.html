@@ -7,8 +7,7 @@
 <link href="/style/stylesheet.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/style/code_highlighting.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/blog/feed.xml" rel="alternate" title="Spooner's Blog" type="application/atom+xml">
-<title>Spooner - Set up new website</title>
-<div class="banner">
+<header><div class="banner">
 <a href="/">
 <img alt="Actual photo of Spooner" class="banner_left" height="128" src="/images/spooner_pixels_large.png" width="128"></a>
 <a href="/">
@@ -17,7 +16,7 @@
 <p>Ruby addict and maker of games with outrageously large pixels</p>
 </div>
 <div class="breadcrumbs">
-<a href="/">Home</a> » <a href="/blog/">Blog</a> » <a href="/blog/2011/">2011</a> » <a href="/blog/2011/new_website/">Set up new website</a>
+<a href="/">Home</a> » <a href="/blog/">Blog</a> » <a href="/blog/2011/"></a> » <a href="/blog/2011/12/"></a> » <a href="/blog/2011/12/set-up-new-nanoc-generated-website/">Set up new nanoc-generated website</a>
 </div>
 <nav><ul>
 <li>
@@ -35,28 +34,31 @@
 <li>
 <a href="/utilities/">Utilities</a>
 </li>
-</ul></nav><div class="col_mask right_menu">
+</ul></nav></header><div class="col_mask right_menu">
 <div class="col_left">
 <div class="contents_wrap">
 <div class="contents">
-<h2><a href="/blog/2011/new_website/">Set up new website</a></h2>
-<article><p class="posted">Posted: Fri,  2 Dec 2011</p>
+<article><h2><a href="/blog/2011/12/set-up-new-nanoc-generated-website/">Set up new nanoc-generated website</a></h2>
+<p class="posted">Posted on Friday,  2 Dec 2011</p>
 <p>I started using <a href="http://nanoc.stoneship.org/">nanoc</a> in order to generate a bit more interesting site. Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasn’t useful as a showcase of my projects and I quite liked the idea of having my own blog. Whether I’ll blog more than once a year or not, is another question.</p>
 
-<p><a href="http://nanoc.stoneship.org/">nanoc</a> seems to be pretty good overall and I think it was a better choice for me than <a href="http://jekyllrb.com/">Jekyll</a>, which I’d used previously (this is because <a href="http://jekyllrb.com/">Jekyll</a> can be used at <a href="https://github.com/">Github</a>, but there aren’t actually any significant advantages to using it over generating flat pages and uploading them). It isn’t too complicated and manages HAML for layout, kramdown for content and SASS for style quite nicely.</p>
+<p><a href="http://nanoc.stoneship.org/">nanoc</a> seems to be pretty good overall and I think it was a better choice for me than <a href="http://jekyllrb.com/">Jekyll</a>, which I’d used previously (this is because <a href="http://jekyllrb.com/">Jekyll</a> can be used to directly host at <a href="https://github.com/">Github</a>, which is good, but it doesn’t support HAML in that usage, which is bad). It isn’t too complicated to set up and I use HAML for layout, kramdown for content and Sass for style quite nicely.</p>
 
 <p>One thing that dismays me a little with <a href="http://nanoc.stoneship.org/">nanoc</a> is that you have to manually manage rules for compilation and routing, when it could have much more reasonable defaults set up and a bit more assumption of standard practice.</p>
 
+<p>I know it is probably not exemplary, but the generator source for this whole site is freely available at <a href="https://github.com/Spooner/spooner.github.com/tree/generator">Github</a>.</p>
 
-<p class="tags"><a href="/blog/tags/nanoc/" rel="tag">nanoc</a>, <a href="/blog/tags/website/" rel="tag">website</a>, <a href="/blog/tags/ruby/" rel="tag">ruby</a></p>
+
+</article><div class="tags">Tags: <a href="/blog/tags/nanoc/" rel="tag">nanoc</a>, <a href="/blog/tags/website/" rel="tag">website</a>, <a href="/blog/tags/ruby/" rel="tag">ruby</a>
+</div>
 <hr>
 <div id="disqus_thread">
 <script>
   //<![CDATA[
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = "spooner"; // required: replace example with your forum shortname
-    var disqus_identifier = "new_website";
-    var disqus_url = "http://spooner.github.com/blog/2011/new_website/";
+    var disqus_identifier = "set-up-new-nanoc-generated-website";
+    var disqus_url = "http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/";
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -75,26 +77,16 @@ blog comments powered by
 <span class="logo-disqus">Disqus</span>
 </a>
 
-</article>
 </div>
 </div>
 <div class="sidebar">
-<ul>
-<li style="margin-bottom:1em;">
-<a href="/">Home</a>
-</li>
+<ul class="menu">
+<li style="margin-bottom:1em;"><a href="/">Home</a></li>
 <li>
 <a href="/blog/">Blog</a>
 <ul>
-<li>
-<a href="/blog/2012/">2012 (0)</a>
-</li>
-<li>
-<a href="/blog/2011/">2011 (1)</a>
-</li>
-<li>
-<a href="/blog/tags/">Tags (3)</a>
-</li>
+<li><a href="/blog/2011/">2011 (1)</a></li>
+<li><a href="/blog/tags/">Tags (3)</a></li>
 </ul>
 </li>
 <li>
@@ -152,13 +144,14 @@ blog comments powered by
 </li>
 </ul>
 </li>
+<li><a href="http://github.com/Spooner">Github</a></li>
 <li><a href="http://lemonsails.deviantart.com">deviantART</a></li>
 <li><a href="http://www.youtube.com/user/spoonerspon">YouTube</a></li>
 </ul>
 </div>
 </div>
 </div>
-<nav><ul>
+<footer><nav><ul>
 <li>
 <a href="/">Home</a>
 </li>
@@ -180,5 +173,17 @@ Today, Spooner was brought to you by the letter 'oo'<br>
 bil dot bagpuss {at} gmail dot com
 </p>
 </div>
-
+</footer><script>
+  //<![CDATA[
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'spooner'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  //]]>
+</script>
 </body>

@@ -7,9 +7,9 @@
 <link href='/style/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/code_highlighting.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/blog/feed.xml' rel='alternate' title="Spooner's Blog" type='application/atom+xml'>
-<title>Spooner - Utilities</title>
 </head>
 <body>
+<header>
 <div class='banner'>
 <a href='/'>
 <img alt='Actual photo of Spooner' class='banner_left' height='128' src='/images/spooner_pixels_large.png' width='128'>
@@ -43,44 +43,33 @@
 </ul>
 </nav>
 
+</header>
 <div class='col_mask right_menu'>
 <div class='col_left'>
 <div class='contents_wrap'>
-<div class='contents'>
-<h2><a href="/utilities/">Utilities</a></h2>
-<div>
-  <article class='app'>
-  <h3>
-  <a href="/utilities/flipped/">Flipped</a>
-  </h3>
-  <a href='/utilities/flipped/'>
-  <img alt='Flipped icon' class='app_icon' src='/images/icon/flipped.png'>
-  </a>
-  <p class='status'>Complete</p>
-  <p>A flip-book editing/viewing tool for <a href="http://sleepisdeath.net">Sleep Is Death</a></p>
-  <p><a href="/utilities/flipped/">More...</a></p>
-  </article>
-</div>
+<div class='contents'><h2>
+<a href="/utilities/">Utilities</a>
+</h2>
+<summary>
+<h3><a href="/utilities/flipped/">Flipped</a></h3>
+<a href='/utilities/flipped/'>
+<img alt='Flipped icon' class='app_icon' src='/images/icon/flipped.png'>
+</a>
+<p class='status'>Complete</p>
+<p>A flip-book editing/viewing tool for <a href="http://sleepisdeath.net">Sleep Is Death</a></p>
+<div class='more'><a href="/utilities/flipped/">More...</a></div>
+</summary>
 
 </div>
 </div>
 <div class='sidebar'>
-<ul>
-<li style='margin-bottom:1em;'>
-<a href="/">Home</a>
-</li>
+<ul class='menu'>
+<li style='margin-bottom:1em;'><a href="/">Home</a></li>
 <li>
 <a href="/blog/">Blog</a>
 <ul>
-<li>
-<a href="/blog/2012/">2012 (0)</a>
-</li>
-<li>
-<a href="/blog/2011/">2011 (1)</a>
-</li>
-<li>
-<a href="/blog/tags/">Tags (3)</a>
-</li>
+<li><a href="/blog/2011/">2011 (1)</a></li>
+<li><a href="/blog/tags/">Tags (3)</a></li>
 </ul>
 </li>
 <li>
@@ -146,12 +135,15 @@
 </li>
 </ul>
 </li>
+<li><a href="http://github.com/Spooner">Github</a></li>
 <li><a href="http://lemonsails.deviantart.com">deviantART</a></li>
 <li><a href="http://www.youtube.com/user/spoonerspon">YouTube</a></li>
 </ul>
+
 </div>
 </div>
 </div>
+<footer>
 <nav>
 <ul>
 <li>
@@ -178,5 +170,19 @@ Today, Spooner was brought to you by the letter 'oo'<br />
 bil dot bagpuss {at} gmail dot com
 </p>
 </div>
+</footer>
+<script>
+  //<![CDATA[
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'spooner'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  //]]>
+</script>
 </body>
 </html>

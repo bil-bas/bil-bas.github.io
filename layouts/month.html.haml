@@ -1,8 +1,7 @@
 -# A month of posts
 
 %h2
-  - date = Date.new(0, @item.name.to_i, 1)
-  = link_to "#{date.strftime("%B")} #{@item.parent.name}", @item.path
+  = link_to "#{@item.title} #{@item.parent.title}", @item.path
 
 - @item.children.sort_by(&:created_at).reverse_each do |article|
   = render 'article', item: article, summary: true

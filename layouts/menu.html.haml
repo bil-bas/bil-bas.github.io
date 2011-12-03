@@ -1,29 +1,37 @@
 -# Vertical menu / Sitemap
 
-%ul.menu
-  %li{ style: "margin-bottom:1em;" }= link_to_unless_current "Home", '/'
+%nav.menu
+  %ul
+    %li{ style: "margin-bottom:1em;" }= link_to_unless_current "Home", '/'
 
-  - home = @items.find {|i| i.identifier == "/" }
-  - home.children.select {|i| i.title }.each do |item|
+    - home = @items.find {|i| i.identifier == "/" }
+    - home.children.select {|i| i[:title] }.each do |item|
 
-    %li
-      = link_to_unless_current item.title, item.identifier
+      %li
+        = link_to_unless_current item.title, item.identifier
 
-      %ul
-        - if item.identifier == '/blog/'
-          - item.children.select {|i| i.kind == 'year' }.reverse_each do |year|
-            %li= link_to_unless_current "#{year.name} (#{articles.count {|i| i.year.to_s == year.name }})", year.path
+        %ul
+          - if item.identifier == '/blog/'
+            - item.children.select {|i| i.kind == 'year' }.reverse_each do |year|
+              %li= link_to_unless_current "#{year.title} (#{articles.count {|i| i.year.to_s == year.name }})", year.path
 
-          - tags = item.children.find {|i| i.name == 'tags' }
-          %li= link_to_unless_current "#{tags.title} (#{tags.children.size})", tags.identifier
+            - tags = item.children.find {|i| i.name == 'tags' }
+            %li= link_to_unless_current "#{tags.title} (#{tags.children.size})", tags.identifier
 
-        - else
-          - item.children.each do |item|
-            %li
-              %a{href: item.identifier}
-                %img.app_icon_small{alt: "#{item.title}", src: "/images/small_icon/#{item.name}.png"}
-              = link_to_unless_current item.title, item.identifier
+          - else
+            - item.children.each do |project|
+              %li
+                - if project == @item
+                  %span{ title: "You're here." }
+                    %img.app_icon_small{alt: "#{project.title}", src: "/images/small_icon/#{project.name}.png"}
+                    = project.title
 
-  %li= link_to "Github", "http://github.com/Spooner"
-  %li= link_to "deviantART", "http://lemonsails.deviantart.com"
-  %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"
+                - else
+                  %a{href: project.identifier}
+                    %img.app_icon_small{alt: "#{project.title}", src: "/images/small_icon/#{project.name}.png"}
+                    = project.title
+
+
+    %li= link_to "Github", "http://github.com/Spooner"
+    %li= link_to "deviantART", "http://lemonsails.deviantart.com"
+    %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"

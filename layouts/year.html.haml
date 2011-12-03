@@ -1,7 +1,7 @@
 -# A whole year of posts
 
 %h2
-  = link_to @item.name, @item.path
+  = link_to @item.title, @item.path
 
 - sorted_articles.select {|i| i.year.to_s == @item.name }.each do |article|
   = render 'article', item: article, summary: true

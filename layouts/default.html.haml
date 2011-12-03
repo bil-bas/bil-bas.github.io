@@ -37,7 +37,7 @@
           %div.contents= yield
 
         %div.sidebar
-          = render 'menu'
+          = render 'menu', item: @item
 
     %footer
       = render 'navbar', item: @item

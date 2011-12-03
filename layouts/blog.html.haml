@@ -12,10 +12,16 @@
   - next unless year.kind == 'year'
 
   %h3
-    = link_to year.name, year.path
+    = link_to year.title, year.path
 
+  - previous_month = nil
   %ul
     - sorted_articles.select {|i| i.year.to_s == year.name }.each do |article|
+      - if article.month != previous_month
+        - previous_month = article.month
+        %h4
+          =link_to article.month_name, article.parent.path
+
       %li
         = link_to article.title, article.path
         \-

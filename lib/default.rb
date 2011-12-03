@@ -6,7 +6,7 @@ require 'hpricot'
 
 def pretty_date(date)
   return "bad date" unless date
-  date.strftime("%A, %e %b %Y")
+  date.strftime("%A, %e %B %Y")
 end
 
 # Needed so we get a trailing /
@@ -22,6 +22,7 @@ class Nanoc3::Item
 
   def year; self[:created_at].year; end
   def month; self[:created_at].month; end
+  def month_name; Date.new(2000, month, 1).strftime("%B"); end
   def day; self[:created_at].day; end
 
   def created_at; self[:created_at] || raise(path); end

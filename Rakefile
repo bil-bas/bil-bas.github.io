@@ -18,7 +18,7 @@ task :serve do
 end
 
 desc "Compile everything"
-task :compile do
+task compile: :clean do
   system "nanoc compile"
   create_tags
 end

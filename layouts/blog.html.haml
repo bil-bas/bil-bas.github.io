@@ -23,6 +23,6 @@
           =link_to article.month_name, article.parent.path
 
       %li
-        = link_to article.title, article.path
+        = link_to article.title, article.path, title: excerptize(strip_html(article.summary), length: 140)
         \-
         = pretty_date article.created_at

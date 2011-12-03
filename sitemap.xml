@@ -117,6 +117,14 @@
     <lastmod>2011-05-06</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/images/banner_background.png</loc>
+    <lastmod>2011-12-03</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/banner_background_small.png</loc>
+    <lastmod>2011-12-03</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/images/feed-icon-14x14.png</loc>
     <lastmod>2006-07-27</lastmod>
   </url>
@@ -237,8 +245,24 @@
     <lastmod>2011-05-06</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/images/subtitle.png</loc>
+    <lastmod>2011-12-03</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/subtitle_small.png</loc>
+    <lastmod>2011-12-03</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/images/tigsource.png</loc>
     <lastmod>2011-11-08</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/title.png</loc>
+    <lastmod>2011-12-03</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/images/title_small.png</loc>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/</loc>

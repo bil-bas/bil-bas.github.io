@@ -1,7 +1,5 @@
 body { background-color: #daf8c9; font-family: Helvetica,Arial,FreeSans; color: black; margin: 0.5em 5% 4em 5%; }
 
-h1 { font-size: 3.8em; margin-bottom: -20px; margin-top: 0; text-align: center; font-style: italic; }
-
 h2 { font-size: 1.7em; text-align: center; margin-top: 0; background-color: #1a3009; width: 100%; border: 0; padding: 4px 0; }
 
 h3 { font-size: 1.2em; margin-bottom: .5ex; background-color: #c9e6b6; padding: .5em; }
@@ -10,9 +8,12 @@ h1 a, h3 a, h4 a { text-decoration: none; color: #250736; }
 
 h2 a { text-decoration: none; color: #daf8c9; }
 
-.banner { height: 130px; background-color: #c9e6b6; border: 2px solid black; }
-.banner a { font-size: 1.2em; }
-.banner p { padding-top: 1.25em; text-align: center; font-size: 80%; }
+.banner { height: 130px; background-image: url(/images/banner_background.png); background-repeat: repeat-x; background-color: #c9e6b6; border: 2px solid black; text-align: center; }
+.banner img.title { margin-top: 21px; margin-bottom: 0; width: 397px; height: 64px; }
+.banner img.subtitle { margin-top: 13px; width: 500px; height: 12px; }
+.banner img.banner_left { float: left; border: 2px solid black; width: 128px; height: 128px; }
+.banner img.banner_right { float: right; border: 2px solid black; width: 128px; height: 128px; }
+.banner a { text-decoration: none; color: black; }
 
 pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 
@@ -56,10 +57,6 @@ nav.menu ul .active { font-size: 120%; margin-bottom: 1em; width: 10em; margin-b
 img.app_icon { width: 128px; height: 128px; float: right; margin-left: 2em; margin-right: 1em; margin-bottom: 2em; margin-top: -16px; }
 
 img.app_icon_small { width: 16px; height: 16px; margin: 0; }
-
-img.banner_left { float: left; margin-bottom: 0.5em; border: 2px solid black; }
-
-img.banner_right { float: right; border: 2px solid black; }
 
 .comments { float: right; }
 

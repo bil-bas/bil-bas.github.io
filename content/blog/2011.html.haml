@@ -1,4 +1,0 @@
-
-%div
-  - @item.children.sort_by {|i| i[:created_at]}.reverse_each do |article|
-    = render 'article', item: article, summary: true

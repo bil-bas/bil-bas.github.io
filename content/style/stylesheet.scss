@@ -102,6 +102,10 @@ hr {
   margin-top: 2em;
 }
 
+span.date {
+  float: right;
+}
+
 .col_mask {
     position: relative;		// This fixes the IE7 overflow hidden bug and stops the layout jumping out of place
     clear: both;
@@ -142,8 +146,15 @@ hr {
     }
 }
 
-ul {
+ul.menu {
+    list-style: none;
+    padding-left: 0.75em;
+
     ul {
+        list-style: none;
+        padding-left: 1em;
+        padding-bottom: 1em;
+
         a {
             font-size: $normal_font_size;
         }
@@ -166,6 +177,10 @@ ul {
     }
 }
 
+ul.tags {
+
+}
+
 .posted {
   font-style: italic;
   font-size: $small_font_size;
@@ -186,6 +201,16 @@ ul {
     width: 100%;
 }
 
+.feed {
+    a {
+        text-decoration: none;
+    }
+    img {
+        width: 14;
+        height: 14;
+    }
+}
+
 .breadcrumbs {
     clear: both;
     margin-bottom: 1em;
@@ -196,16 +221,6 @@ ul {
     }
 }
 
-
-ul {
-    list-style: none;
-    padding-left: 0.75em;
-
-    ul {
-        padding-left: 1em;
-        padding-bottom: 1em;
-    }
-}
 
 
 img.app_icon {

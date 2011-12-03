@@ -1,4 +1,0 @@
-
-- @items.select {|i| i[:kind] == 'article' }.sort_by {|i| i[:created_at] }.reverse.take(3).each do |item|
-  = render 'article', item: item, summary: true
-

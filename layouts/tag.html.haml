@@ -1,0 +1,8 @@
+-# All posts under a specific tag.
+
+%h2
+  = link_to "Tag: #{@item.title}", @item.path
+
+%div
+  - items_with_tag(@item.title).sort_by {|a| a[:created_at] }.reverse_each do |article|
+    = render 'article', item: article, summary: true

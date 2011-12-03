@@ -1,26 +1,29 @@
-
+-# Single blog post
 
 - if @summary
   %summary
     %h3
-      %a{href: @item.path}  #{@item[:title]} - #{pretty_date @item[:created_at]}
+      %a{ href: @item.path }
+        = @item.title
+        %span.date= pretty_date @item.created_at
 
     = @item.summary
 
     .comments
-      %a{ href: "#{@item.identifier}#disqus_thread", "data-disqus-identifier" => "#{File.basename(@item.identifier)}"} Comments
+      %a{ href: "#{@item.identifier}#disqus_thread", "data-disqus-identifier" => "#{@item.name}"} Comments
     .more
       = link_to "Read more...", @item.path
 
-    .tags Tags: #{@site.tags_for(@item, base_url: '/blog/tags/')}
-
-
 - else
   %article
-    %p.posted= "Posted on #{pretty_date @item[:created_at]}"
+    %h2= link_to @item.title, @item.path
+
+    %p.posted= "Posted on #{pretty_date @item.created_at}"
+
     = yield
 
-    .tags Tags: #{@site.tags_for(@item, base_url: '/blog/tags/')}
 
-    = render "comments", item: @item
+.tags Tags: #{@site.tags_for(@item, base_url: '/blog/tags/')}
 
+- unless @summary
+  = render "comments", item: @item

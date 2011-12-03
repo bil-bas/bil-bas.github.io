@@ -1,3 +1,7 @@
-%div.app
-  %h3
-    %a{href: @item.path}= @item[:title]
+-# A whole year of posts
+
+%h2
+  = link_to @item.name, @item.path
+
+- sorted_articles.select {|i| i.year.to_s == @item.name }.each do |article|
+  = render 'article', item: article, summary: true

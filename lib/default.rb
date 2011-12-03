@@ -19,4 +19,19 @@ class Nanoc3::Item
     # Just include the first paragraph.
     Hpricot(compiled_content).at("p").to_html
   end
+
+  def year; self[:created_at].year; end
+  def month; self[:created_at].month; end
+  def day; self[:created_at].day; end
+
+  def created_at; self[:created_at] || raise(path); end
+  def modified_at; self[:modified_at] || created_at; end
+
+  def title; self[:title]; end
+  def kind; self[:kind]; end
+
+  def article?; kind == 'article'; end
+  def project?; kind == 'project'; end
+
+  def name; File.basename(identifier); end
 end

@@ -18,7 +18,7 @@ task :serve do
 end
 
 desc "Compile everything"
-task compile: :clean do
+task :compile do
   system "nanoc compile"
   create_tags
 end
@@ -49,20 +49,12 @@ end
 def write_tag_page(dir, tag, count)
   puts "Generating tag list for '#{tag}'"
 
-  File.open(File.join(dir, "#{tag}.html.haml"), "w") do |file|
-
-    file.puts <<END
-%div
-  - items_with_tag('#{tag}').sort_by {|a| a[:created_at]}.reverse_each do |article|
-    = render 'article', item: article, summary: true
-END
-  end
-
-  File.open(File.join(dir, "#{tag}.yaml"), "w") do |file|
+  File.open(File.join(dir, "#{tag}.md"), "w") do |file|
 
     file.puts <<END
 ---
-title: Tag -  #{tag}
+title: #{tag}
+kind: tag
 count: #{count}
 ---
 END

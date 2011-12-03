@@ -1,3 +1,4 @@
 ---
 title: Libraries
+kind: projects
 ---

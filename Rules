@@ -32,11 +32,15 @@ compile '*' do
     case item[:extension]
       when 'md'
         filter :kramdown
-        layout item[:kind]
-        snapshot :guts
+
+        if item.kind
+          layout item.kind
+          snapshot :guts
+        end
+
         layout 'default'
 
-        if item[:kind] == 'article'
+        if item.article?
           filter :colorize_syntax,
               colorizers: { ruby: :coderay }
         end

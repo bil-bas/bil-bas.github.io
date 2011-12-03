@@ -34,39 +34,10 @@
     %div{ class: "col_mask right_menu" }
       %div.col_left
         %div.contents_wrap
-          %div.contents
-            %h2= link_to ((@item.identifier == '/') ? "News" : @item[:title]), @item.identifier
-
-            = yield
+          %div.contents= yield
 
         %div.sidebar
-          %ul
-            %li{ style: "margin-bottom:1em;" }
-              = link_to_unless_current "Home", '/'
-
-            - home = @items.find {|i| i.identifier == "/" }
-            - home.children.select {|i| i[:title] }.each do |item|
-
-              %li
-                = link_to_unless_current item[:title], item.identifier
-
-                %ul
-                  - if item.identifier == '/blog/'
-                    - items = item.children.select {|i| i[:kind] == 'year' }.reverse
-                    - items << item.children.find {|i| i.identifier =~ /tags/ }
-                    - items.each do |item|
-                      %li
-                        = link_to_unless_current "#{item[:title]} (#{item.children.size})", item.identifier
-                  - else
-                    - item.children.each do |item|
-                      %li
-                        %a{href: item.identifier}
-                          %img.app_icon_small{alt: "#{item[:title]}", src: "/images/small_icon/#{File.basename(item.identifier)}.png"}
-                        = link_to_unless_current item[:title], item.identifier
-
-            %li= link_to "Github", "http://github.com/Spooner"
-            %li= link_to "deviantART", "http://lemonsails.deviantart.com"
-            %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"
+          = render 'menu'
 
     %footer
       = render 'navbar', item: @item

@@ -13,8 +13,12 @@ task :serve do
 end
 
 desc "Compile everything"
-task compile: ["create:years_and_months", "create:tags"]  do
+task :compile  do
   system "nanoc compile"
+end
+
+desc "Compile everything"
+task recreate: ["create:years_and_months", "create:tags", :compile]  do
 end
 
 desc "Create content files for years and months everything"

@@ -20,14 +20,12 @@
   %body
     %header
       %div.banner
-        %a{ href: '/' }
-          %img.banner_left{ src: "/images/spooner_pixels_large.png", width: "128", height: "128", alt: "Actual photo of Spooner" }
-        %a{ href: '/' }
-          %img.banner_right{ src: "/images/bagpuss_large.png", width: "128", height: "128", alt: "Bagpuss" }
-
-        %h1= link_to "Spooner", "/"
-
-        %p Ruby addict and maker of games with outrageously large pixels
+        %a{ href: '/', title: "Spooner: Ruby addict and maker of games with outrageously large pixels" }
+          %img.banner_left{ src: "/images/spooner_pixels_large.png", alt: "Actual photo of Spooner" }
+          %img.banner_right{ src: "/images/bagpuss_large.png", alt: "Bagpuss" }
+          %img.title{ src: "/images/title.png", alt: "Spooner" }
+          %br/
+          %img.subtitle{ src: "/images/subtitle.png", alt: "Ruby addict and maker of games with outrageously large pixels" }
 
       %div.breadcrumbs
         - if %w[/ /errors/404/].include? @item.identifier

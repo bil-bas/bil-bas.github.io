@@ -24,14 +24,6 @@ body {
 
 
 // Headings
-h1 {
-    font-size: 3.8em;
-    margin-bottom: -20px;
-    margin-top: 0;
-    text-align: center;
-    font-style: italic;
-}
-
 h2 {
     font-size: 1.7em;
     text-align: center;
@@ -62,15 +54,38 @@ h2 a {
 
 .banner {
     height: 128 + 2px;
+    background-image: url(/images/banner_background.png);
+    background-repeat: repeat-x;
     background-color: $light_color;
     border: $image_border;
-    a {
-      font-size: 1.2em;
+    text-align: center;
+
+    img.title {
+        margin-top: 21px;
+        margin-bottom: 0;
+        width: 397px;
+        height: 64px;
     }
-    p {
-      padding-top: 1.25em;
-      text-align: center;
-      font-size: $small_font_size;
+    img.subtitle {
+        margin-top: 13px;
+        width: 500px;
+        height: 12px;
+    }
+    img.banner_left {
+        float: left;
+        border: $image_border;
+        width: 128px;
+        height: 128px;
+    }
+    img.banner_right {
+        float: right;
+        border: $image_border;
+        width: 128px;
+        height: 128px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
     }
 }
 
@@ -250,16 +265,6 @@ img.app_icon_small {
     height: 16px;
     margin: 0;
 }
-
-img.banner_left {
-    float: left;
-    margin-bottom: 0.5em;
-    border: $image_border;
-}
-img.banner_right {
-    float: right;
-    border: $image_border;
-}   
 
 .comments {
   float: right;

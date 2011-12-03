@@ -6,10 +6,17 @@
     %meta{ "http-equiv" => "Content-Type", content: "text/html; charset=UTF-8" }
     %meta{ charset: "UTF-8" }
     %meta{ name: "generator", content: "nanoc 3.2.3" }
+
     - %w[stylesheet code_highlighting].each do |stylesheet|
       %link{ rel: "stylesheet", type: "text/css", href: "/style/#{stylesheet}.css", media: "screen" }
 
+    %title
+      Spooner
+      - unless @item.home?
+        = "- #{@item.title}"
+
     %link{ href: '/blog/feed.xml', rel: 'alternate', title: "Spooner's Blog", type: 'application/atom+xml' }
+
   %body
     %header
       %div.banner

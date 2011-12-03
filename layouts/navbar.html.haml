@@ -5,7 +5,7 @@
     %li
       = link_to_unless_current "Home", "/"
 
-    - @items.find {|i| i.identifier == "/" }.children.each do |item|
+    - home.children.each do |item|
       - if item[:title]
         %li
           = link_to_unless_current item.title, item.identifier

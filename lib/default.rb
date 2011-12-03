@@ -14,11 +14,17 @@ def link_for_tag(tag, base_url)
   %[<a href="#{h base_url}#{h tag}/" rel="tag">#{h tag}</a>]
 end
 
+def home
+  @items.find(&:home?)
+end
+
 class Nanoc3::Item
   def summary
     # Just include the first paragraph.
     Hpricot(compiled_content).at("p").to_html
   end
+
+  def home?; identifier == '/'; end
 
   def year; self[:created_at].year; end
   def month; self[:created_at].month; end

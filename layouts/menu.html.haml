@@ -4,8 +4,7 @@
   %ul
     %li{ style: "margin-bottom:1em;" }= link_to_unless_current "Home", '/'
 
-    - home = @items.find {|i| i.identifier == "/" }
-    - home.children.select {|i| i[:title] }.each do |item|
+    - home.children.select {|i| i.title }.each do |item|
 
       %li
         = link_to_unless_current item.title, item.identifier

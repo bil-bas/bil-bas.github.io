@@ -13,4 +13,4 @@ One thing that dismays me a little with [nanoc] is that you have to manually man
 
 [Github]: https://github.com/
 [nanoc]: http://nanoc.stoneship.org/
-[Jekyll]: http://nanoc.stoneship.org/
+[Jekyll]: http://jekyllrb.com/

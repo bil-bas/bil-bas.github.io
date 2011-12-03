@@ -6,6 +6,8 @@ $light_color: #c9e6b6;
 $text_color: #000;
 $inverted_text_color: #daf8c9;
 
+$hover_color: #e9ffd6;
+
 $image_border: 2px solid black;
 
 $large_font_size: 120%;
@@ -125,7 +127,7 @@ hr {
     }
 
     .contents {
-        margin:0 1em 0 13em;
+        margin:0 1em 0 12em;
         overflow:hidden;
      }
 
@@ -229,5 +231,43 @@ img.banner_left {
 img.banner_right {
     float:right;
     border:$image_border;
+}
+
+nav {
+    clear: both;
+    align: center;
+
+    ul {
+        list-style:none;
+        padding: 0;
+
+        li {
+            display: inline;
+            padding: 0;
+            margin: 0 0.25em 0 0;
+
+            a {
+                text-align: center;
+                background-color: $light_color;
+                color: $text_color;
+                border: 3px solid $dark_color;
+                padding: .25em 2em;
+                width: 10em;
+
+                &:hover {
+                    background-color: $hover_color;
+                }
+            }
+
+            span {
+                text-align: center;
+                background-color: $background_color;
+                color: $text_color;
+                border: 3px solid $dark_color;
+                padding: .25em 2em;
+                width: 9em;
+            }
+        }
+    }
 }
 

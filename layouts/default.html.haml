@@ -30,6 +30,8 @@
       - else
         = breadcrumbs_trail.map {|crumb| link_to(crumb[:title], crumb.rep_named(:default)) }.join(" &raquo; ")
 
+    = render 'navbar', item: @item
+
     %div{ class: "col_mask right_menu" }
       %div.col_left
         %div.contents_wrap
@@ -65,6 +67,8 @@
 
             %li= link_to "deviantART", "http://lemonsails.deviantart.com"
             %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"
+
+    = render 'navbar', item: @item
 
     %div.footer
       %p

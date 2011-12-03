@@ -178,6 +178,9 @@ nav.menu {
             @include menu_category;
             text-decoration: none;
             color: $text_color;
+            &:hover {
+              text-decoration: underline;
+            }
         }
         .active {
             @include menu_category;

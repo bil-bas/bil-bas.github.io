@@ -38,6 +38,7 @@ nav.menu ul ul { list-style: none; padding-left: 0; padding-bottom: 1em; font-st
 nav.menu ul ul a { font-size: 100%; }
 nav.menu ul ul .active { font-size: 100%; margin-bottom: 1em; }
 nav.menu ul a { font-size: 120%; margin-bottom: 1em; width: 10em; text-decoration: none; color: black; }
+nav.menu ul a:hover { text-decoration: underline; }
 nav.menu ul .active { font-size: 120%; margin-bottom: 1em; width: 10em; margin-bottom: 1em; }
 
 .posted { font-style: italic; font-size: 80%; }

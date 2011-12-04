@@ -38,17 +38,19 @@ title: "#{File.basename(year)}"
 END
       end
 
-      (1..12).each do |month|
-        filename = File.join(base_dir, 'content/blog/', File.basename(year), "#{month.to_s.rjust(2, "0")}.md")
-        month_name = Date.new(2000, month, 1).strftime("%B")
-        puts "Creating #{filename.sub(base_dir, '')} (#{month_name})"
-        File.open(filename, "w") do |file|
-          file.write <<END
+      Dir[File.join(year, "*")].each do |month_path|
+        month_num = File.basename(month_path).to_i
+        if File.directory? month_path and month_num > 0
+          month_name = Date.new(2000, month_num, 1).strftime("%B")
+          puts "Creating #{month_path.sub(base_dir, '')} (#{month_name})"
+          File.open("#{month_path}.md", "w") do |file|
+            file.write <<END
 ---
 kind: month
 title: #{month_name}
 ---
 END
+          end
         end
       end
     end
@@ -99,6 +101,45 @@ count: #{count}
 ---
 END
   end
+end
+
+
+desc "Create a blog entry - tags should be separated by ;"
+task :blog, :title, :tags do |t, args|
+  raise "Error: requires title" unless args[:title]
+  args.with_defaults(tags: "")
+
+  title, tags = args[:title], args[:tags]
+
+  title.strip!
+  tags = tags.strip.split(";")
+
+  today = Time.now.to_date
+
+  base_dir = File.dirname(__FILE__) + '/'
+  year, month = today.year.to_s, today.month.to_s.rjust(2, "0")
+  blog_file = File.join(base_dir, "content/blog", year, month, "#{title.downcase}.md")
+  FileUtils.mkdir_p File.dirname blog_file
+
+  raise "Blog with that name already exists" if File.exists? blog_file
+
+  File.open(blog_file, "w") do |file|
+    file.puts <<END
+---
+kind: article
+title: #{title.tr("-", " ")}
+created_at: #{today.strftime("%Y-%m-%d")}
+tags: #{tags}
+---
+
+(empty article)
+END
+  end
+
+  puts "Created: #{blog_file.sub(base_dir, '')} with tags #{tags}"
+
+  Rake::Task["create:tags"].invoke
+  Rake::Task["create:years_and_months"].invoke
 end
 
 

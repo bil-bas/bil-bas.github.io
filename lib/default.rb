@@ -21,7 +21,7 @@ end
 class Nanoc3::Item
   def summary
     # Just include the first paragraph.
-    Hpricot(compiled_content).at("p").to_html
+    (Hpricot(compiled_content).at("p") || "(empty article)").to_s
   end
 
   def home?; identifier == '/'; end

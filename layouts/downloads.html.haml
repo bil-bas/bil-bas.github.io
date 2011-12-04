@@ -1,0 +1,4 @@
+%h1 #{ @item.parent.title } - #{ @item.title }
+
+- @item.children.reverse_each do |release|
+  = render 'release', item: release, summary: true

@@ -122,6 +122,12 @@ span.date {
   float: right;
 }
 
+span.release_date {
+  float: right;
+  margin-top: 0.75em;
+  margin-right: 0.5em;
+}
+
 .col_mask {
     position: relative;		// This fixes the IE7 overflow hidden bug and stops the layout jumping out of place
     clear: both;

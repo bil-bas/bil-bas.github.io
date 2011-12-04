@@ -6,6 +6,8 @@ status: Beta / CURRENT PROJECT
 
 A cat runs! Why does the cat run? (1 or 2 players locally; game based on [Metro-Cross])
 
+[Downloads](downloads/)
+
 [![TIGSource forum](/images/tigsource.png)](http://forums.tigsource.com/index.php?topic=20797.0 "TIGSource forum")
 [![Github project](/images/github.png)](https://github.com/Spooner/zed_and_ginger "Github project")
 

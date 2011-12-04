@@ -41,8 +41,8 @@ end
 
 class Nanoc3::Item
   def summary
-    # Just include the first paragraph.
-    (Hpricot(compiled_content).at("p") || "(empty article)").to_s
+    # Just include the first paragraph (article) or list (release).
+    (Hpricot(compiled_content).at("p|ul") || "(empty article)").to_s
   end
 
   def home?; identifier == '/'; end

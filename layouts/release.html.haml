@@ -1,0 +1,19 @@
+- if @summary
+  %summary
+    %span.release_date Released #{pretty_date @item.created_at}
+
+    %h2= link_to @item.title, @item.path
+
+    = @item.summary
+
+    = link_to "Release notes...", @item.path
+
+- else
+
+  %article
+    %h1= link_to "#{ @item.parent.parent.title } - #{ @item.title }", @item.path
+
+    %p.posted Released #{pretty_date @item.created_at}
+
+    = yield
+

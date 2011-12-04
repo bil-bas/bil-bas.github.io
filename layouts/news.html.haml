@@ -7,7 +7,7 @@
     %img{ src: "/images/feed-icon-14x14.png", alt: "Atom feed" }
     Subscribe to news
 
-- newsworthy = @items.select {|i| i.identifier =~ %r[^(?:/blog/_articles/|/\w+/\w+/downloads/v)] }
+- newsworthy = @items.select {|i| i.identifier =~ %r[^(?:/blog/_articles/|/\w+/\w+/releases/v)] }
 - newsworthy.sort_by {|i| i.created_at }.pop(@config[:posts_per_page]).reverse_each do |item|
   = render item.kind, item: item, summary: true
 

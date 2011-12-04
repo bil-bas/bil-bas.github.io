@@ -1,7 +1,7 @@
 <%=
     # Feed of BLOG + RELEASES.
 
-    newsworthy = @items.select {|i| i.identifier =~ %r[^(?:/blog/_articles/|/\w+/\w+/downloads/v)] }
+    newsworthy = @items.select {|i| i.identifier =~ %r[^(?:/blog/_articles/|/\w+/\w+/releases/v)] }
     newsworthy.sort_by! {|i| i.created_at }
     newsworthy.reverse!
 

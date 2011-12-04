@@ -2,5 +2,5 @@
 
 %h1= link_to "#{@item.title} #{@item.parent.title}", @item.permalink
 
-- @item.children.sort_by(&:created_at).reverse_each do |article|
+- sorted_articles.select {|i| i.month == @item.name.to_i }.each do |article|
   = render 'article', item: article, summary: true

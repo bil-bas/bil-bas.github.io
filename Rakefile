@@ -38,6 +38,7 @@ task "create:years_and_months" do
 ---
 kind: year
 title: "#{year}"
+count_comments: true
 ---
 END
       end
@@ -53,6 +54,7 @@ END
 ---
 kind: month
 title: #{month_name}
+count_comments: true
 ---
 END
       end
@@ -101,6 +103,7 @@ def write_tag_page(tag_dir, tag, count)
 title: #{tag}
 kind: tag
 count: #{count}
+count_comments: true
 ---
 END
   end

@@ -11,7 +11,7 @@
 - else
 
   %article
-    %h1= link_to "#{ @item.parent.parent.title } - #{ @item.title }", @item.path
+    %h1= link_to "#{ @item.parent.parent.title } - #{ @item.title }", @item.permalink
 
     %p.posted Released #{pretty_date @item.created_at}
 

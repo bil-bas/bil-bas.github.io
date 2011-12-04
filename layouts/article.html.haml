@@ -16,7 +16,7 @@
 
 - else
   %article
-    %h1= link_to @item.title, @item.path
+    %h1= link_to @item.title, @item.permalink
 
     %p.posted= "Posted on #{pretty_date @item.created_at}"
 

@@ -1,7 +1,6 @@
 -# A list of all tags.
 
-%h1
-  = link_to @item.title, @item.path
+%h1= link_to @item.title, @item.permalink
 
 %div
   - @item.children.sort_by(&:identifier).each do |tag|

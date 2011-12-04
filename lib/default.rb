@@ -57,6 +57,7 @@ class Nanoc3::Item
   def created_at; self[:created_at] || raise(path); end
   def modified_at; self[:modified_at] || created_at; end
 
+  def permalink; "http://spooner.github.com#{path}"; end
   def title; self[:title]; end
   def kind; self[:kind]; end
 

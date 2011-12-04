@@ -1,7 +1,6 @@
 -# News page showing the latest posts.
 
-%h1
-  = link_to @item.title, @item.path
+%h1= link_to @item.title, @item.permalink
 
 - sorted_articles.take(3).each do |item|
   = render 'article', item: item, summary: true

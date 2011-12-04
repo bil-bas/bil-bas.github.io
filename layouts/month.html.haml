@@ -1,7 +1,6 @@
 -# A month of posts
 
-%h1
-  = link_to "#{@item.title} #{@item.parent.title}", @item.path
+%h1= link_to "#{@item.title} #{@item.parent.title}", @item.permalink
 
 - @item.children.sort_by(&:created_at).reverse_each do |article|
   = render 'article', item: article, summary: true

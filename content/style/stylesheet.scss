@@ -9,7 +9,7 @@ $inverted_text_color: #daf8c9;
 
 $hover_color: #e9ffd6;
 
-$image_border: 2px solid black;
+$image_border: 4px solid black;
 
 $large_font_size: 120%;
 $normal_font_size: 100%;
@@ -54,7 +54,7 @@ h1 a {
 
 
 .banner {
-    height: 128 + 2px;
+    height: 128px;
     background-image: url(/images/banner_background.png);
     background-repeat: repeat-x;
     background-color: $light_color;
@@ -74,13 +74,13 @@ h1 a {
     }
     img.banner_left {
         float: left;
-        border: $image_border;
+        border-right: $image_border;
         width: 128px;
         height: 128px;
     }
     img.banner_right {
         float: right;
-        border: $image_border;
+        border-left: $image_border;
         width: 128px;
         height: 128px;
     }

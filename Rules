@@ -17,6 +17,10 @@ compile '/blog/feed/' do
   filter :erb
 end
 
+compile '/feed/' do
+  filter :erb
+end
+
 compile '/sitemap/' do
   filter :erb
 end
@@ -56,6 +60,10 @@ end
 
 route '/blog/feed/' do
   '/blog/feed.xml'
+end
+
+route '/feed/' do
+  '/feed.xml'
 end
 
 route '/blog/_articles/*/' do

@@ -1,27 +1,31 @@
 -# List of all posts by year.
 
-%h1
-  = link_to @item.title, @item.permalink
+%h1= link_to @item.title, @item.permalink
 
 .feed
-  %a{ href: "/blog/feed.xml", title: "Subscribe to Atom feed" }
+  %a{ href: "/blog/feed.xml", title: "Subscribe to Atom feed (blog only)" }
     %img{ src: "/images/feed-icon-14x14.png", alt: "Atom feed" }
-    Subscribe
+    Subscribe to blog
 
-- @item.children.reverse_each do |year|
-  - next unless year.path =~ %r[^/blog/\d{4}/$]
+- sorted_articles.take(@config[:posts_per_page]).each do |item|
+  = render 'article', item: item, summary: true
 
-  %h2
-    = link_to year.title, year.path
+-# This is an older version that posts one-line descriptions for every post.
 
-  - previous_month = nil
-  %ul
-    - sorted_articles.select {|i| i.year.to_s == year.name }.each do |article|
-      - if article.month != previous_month
-        - previous_month = article.month
-        %h3= link_to article.month_name, File.dirname(article.path)
-
-      %li
-        = link_to article.title, article.path, title: excerptize(strip_html(article.summary), length: 140)
-        \-
-        = pretty_date article.created_at
+-#- @item.children.reverse_each do |year|
+-#  - next unless year.path =~ %r[^/blog/\d{4}/$]
+-#
+-#  %h2
+-#    = link_to year.title, year.path
+-#
+-#  - previous_month = nil
+-#  %ul
+-#    - sorted_articles.select {|i| i.year.to_s == year.name }.each do |article|
+-#      - if article.month != previous_month
+-#        - previous_month = article.month
+-#        %h3= link_to article.month_name, File.dirname(article.path)
+-#
+-#      %li
+-#        = link_to article.title, article.path, title: excerptize(strip_html(article.summary), length: 140)
+-#        \-
+-#        = pretty_date article.created_at

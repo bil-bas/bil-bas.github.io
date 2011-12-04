@@ -1,0 +1,15 @@
+<%=
+    # Feed of BLOG + RELEASES.
+
+    newsworthy = @items.select {|i| i.identifier =~ %r[^(?:/blog/_articles/|/\w+/\w+/downloads/v)] }
+    newsworthy.sort_by! {|i| i.created_at }
+    newsworthy.reverse!
+
+    atom_feed(
+        title: "Spooner's News (Blog & releases)",
+        author_name: "Spooner (Bil Bas)",
+        author_uri: @config[:base_url],
+        excerpt_proc: lambda {|article| article.summary },
+        articles: newsworthy
+    )
+ %>

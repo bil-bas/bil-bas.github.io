@@ -61,3 +61,6 @@ watcher:
 
 # Needed for the feed.
 base_url: http://spooner.github.com
+
+# Number of posts to show on news/blog pages.
+posts_per_page: 4

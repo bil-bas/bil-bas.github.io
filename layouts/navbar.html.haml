@@ -2,8 +2,7 @@
 
 %nav.navbar
   %ul
-    %li
-      = link_to_unless_current "Home", "/"
+    %li= link_to_unless_current home.title, "/"
 
     - home.children.each do |item|
       - if item[:title]

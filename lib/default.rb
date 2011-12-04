@@ -15,7 +15,7 @@ def link_for_tag(tag, base_url)
 end
 
 def home
-  @items.find(&:home?)
+  @home ||= @items.find(&:home?)
 end
 
 def breadcrumbs_for_path(path)

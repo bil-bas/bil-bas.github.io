@@ -2,7 +2,7 @@
 
 %nav.menu
   %ul
-    %li{ style: "margin-bottom:1em;" }= link_to_unless_current "Home", '/'
+    %li{ style: "margin-bottom:1em;" }= link_to_unless_current home.title, '/'
 
     - home.children.select {|i| i.title }.each do |item|
 

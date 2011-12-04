@@ -1,4 +1,7 @@
-<%= atom_feed(
+<%=
+    # Feed of BLOG only (no RELEASES)
+
+    atom_feed(
         title: "Spooner's Blog",
         author_name: "Spooner (Bil Bas)",
         author_uri: @config[:base_url],

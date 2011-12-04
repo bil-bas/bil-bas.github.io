@@ -1,8 +1,10 @@
+- title = "#{@item.parent.parent.title} #{@item.title}"
+
 - if @summary
   %summary
     %span.release_date Released #{pretty_date @item.created_at}
 
-    %h2= link_to @item.title, @item.path
+    %h2= link_to title, @item.path
 
     = @item.summary
 
@@ -11,7 +13,7 @@
 - else
 
   %article
-    %h1= link_to "#{ @item.parent.parent.title } - #{ @item.title }", @item.permalink
+    %h1= link_to title, @item.permalink
 
     %p.posted Released #{pretty_date @item.created_at}
 

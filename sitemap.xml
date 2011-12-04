@@ -1,60 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://spooner.github.com/blog/2011/01/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/02/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/03/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/04/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/05/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/06/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/07/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/08/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/09/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/10/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/2011/11/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/</loc>
     <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/2011/12/</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/2011/</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/feed.xml</loc>
@@ -62,15 +18,15 @@
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/nanoc/</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/ruby/</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/website/</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/</loc>
@@ -106,7 +62,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/games/zed_and_ginger/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/</loc>
@@ -270,7 +226,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/fidgit/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-03</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/</loc>

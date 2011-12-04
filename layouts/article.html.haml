@@ -24,4 +24,4 @@
 .tags Tags: #{@site.tags_for(@item, base_url: '/blog/tags/')}
 
 - unless @summary
-  = render "comments", item: @item
+  = render "comments", item: @item, comment_id: @item.name

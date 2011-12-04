@@ -1,5 +1,6 @@
 - title = "#{@item.parent.parent.title} #{@item.title}"
 
+- comment_id = "#{@item.parent.parent.name}_#{@item.name}"
 - if @summary
   %summary
     %span.release_date Released #{pretty_date @item.created_at}
@@ -7,6 +8,9 @@
     %h2= link_to title, @item.path
 
     = @item.summary
+
+    .comments
+      %a{ href: "#{@item.path}#disqus_thread", "data-disqus-identifier" => "#{comment_id}"} Comments
 
     = link_to "Release notes...", @item.path
 
@@ -18,4 +22,7 @@
     %p.posted Released #{pretty_date @item.created_at}
 
     = yield
+
+    - unless @summary
+      = render "comments", item: @item, comment_id: comment_id
 

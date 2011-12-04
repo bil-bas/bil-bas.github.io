@@ -17,8 +17,8 @@ task :compile  do
   system "nanoc compile"
 end
 
-desc "Compile everything"
-task recreate: ["create:years_and_months", "create:tags", :compile]  do
+desc "Delete everything, re-generate and recompile everything"
+task recreate: ["clean", "create:years_and_months", "create:tags", :compile]  do
 end
 
 desc "Create content files for years and months everything"

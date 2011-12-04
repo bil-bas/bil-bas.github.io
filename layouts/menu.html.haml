@@ -11,7 +11,7 @@
 
         %ul
           - if item.identifier == '/blog/'
-            - item.children.select {|i| i.kind == 'year' }.reverse_each do |year|
+            - item.children.select {|i| i.identifier =~ %r[^/blog/\d{4}/] }.reverse_each do |year|
               %li= link_to_unless_current "#{year.title} (#{articles.count {|i| i.year.to_s == year.name }})", year.path
 
             - tags = item.children.find {|i| i.name == 'tags' }

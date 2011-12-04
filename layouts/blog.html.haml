@@ -9,7 +9,7 @@
     Subscribe
 
 - @item.children.reverse_each do |year|
-  - next unless year.kind == 'year'
+  - next unless year.identifier =~ %r[^/blog/\d{4}/]
 
   %h2
     = link_to year.title, year.path

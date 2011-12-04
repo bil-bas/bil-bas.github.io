@@ -25,7 +25,7 @@ Fidgit requires Ruby 1.9.2 or higher and will only work when coupled with the [G
 Examples of applications using Fidgit
 -------------------------------------
 
-Fidgit is used to build a nice user interface in several of my games: [Hoops](/games/hoops), [Sidney](/games/sidney), [Smash and Grab](/games/smash_and_grab) and [Wrath](/games/wrath).
+Fidgit is used to build a nice user interface in several of my games: [Hoops](/games/hoops), [Smash and Grab](/games/smash_and_grab) and [Wrath](/games/wrath).
 
-[Gosu]: http://http://www.libgosu.org/
+[Gosu]: http://www.libgosu.org/
 [Chingu]: http://ippa.se/chingu

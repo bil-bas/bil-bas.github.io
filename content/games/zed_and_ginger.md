@@ -19,4 +19,4 @@ When played with two players, they share the screen if they are close together, 
 
 [Metro-cross]: http://en.wikipedia.org/wiki/Metro-Cross
 [Ray]: http://mon-ouie.github.com/projects/ray.html
-[Gosu]: http://http://www.libgosu.org/
+[Gosu]: http://www.libgosu.org/

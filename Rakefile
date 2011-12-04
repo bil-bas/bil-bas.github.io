@@ -142,10 +142,64 @@ tags: #{tags}
 END
   end
 
-  puts "Created: #{blog_file.sub(base_dir, '')} with tags #{tags}"
+  puts "Blogged: #{blog_file.sub(base_dir, '')} with tags #{tags}"
 
   Rake::Task["create:tags"].invoke
   Rake::Task["create:years_and_months"].invoke
 end
+
+desc "Create a project release project"
+task :release, :project, :version do |t, args|
+  raise "Error: requires project and version" unless args[:version] and args[:project]
+
+  project, version = args[:project].strip.downcase, args[:version].strip
+
+  now = Time.now
+
+  base_dir = File.dirname(__FILE__) + '/'
+  underscored_project = project.tr " ", "_"
+  type = %w[games libraries utilities].find {|t| File.exists? "#{base_dir}/content/#{t}/#{underscored_project}" }
+  raise "Project name not recognised: #{project}" unless type
+
+  release_file = "#{base_dir}content/#{type}/#{underscored_project}/releases/#{version.tr(".", "_")}.md"
+  FileUtils.mkdir_p File.dirname(release_file)
+
+  raise "Release with that version already exists" if File.exists? release_file
+  raise "Version must follow pattern" unless version =~ /^v\d+(?:\.\d+)+[a-z]*$/
+
+  File.open(release_file, "w") do |file|
+    file.puts <<END
+---
+kind: article
+title: #{version}
+created_at: #{now}
+---
+
+* empty release
+END
+  end
+
+  puts "Released: #{release_file.sub(base_dir, '')}"
+
+  releases_file = "#{File.dirname(release_file)}/index.md"
+
+  unless File.exists? releases_file
+    File.open(releases_file, "w") do |file|
+      file.puts <<END
+---
+title: Releases
+kind: releases
+count_comments: true
+---
+
+END
+    end
+  end
+
+  puts "Created releases index: #{releases_file.sub(base_dir, '')}"
+
+
+end
+
 
 

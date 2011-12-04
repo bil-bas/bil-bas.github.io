@@ -54,6 +54,10 @@ h1 a {
     color: $inverted_text_color;
 }
 
+img {
+    border: 0;
+    padding: 0;
+}
 
 .banner {
     height: 128px;
@@ -62,6 +66,7 @@ h1 a {
     background-color: $light_color;
     border: $image_border;
     text-align: center;
+    padding: 0;
 
     img.title {
         margin-top: 21px;
@@ -75,12 +80,14 @@ h1 a {
         height: 12px;
     }
     img.banner_left {
+        background: black;
         float: left;
         border-right: $image_border;
         width: 128px;
         height: 128px;
     }
     img.banner_right {
+        background: black;
         float: right;
         border-left: $image_border;
         width: 128px;

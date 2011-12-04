@@ -1,1 +1,1 @@
-<%= xml_sitemap :items => @items.reject{ |i| i[:is_hidden] || i[:binary] } %>
+<%= xml_sitemap(items: @items.reject{|i| i.hidden? || i.binary? }) %>

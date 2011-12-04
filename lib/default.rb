@@ -26,6 +26,8 @@ class Nanoc3::Item
 
   def home?; identifier == '/'; end
 
+  def hidden?; self[:is_hidden]; end
+
   def year; self[:created_at].year; end
   def month; self[:created_at].month; end
   def month_name; Date.new(2000, month, 1).strftime("%B"); end

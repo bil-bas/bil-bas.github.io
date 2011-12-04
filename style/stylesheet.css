@@ -23,8 +23,6 @@ pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 
 .status { font-style: italic; }
 
-hr { background-color: #c9e6b6; height: 4px; border: none; width: 100%; margin-top: 2em; }
-
 span.date { float: right; }
 
 span.release_date { float: right; margin-top: 0.75em; margin-right: 0.5em; }
@@ -35,6 +33,9 @@ span.release_date { float: right; margin-top: 0.75em; margin-right: 0.5em; }
 .right_menu .contents_wrap { float: left; width: 50%; position: relative; left: 50%; padding-bottom: 1em; }
 .right_menu .contents { margin: 0 1em 0 12em; overflow: hidden; }
 .right_menu .sidebar { float: right; width: 12em; position: relative; left: 13em; margin: 0 0 4em 32px; background-color: #a8c595; }
+.right_menu .sidebar hr { height: 5px; border: none; width: 9.5em; margin: 0.5em 0 1em 0; padding: 0; }
+
+hr { background-color: #c9e6b6; width: 80%; }
 
 nav.menu ul { list-style: none; padding-left: 0.75em; font-style: normal; }
 nav.menu ul ul { list-style: none; padding-left: 0; padding-bottom: 1em; font-style: italic; }

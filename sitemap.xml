@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/fidgit/</loc>
@@ -119,6 +119,14 @@
   <url>
     <loc>http://spooner.github.com/libraries/</loc>
     <lastmod>2011-12-03</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/releases/feed.xml</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/releases/</loc>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/sitemap.xml</loc>

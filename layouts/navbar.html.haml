@@ -2,9 +2,5 @@
 
 %nav.navbar
   %ul
-    %li= link_to_unless_current home.title, "/"
-
-    - home.children.each do |item|
-      - if item[:title]
-        %li
-          = link_to_unless_current item.title, item.path
+    - nav_items.each do |item|
+      %li= link_to_unless_current item.title, item.path

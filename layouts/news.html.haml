@@ -1,13 +1,9 @@
 -# News page showing the latest posts.
 
-%h1= link_to @item.title, @item.permalink
+%h1= link_to 'News', @item.permalink
 
-.feed
-  %a{ href: "/feed.xml", title: "Subscribe to Atom feed (blog + releases)" }
-    %img{ src: "/images/feed-icon-14x14.png", alt: "Atom feed" }
-    Subscribe to news
+= render 'subscribe', item: @item
 
-- newsworthy = @items.select {|i| i.identifier =~ %r[^(?:/blog/_articles/|/\w+/\w+/releases/v)] }
-- newsworthy.sort_by {|i| i.created_at }.pop(@config[:posts_per_page]).reverse_each do |item|
+- sorted_news.take(@config[:posts_per_page]).each do |item|
   = render item.kind, item: item, summary: true
 

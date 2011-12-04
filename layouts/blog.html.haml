@@ -2,10 +2,7 @@
 
 %h1= link_to @item.title, @item.permalink
 
-.feed
-  %a{ href: "/blog/feed.xml", title: "Subscribe to Atom feed (blog only)" }
-    %img{ src: "/images/feed-icon-14x14.png", alt: "Atom feed" }
-    Subscribe to blog
+= render 'subscribe', item: @item
 
 - sorted_articles.take(@config[:posts_per_page]).each do |item|
   = render 'article', item: item, summary: true

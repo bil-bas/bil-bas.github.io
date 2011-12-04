@@ -1,3 +1,5 @@
+-# Page showing releases for a single project.
+
 %h1=link_to "#{ @item.parent.title } - #{ @item.title }", @item.permalink
 
 - @item.children.reverse_each do |release|

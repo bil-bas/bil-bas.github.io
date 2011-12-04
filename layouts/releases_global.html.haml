@@ -1,0 +1,8 @@
+-# Main releases page.
+
+%h1= link_to @item.title, @item.permalink
+
+= render 'subscribe', item: @item
+
+- sorted_releases.take(@config[:posts_per_page]).each do |item|
+  = render item.kind, item: item, summary: true

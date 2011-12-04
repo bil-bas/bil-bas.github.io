@@ -1,0 +1,5 @@
+.feed
+  - title = @item == home ? "news" : @item.title.downcase
+  %a{ href: "#{@item.path}feed.xml", title: "Subscribe to Atom feed (#{title})" }
+    %img{ src: "/images/feed-icon-14x14.png", alt: "Atom feed" }
+    Subscribe to #{title}

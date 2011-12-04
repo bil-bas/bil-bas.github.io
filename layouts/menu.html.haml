@@ -2,9 +2,7 @@
 
 %nav.menu
   %ul
-    %li{ style: "margin-bottom:1em;" }= link_to_unless_current home.title, '/'
-
-    - home.children.select {|i| i.title }.each do |item|
+    - nav_items.each do |item|
 
       %li
         = link_to_unless_current item.title, item.path
@@ -17,7 +15,7 @@
             - tags = item.children.find {|i| i.name == 'tags' }
             = link_to_unless_current "#{tags.title} (#{tags.children.size})", tags.path
 
-          - else
+          - elsif item != home and item.identifier != '/releases/'
             - item.children.each do |project|
               %li
                 - if project == @item
@@ -30,7 +28,8 @@
                     %img.app_icon_small{alt: "#{project.title}", src: "/images/small_icon/#{project.name}.png"}
                     = project.title
 
+    %hr/
 
-    %li= link_to "Github", "http://github.com/Spooner"
-    %li= link_to "deviantART", "http://lemonsails.deviantart.com"
-    %li= link_to "YouTube", "http://www.youtube.com/user/spoonerspon"
+    %li= link_to "Developer profile", "http://github.com/Spooner", title: "Spooner's Github profile"
+    %li= link_to "Art", "http://lemonsails.deviantart.com", title: "Spooner's DeviantART portfolio"
+    %li= link_to "Videos", "http://www.youtube.com/user/spoonerspon", title: "Spooner's videos"

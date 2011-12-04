@@ -15,6 +15,8 @@ $large_font_size: 120%;
 $normal_font_size: 100%;
 $small_font_size: 80%;
 
+$sidebar_width: 12em;
+
 body {
     background-color: $background_color;
     font-family: Helvetica,Arial,FreeSans;
@@ -110,14 +112,6 @@ pre {
     font-style: italic;
 }
 
-hr {
-  background-color: $light_color;
-  height: 4px;
-  border: none;
-  width: 100%;
-  margin-top: 2em;
-}
-
 span.date {
   float: right;
 }
@@ -160,12 +154,25 @@ span.release_date {
 
     .sidebar {
         float: right;
-        width: 12em;
+        width: $sidebar_width;
         position: relative;
         left: 13em;
         margin: 0 0 4em 32px;
         background-color: $medium_color;
+
+        hr {
+            height: 5px;
+            border: none;
+            width: $sidebar_width - 2.5em;
+            margin: 0.5em 0 1em 0;
+            padding: 0;
+        }
     }
+}
+
+hr {
+  background-color: $light_color;
+  width: 80%;
 }
 
 @mixin menu_category {

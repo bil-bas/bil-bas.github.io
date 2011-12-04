@@ -1,11 +1,11 @@
 <%=
-    # Feed of BLOG + RELEASES.
+    # Feed of RELEASES.
 
     atom_feed(
-        title: "Spooner's News (Blog & releases)",
+        title: "Spooner's Releases",
         author_name: "Spooner (Bil Bas)",
         author_uri: @config[:base_url],
         excerpt_proc: lambda {|article| article.summary },
-        articles: sorted_news
+        articles: sorted_releases
     )
  %>

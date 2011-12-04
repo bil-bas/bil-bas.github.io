@@ -18,6 +18,21 @@ def home
   @home ||= @items.find(&:home?)
 end
 
+
+def nav_items
+  @nav_items ||= [home] + @config[:nav_items].map do |identifier|
+    home.children.find {|i| i.identifier == identifier }
+  end
+end
+
+def sorted_news
+  @sorted_news ||= (articles + sorted_releases).sort_by {|i| i.created_at }.reverse
+end
+
+def sorted_releases
+  @sorted_releases ||= @items.select {|i| i.identifier =~ %r[^/\w+/\w+/releases/v] }.sort_by {|i| i.created_at }.reverse
+end
+
 def breadcrumbs_for_path(path)
   @breadcrumbs_path_cache ||= {}
   @breadcrumbs_path_cache[path] ||= begin

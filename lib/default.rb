@@ -18,6 +18,27 @@ def home
   @items.find(&:home?)
 end
 
+def breadcrumbs_for_path(path)
+  @breadcrumbs_path_cache ||= {}
+  @breadcrumbs_path_cache[path] ||= begin
+    head = (path == '/' ? [] :  breadcrumbs_for_path(path.sub(/[^\/]+\/$/, '')) )
+    tail = [ item_with_path(path) ]
+
+    head + tail
+  end
+end
+
+def item_with_path(path)
+  @path_cache ||= {}
+  @path_cache[path] ||= begin
+    @items.find { |i| i.path == path }
+  end
+end
+
+def breadcrumbs_trail
+  breadcrumbs_for_path(@item.path)
+end
+
 class Nanoc3::Item
   def summary
     # Just include the first paragraph.

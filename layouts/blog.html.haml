@@ -9,7 +9,7 @@
     Subscribe
 
 - @item.children.reverse_each do |year|
-  - next unless year.identifier =~ %r[^/blog/\d{4}/]
+  - next unless year.path =~ %r[^/blog/\d{4}/$]
 
   %h2
     = link_to year.title, year.path
@@ -19,8 +19,7 @@
     - sorted_articles.select {|i| i.year.to_s == year.name }.each do |article|
       - if article.month != previous_month
         - previous_month = article.month
-        %h3
-          =link_to article.month_name, article.parent.path
+        %h3= link_to article.month_name, File.dirname(article.path)
 
       %li
         = link_to article.title, article.path, title: excerptize(strip_html(article.summary), length: 140)

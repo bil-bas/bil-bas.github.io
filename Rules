@@ -58,6 +58,18 @@ route '/blog/feed/' do
   '/blog/feed.xml'
 end
 
+route '/blog/_articles/*/' do
+  item.identifier =~ %r[(\d{4})-(\d{2})-(\d{2})_(.+)/$]
+  year, month, day, title = $1, $2, $3, $4
+
+  # Ensure that the created_at is consistent with the name of the file.
+  raise unless year.to_i == item.year
+  raise unless month.to_i == item.month
+  raise unless day.to_i == item.day
+
+  "/blog/#{year}/#{month}/#{title}/index.html"
+end
+
 route '/sitemap/' do
   '/sitemap.xml'
 end

@@ -10,7 +10,7 @@
     = @item.summary
 
     .comments
-      %a{ href: "#{@item.identifier}#disqus_thread", "data-disqus-identifier" => "#{@item.name}"} Comments
+      %a{ href: "#{@item.path}#disqus_thread", "data-disqus-identifier" => "#{@item.name}"} Comments
     .more
       = link_to "Read more...", @item.path
 

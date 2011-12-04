@@ -8,4 +8,4 @@
     - home.children.each do |item|
       - if item[:title]
         %li
-          = link_to_unless_current item.title, item.identifier
+          = link_to_unless_current item.title, item.path

@@ -26,32 +26,35 @@ task "create:years_and_months" do
   puts
   puts "** Generating year and month files"
   base_dir = File.dirname(__FILE__) + "/"
-  Dir[File.join(base_dir, 'content/blog/*')].each do |year|
-    if File.directory? year and File.basename(year).to_i > 0
-      puts "Creating #{year.sub(base_dir, '')}.md"
-      File.open("#{year}.md", "w") do |file|
+  Dir[File.join(base_dir, 'content/blog/_articles/*.md')].each do |article_path|
+    article_path =~ %r[_articles/(\d{4})-(\d{2})]
+    year, month = $1, $2
+    year_filename = File.join(base_dir, "content/blog/#{year}/index.md")
+    unless File.exists? year_filename
+      FileUtils.mkdir_p File.dirname year_filename
+      puts "Creating #{year_filename.sub(base_dir, '')}"
+      File.open(year_filename, "w") do |file|
         file.write <<END
 ---
 kind: year
-title: "#{File.basename(year)}"
+title: "#{year}"
 ---
 END
       end
+    end
 
-      Dir[File.join(year, "*")].each do |month_path|
-        month_num = File.basename(month_path).to_i
-        if File.directory? month_path and month_num > 0
-          month_name = Date.new(2000, month_num, 1).strftime("%B")
-          puts "Creating #{month_path.sub(base_dir, '')} (#{month_name})"
-          File.open("#{month_path}.md", "w") do |file|
-            file.write <<END
+    month_filename = File.join(base_dir, "content/blog/#{year}/#{month}.md")
+    unless File.exists? month_filename
+      FileUtils.mkdir_p File.dirname month_filename
+      month_name = Date.new(2000, month.to_i, 1).strftime("%B")
+      puts "Creating #{month_filename.sub(base_dir, '')} (#{month_name})"
+      File.open(month_filename, "w") do |file|
+        file.write <<END
 ---
 kind: month
 title: #{month_name}
 ---
 END
-          end
-        end
       end
     end
   end
@@ -112,13 +115,13 @@ task :blog, :title, :tags do |t, args|
   title, tags = args[:title], args[:tags]
 
   title.strip!
-  tags = tags.strip.split(";")
+  tags = tags.strip.split(/\W+/).downcase.sort
 
-  today = Time.now.to_date
+  now = Time.now
 
   base_dir = File.dirname(__FILE__) + '/'
-  year, month = today.year.to_s, today.month.to_s.rjust(2, "0")
-  blog_file = File.join(base_dir, "content/blog", year, month, "#{title.downcase}.md")
+  date = now.strftime("%Y-%m-%d")
+  blog_file = File.join(base_dir, "content/blog/_articles", "#{date}_#{title.downcase.tr(" _", "-")}.md")
   FileUtils.mkdir_p File.dirname blog_file
 
   raise "Blog with that name already exists" if File.exists? blog_file
@@ -127,8 +130,8 @@ task :blog, :title, :tags do |t, args|
     file.puts <<END
 ---
 kind: article
-title: #{title.tr("-", " ")}
-created_at: #{today.strftime("%Y-%m-%d")}
+title: #{title}
+created_at: #{now}
 tags: #{tags}
 ---
 

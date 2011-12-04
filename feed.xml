@@ -27,15 +27,15 @@
     <summary type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site. Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasnÔÇÖt useful as a showcase of my projects and I quite liked the idea of having my own blog. Whether IÔÇÖll blog more than once a year or not, is another question.&lt;/p&gt;</summary>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-11-24:/games/alpha_channel/downloads/v1_2_4/</id>
+    <id>tag:spooner.github.com,2011-11-24:/games/alpha_channel/releases/v1_2_4/</id>
     <title type="html">v1.2.4</title>
     <published>2011-11-24T12:00:00Z</published>
     <updated>2011-11-24T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/downloads/v1_2_4/"/>
+    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/releases/v1_2_4/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_WIN32.zip"&gt;Windows executable&lt;/a&gt; [3.2MB]&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [156K]&lt;/li&gt;
-  &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/downloads/v1_2_1"&gt;v1.2.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/releases/v1_2_1"&gt;v1.2.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
@@ -51,15 +51,15 @@
     <summary type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_WIN32.zip"&gt;Windows executable&lt;/a&gt; [3.2MB]&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [156K]&lt;/li&gt;
-  &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/downloads/v1_2_1"&gt;v1.2.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/releases/v1_2_1"&gt;v1.2.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-08-10:/games/zed_and_ginger/downloads/v0_3_0/</id>
+    <id>tag:spooner.github.com,2011-08-10:/games/zed_and_ginger/releases/v0_3_0/</id>
     <title type="html">v0.3.0</title>
     <published>2011-08-10T12:00:00Z</published>
     <updated>2011-08-10T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/zed_and_ginger/downloads/v0_3_0/"/>
+    <link rel="alternate" href="http://spooner.github.com/games/zed_and_ginger/releases/v0_3_0/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_3_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
   &lt;li&gt;[Source only for OS X/Linux] - not released.&lt;/li&gt;
@@ -84,11 +84,11 @@
 &lt;/ul&gt;</summary>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-07-17:/games/alpha_channel/downloads/v1_2_1/</id>
+    <id>tag:spooner.github.com,2011-07-17:/games/alpha_channel/releases/v1_2_1/</id>
     <title type="html">v1.2.1</title>
     <published>2011-07-17T12:00:00Z</published>
     <updated>2011-07-17T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/downloads/v1_2_1/"/>
+    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/releases/v1_2_1/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.3MB]&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
@@ -108,11 +108,11 @@
 &lt;/ul&gt;</summary>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-06-07:/games/wrath/downloads/v0_1_0/</id>
+    <id>tag:spooner.github.com,2011-06-07:/games/wrath/releases/v0_1_0/</id>
     <title type="html">v0.1.0</title>
     <published>2011-06-07T12:00:00Z</published>
     <updated>2011-06-07T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/wrath/downloads/v0_1_0/"/>
+    <link rel="alternate" href="http://spooner.github.com/games/wrath/releases/v0_1_0/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.5MB]&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;

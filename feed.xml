@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://spooner.github.com/</id>
+  <title>Spooner's News (Blog &amp; releases)</title>
+  <updated>2011-12-02T23:00:00Z</updated>
+  <link rel="alternate" href="http://spooner.github.com/"/>
+  <link rel="self" href="http://spooner.github.com/feed.xml"/>
+  <author>
+    <name>Spooner (Bil Bas)</name>
+    <uri>http://spooner.github.com</uri>
+  </author>
+  <entry>
+    <id>tag:spooner.github.com,2011-12-02:/blog/2011/12/set-up-new-nanoc-generated-website/</id>
+    <title type="html">Set up new nanoc-generated website</title>
+    <published>2011-12-02T23:00:00Z</published>
+    <updated>2011-12-02T23:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/"/>
+    <content type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site. Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasn’t useful as a showcase of my projects and I quite liked the idea of having my own blog. Whether I’ll blog more than once a year or not, is another question.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; seems to be pretty good overall and I think it was a better choice for me than &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;, which I’d used previously (this is because &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; can be used to directly host at &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;, which is good, but it doesn’t support HAML in that usage, which is bad). It isn’t too complicated to set up and I use HAML for layout, kramdown for content and Sass for style quite nicely.&lt;/p&gt;
+
+&lt;p&gt;One thing that dismays me a little with &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; is that you have to manually manage rules for compilation and routing, when it could have much more reasonable defaults set up and a bit more assumption of standard practice.&lt;/p&gt;
+
+&lt;p&gt;I know it is probably not exemplary, but the generator source for this whole site is freely available at &lt;a href="https://github.com/Spooner/spooner.github.com/tree/generator"&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+    <summary type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site. Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasnÔÇÖt useful as a showcase of my projects and I quite liked the idea of having my own blog. Whether IÔÇÖll blog more than once a year or not, is another question.&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <id>tag:spooner.github.com,2011-11-24:/games/alpha_channel/downloads/v1_2_4/</id>
+    <title type="html">v1.2.4</title>
+    <published>2011-11-24T12:00:00Z</published>
+    <updated>2011-11-24T12:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/downloads/v1_2_4/"/>
+    <content type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_WIN32.zip"&gt;Windows executable&lt;/a&gt; [3.2MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [156K]&lt;/li&gt;
+  &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/downloads/v2_1"&gt;v2.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hopefully fixed issue with openal in ocra package (I think - thanks jlnr and dahrkael)&lt;/li&gt;
+  &lt;li&gt;Fixed for ruby 1.9.2&lt;/li&gt;
+  &lt;li&gt;Added message when building OSX if required file is missing.&lt;/li&gt;
+  &lt;li&gt;Updated Windows executable to use Ruby 1.9.3 (should start up faster)&lt;/li&gt;
+  &lt;li&gt;Fixed: Game breaks when paused (pressed ‘P’) or in help (pressed ‘F1’) (Thanks Jwosty)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <summary type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_WIN32.zip"&gt;Windows executable&lt;/a&gt; [3.2MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [156K]&lt;/li&gt;
+  &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/downloads/v2_1"&gt;v2.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+  </entry>
+  <entry>
+    <id>tag:spooner.github.com,2011-08-10:/games/zed_and_ginger/downloads/v0_3_0/</id>
+    <title type="html">v0.3.0</title>
+    <published>2011-08-10T12:00:00Z</published>
+    <updated>2011-08-10T12:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/games/zed_and_ginger/downloads/v0_3_0/"/>
+    <content type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_3_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
+  &lt;li&gt;[Source only for OS X/Linux] - not released.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moved resolution/fullscreen controls into Settings page.&lt;/li&gt;
+  &lt;li&gt;Added effects/music volume sliders in a separate Settings page.&lt;/li&gt;
+  &lt;li&gt;Added particle system and other graphical improvements.&lt;/li&gt;
+  &lt;li&gt;Fixed problem with gaining extra time, which also messing up animations (e.g. of green goo texture or laser movement).&lt;/li&gt;
+  &lt;li&gt;Changed gravity to be more realistic.&lt;/li&gt;
+  &lt;li&gt;Added intro which explains the origin of Zed.&lt;/li&gt;
+  &lt;li&gt;Applied flea collars.&lt;/li&gt;
+  &lt;li&gt;Added 4th level.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <summary type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_3_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
+  &lt;li&gt;[Source only for OS X/Linux] - not released.&lt;/li&gt;
+&lt;/ul&gt;</summary>
+  </entry>
+  <entry>
+    <id>tag:spooner.github.com,2011-07-17:/games/alpha_channel/downloads/v1_2_1/</id>
+    <title type="html">v1.2.1</title>
+    <published>2011-07-17T12:00:00Z</published>
+    <updated>2011-07-17T12:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/downloads/v1_2_1/"/>
+    <content type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://github.com/downloads/Spooner/alpha_channel/alpha_channel_v1_2_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.3MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://github.com/downloads/Spooner/alpha_channel/alpha_channel_v1_2_1_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://github.com/downloads/Spooner/alpha_channel/alpha_channel_v1_2_1_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [155MB]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First improved version after Lumum Dare.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <summary type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://github.com/downloads/Spooner/alpha_channel/alpha_channel_v1_2_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.3MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://github.com/downloads/Spooner/alpha_channel/alpha_channel_v1_2_1_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://github.com/downloads/Spooner/alpha_channel/alpha_channel_v1_2_1_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [155MB]&lt;/li&gt;
+&lt;/ul&gt;</summary>
+  </entry>
+  <entry>
+    <id>tag:spooner.github.com,2011-06-07:/games/wrath/downloads/v0_1_0/</id>
+    <title type="html">v0.1.0</title>
+    <published>2011-06-07T12:00:00Z</published>
+    <updated>2011-06-07T12:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/games/wrath/downloads/v0_1_0/"/>
+    <content type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.5MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [184K]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Changed default online player controls to same as player 1. Reset everyone’s settings to default.&lt;/li&gt;
+  &lt;li&gt;Collects game-play statistics locally (for achievements).&lt;/li&gt;
+  &lt;li&gt;Added achievements and unlocks system.&lt;/li&gt;
+  &lt;li&gt;Added some more sound effects (but nowhere near enough).&lt;/li&gt;
+  &lt;li&gt;Can’t pick up creatures that can hurt you, or the other player, unless they are knocked down first.&lt;/li&gt;
+  &lt;li&gt;Knocked back when hit by a monster, rather than taking damage-over time (fire still burns slowly, however).&lt;/li&gt;
+  &lt;li&gt;Gods love certain sacrifices at any given time, which will net greatly increased favour.&lt;/li&gt;
+  &lt;li&gt;Favour of object currently carried is indicated next to favour bars.&lt;/li&gt;
+  &lt;li&gt;Can set sound volume and window size in options (sorry, no full-screen mode yet).&lt;/li&gt;
+  &lt;li&gt;Added 2 new playable priests.&lt;/li&gt;
+  &lt;li&gt;Added creature spawning (how could I not have put it in yet?) and reduced favour value of most objects.&lt;/li&gt;
+  &lt;li&gt;Containers, such as chests, spawn items if left empty.&lt;/li&gt;
+  &lt;li&gt;Added level under the sea.&lt;/li&gt;
+  &lt;li&gt;Added level in a tech facility (AI &lt;em&gt;are&lt;/em&gt; gods, aren’t they?).&lt;/li&gt;
+  &lt;li&gt;Added level in a desert (reused lighting storm disaster effect, though, until unique one created)&lt;/li&gt;
+  &lt;li&gt;Added level on a moon with radioactive meteors.&lt;/li&gt;
+  &lt;li&gt;Network stats overlay (Ctrl-N).&lt;/li&gt;
+  &lt;li&gt;Poison/growth status effects are not properly synchronised in network play.&lt;/li&gt;
+  &lt;li&gt;Countless other things I forgot to write down.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="significant-issues"&gt;Significant Issues&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Possible to juggle (continually pick up and throw) the other player, so they never get to act.&lt;/li&gt;
+  &lt;li&gt;Possible to get killed by being continually hit into a wall.&lt;/li&gt;
+  &lt;li&gt;Enemies don’t care if they are getting killed in lava, etc.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    <summary type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.5MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [184K]&lt;/li&gt;
+&lt;/ul&gt;</summary>
+  </entry>
+</feed>

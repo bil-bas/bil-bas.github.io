@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/blog/feed.xml</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/blog/tags/nanoc/</loc>
@@ -37,15 +37,19 @@
     <lastmod>2011-12-03</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/feed.xml</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/games/alpha_channel/downloads/v1_1/</loc>
     <lastmod>2011-12-04</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/games/alpha_channel/downloads/v2_1/</loc>
+    <loc>http://spooner.github.com/games/alpha_channel/downloads/v1_2_1/</loc>
     <lastmod>2011-12-04</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/games/alpha_channel/downloads/v2_4/</loc>
+    <loc>http://spooner.github.com/games/alpha_channel/downloads/v1_2_4/</loc>
     <lastmod>2011-12-04</lastmod>
   </url>
   <url>

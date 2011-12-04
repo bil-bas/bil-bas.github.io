@@ -7,6 +7,9 @@
     %meta{ charset: "UTF-8" }
     %meta{ name: "generator", content: "nanoc 3.2.3" }
 
+    %meta{ name: "keywords", content: "ruby game games software development programming ai graphics" }
+    %meta{ name: "description", content: "Spooner's game-making blog and project portfolio, focusing on Ruby development" }
+
     - %w[stylesheet code_highlighting].each do |stylesheet|
       %link{ rel: "stylesheet", type: "text/css", href: "/style/#{stylesheet}.css", media: "screen" }
 
@@ -15,7 +18,8 @@
       - unless @item.home?
         = "- #{@item.title}"
 
-    %link{ href: '/blog/feed.xml', rel: 'alternate', title: "Spooner's Blog", type: 'application/atom+xml' }
+    - if @item[:feed_url]
+      %link{ href: @item[:feed_url], rel: 'alternate', title: "Spooner's #{@item.title}", type: 'application/atom+xml' }
 
   %body
     %header

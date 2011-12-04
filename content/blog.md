@@ -1,6 +1,6 @@
 ---
 title: Blog
-feed_url: feed.xml
+feed_url: /blog/feed.xml
 kind: blog
 count_comments: true
 ---

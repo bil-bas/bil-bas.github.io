@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://spooner.github.com/</id>
   <title>Spooner's Blog</title>
-  <updated>2011-12-02T00:00:00Z</updated>
+  <updated>2011-12-02T23:00:00Z</updated>
   <link rel="alternate" href="http://spooner.github.com/"/>
   <link rel="self" href="http://spooner.github.com/blog/feed.xml"/>
   <author>
@@ -12,8 +12,8 @@
   <entry>
     <id>tag:spooner.github.com,2011-12-02:/blog/2011/12/set-up-new-nanoc-generated-website/</id>
     <title type="html">Set up new nanoc-generated website</title>
-    <published>2011-12-02T00:00:00Z</published>
-    <updated>2011-12-02T00:00:00Z</updated>
+    <published>2011-12-02T23:00:00Z</published>
+    <updated>2011-12-02T23:00:00Z</updated>
     <link rel="alternate" href="http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/"/>
     <content type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site. Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasn’t useful as a showcase of my projects and I quite liked the idea of having my own blog. Whether I’ll blog more than once a year or not, is another question.&lt;/p&gt;
 

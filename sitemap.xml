@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/blog/2011/12/</loc>
     <lastmod>2011-12-04</lastmod>
   </url>
@@ -33,32 +29,72 @@
     <lastmod>2011-12-03</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/blog/</loc>
     <lastmod>2011-12-03</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/favicon.ico</loc>
-    <lastmod>2011-12-03</lastmod>
+    <loc>http://spooner.github.com/games/alpha_channel/downloads/v1_1/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/alpha_channel/downloads/v2_1/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/alpha_channel/downloads/v2_4/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/alpha_channel/downloads/</loc>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/alpha_channel/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/hoops/downloads/v0_1_1/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/hoops/downloads/</loc>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/hoops/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/games/sidney/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <loc>http://spooner.github.com/games/smash_and_grab/downloads/</loc>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/smash_and_grab/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/wrath/downloads/v0_1_0/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/wrath/downloads/</loc>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/wrath/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/zed_and_ginger/downloads/v0_3_0/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/zed_and_ginger/downloads/</loc>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/zed_and_ginger/</loc>
@@ -66,159 +102,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/games/</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/bagpuss_large.png</loc>
-    <lastmod>2011-05-06</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/banner_background.png</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/banner_background_small.png</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/feed-icon-14x14.png</loc>
-    <lastmod>2006-07-27</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/feed-icon-28x28.png</loc>
-    <lastmod>2006-07-27</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/github.png</loc>
-    <lastmod>2011-11-08</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/alpha_channel.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/fidgit.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/flipped.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/hoops.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/sidney.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/smash_and_grab.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/wrath.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/icon/zed_and_ginger.png</loc>
-    <lastmod>2011-11-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/libgosu.png</loc>
-    <lastmod>2011-11-08</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/alpha_channel_122.png</loc>
-    <lastmod>2011-11-23</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/alpha_channel_linux_v1.1.png</loc>
-    <lastmod>2010-08-24</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/hoops_02.png</loc>
-    <lastmod>2011-04-26</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/smash_grab_17_zoc_new_eyes_and_font.png</loc>
-    <lastmod>2011-11-10</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/smash_grab_18_newer_editor.png</loc>
-    <lastmod>2011-11-11</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/wrath-22-volcano-island.png</loc>
-    <lastmod>2011-05-17</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/wrath-30-the_kraken.png</loc>
-    <lastmod>2011-06-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/zed_and_ginger_13-lunch.png</loc>
-    <lastmod>2011-07-27</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/screenshots/zed_and_ginger_17-2-player-cameras.png</loc>
-    <lastmod>2011-08-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/alpha_channel.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/fidgit.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/flipped.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/hoops.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/sidney.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/smash_and_grab.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/wrath.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/small_icon/zed_and_ginger.png</loc>
-    <lastmod>2011-12-02</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/spooner_pixels_large.png</loc>
-    <lastmod>2011-05-06</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/subtitle.png</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/subtitle_small.png</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/tigsource.png</loc>
-    <lastmod>2011-11-08</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/title.png</loc>
-    <lastmod>2011-12-03</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/images/title_small.png</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/</loc>
@@ -226,7 +110,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/fidgit/</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/</loc>
@@ -234,7 +118,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/sitemap.xml</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/style/code_highlighting.css</loc>
@@ -242,11 +126,19 @@
   </url>
   <url>
     <loc>http://spooner.github.com/style/stylesheet.css</loc>
-    <lastmod>2011-12-03</lastmod>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/utilities/flipped/downloads/v0_2_0/</loc>
+    <lastmod>2011-12-04</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/utilities/flipped/downloads/</loc>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/utilities/flipped/</loc>
-    <lastmod>2011-12-02</lastmod>
+    <lastmod>2011-12-04</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/utilities/</loc>

@@ -9,10 +9,6 @@
     <lastmod>2011-12-04</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/blog/feed.xml</loc>
-    <lastmod>2011-12-04</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/blog/tags/nanoc/</loc>
     <lastmod>2011-12-04</lastmod>
   </url>
@@ -34,11 +30,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/blog/</loc>
-    <lastmod>2011-12-04</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/feed.xml</loc>
-    <lastmod>2011-12-04</lastmod>
+    <lastmod>2011-12-05</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/alpha_channel/releases/</loc>
@@ -110,7 +102,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/</loc>
-    <lastmod>2011-12-04</lastmod>
+    <lastmod>2011-12-05</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/fidgit/</loc>
@@ -121,16 +113,12 @@
     <lastmod>2011-12-03</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/releases/feed.xml</loc>
-    <lastmod>2011-12-04</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/releases/</loc>
-    <lastmod>2011-12-04</lastmod>
+    <lastmod>2011-12-05</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/sitemap.xml</loc>
-    <lastmod>2011-12-04</lastmod>
+    <lastmod>2011-12-05</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/style/code_highlighting.css</loc>

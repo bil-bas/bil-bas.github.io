@@ -161,7 +161,9 @@ task :release, :project, :version do |t, args|
 
   base_dir = File.dirname(__FILE__) + '/'
   underscored_project = project.tr " ", "_"
-  type = %w[games libraries utilities].find {|t| File.exists? "#{base_dir}/content/#{t}/#{underscored_project}" }
+  type = %w[games libraries utilities].find {|t| File.exists? "#{base_dir}content/#{t}/#{underscored_project}" }
+  File.read("#{base_dir}content/#{type}/#{underscored_project}.md") =~ /\ntitle: (.*)\n/
+  project_title = $1
   raise "Project name not recognised: #{project}" unless type
 
   release_file = "#{base_dir}content/#{type}/#{underscored_project}/releases/#{version.tr(".", "_")}.md"
@@ -174,7 +176,7 @@ task :release, :project, :version do |t, args|
     file.puts <<END
 ---
 kind: article
-title: #{version}
+title: #{project_title} #{version}
 created_at: #{now}
 ---
 

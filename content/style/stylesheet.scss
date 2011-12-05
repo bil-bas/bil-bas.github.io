@@ -185,7 +185,11 @@ hr {
 @mixin menu_category {
     font-size: $large_font_size;
     margin-bottom: 1em;
-    width: 10em;
+}
+
+@mixin menu_button {
+    border-left: 8px solid $dark_color;
+    padding-left:6px;
 }
 
 nav.menu {
@@ -200,27 +204,35 @@ nav.menu {
             padding-bottom: 1em;
             font-style: italic;
 
-            a {
-                font-size: $normal_font_size;
-            }
+            li {
 
-            .active {
-                font-size: $normal_font_size;
+                a {
+                    font-size: $normal_font_size;
+                }
+                span {
+                    font-size: $normal_font_size;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+
+        li {
+            a {
+                @include menu_button;
+                border-color: $medium_color; // Make transparent unless hovering.
+
+                @include menu_category;
+                text-decoration: none;
+                color: $text_color;
+                &:hover {
+                    border-color: $dark_color;
+                }
+            }
+            span {
+                @include menu_button;
+                @include menu_category;
                 margin-bottom: 1em;
             }
-        }
-
-        a {
-            @include menu_category;
-            text-decoration: none;
-            color: $text_color;
-            &:hover {
-              text-decoration: underline;
-            }
-        }
-        .active {
-            @include menu_category;
-            margin-bottom: 1em;
         }
     }
 }

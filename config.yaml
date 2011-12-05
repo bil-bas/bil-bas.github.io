@@ -66,4 +66,4 @@ base_url: http://spooner.github.com
 posts_per_page: 5
 
 # Order of the base navigation paths. Home always comes first.
-nav_items: ['/blog/', '/releases/', '/games/', '/libraries/', '/utilities/']
+nav_items: ['/about/', '/blog/', '/releases/', '/games/', '/libraries/', '/utilities/']

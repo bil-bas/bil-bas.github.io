@@ -19,7 +19,7 @@
         = "- #{@item.title}"
 
     - if @item[:feed_url]
-      %link{ href: "#{@config[:base_url]}#{@item[:feed_url]}", rel: 'alternate', title: "Spooner's #{@item == home ? "News" : @item.title }", type: 'application/atom+xml' }
+      %link{ href: @item[:feed_url], rel: 'alternate', title: "Spooner's #{@item == home ? "News" : @item.title }", type: 'application/atom+xml' }
 
   %body
     %header

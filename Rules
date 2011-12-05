@@ -13,11 +13,7 @@
 #   item, use the pattern "/about/*/"; "/about/*" will also select the parent,
 #   because "*" matches zero or more characters.
 
-compile '/*/feed/' do
-  filter :erb
-end
-
-compile '/feed/' do
+compile '/*/feed_private/' do
   filter :erb
 end
 
@@ -58,16 +54,8 @@ end
 
 # --------------------------------------------------
 
-route '/blog/feed/' do
-  '/blog/feed.xml'
-end
-
-route '/releases/feed/' do
-  '/releases/feed.xml'
-end
-
-route '/feed/' do
-  '/feed.xml'
+route '/*/feed_private/' do
+  rep.item.identifier + '/index.xml'
 end
 
 route '/blog/_articles/*/' do

@@ -1,6 +1,6 @@
 ---
 title: Blog
-feed_url: /blog/feed.xml
+feed_url: http://feeds.feedburner.com/spooner_blog
 kind: blog
 count_comments: true
 ---

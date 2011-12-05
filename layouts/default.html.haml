@@ -25,11 +25,7 @@
     %header
       %div.banner
         %a{ href: @config[:base_url], title: "Spooner: Ruby addict and maker of games with outrageously large pixels" }
-          %img.banner_left{ src: "/images/spooner_pixels_large.png", alt: "Actual photo of Spooner" }
-          %img.banner_right{ src: "/images/bagpuss_large.png", alt: "Bagpuss" }
-          %img.title{ src: "/images/title.png", alt: "Spooner" }
-          %br/
-          %img.subtitle{ src: "/images/subtitle.png", alt: "Ruby addict and maker of games with outrageously large pixels" }
+          .banner_overlay
 
       - if @item[:feed_url]
         = render 'subscribe', item: @item

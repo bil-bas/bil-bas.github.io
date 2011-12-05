@@ -65,37 +65,18 @@ img {
     background-repeat: repeat-x;
     background-color: $light_color;
     border: $image_border;
-    text-align: center;
     padding: 0;
 
-    img.title {
-        margin-top: 21px;
-        margin-bottom: 0;
-        width: 397px;
-        height: 64px;
-    }
-    img.subtitle {
-        margin-top: 13px;
-        width: 500px;
-        height: 12px;
-    }
-    img.banner_left {
-        background: black;
-        float: left;
-        border-right: $image_border;
-        width: 128px;
-        height: 128px;
-    }
-    img.banner_right {
-        background: black;
-        float: right;
-        border-left: $image_border;
-        width: 128px;
-        height: 128px;
-    }
     a {
         text-decoration: none;
-        color: black;
+
+        .banner_overlay {
+            background-image: url(/images/banner_overlay.png);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
     }
 }
 
@@ -144,20 +125,20 @@ span.release_date {
         margin-left: -12em;
         position: relative;
         right: 100%;
-    }
 
-    .contents_wrap {
-        float: left;
-        width: 50%;
-        position: relative;
-        left: 50%;
-        padding-bottom: 1em;
-    }
+        .contents_wrap {
+            float: left;
+            width: 50%;
+            position: relative;
+            left: 50%;
+            padding-bottom: 1em;
 
-    .contents {
-        margin: 0 1em 0 12em;
-        overflow: hidden;
-     }
+            .contents {
+                margin: 0 1em 0 12em;
+                overflow: hidden;
+            }
+        }
+    }
 
     .sidebar {
         float: right;

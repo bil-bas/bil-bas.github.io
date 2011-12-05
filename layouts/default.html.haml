@@ -31,6 +31,9 @@
           %br/
           %img.subtitle{ src: "/images/subtitle.png", alt: "Ruby addict and maker of games with outrageously large pixels" }
 
+      - if @item[:feed_url]
+        = render 'subscribe', item: @item
+
       %div.breadcrumbs
         - if %w[/ /errors/404/].include? @item.identifier
           &nbsp;

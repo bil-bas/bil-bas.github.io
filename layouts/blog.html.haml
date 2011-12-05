@@ -2,8 +2,6 @@
 
 %h1= link_to @item.title, @item.permalink
 
-= render 'subscribe', item: @item
-
 - sorted_articles.take(@config[:posts_per_page]).each do |item|
   = render 'article', item: item, summary: true
 

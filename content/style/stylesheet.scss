@@ -247,6 +247,10 @@ nav.menu {
 }
 
 .feed {
+    float:right;
+    margin-top: .25em;
+    margin-bottom: 1em;
+    font-size: $small_font_size;
     a {
         text-decoration: none;
     }
@@ -257,12 +261,11 @@ nav.menu {
 }
 
 .breadcrumbs {
-    clear: both;
     margin-bottom: 1em;
 
     a {
         text-decoration: none;
-        font-size: 80%;
+        font-size: $small_font_size;
     }
 }
 

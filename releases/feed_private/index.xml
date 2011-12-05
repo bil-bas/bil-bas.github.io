@@ -31,11 +31,6 @@
   &lt;li&gt;Fixed: Game breaks when paused (pressed ‘P’) or in help (pressed ‘F1’) (Thanks Jwosty)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <summary type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_WIN32.zip"&gt;Windows executable&lt;/a&gt; [3.2MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [156K]&lt;/li&gt;
-  &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/releases/v1_2_1"&gt;v1.2.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
   </entry>
   <entry>
     <id>tag:spooner.github.com,2011-08-10:/games/zed_and_ginger/releases/v0_3_0/</id>
@@ -61,10 +56,6 @@
   &lt;li&gt;Added 4th level.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <summary type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_3_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
-  &lt;li&gt;[Source only for OS X/Linux] - not released.&lt;/li&gt;
-&lt;/ul&gt;</summary>
   </entry>
   <entry>
     <id>tag:spooner.github.com,2011-07-17:/games/alpha_channel/releases/v1_2_1/</id>
@@ -84,11 +75,6 @@
   &lt;li&gt;First improved version after Lumum Dare.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <summary type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.3MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [155MB]&lt;/li&gt;
-&lt;/ul&gt;</summary>
   </entry>
   <entry>
     <id>tag:spooner.github.com,2011-06-07:/games/wrath/releases/v0_1_0/</id>
@@ -134,11 +120,6 @@
   &lt;li&gt;Enemies don’t care if they are getting killed in lava, etc.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <summary type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.5MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [184K]&lt;/li&gt;
-&lt;/ul&gt;</summary>
   </entry>
   <entry>
     <id>tag:spooner.github.com,2011-05-17:/games/hoops/releases/v0_1_1/</id>
@@ -159,10 +140,5 @@
   &lt;li&gt;Added an OS X executable.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-    <summary type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v0_1_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [6.1MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v0_1_1a_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [13MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v0_1_1_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [3.8MB]&lt;/li&gt;
-&lt;/ul&gt;</summary>
   </entry>
 </feed>

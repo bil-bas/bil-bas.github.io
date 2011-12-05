@@ -41,11 +41,11 @@ hr { background-color: #c9e6b6; width: 80%; }
 
 nav.menu ul { list-style: none; padding-left: 0.75em; font-style: normal; }
 nav.menu ul ul { list-style: none; padding-left: 0; padding-bottom: 1em; font-style: italic; }
-nav.menu ul ul a { font-size: 100%; }
-nav.menu ul ul .active { font-size: 100%; margin-bottom: 1em; }
-nav.menu ul a { font-size: 120%; margin-bottom: 1em; width: 10em; text-decoration: none; color: black; }
-nav.menu ul a:hover { text-decoration: underline; }
-nav.menu ul .active { font-size: 120%; margin-bottom: 1em; width: 10em; margin-bottom: 1em; }
+nav.menu ul ul li a { font-size: 100%; }
+nav.menu ul ul li span { font-size: 100%; margin-bottom: 1em; }
+nav.menu ul li a { border-left: 8px solid #1a3009; padding-left: 6px; border-color: #a8c595; font-size: 120%; margin-bottom: 1em; text-decoration: none; color: black; }
+nav.menu ul li a:hover { border-color: #1a3009; }
+nav.menu ul li span { border-left: 8px solid #1a3009; padding-left: 6px; font-size: 120%; margin-bottom: 1em; margin-bottom: 1em; }
 
 .posted { font-style: italic; font-size: 80%; }
 
@@ -53,10 +53,11 @@ nav.menu ul .active { font-size: 120%; margin-bottom: 1em; width: 10em; margin-b
 
 .footer { text-align: center; margin-top: 2em; padding: 0.25em 0; font-style: italic; clear: both; float: left; background-color: #a8c595; width: 100%; }
 
+.feed { float: right; margin-top: .25em; margin-bottom: 1em; font-size: 80%; }
 .feed a { text-decoration: none; }
 .feed img { width: 14px; height: 14px; }
 
-.breadcrumbs { clear: both; margin-bottom: 1em; }
+.breadcrumbs { margin-bottom: 1em; }
 .breadcrumbs a { text-decoration: none; font-size: 80%; }
 
 img.app_icon { width: 128px; height: 128px; float: right; margin-left: 2em; margin-right: 1em; margin-bottom: 2em; margin-top: -16px; }

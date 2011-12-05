@@ -60,6 +60,10 @@ class Nanoc3::Item
     (Hpricot(compiled_content).at("p|ul") || "(empty article)").to_s
   end
 
+  def feed_summary
+    excerptize strip_html(compiled_content), length: 140
+  end
+
   def home?; identifier == '/'; end
 
   def hidden?; self[:is_hidden]; end

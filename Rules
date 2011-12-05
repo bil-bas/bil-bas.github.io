@@ -55,7 +55,7 @@ end
 # --------------------------------------------------
 
 route '/*/feed_private/' do
-  rep.item.identifier + '/index.xml'
+  rep.item.identifier + 'index.xml'
 end
 
 route '/blog/_articles/*/' do

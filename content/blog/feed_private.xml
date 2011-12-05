@@ -1,10 +1,16 @@
+---
+title: Spooner's Blog
+is_hidden: true
+feed_url: http://feeds.feedburner.com/spooner_blog
+author_name: Spooner (Bil Bas)
+is_dynamic: true
+---
+
 <%=
     # Feed of BLOG only (no RELEASES)
 
     atom_feed(
-        title: "Spooner's Blog",
-        author_name: "Spooner (Bil Bas)",
         author_uri: @config[:base_url],
-        excerpt_proc: lambda {|article| article.summary }
+        #excerpt_proc: lambda {|article| article.feed_summary }
     )
  %>

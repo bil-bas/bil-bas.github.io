@@ -24,33 +24,53 @@ pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
 
 span.date { float: right; }
 
-span.release_date { float: right; margin-top: 0.75em; margin-right: 0.5em; }
+span.release_date { float: right; font-size: 80%; margin-top: 0.75em; margin-right: 0.5em; }
 
 .col_mask { position: relative; clear: both; float: left; width: 100%; overflow: hidden; }
 
-.right_menu .col_left { float: left; width: 200%; margin-left: -12em; position: relative; right: 100%; }
+.right_menu .col_left { float: left; width: 200%; margin-left: -220px; position: relative; right: 100%; }
 .right_menu .col_left .contents_wrap { float: left; width: 50%; position: relative; left: 50%; padding-bottom: 1em; }
-.right_menu .col_left .contents_wrap .contents { margin: 0 1em 0 12em; overflow: hidden; }
-.right_menu .sidebar { float: right; width: 12em; position: relative; left: 13em; margin: 0 0 4em 32px; background-color: #a8c595; }
-.right_menu .sidebar hr { height: 5px; border: none; width: 9.5em; margin: 0.5em 0 1em 0; padding: 0; }
+.right_menu .col_left .contents_wrap .contents { margin: 0 1em 0 220px; overflow: hidden; }
+.right_menu .sidebar { float: right; width: 220px; position: relative; left: 220px; margin: 0 0 4em 32px; }
 
 hr { background-color: #c9e6b6; width: 80%; }
 
-nav.menu ul { list-style: none; padding-left: 0.75em; font-style: normal; }
-nav.menu ul ul { list-style: none; padding-left: 0; padding-bottom: 1em; font-style: italic; }
-nav.menu ul ul li a { font-size: 100%; }
-nav.menu ul ul li span { font-size: 100%; margin-bottom: 1em; }
-nav.menu ul li a { border-left: 8px solid #1a3009; padding-left: 6px; border-color: #a8c595; font-size: 120%; margin-bottom: 1em; text-decoration: none; color: black; }
-nav.menu ul li a:hover { border-color: #1a3009; }
-nav.menu ul li span { border-left: 8px solid #1a3009; padding-left: 6px; font-size: 120%; margin-bottom: 1em; margin-bottom: 1em; }
+nav.tag_cloud h3 { margin: 2em 0 0 0.75em; }
+nav.tag_cloud h3 a { text-decoration: none; color: black; }
+nav.tag_cloud h3 a:hover { text-decoration: underline; }
+nav.tag_cloud ul { list-style: none; padding-left: 1em; }
+nav.tag_cloud ul li { display: inline; padding-right: 0.5em; padding-bottom: 0.5em; }
+nav.tag_cloud ul li a { text-decoration: none; color: black; }
+nav.tag_cloud ul li a:hover { text-decoration: underline; }
+
+nav.archives h3 { margin: 2em 0 0 0.75em; }
+nav.archives h3 a { text-decoration: none; color: black; }
+nav.archives h3 a:hover { text-decoration: underline; }
+nav.archives ul { list-style: none; padding-left: 1em; }
+nav.archives ul li { font-style: italic; }
+nav.archives ul li a { text-decoration: none; color: black; }
+nav.archives ul li a:hover { text-decoration: underline; }
+
+nav.menu { background-color: #a8c595; padding-top: 0.25em; margin-top: 0; }
+nav.menu hr { background-color: #a8c595; height: 1em; border: none; margin: 0 0 0 20px; padding: 0; }
+nav.menu ul { list-style: none; padding: 0; }
+nav.menu ul li ul { list-style: none; padding-left: 0; }
+nav.menu ul li ul li { font-style: italic; }
+nav.menu ul li ul li a { font-size: 100%; }
+nav.menu ul li ul li span.active { font-size: 100%; }
+nav.menu ul li a { border-left: 8px solid #1a3009; padding: 3px 0 3px 6px; margin: 0; margin-left: 20px; width: 180px; display: inline; float: left; border-color: #a8c595; font-size: 120%; text-decoration: none; color: black; }
+nav.menu ul li a:hover { border-color: #1a3009; background: #c9e6b6; }
+nav.menu ul li span.active { border-left: 8px solid #1a3009; padding: 3px 0 3px 6px; margin: 0; margin-left: 20px; width: 180px; display: inline; float: left; font-size: 120%; }
 
 .posted { font-style: italic; font-size: 80%; }
 
-.tags { font-size: 80%; margin-top: .5em; }
+.tags { font-size: 80%; margin-top: 0.5em; }
+.tags a { text-decoration: none; color: black; }
+.tags a:hover { text-decoration: underline; }
 
 .footer { text-align: center; margin-top: 2em; padding: 0.25em 0; font-style: italic; clear: both; float: left; background-color: #a8c595; width: 100%; }
 
-.feed { float: right; margin-top: .25em; margin-bottom: 1em; font-size: 80%; }
+.feed { float: right; font-size: 80%; }
 .feed a { text-decoration: none; }
 .feed img { width: 14px; height: 14px; }
 
@@ -63,9 +83,10 @@ img.app_icon_small { width: 16px; height: 16px; margin: 0; }
 
 .comments { float: right; }
 
-nav.navbar { clear: both; }
+span.active { color: #587545; }
+
 nav.navbar ul { list-style: none; padding: 0; }
-nav.navbar ul li { display: inline; padding: 0; margin: 0 0.25em 0 0; }
-nav.navbar ul li a { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; text-decoration: none; background-color: #c9e6b6; color: black; }
+nav.navbar ul li { display: inline; padding: 0; margin: 0 0.5em 0 0; }
+nav.navbar ul li a { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; text-decoration: none; background-color: #c9e6b6; color: black; }
 nav.navbar ul li a:hover { background-color: #e9ffd6; }
-nav.navbar ul li span { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; background-color: #daf8c9; }
+nav.navbar ul li span { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; background-color: #daf8c9; }

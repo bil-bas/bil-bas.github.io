@@ -10,11 +10,11 @@
     <uri>http://spooner.github.com</uri>
   </author>
   <entry>
-    <id>tag:spooner.github.com,2011-12-02:/blog/2011/12/set-up-new-nanoc-generated-website/</id>
+    <id>tag:spooner.github.com,2011-12-02:/2011/12/set-up-new-nanoc-generated-website/</id>
     <title type="html">Set up new nanoc-generated website</title>
     <published>2011-12-02T23:00:00Z</published>
     <updated>2011-12-02T23:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/blog/2011/12/set-up-new-nanoc-generated-website/"/>
+    <link rel="alternate" href="http://spooner.github.com/2011/12/set-up-new-nanoc-generated-website/"/>
     <content type="html">&lt;p&gt;I started using &lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; in order to generate a bit more interesting site. Previously, I just had a single, hand-generated page, which was fine as a list of links really, but it wasn’t useful as a showcase of my projects and I quite liked the idea of having my own blog. Whether I’ll blog more than once a year or not, is another question.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://nanoc.stoneship.org/"&gt;nanoc&lt;/a&gt; seems to be pretty good overall and I think it was a better choice for me than &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;, which I’d used previously (this is because &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; can be used to directly host at &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;, which is good, but it doesn’t support HAML in that usage, which is bad). It isn’t too complicated to set up and I use HAML for layout, kramdown for content and Sass for style quite nicely.&lt;/p&gt;

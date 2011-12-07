@@ -10,11 +10,11 @@
     <uri>http://spooner.github.com</uri>
   </author>
   <entry>
-    <id>tag:spooner.github.com,2011-11-24:/games/alpha_channel/releases/v1_2_4/</id>
+    <id>tag:spooner.github.com,2011-11-24:/2011/11/alpha-channel-v1_2_4/</id>
     <title type="html">Alpha Channel v1.2.4</title>
     <published>2011-11-24T12:00:00Z</published>
     <updated>2011-11-24T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/releases/v1_2_4/"/>
+    <link rel="alternate" href="http://spooner.github.com/2011/11/alpha-channel-v1_2_4/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_WIN32.zip"&gt;Windows executable&lt;/a&gt; [3.2MB]&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_4_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [156K]&lt;/li&gt;
@@ -33,11 +33,28 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-08-10:/games/zed_and_ginger/releases/v0_3_0/</id>
+    <id>tag:spooner.github.com,2011-11-04:/2011/11/fidgit-v0_1_9/</id>
+    <title type="html">Fidgit v0.1.9</title>
+    <published>2011-11-04T12:00:00Z</published>
+    <updated>2011-11-04T12:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/2011/11/fidgit-v0_1_9/"/>
+    <content type="html">&lt;ul&gt;
+  &lt;li&gt;Ruby gem release: &lt;code&gt;gem install fidgit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fixed some minor issues.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:spooner.github.com,2011-08-10:/2011/08/zed-and-ginger-v0_3_0/</id>
     <title type="html">Zed and Ginger v0.3.0</title>
     <published>2011-08-10T12:00:00Z</published>
     <updated>2011-08-10T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/zed_and_ginger/releases/v0_3_0/"/>
+    <link rel="alternate" href="http://spooner.github.com/2011/08/zed-and-ginger-v0_3_0/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_3_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
   &lt;li&gt;[Source only for OS X/Linux] - not released.&lt;/li&gt;
@@ -58,11 +75,11 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-07-17:/games/alpha_channel/releases/v1_2_1/</id>
+    <id>tag:spooner.github.com,2011-07-17:/2011/07/alpha-channel-v1_2_1/</id>
     <title type="html">Alpha Channel v1.2.1</title>
     <published>2011-07-17T12:00:00Z</published>
     <updated>2011-07-17T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/alpha_channel/releases/v1_2_1/"/>
+    <link rel="alternate" href="http://spooner.github.com/2011/07/alpha-channel-v1_2_1/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.3MB]&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
@@ -77,11 +94,11 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-06-07:/games/wrath/releases/v0_1_0/</id>
+    <id>tag:spooner.github.com,2011-06-07:/2011/06/wrath-v0_1_0/</id>
     <title type="html">Wrath v0.1.0</title>
     <published>2011-06-07T12:00:00Z</published>
     <updated>2011-06-07T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/wrath/releases/v0_1_0/"/>
+    <link rel="alternate" href="http://spooner.github.com/2011/06/wrath-v0_1_0/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.5MB]&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
@@ -118,26 +135,6 @@
   &lt;li&gt;Possible to juggle (continually pick up and throw) the other player, so they never get to act.&lt;/li&gt;
   &lt;li&gt;Possible to get killed by being continually hit into a wall.&lt;/li&gt;
   &lt;li&gt;Enemies don’t care if they are getting killed in lava, etc.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:spooner.github.com,2011-05-17:/games/hoops/releases/v0_1_1/</id>
-    <title type="html">Hoops v0.1.1</title>
-    <published>2011-05-17T12:00:00Z</published>
-    <updated>2011-05-17T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/games/hoops/releases/v0_1_1/"/>
-    <content type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v0_1_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [6.1MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v0_1_1a_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [13MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v0_1_1_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [3.8MB]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tiny tweak to the code.&lt;/li&gt;
-  &lt;li&gt;Added an OS X executable.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

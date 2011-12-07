@@ -1,12 +1,11 @@
 usage       'release project [options]'
 aliases     :rel
 summary     'Makes a release post'
-description 'This command does a lot of stuff. I really mean a lot.'
+description <<END
+Creates a release post for a project version, optionally with tags.
 
-flag   :h, :help,  'show help for this command' do |value, cmd|
-  puts cmd.help
-  exit 0
-end
+    > nanoc release Alpha Channel -v 1.2.4
+END
 
 option :t, :tags, 'specify tags', :argument => :optional
 option :v, :version, 'specify version', :argument => :required
@@ -18,7 +17,7 @@ run do |opts, args, cmd|
   end
 
   tags = (opts[:tags] || "").downcase.split /[,;.]/
-  underscored_project = args.map(&:strip).join "_"
+  underscored_project = args.map(&:strip).join("_").downcase
   version = opts[:version]
 
   now = Time.now

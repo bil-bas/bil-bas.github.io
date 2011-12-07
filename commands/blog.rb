@@ -1,13 +1,11 @@
 usage       'blog title [options]'
 #aliases     :blo
 summary     'Makes a blog post'
-description 'This command does a lot of stuff. I really mean a lot.'
+description <<END
+Creates a blog post, optionally with tags.
 
-flag   :h, :help,  'show help for this command' do |value, cmd|
-  puts cmd.help
-  exit 0
-end
-
+    > nanoc blog I really like pies -t pies,pastry
+END
 option :t, :tags, 'specify tags', :argument => :optional
 
 run do |opts, args, cmd|

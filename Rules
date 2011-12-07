@@ -99,3 +99,83 @@ end
 # -----------------------------------
 # Ugly is required, lest code blocks don't indent properly.
 layout '*', :haml, format: :html5, ugly: true
+
+# -------------------------------
+preprocess do
+  def create_years_and_months
+    puts "** Generating years and months"
+    months, years = Set.new, Set.new
+    sorted_articles.each do |article|
+
+      unless years.include? article.year
+        puts "Creating #{article.year}"
+        years << article.year
+
+        @items << Nanoc3::Item.new(
+            "",
+            {
+                title: article.year.to_s,
+                layout: 'year',
+                count_comments: true,
+                extension: 'md',
+            },
+            "/#{article.year}/"
+        )
+      end
+
+      unless months.include? [article.year, article.month]
+        months << [article.year, article.month]
+
+        month_name = Date.new(2000, article.month, 1).strftime("%B")
+
+        puts "Creating #{month_name} #{article.year}"
+
+        @items << Nanoc3::Item.new(
+            "",
+            {
+                title: month_name,
+                full_title: "#{month_name} #{article.year}",
+                layout: 'month',
+                count_comments: true,
+                extension: 'md',
+            },
+            "/#{article.year}/#{article.month.to_s.rjust(2, '0')}/"
+        )
+      end
+    end
+  end
+
+  # http://www.h3rald.com/articles/take-back-your-site-with-nanoc/
+  def create_tags
+    puts "** Generating tags"
+
+    # Collect tag and page data
+    tags = Hash.new 0
+
+    sorted_articles.each do |article|
+      article.attributes[:tags].each {|t| tags[t] += 1 }
+    end
+
+    # Write pages.
+    tags.each_pair do |tag, count|
+      puts "Creating: #{tag} (#{count})"
+      @items << Nanoc3::Item.new(
+          '',
+          {
+              title: tag,
+              layout: 'tag',
+              count: count,
+              count_comments: true,
+              extension: 'md',
+          },
+          "/tags/#{tag}/"
+      )
+    end
+
+    puts
+  end
+
+  create_tags
+  create_years_and_months
+end
+

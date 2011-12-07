@@ -1,5 +1,5 @@
 ---
-kind: project
+layout: project
 title: Zed and Ginger
 status: Beta / CURRENT PROJECT
 ---

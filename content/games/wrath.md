@@ -1,5 +1,5 @@
 ---
-kind: project
+layout: project
 title: Wrath
 status: Beta
 ---

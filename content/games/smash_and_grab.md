@@ -1,5 +1,5 @@
 ---
-kind: project
+layout: project
 title: Smash and Grab
 status: Alpha / CURRENT PROJECT
 ---

@@ -1,6 +1,6 @@
 ---
 title: Releases
-kind: releases
+layout: releases
 count_comments: true
 ---
 

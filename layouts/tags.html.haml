@@ -5,4 +5,4 @@
 %div
   - @item.children.sort_by(&:identifier).each do |tag|
     %ul.tags
-      %li= link_to "#{tag.title} (#{tag[:count]})", tag.path
+      %li= link_to "#{tag.title} (#{tag[:count]})", tag

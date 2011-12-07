@@ -2,9 +2,9 @@
 
 - if @summary
   %summary
-    %h2= link_to @item.title, @item.path
+    %h2= link_to @item.title, @item
 
-    %a{href: @item.path}
+    = link_to @item.path do
       %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
 
     %p.status= @item[:status]

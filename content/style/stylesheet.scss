@@ -5,6 +5,7 @@ $medium_color: #a8c595;
 $light_color: #c9e6b6;
 
 $text_color: #000;
+$active_text_color: #587545;
 $inverted_text_color: #daf8c9;
 
 $hover_color: #e9ffd6;
@@ -15,7 +16,7 @@ $large_font_size: 120%;
 $normal_font_size: 100%;
 $small_font_size: 80%;
 
-$sidebar_width: 12em;
+$sidebar_width: 220px;
 
 body {
     background-color: $background_color;
@@ -101,13 +102,14 @@ pre {
 }
 
 span.date {
-  float: right;
+    float: right;
 }
 
 span.release_date {
-  float: right;
-  margin-top: 0.75em;
-  margin-right: 0.5em;
+      float: right;
+      font-size: $small_font_size;
+      margin-top: 0.75em;
+      margin-right: 0.5em;
 }
 
 .col_mask {
@@ -122,7 +124,7 @@ span.release_date {
     .col_left {
         float: left;
         width: 200%;
-        margin-left: -12em;
+        margin-left: -$sidebar_width;
         position: relative;
         right: 100%;
 
@@ -134,7 +136,7 @@ span.release_date {
             padding-bottom: 1em;
 
             .contents {
-                margin: 0 1em 0 12em;
+                margin: 0 1em 0 $sidebar_width;
                 overflow: hidden;
             }
         }
@@ -144,60 +146,119 @@ span.release_date {
         float: right;
         width: $sidebar_width;
         position: relative;
-        left: 13em;
+        left: $sidebar_width;
         margin: 0 0 4em 32px;
-        background-color: $medium_color;
-
-        hr {
-            height: 5px;
-            border: none;
-            width: $sidebar_width - 2.5em;
-            margin: 0.5em 0 1em 0;
-            padding: 0;
-        }
     }
 }
 
 hr {
-  background-color: $light_color;
-  width: 80%;
+    background-color: $light_color;
+    width: 80%;
+}
+
+@mixin underline_on_hover {
+    text-decoration: none;
+    color: $text_color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+nav.tag_cloud {
+    h3 {
+       margin: 2em 0 0 0.75em;
+       a {
+            @include underline_on_hover;
+       }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 1em;
+
+        li {
+            display: inline;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+
+            a {
+                @include underline_on_hover;
+            }
+        }
+    }
+}
+
+nav.archives {
+    h3 {
+        margin: 2em 0 0 0.75em;
+        a {
+            @include underline_on_hover;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 1em;
+
+        li {
+            font-style: italic;
+            a {
+                @include underline_on_hover;
+            }
+        }
+    }
 }
 
 @mixin menu_category {
     font-size: $large_font_size;
-    margin-bottom: 1em;
 }
 
 @mixin menu_button {
     border-left: 8px solid $dark_color;
-    padding-left:6px;
+    padding: 3px 0 3px 6px;
+    margin: 0;
+    margin-left: 20px;
+    width: $sidebar_width - 40px;
+    display: inline;
+    float: left;
 }
 
 nav.menu {
+    background-color: $medium_color;
+    padding-top: 0.25em;
+    margin-top: 0;
+
+    hr {
+        // Used as a bit of a hack
+        background-color: $medium_color;
+        height: 1em;
+        border: none;
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
+
     ul {
         list-style: none;
-        padding-left: 0.75em;
-        font-style: normal;
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-            padding-bottom: 1em;
-            font-style: italic;
-
-            li {
-
-                a {
-                    font-size: $normal_font_size;
-                }
-                span {
-                    font-size: $normal_font_size;
-                    margin-bottom: 1em;
-                }
-            }
-        }
+        padding: 0;
 
         li {
+            ul {
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    font-style: italic;
+
+                    a {
+                        font-size: $normal_font_size;
+                    }
+                    span.active {
+                        font-size: $normal_font_size;
+                    }
+                }
+            }
+
             a {
                 @include menu_button;
                 border-color: $medium_color; // Make transparent unless hovering.
@@ -205,14 +266,15 @@ nav.menu {
                 @include menu_category;
                 text-decoration: none;
                 color: $text_color;
+
                 &:hover {
                     border-color: $dark_color;
+                    background: $light_color;
                 }
             }
-            span {
+            span.active {
                 @include menu_button;
                 @include menu_category;
-                margin-bottom: 1em;
             }
         }
     }
@@ -224,8 +286,12 @@ nav.menu {
 }
 
 .tags {
+    //font-size: $small_font_size;
+    a {
+         @include underline_on_hover;
+    }
     font-size: $small_font_size;
-    margin-top: .5em;
+    margin-top: 0.5em;
 }
 
 .footer {
@@ -241,8 +307,6 @@ nav.menu {
 
 .feed {
     float:right;
-    margin-top: .25em;
-    margin-bottom: 1em;
     font-size: $small_font_size;
     a {
         text-decoration: none;
@@ -287,16 +351,19 @@ img.app_icon_small {
 .more {
 }
 
+span.active {
+  color: $active_text_color;
+}
+
 @mixin navbar_button {
     border: 3px solid $medium_color;
     padding: .25em 1.5em;
     width: 10em;
     text-align: center;
+    white-space: nowrap;
 }
 
 nav.navbar {
-    clear: both;
-
     ul {
         list-style: none;
         padding: 0;
@@ -304,7 +371,7 @@ nav.navbar {
         li {
             display: inline;
             padding: 0;
-            margin: 0 0.25em 0 0;
+            margin: 0 0.5em 0 0;
 
 
             a {

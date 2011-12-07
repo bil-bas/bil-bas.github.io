@@ -1,6 +1,8 @@
 -# A month of posts
 
-%h1= link_to "#{@item.title} #{@item.parent.title}", @item.permalink
+%h1= link_to @item.full_title, @item.permalink
 
-- sorted_articles.select {|i| i.month == @item.name.to_i }.each do |article|
-  = render 'article', item: article, summary: true
+- @item.identifier =~ %r[^/(\d{4})/]
+- year = $1.to_i
+- sorted_news.select {|i| i.year == year and i.month == @item.name.to_i }.each do |article|
+  = render article.layout, item: article, summary: true

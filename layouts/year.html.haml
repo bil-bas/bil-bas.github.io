@@ -2,5 +2,5 @@
 
 %h1= link_to @item.title, @item.permalink
 
-- sorted_articles.select {|i| i.year.to_s == @item.name }.each do |article|
-  = render 'article', item: article, summary: true
+- sorted_news.select {|i| i.year.to_s == @item.name }.each do |article|
+  = render article.layout, item: article, summary: true

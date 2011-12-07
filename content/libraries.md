@@ -1,4 +1,4 @@
 ---
 title: Libraries
-kind: projects
+layout: projects
 ---

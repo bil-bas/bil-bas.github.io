@@ -2,7 +2,7 @@
 
 %h2 Comments
 
-%div#disqus_thread
+#disqus_thread
 
   :javascript
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -21,6 +21,6 @@
     Please enable JavaScript to view the
     = link_to "comments powered by Disqus.", "http://disqus.com/?ref_noscript"
 
-%a{ href: "http://disqus.com", class: "dsq-brlink"}
+= link_to "http://disqus.com", class: "dsq-brlink" do
   blog comments powered by
   %span.logo-disqus Disqus

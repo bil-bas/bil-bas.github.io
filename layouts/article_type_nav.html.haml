@@ -1,0 +1,7 @@
+%nav.navbar{ style: "font-size: 80%" }
+  %ul
+    - base_page = (@item == home or @item.identifier == "/archives/") ? @item : @item.parent
+    - blog = base_page.children.find {|i| i.identifier == "#{base_page.path}blog/" }
+    - releases = base_page.children.find {|i| i.identifier == "#{base_page.path}releases/" }
+    - [base_page, blog, releases].each do |archive|
+      %li= link_to_unless_current archive[:nav_title], archive

@@ -3,5 +3,5 @@
 %h1= link_to "Tag: #{@item.title}", @item.permalink
 
 %div
-  - items_with_tag(@item.title).sort_by {|a| a[:created_at] }.reverse_each do |article|
-    = render 'article', item: article, summary: true
+  - items_with_tag(@item.name).sort_by {|a| a[:created_at] }.reverse_each do |article|
+    = render article.layout, item: article, summary: true

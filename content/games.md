@@ -1,4 +1,4 @@
 ---
 title: Games
-kind: projects
+layout: projects
 ---

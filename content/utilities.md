@@ -1,4 +1,4 @@
 ---
 title: Utilities
-kind: projects
+layout: projects
 ---

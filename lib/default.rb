@@ -26,11 +26,15 @@ def nav_items
 end
 
 def sorted_news
-  @sorted_news ||= (articles + sorted_releases).sort_by {|i| i.created_at }.reverse
+  sorted_articles
 end
 
 def sorted_releases
-  @sorted_releases ||= @items.select {|i| i.identifier =~ %r[^/\w+/\w+/releases/v] }.sort_by {|i| i.created_at }.reverse
+  @sorted_releases ||= sorted_articles.select {|i| i.identifier =~ %r[^/\w+/\w+/releases/v] }
+end
+
+def sorted_blog_posts
+  @sorted_blog_posts ||= sorted_articles.select {|i| i.identifier =~ %r[^/blog/_posts/] }
 end
 
 def breadcrumbs_for_path(path)
@@ -52,6 +56,76 @@ end
 
 def breadcrumbs_trail
   breadcrumbs_for_path(@item.path)
+end
+
+def sorted_years
+  @sorted_years ||= begin
+    years = @items.select {|i| i.identifier =~ %r[^/\d{4}/$] }
+    years.sort_by(&:name).reverse
+  end
+end
+
+def sorted_months
+  @sorted_months ||= begin
+    months = @items.select {|i| i.identifier =~ %r[^(?:/\d{4}/\d{2}/)] }
+    months.sort_by {|m| [m.parent.name, m.name] }.reverse
+  end
+end
+
+def news_by_month
+  @news_by_month ||= begin
+    sorted_months.map do |month|
+      year_num, month_num = month.parent.name.to_i, month.name.to_i
+      [month, sorted_news.select {|i| i.year == year_num and i.month == month_num }]
+    end
+  end
+end
+
+def link_to(*args, &block)
+  if block_given?
+    raise ArgumentError, "Block version requires: path_or_rep, [attributes]" unless (1..2).include? args.size
+    link_to capture(&block), *args
+
+  else
+    raise ArgumentError, "Non-block version requires: text, path_or_rep, [attributes]" unless (2..3).include? args.size
+
+    # Find path
+    text, path_or_rep, attributes = *args
+    attributes ||= {}
+
+    path = path_or_rep.is_a?(String) ? path_or_rep : path_or_rep.path
+
+    # Join attributes
+    attributes = attributes.inject('') do |memo, (key, value)|
+      memo + key.to_s + '="' + h(value) + '" '
+    end
+
+    # Create link
+    "<a #{attributes}href=\"#{path}\">#{text}</a>"
+  end
+end
+
+def link_to_unless_current(*args, &block)
+  if block_given?
+    raise ArgumentError, "Block version requires: path_or_rep, [attributes]" unless (1..2).include? args.size
+    link_to capture(&block), *args
+
+  else
+    raise ArgumentError, "Non-block version requires: text, path_or_rep, [attributes]" unless (2..3).include? args.size
+
+    # Find path
+    text, path_or_rep, attributes = *args
+    attributes ||= {}
+
+    path = path_or_rep.is_a?(String) ? path_or_rep : path_or_rep.path
+
+    if @item_rep and @item_rep.path == path
+      # Create message
+      "<span class=\"active\" title=\"You're here.\">#{text}</span>"
+    else
+      link_to(text, path_or_rep, attributes)
+    end
+  end
 end
 
 class Nanoc3::Item
@@ -79,9 +153,15 @@ class Nanoc3::Item
   def permalink; "http://spooner.github.com#{path}"; end
   def title; self[:title]; end
   def kind; self[:kind]; end
+  def layout; self[:layout]; end
+
+  # Page heading, as opposed to nav link.
+  def full_title
+    self[:full_title] || title
+  end
 
   def article?; kind == 'article'; end
-  def project?; kind == 'project'; end
+  def blog_post?; article? and layout == 'blog_post'; end
 
   def name; File.basename(identifier); end
 end

@@ -1,0 +1,22 @@
+-# posts one-line descriptions for every post.
+
+%h1= link_to @item.full_title, @item.permalink
+
+= render 'subscribe'
+
+= render 'article_type_nav'
+
+- sorted_years.each do |year|
+  %h2= link_to year.title, year.path
+
+  - previous_month = nil
+  %ul
+    - send(@item[:archives]).select {|i| i.year.to_s == year.name }.each do |article|
+      - if article.month != previous_month
+        - previous_month = article.month
+        %h3= link_to article.month_name, File.dirname(article.path)
+
+      %li
+        = link_to article.title, article, title: excerptize(strip_html(article.summary), length: 140)
+        \-
+        = pretty_date article.created_at

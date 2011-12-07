@@ -1,5 +1,5 @@
 ---
-kind: project
+layout: project
 title: Alpha Channel
 status: Complete
 ---

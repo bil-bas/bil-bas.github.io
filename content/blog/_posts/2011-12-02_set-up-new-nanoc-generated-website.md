@@ -1,5 +1,6 @@
 ---
 kind: article
+layout: blog_post
 title: Set up new nanoc-generated website
 created_at: 2011-12-02 23:00:00 +0000
 tags: [ 'nanoc', 'website', 'ruby' ]

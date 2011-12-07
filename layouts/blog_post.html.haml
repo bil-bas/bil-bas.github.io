@@ -3,14 +3,14 @@
 - if @summary
   %summary
     %span.release_date Posted #{pretty_date @item.created_at}
-    %h2= link_to @item.title, @item.path
+    %h2= link_to @item.title, @item
 
     = @item.summary
 
     .comments
-      %a{ href: "#{@item.path}#disqus_thread", "data-disqus-identifier" => "#{@item.name}"} Comments
+      = link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => @item.name
     .more
-      = link_to "Read more...", @item.path
+      = link_to "Read more...", @item
 
 - else
   %article
@@ -21,7 +21,7 @@
     = yield
 
 
-.tags Tags: #{@site.tags_for(@item, base_url: '/blog/tags/')}
+.tags Tags: #{@site.tags_for(@item, base_url: '/tags/')}
 
 - unless @summary
-  = render "comments", item: @item, comment_id: @item.name
+  = render "comments", comment_id: @item.name

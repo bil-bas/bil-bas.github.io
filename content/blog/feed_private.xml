@@ -12,5 +12,6 @@ is_dynamic: true
     atom_feed(
         author_uri: @config[:base_url],
         #excerpt_proc: lambda {|article| article.feed_summary }
+        articles: sorted_blog_posts
     )
  %>

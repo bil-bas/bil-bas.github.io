@@ -4,4 +4,4 @@
   = link_to @item.title, @item.permalink
 
 - @item.children.sort_by {|item| item.title.downcase }.each do |item|
-  = render 'project', item: item, summary: true
+  = render item.layout, item: item, summary: true

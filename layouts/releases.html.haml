@@ -3,4 +3,4 @@
 %h1=link_to "#{ @item.parent.title } - #{ @item.title }", @item.permalink
 
 - @item.children.reverse_each do |release|
-  = render 'release', item: release, summary: true
+  = render release.layout, item: release, summary: true

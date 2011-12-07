@@ -1,4 +1,4 @@
 ---
 title: Tags
-kind: tags
+layout: tags
 ---

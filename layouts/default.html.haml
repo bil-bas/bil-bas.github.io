@@ -23,34 +23,31 @@
 
   %body
     %header
-      %div.banner
-        %a{ href: @config[:base_url], title: "Spooner: Ruby addict and maker of games with outrageously large pixels" }
+      .banner
+        = link_to @config[:base_url], title: "Spooner: Ruby addict and maker of games with outrageously large pixels" do
           .banner_overlay
 
-      - if @item[:feed_url]
-        = render 'subscribe', item: @item
-
-      %div.breadcrumbs
-        - if %w[/ /errors/404/].include? @item.identifier
+      .breadcrumbs
+        - if @item.identifier == '/errors/404/'
           &nbsp;
         - else
           = breadcrumbs_trail.map {|crumb| link_to(crumb.title, crumb.rep_named(:default)) }.join(" &raquo; ")
 
-      = render 'navbar', item: @item
+      = render 'navbar'
 
 
     %div{ class: "col_mask right_menu" }
-      %div.col_left
-        %div.contents_wrap
-          %div.contents= yield
+      .col_left
+        .contents_wrap
+          .contents= yield
 
-        %div.sidebar
-          = render 'menu', item: @item
+        .sidebar
+          = render 'menu'
 
     %footer
-      = render 'navbar', item: @item
+      = render 'navbar'
 
-      %div.footer
+      .footer
         %p
           Today, Spooner was brought to you by the letter 'oo'<br />
           = "Bil Bas --- bil dot bagpuss {at} gmail dot com"

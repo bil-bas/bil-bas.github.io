@@ -1,7 +1,0 @@
--# News page showing the latest posts.
-
-%h1= link_to 'News', @item.permalink
-
-- sorted_news.take(@config[:posts_per_page]).each do |item|
-  = render item.kind, item: item, summary: true
-

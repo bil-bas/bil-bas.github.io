@@ -10,6 +10,7 @@ GEM
     nanoc3 (3.2.3)
       cri (~> 2.0)
     nokogiri (1.5.0-x86-mingw32)
+    sass (3.1.11)
     w3c_validators (1.2)
       json
       nokogiri
@@ -23,4 +24,5 @@ DEPENDENCIES
   hpricot (~> 0.8.5)
   kramdown (~> 0.13.3)
   nanoc3 (~> 3.2.3)
+  sass (~> 3.1.11)
   w3c_validators (~> 1.2)

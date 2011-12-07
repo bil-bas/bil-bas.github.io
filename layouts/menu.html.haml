@@ -41,6 +41,6 @@
 
   %ul
     - news_by_month.each do |month, articles|
-      %li= link_to_unless_current "#{month.full_title} (#{articles.count})", month
+      %li= link_to_unless_current "#{month.full_title} (#{articles.count})", month, title: articles.map(&:title).join("\n")
 
 

@@ -157,6 +157,7 @@ class Nanoc3::Item
   def article?; path =~ %r[^/\d{4}/\d{2}/[^/]+/$]; end
   def project?; identifier =~ %r[^/(?:games|libraries|utilities)/[^/]+/$]; end
   def blog_post?; article? and layout == 'blog_post'; end
+  def release?; article? and layout == 'release'; end
 
   def name; File.basename(identifier); end
 

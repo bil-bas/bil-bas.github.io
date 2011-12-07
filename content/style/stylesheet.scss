@@ -18,6 +18,16 @@ $small_font_size: 80%;
 
 $sidebar_width: 220px;
 
+
+@mixin underline_on_hover {
+    text-decoration: none;
+    color: $text_color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
 body {
     background-color: $background_color;
     font-family: Helvetica,Arial,FreeSans;
@@ -105,11 +115,18 @@ span.date {
     float: right;
 }
 
+summary {
+  clear: both;
+}
+
 span.release_date {
-      float: right;
-      font-size: $small_font_size;
-      margin-top: 0.75em;
-      margin-right: 0.5em;
+    float: right;
+    font-size: $small_font_size;
+    margin-top: 0.75em;
+    margin-right: 0.5em;
+    a {
+        @include underline_on_hover;
+    }
 }
 
 .col_mask {
@@ -156,14 +173,6 @@ hr {
     width: 80%;
 }
 
-@mixin underline_on_hover {
-    text-decoration: none;
-    color: $text_color;
-
-    &:hover {
-      text-decoration: underline;
-    }
-}
 
 nav.tag_cloud {
     h3 {
@@ -283,6 +292,9 @@ nav.menu {
 .posted {
   font-style: italic;
   font-size: $small_font_size;
+  a {
+     @include underline_on_hover;
+  }
 }
 
 .tags {
@@ -332,10 +344,7 @@ img.app_icon {
     width: 128px;
     height: 128px;
     float: right;
-    margin-left: 2em;
-    margin-right: 1em;
-    margin-bottom: 2em;
-    margin-top: -16px;
+    margin: 0 0 2em 2em;
 }
 
 img.app_icon_small {

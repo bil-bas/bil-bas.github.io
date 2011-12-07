@@ -1,13 +1,28 @@
 -# A project (e.g. a game)
 
+- last_release = @item.children.find {|i| i.name == 'releases' }.children.last
+- if last_release
+  - latest_version = last_release.title.split(" ").last
+  - updated_link = link_to "Updated #{pretty_date last_release.created_at}", last_release
+  - latest_version_link = link_to latest_version, last_release
+
+- status = latest_version_link ? latest_version_link : "Unreleased"
+- status += " (#{@item[:status]})"
+
 - if @summary
   %summary
+    %span.release_date
+      - if updated_link
+        = updated_link
+      - else
+        Unreleased
+
     %h2= link_to @item.title, @item
 
     = link_to @item.path do
       %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
 
-    %p.status= @item[:status]
+    %p.status= status
 
     = @item.summary
 
@@ -19,7 +34,9 @@
 
     %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
 
-    %p.status= @item[:status]
+    %p.posted= updated_link
+
+    %p.status= status
 
     = yield
 

@@ -71,7 +71,7 @@ route '/blog/_posts/*/' do
 end
 
 route '/*/*/releases/*/' do
-  "/#{item.year}/#{item.month.to_s.rjust(2, '0')}/#{item.full_title.tr(' ', '-')}/index.html"
+  "/#{item.year}/#{item.month.to_s.rjust(2, '0')}/#{item.full_title.downcase.tr(' .', '-_')}/index.html"
 end
 
 route '/sitemap/' do

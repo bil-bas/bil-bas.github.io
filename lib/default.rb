@@ -160,8 +160,25 @@ class Nanoc3::Item
     self[:full_title] || title
   end
 
-  def article?; kind == 'article'; end
+  def article?; path =~ %r[^/\d{4}/\d{2}/[^/]+/$]; end
+  def project?; identifier =~ %r[^/(?:games|libraries|utilities)/[^/]+/$]; end
   def blog_post?; article? and layout == 'blog_post'; end
 
   def name; File.basename(identifier); end
+
+  def meta_keywords
+    if layout == 'articles'
+      "ruby game games software development programming ai graphics"
+    elsif article?
+      self[:tags].join " "
+    end
+  end
+
+  def meta_description
+    if layout == 'articles'
+      "Spooner's game-making blog and project portfolio, focusing on Ruby development"
+    else
+      nil
+    end
+  end
 end

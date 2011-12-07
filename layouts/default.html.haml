@@ -7,8 +7,10 @@
     %meta{ charset: "UTF-8" }
     %meta{ name: "generator", content: "nanoc 3.2.3" }
 
-    %meta{ name: "keywords", content: "ruby game games software development programming ai graphics" }
-    %meta{ name: "description", content: "Spooner's game-making blog and project portfolio, focusing on Ruby development" }
+    - if @item.meta_keywords
+      %meta{ name: "keywords", content: @item.meta_keywords }
+    - if @item.meta_description
+      %meta{ name: "description", content: @item.meta_description }
 
     - %w[stylesheet code_highlighting].each do |stylesheet|
       %link{ rel: "stylesheet", type: "text/css", href: "/style/#{stylesheet}.css", media: "screen" }
@@ -16,7 +18,7 @@
     %title
       Spooner
       - unless @item.home?
-        = "- #{@item.title}"
+        = "- #{@item.full_title}"
 
     - if @item[:feed_url]
       %link{ href: @item[:feed_url], rel: 'alternate', title: "Spooner's #{@item == home ? "News" : @item.title }", type: 'application/atom+xml' }

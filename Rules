@@ -31,7 +31,8 @@ compile '*' do
   else
     case item[:extension]
       when 'md'
-        filter :kramdown
+        # Filter through kramdown without generating heading IDs.
+        filter :kramdown, :auto_ids => false
 
         if item.layout
           layout item.layout
@@ -41,8 +42,7 @@ compile '*' do
         layout 'default'
 
         if item.article?
-          filter :colorize_syntax,
-              colorizers: { ruby: :coderay }
+          filter :colorize_syntax, colorizers: { ruby: :coderay }
         end
 
       when 'html.haml'
@@ -104,44 +104,57 @@ layout '*', :haml, format: :html5, ugly: true
 preprocess do
   def create_years_and_months
     puts "** Generating years and months"
-    months, years = Set.new, Set.new
+
+    # year => latest mtime of articles in that year
+    years =  Hash.new  {|h, k| h[k] = Time.new 0 }
+    # [year, month] => latest mtime of articles in that month
+    months = Hash.new {|h, k| h[k] = Time.new 0 }
+
     sorted_articles.each do |article|
+      year, month = article.year, article.month
 
-      unless years.include? article.year
-        puts "Creating #{article.year}"
-        years << article.year
-
-        @items << Nanoc3::Item.new(
-            "",
-            {
-                title: article.year.to_s,
-                layout: 'year',
-                count_comments: true,
-                extension: 'md',
-            },
-            "/#{article.year}/"
-        )
+      if article.mtime > years[year]
+        years[year] = article.mtime
       end
 
-      unless months.include? [article.year, article.month]
-        months << [article.year, article.month]
-
-        month_name = Date.new(2000, article.month, 1).strftime("%B")
-
-        puts "Creating #{month_name} #{article.year}"
-
-        @items << Nanoc3::Item.new(
-            "",
-            {
-                title: month_name,
-                full_title: "#{month_name} #{article.year}",
-                layout: 'month',
-                count_comments: true,
-                extension: 'md',
-            },
-            "/#{article.year}/#{article.month.to_s.rjust(2, '0')}/"
-        )
+      if article.mtime > months[[year, month]]
+        months[[year, month]] = article.mtime
       end
+    end
+
+    years.each_pair do |year, mtime|
+      puts "Creating #{year}"
+
+      @items << Nanoc3::Item.new(
+          "",
+          {
+              title: year.to_s,
+              layout: 'year',
+              count_comments: true,
+              extension: 'md',
+              mtime: mtime,
+          },
+          "/#{year}/"
+      )
+    end
+
+    months.each_pair do |(year, month), mtime|
+      month_name = Date.new(2000, month, 1).strftime("%B")
+
+      puts "Creating #{month_name} #{year}"
+
+      @items << Nanoc3::Item.new(
+          "",
+          {
+              title: month_name,
+              full_title: "#{month_name} #{year}",
+              layout: 'month',
+              count_comments: true,
+              extension: 'md',
+              mtime: mtime,
+          },
+          "/#{year}/#{month.to_s.rjust(2, '0')}/"
+      )
     end
   end
 
@@ -150,23 +163,32 @@ preprocess do
     puts "** Generating tags"
 
     # Collect tag and page data
-    tags = Hash.new 0
+    # tag_name => { :count, :mtime }
+    tags = Hash.new {|h, k| h[k] = { count: 0, mtime: Time.new(0)} }
 
     sorted_articles.each do |article|
-      article.attributes[:tags].each {|t| tags[t] += 1 }
+      article.attributes[:tags].each do |tag|
+
+        tags[tag][:count] += 1
+
+        if article.mtime > tags[tag][:mtime]
+          tags[tag][:mtime] = article.mtime
+        end
+      end
     end
 
     # Write pages.
-    tags.each_pair do |tag, count|
-      puts "Creating: #{tag} (#{count})"
+    tags.each_pair do |tag, data|
+      puts "Creating: #{tag} (#{data[:count]})"
       @items << Nanoc3::Item.new(
           '',
           {
               title: tag,
               layout: 'tag',
-              count: count,
+              count: data[:count],
               count_comments: true,
               extension: 'md',
+              mtime: data[:mtime],
           },
           "/tags/#{tag}/"
       )

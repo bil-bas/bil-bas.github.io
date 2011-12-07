@@ -35,16 +35,22 @@ task "create:years_and_months" do
 
   base_dir = File.dirname(__FILE__) + "/"
 
-  articles_dir = File.expand_path('content/articles', base_dir)
-  FileUtils.rmtree articles_dir if File.exists?(articles_dir)
-  FileUtils.mkdir_p articles_dir
+  articles_dir = File.expand_path('content/', base_dir)
+  Dir["#{articles_dir}/*"].each do |year_dir|
+    next unless year_dir =~ /\d{4}$/
+    puts "Deleting #{year_dir.sub(base_dir, '')}/"
+    FileUtils.rmtree year_dir if File.exists?(year_dir)
+    FileUtils.mkdir_p year_dir
+  end
+
+  puts
 
   site.items.each do |article|
     next unless article.article?
     year_filename = File.join(articles_dir, "#{article.year}/index.md")
     unless File.exists? year_filename
       FileUtils.mkdir_p File.dirname year_filename
-      puts "Creating #{year_filename.sub(base_dir, '')}"
+      puts "Creating #{year_filename.sub(base_dir, '')} (#{article.year})"
       File.open(year_filename, "w") do |file|
         file.write <<END
 ---
@@ -61,7 +67,7 @@ END
     unless File.exists? month_filename
       FileUtils.mkdir_p File.dirname month_filename
       month_name = Date.new(2000, article.month, 1).strftime("%B")
-      puts "Creating #{month_filename.sub(base_dir, '')} (#{month_name})"
+      puts "Creating #{month_filename.sub(base_dir, '')} (#{month_name} #{article.year})"
       File.open(month_filename, "w") do |file|
         file.write <<END
 ---
@@ -110,7 +116,7 @@ end
 def write_tag_page(tag_dir, tag, count)
   dir = File.dirname(__FILE__) + '/'
   tag_file = File.join(tag_dir, "#{tag}.md")
-  puts "Created: #{tag_file.sub(dir, '')}"
+  puts "Created: #{tag_file.sub(dir, '')} (#{count})"
 
   File.open(tag_file, "w") do |file|
     file.puts <<END

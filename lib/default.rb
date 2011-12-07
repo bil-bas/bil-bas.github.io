@@ -59,17 +59,11 @@ def breadcrumbs_trail
 end
 
 def sorted_years
-  @sorted_years ||= begin
-    years = @items.select {|i| i.identifier =~ %r[^/\d{4}/$] }
-    years.sort_by(&:name).reverse
-  end
+  @sorted_years ||= home.children.select {|i| i.identifier =~ %r[^/\d{4}/$] }.reverse
 end
 
 def sorted_months
-  @sorted_months ||= begin
-    months = @items.select {|i| i.identifier =~ %r[^(?:/\d{4}/\d{2}/)] }
-    months.sort_by {|m| [m.parent.name, m.name] }.reverse
-  end
+  @sorted_months ||= sorted_years.inject([]) { |m, y| m.push *y.children }.reverse
 end
 
 def news_by_month

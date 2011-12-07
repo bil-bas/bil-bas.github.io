@@ -64,7 +64,7 @@ def sorted_years
 end
 
 def sorted_months
-  @sorted_months ||= sorted_years.inject([]) { |m, y| m.push *y.children }.reverse
+  @sorted_months ||= sorted_years.inject([]) { |m, y| m.push *y.children.reverse }
 end
 
 def news_by_month

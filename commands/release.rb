@@ -90,7 +90,4 @@ END
   end
 
   puts "Created releases index: #{releases_file.sub(base_dir, '')}"
-
-  system "rake create:tags"
-  system "rake create:years_and_months"
 end

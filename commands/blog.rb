@@ -42,7 +42,4 @@ END
   end
 
   puts "Blogged: #{blog_file.sub(base_dir, '')} with tags #{tags}"
-
-  system "rake create:tags"
-  system "rake create:years_and_months"
 end

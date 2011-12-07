@@ -21,7 +21,7 @@
   &lt;li&gt;For OS X, the last release was &lt;a href="/games/alpha_channel/releases/v1_2_1"&gt;v1.2.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Hopefully fixed issue with openal in ocra package (I think - thanks jlnr and dahrkael)&lt;/li&gt;
@@ -42,7 +42,7 @@
   &lt;li&gt;Ruby gem release: &lt;code&gt;gem install fidgit&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Fixed some minor issues.&lt;/li&gt;
@@ -60,7 +60,7 @@
   &lt;li&gt;[Source only for OS X/Linux] - not released.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Moved resolution/fullscreen controls into Settings page.&lt;/li&gt;
@@ -86,7 +86,7 @@
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [155MB]&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;First improved version after Lumum Dare.&lt;/li&gt;
@@ -105,7 +105,7 @@
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [184K]&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="changelog"&gt;Changelog&lt;/h2&gt;
+&lt;h2&gt;Changelog&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Changed default online player controls to same as player 1. Reset everyone’s settings to default.&lt;/li&gt;
@@ -129,7 +129,7 @@
   &lt;li&gt;Countless other things I forgot to write down.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id="significant-issues"&gt;Significant Issues&lt;/h2&gt;
+&lt;h2&gt;Significant Issues&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Possible to juggle (continually pick up and throw) the other player, so they never get to act.&lt;/li&gt;

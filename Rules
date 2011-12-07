@@ -139,7 +139,7 @@ preprocess do
     end
 
     months.each_pair do |(year, month), mtime|
-      month_name = Date.new(2000, month, 1).strftime("%B")
+      month_name = Date::MONTHNAMES[month]
 
       puts "Creating #{month_name} #{year}"
 

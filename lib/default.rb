@@ -1,12 +1,11 @@
 # All files in the 'lib' directory will be loaded
 # before nanoc starts compiling.
 
-require 'date'
 require 'hpricot'
 
 def pretty_date(date)
   return "bad date" unless date
-  date.strftime("%A, %e %B %Y")
+  date.strftime("%A, #{date.mday.ordinal} %B %Y")
 end
 
 # Needed so we get a trailing /
@@ -122,6 +121,16 @@ def link_to_unless_current(*args, &block)
   end
 end
 
+class Fixnum
+  def ordinal
+    if (10...20).include?(self) then
+      self.to_s + 'th'
+    else
+      self.to_s + %w{th st nd rd th th th th th th}[self % 10]
+    end
+  end
+end
+
 class Nanoc3::Item
   def summary
     # Just include the first paragraph (article) or list (release).
@@ -138,7 +147,7 @@ class Nanoc3::Item
 
   def year; self[:created_at].year; end
   def month; self[:created_at].month; end
-  def month_name; Date.new(2000, month, 1).strftime("%B"); end
+  def month_name; Date::MONTHNAMES[month]; end
   def day; self[:created_at].day; end
 
   def created_at; self[:created_at] || raise(path); end

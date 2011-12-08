@@ -116,7 +116,15 @@ def link_to_unless_current(*args, &block)
 
     if @item_rep and @item_rep.path == path
       # Create message
-      "<span class=\"active\" title=\"You're here.\">#{text}</span>"
+      attributes = attributes.inject('') do |memo, (key, value)|
+        if [:title, :class].include? key
+          memo
+        else
+          memo + key.to_s + '="' + h(value) + '" '
+        end
+      end
+
+      "<span #{attributes}class=\"active\" title=\"You're here.\">#{text}</span>"
     else
       link_to(text, path_or_rep, attributes)
     end

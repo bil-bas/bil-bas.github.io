@@ -39,15 +39,15 @@ span.release_date a:hover { text-decoration: underline; }
 
 hr { background-color: #c9e6b6; width: 80%; }
 
-nav.tag_cloud h3 { margin: 2em 0 0 0.75em; }
+nav.tag_cloud h3 { margin: 1em 0 0 0.75em; }
 nav.tag_cloud h3 a { text-decoration: none; color: black; }
 nav.tag_cloud h3 a:hover { text-decoration: underline; }
-nav.tag_cloud ul { list-style: none; padding-left: 1em; }
-nav.tag_cloud ul li { display: inline; padding-right: 0.5em; padding-bottom: 0.5em; }
+nav.tag_cloud ul { background-color: #c9e6b6; list-style: none; padding: 0.5em 0.5em 0.5em 1em; }
+nav.tag_cloud ul li { display: inline; white-space: nowrap; padding-right: 0.5em; padding-bottom: 0.5em; }
 nav.tag_cloud ul li a { text-decoration: none; color: black; }
 nav.tag_cloud ul li a:hover { text-decoration: underline; }
 
-nav.archives h3 { margin: 2em 0 0 0.75em; }
+nav.archives h3 { margin: 1em 0 0 0.75em; }
 nav.archives h3 a { text-decoration: none; color: black; }
 nav.archives h3 a:hover { text-decoration: underline; }
 nav.archives ul { list-style: none; padding-left: 1em; }

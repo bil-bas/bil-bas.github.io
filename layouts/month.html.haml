@@ -7,7 +7,7 @@
 - @item.identifier =~ %r[^/(\d{4})/]
 - year = $1.to_i
 - sorted_news.select {|i| i.year == year and i.month == @item.name.to_i }.each do |article|
-  = render article.layout, item: article, summary: true
+  = render article.layout, item: article, full: true
 
 %hr/
 

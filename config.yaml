@@ -63,7 +63,7 @@ watcher:
 base_url: http://spooner.github.com
 
 # Number of posts to show on news/blog pages.
-posts_per_page: 5
+posts_per_page: 3
 
 # Order of the base navigation paths. Home always comes first.
 nav_items: ['/games/', '/libraries/', '/utilities/', '/about/']

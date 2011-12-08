@@ -34,10 +34,7 @@ compile '*' do
         # Filter through kramdown without generating heading IDs.
         filter :kramdown, :auto_ids => false
 
-        if item.layout
-          layout item.layout
-          snapshot :guts
-        end
+        layout item.layout if item.layout
 
         if item.article?
           filter :colorize_syntax, colorizers: { ruby: :coderay }
@@ -201,6 +198,8 @@ preprocess do
       created identifier
     end
   end
+
+  puts
 
   create_tags
   create_years_and_months

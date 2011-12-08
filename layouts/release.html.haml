@@ -13,7 +13,7 @@
       .more= link_to "Release notes...", @item.path
       .tags Tags: #{tags_for(@item, base_url: '/tags/')}
 
-  - else
+  - elsif block_given?
     %header
       %h1= link_to @item.title, @item.permalink
       %p.posted Released #{pretty_date @item.created_at}
@@ -23,4 +23,15 @@
     %footer
       .tags Tags: #{tags_for(@item, base_url: '/tags/')}
       = render "comments", comment_id: comment_id
+
+  - else
+    %header
+      %span.release_date Released #{pretty_date @item.created_at}
+      %h2= link_to @item.title, @item.permalink
+
+    = @item.compiled_content
+
+    %footer
+      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => comment_id
+      .tags Tags: #{tags_for(@item, base_url: '/tags/')}
 

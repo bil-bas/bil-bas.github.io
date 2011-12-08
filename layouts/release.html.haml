@@ -1,28 +1,26 @@
 - comment_id = "#{@item.parent.parent.name}_#{@item.name}"
 
-- if @summary
-  %summary
-    %span.release_date Released #{pretty_date @item.created_at}
-
-    %h2= link_to @item.title, @item
+%article
+  - if @summary
+    %header
+      %span.release_date Released #{pretty_date @item.created_at}
+      %h2= link_to @item.title, @item
 
     = @item.summary
 
-    .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => comment_id
+    %footer
+      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => comment_id
+      .more= link_to "Release notes...", @item.path
+      .tags Tags: #{tags_for(@item, base_url: '/tags/')}
 
-    = link_to "Release notes...", @item.path
-
-- else
-
-  %article
-    %h1= link_to @item.title, @item.permalink
-
-    %p.posted Released #{pretty_date @item.created_at}
+  - else
+    %header
+      %h1= link_to @item.title, @item.permalink
+      %p.posted Released #{pretty_date @item.created_at}
 
     = yield
 
-.tags Tags: #{@site.tags_for(@item, base_url: '/tags/')}
-
-- unless @summary
-  = render "comments", comment_id: comment_id
+    %footer
+      .tags Tags: #{tags_for(@item, base_url: '/tags/')}
+      = render "comments", comment_id: comment_id
 

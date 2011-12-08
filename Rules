@@ -39,16 +39,12 @@ compile '*' do
           snapshot :guts
         end
 
-        layout 'default'
-
         if item.article?
           filter :colorize_syntax, colorizers: { ruby: :coderay }
         end
-
-      when 'html.haml'
-        filter :haml
-        layout 'default'
     end
+
+    layout 'default'
   end
 end
 
@@ -99,6 +95,7 @@ end
 # -----------------------------------
 # Ugly is required, lest code blocks don't indent properly.
 layout '*', :haml, format: :html5, ugly: true
+
 
 # -------------------------------
 preprocess do
@@ -205,6 +202,7 @@ preprocess do
     puts
   end
 
+  puts
   create_tags
   create_years_and_months
 end

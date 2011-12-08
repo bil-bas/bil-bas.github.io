@@ -10,34 +10,32 @@
 - status += " (#{@item[:status]})"
 
 - if @summary
-  %summary
-    %span.release_date
-      - if updated_link
-        = updated_link
-      - else
-        Unreleased
+  %span.release_date
+    - if updated_link
+      = updated_link
+    - else
+      Unreleased
 
-    %h2= link_to @item.title, @item
+  %h2= link_to @item.title, @item
 
-    = link_to @item.path do
-      %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
-
-    %p.status= status
-
-    = @item.summary
-
-    .more= link_to "More...", @item.path
-
-- else
-  %article.app
-    %h1= link_to @item.title, @item.permalink
-
+  = link_to @item.path do
     %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
 
-    %p.posted= updated_link
+  %p.status= status
 
-    %p.status= status
+  = @item.summary
 
-    = yield
+  .more= link_to "More...", @item.path
+
+- else
+  %h1= link_to @item.title, @item.permalink
+
+  %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
+
+  %p.posted= updated_link
+
+  %p.status= status
+
+  = yield
 
 

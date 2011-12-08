@@ -1,27 +1,25 @@
 -# Single blog post
 
-- if @summary
-  %summary
-    %span.release_date Posted #{pretty_date @item.created_at}
-    %h2= link_to @item.title, @item
+%article
+  - if @summary
+    %header
+      %span.release_date Posted #{pretty_date @item.created_at}
+      %h2= link_to @item.title, @item
 
     = @item.summary
 
-    .comments
-      = link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => @item.name
-    .more
-      = link_to "Read more...", @item
+    %footer
+      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => @item.name
+      .more= link_to "Read more...", @item
+      .tags Tags: #{tags_for(@item, base_url: '/tags/')}
 
-- else
-  %article
-    %h1= link_to @item.title, @item.permalink
-
-    %p.posted= "Posted on #{pretty_date @item.created_at}"
+  - else
+    %header
+      %h1= link_to @item.title, @item.permalink
+      %p.posted Posted on #{pretty_date @item.created_at}
 
     = yield
 
-
-.tags Tags: #{@site.tags_for(@item, base_url: '/tags/')}
-
-- unless @summary
-  = render "comments", comment_id: @item.name
+    %footer
+      .tags Tags: #{tags_for(@item, base_url: '/tags/')}
+      = render "comments", comment_id: @item.name

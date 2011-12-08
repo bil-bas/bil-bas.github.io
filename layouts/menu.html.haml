@@ -15,15 +15,16 @@
                   %img.app_icon_small{alt: project.title, src: "/images/small_icon/#{project.name}.png"}
                   = project.title
 
-    %hr/
+  %hr/
 
+  %ul
     -# External links.
     %li= link_to "Developer profile", "http://github.com/Spooner", title: "Spooner's Github profile"
     %li= link_to "Art", "http://lemonsails.deviantart.com", title: "Spooner's DeviantART portfolio"
     %li= link_to "Videos", "http://www.youtube.com/user/spoonerspon", title: "Spooner's videos"
 
-    -# I don't know why I need this, but otherwise the menu shrinks to nothing.
-    %hr/
+  -# I don't know why I need this, but otherwise the menu shrinks to nothing.
+  %hr/
 
 -# Tag cloud.
 %nav.tag_cloud

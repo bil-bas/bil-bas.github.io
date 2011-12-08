@@ -10,15 +10,15 @@
   %h2= link_to year.title, year.path
 
   - previous_month = nil
-  %ul
-    - send(@item[:archives]).select {|i| i.year.to_s == year.name }.each do |article|
-      - if article.month != previous_month
-        - previous_month = article.month
-        %h3= link_to article.month_name, File.dirname(article.path)
 
-      %li
-        - summary = excerptize(strip_html(article.summary), length: 140)
-        - summary = summary.split(/\s*\n\s*/m).join("\n") if article.release?
-        = link_to article.title, article, title: summary
-        \-
-        = pretty_date article.created_at
+  - send(@item[:archives]).select {|i| i.year.to_s == year.name }.each do |article|
+    - if article.month != previous_month
+      - previous_month = article.month
+      %h3= link_to article.month_name, File.dirname(article.path)
+      %ul
+        %li
+          - summary = excerptize(strip_html(article.summary), length: 140)
+          - summary = summary.split(/\s*\n\s*/m).join("\n") if article.release?
+          = link_to article.title, article, title: summary
+          \-
+          = pretty_date article.created_at

@@ -177,9 +177,16 @@ preprocess do
       end
     end
 
+    # Calculate the relative font size to render the tag at.
+    min_tag_count, max_tag_count = tags.values.map {|d| d[:count] }.minmax
+    tag_count_range = max_tag_count - min_tag_count
+
     # Write pages.
     tags.each_pair do |tag, data|
       puts "Creating: #{tag} (#{data[:count]})"
+
+      # 0 to 1 for smallest to largest.
+      tag_size = (data[:count] - min_tag_count) / tag_count_range.to_f
       @items << Nanoc3::Item.new(
           '',
           {
@@ -188,6 +195,7 @@ preprocess do
               count: data[:count],
               count_comments: true,
               extension: 'md',
+              font_size: tag_size,
               mtime: data[:mtime],
           },
           "/tags/#{tag}/"

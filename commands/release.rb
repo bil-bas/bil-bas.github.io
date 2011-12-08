@@ -16,7 +16,7 @@ run do |opts, args, cmd|
     exit 0
   end
 
-  tags = (opts[:tags] || "").downcase.split /[,;.]/
+  tags = (opts[:tags] || "").downcase.gsub(/[_ ]/, '-').split /[,;.]/
   underscored_project = args.map(&:strip).join("_").downcase
   version = opts[:version]
 

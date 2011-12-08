@@ -176,18 +176,20 @@ hr {
 
 nav.tag_cloud {
     h3 {
-       margin: 2em 0 0 0.75em;
+       margin: 1em 0 0 0.75em;
        a {
             @include underline_on_hover;
        }
     }
 
     ul {
+        background-color: $light_color;
         list-style: none;
-        padding-left: 1em;
+        padding: 0.5em 0.5em 0.5em 1em;
 
         li {
             display: inline;
+            white-space: nowrap;
             padding-right: 0.5em;
             padding-bottom: 0.5em;
 
@@ -200,7 +202,7 @@ nav.tag_cloud {
 
 nav.archives {
     h3 {
-        margin: 2em 0 0 0.75em;
+        margin: 1em 0 0 0.75em;
         a {
             @include underline_on_hover;
         }

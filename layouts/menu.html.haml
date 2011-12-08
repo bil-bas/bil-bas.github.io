@@ -32,7 +32,9 @@
 
   %ul
     - tags.children.each do |tag|
-      %li= link_to_unless_current tag.full_title, tag, title: "x#{tag[:count]}"
+      - title = "Used #{tag[:count] == 1 ? "once" : "#{tag[:count]} times"}"
+      - font_size = (70 + tag[:font_size] * 180).round # 70-250% of regular font size.
+      %li= link_to_unless_current tag.full_title, tag, title: title, style: "font-size:#{font_size}%"
 
 -# Archive.
 %nav.archives

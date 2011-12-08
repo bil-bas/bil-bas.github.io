@@ -13,7 +13,7 @@ run do |opts, args, cmd|
     puts "Post requires a title"
     exit 0
   end
-  tags = (opts[:tags] || "").downcase.split /[,;.]/
+  tags = (opts[:tags] || "").downcase.tr('_ ', '-').split /[,;.]/
   title = args.map(&:strip).join " "
 
   now = Time.now

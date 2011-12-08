@@ -37,7 +37,7 @@ span.release_date a:hover { text-decoration: underline; }
 .right_menu .col_left .contents_wrap .contents { margin: 0 1em 0 220px; overflow: hidden; }
 .right_menu .sidebar { float: right; width: 220px; position: relative; left: 220px; margin: 0 0 4em 32px; }
 
-hr { background-color: #c9e6b6; width: 80%; }
+hr { background-color: #c9e6b6; border: 0; margin: 1em 0 0.5em 0; height: 4px; width: 100%; }
 
 nav.tag_cloud h3 { margin: 1em 0 0 0.75em; }
 nav.tag_cloud h3 a { text-decoration: none; color: black; }
@@ -96,3 +96,6 @@ nav.navbar ul li { display: inline; padding: 0; margin: 0 0.5em 0 0; }
 nav.navbar ul li a { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; text-decoration: none; background-color: #c9e6b6; color: black; }
 nav.navbar ul li a:hover { background-color: #e9ffd6; }
 nav.navbar ul li span { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; background-color: #daf8c9; }
+
+nav.previous_next { height: 1em; }
+nav.previous_next .next { float: right; }

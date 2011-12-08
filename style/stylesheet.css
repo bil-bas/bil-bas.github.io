@@ -94,8 +94,11 @@ span.active { color: #587545; }
 nav.navbar ul { list-style: none; padding: 0; }
 nav.navbar ul li { display: inline; padding: 0; margin: 0 0.5em 0 0; }
 nav.navbar ul li a { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; text-decoration: none; background-color: #c9e6b6; color: black; }
-nav.navbar ul li a:hover { background-color: #e9ffd6; }
+nav.navbar ul li a:hover { background-color: #e9f8d6; }
 nav.navbar ul li span { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; background-color: #daf8c9; }
 
 nav.previous_next { height: 1em; }
 nav.previous_next .next { float: right; }
+
+article { padding: 0 1.5em 1em 1.5em; background-color: #e9f8d6; }
+article header { margin: 0 -1.5em 0 -1.5em; }

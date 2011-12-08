@@ -99,9 +99,11 @@ layout '*', :haml, format: :html5, ugly: true
 
 # -------------------------------
 preprocess do
-  def create_years_and_months
-    puts "** Generating years and months"
+  def created(identifier, duration = nil)
+    Nanoc3::CLI::Logger.instance.file(:high, :create, "output#{identifier}index.html", duration)
+  end
 
+  def create_years_and_months
     # year => latest mtime of articles in that year
     years =  Hash.new  {|h, k| h[k] = Time.new 0 }
     # [year, month] => latest mtime of articles in that month
@@ -120,8 +122,7 @@ preprocess do
     end
 
     years.each_pair do |year, mtime|
-      puts "Creating #{year}"
-
+      identifier = "/#{year}/"
       @items << Nanoc3::Item.new(
           "",
           {
@@ -131,14 +132,15 @@ preprocess do
               extension: 'md',
               mtime: mtime,
           },
-          "/#{year}/"
+          identifier
       )
+
+      created identifier
     end
 
     months.each_pair do |(year, month), mtime|
       month_name = Date::MONTHNAMES[month]
-
-      puts "Creating #{month_name} #{year}"
+      identifier = "/#{year}/#{month.to_s.rjust(2, '0')}/"
 
       @items << Nanoc3::Item.new(
           "",
@@ -150,15 +152,14 @@ preprocess do
               extension: 'md',
               mtime: mtime,
           },
-          "/#{year}/#{month.to_s.rjust(2, '0')}/"
+          identifier
       )
+      created identifier
     end
   end
 
   # http://www.h3rald.com/articles/take-back-your-site-with-nanoc/
   def create_tags
-    puts "** Generating tags"
-
     # Collect tag and page data
     # tag_name => { :count, :mtime }
     tags = Hash.new {|h, k| h[k] = { count: 0, mtime: Time.new(0)} }
@@ -180,10 +181,9 @@ preprocess do
 
     # Write pages.
     tags.each_pair do |tag, data|
-      puts "Creating: #{tag} (#{data[:count]})"
-
       # 0 to 1 for smallest to largest.
       tag_size = (data[:count] - min_tag_count) / tag_count_range.to_f
+      identifier = "/tags/#{tag}/"
       @items << Nanoc3::Item.new(
           '',
           {
@@ -195,14 +195,13 @@ preprocess do
               font_size: tag_size,
               mtime: data[:mtime],
           },
-          "/tags/#{tag}/"
+          identifier
       )
-    end
 
-    puts
+      created identifier
+    end
   end
 
-  puts
   create_tags
   create_years_and_months
 end

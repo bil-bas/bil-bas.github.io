@@ -417,3 +417,11 @@ nav.previous_next {
     }
 }
 
+article {
+    header {
+      margin: 0 -1.5em 0 -1.5em;
+    }
+    padding: 0 1.5em 1em 1.5em;
+    background-color: $hover_color;
+}
+

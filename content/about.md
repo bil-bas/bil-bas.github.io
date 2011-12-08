@@ -2,9 +2,12 @@
 title: About
 ---
 
+<article markdown="1">
 
+<header markdown="1">
 About Spooner
 =============
+</header>
 
 Who am I?
 ---------
@@ -47,8 +50,7 @@ I spent a fair bit of time, a few years ago, modding Arma 1, a game with more th
 * _SPON Scuba_ - Underwater swimming and demolitions
 * And many more!
 
-
-
+</article>
 
 *[ACE]: Advanced Combat Environment
 [ACE]: http://ace.dev-heaven.net/Advanced_Combat_Environment

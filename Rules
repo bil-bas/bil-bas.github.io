@@ -97,7 +97,7 @@ layout '*', :haml, format: :html5, ugly: true
 # -------------------------------
 preprocess do
   def created(identifier, duration = nil)
-    Nanoc3::CLI::Logger.instance.file(:high, :create, "output#{identifier}index.html", duration)
+    Nanoc3::CLI::Logger.instance.file(:high, :create, identifier, duration)
   end
 
   def create_years_and_months
@@ -127,6 +127,8 @@ preprocess do
               layout: 'year',
               count_comments: true,
               extension: 'md',
+              articles_shown: "sorted_news",
+              #filter_articles: true,
               mtime: mtime,
           },
           identifier
@@ -199,9 +201,35 @@ preprocess do
     end
   end
 
+  # A few pages need identical versions filtered by article type.
+  def create_article_filters
+    @items.select {|i| i[:filter_articles] }.each do |index|
+      {
+          blog: ["spooner_blog", "Blog", "sorted_blog_posts"],
+          releases: ["spooner_releases", "Releases", "sorted_releases"]
+      }.each_pair do |filter, (feed, title, articles)|
+        identifier = "#{index.identifier}#{filter}/"
+        @items << Nanoc3::Item.new(
+            index.raw_content,
+            index.attributes.merge(
+              title: title,
+              nav_title: "#{title} only",
+              feed_url: "http://feeds.feedburner.com/#{feed}",
+              articles_shown: articles,
+              filtered: true
+            ),
+            identifier
+        )
+
+        created identifier
+      end
+
+    end
+  end
+
   puts
 
   create_tags
   create_years_and_months
+  create_article_filters
 end
-

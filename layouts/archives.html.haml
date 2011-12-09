@@ -11,7 +11,7 @@
 
   - previous_month = nil
 
-  - send(@item[:archives]).select {|i| i.year.to_s == year.name }.each do |article|
+  - send(@item[:articles_shown]).select {|i| i.year.to_s == year.name }.each do |article|
     - if article.month != previous_month
       - previous_month = article.month
       %h3= link_to article.month_name, File.dirname(article.path)

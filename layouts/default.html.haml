@@ -13,10 +13,7 @@
     - %w[stylesheet code_highlighting].each do |stylesheet|
       %link{ rel: "stylesheet", type: "text/css", href: "/style/#{stylesheet}.css", media: "screen" }
 
-    %title
-      Spooner
-      - unless @item.home?
-        = "- #{@item.full_title}"
+    %title= "Spooner - #{@item.full_title}"
 
     - if @item[:feed_url]
       %link{ href: @item[:feed_url], rel: 'alternate', title: "Spooner's #{@item == home ? "News" : @item.title }", type: 'application/atom+xml' }

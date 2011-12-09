@@ -1,8 +1,8 @@
 %nav.navbar{ style: "font-size: 80%" }
   %ul
-    - base_page = (@item == home or @item.identifier == "/archives/") ? @item : @item.parent
-    - blog = base_page.children.find {|i| i.identifier == "#{base_page.path}blog/" }
-    - releases = base_page.children.find {|i| i.identifier == "#{base_page.path}releases/" }
-    - [base_page, blog, releases].each do |archive|
-      - position = archive == base_page ? "left" : (archive == releases ? "right" : "")
-      %li{ class: "small" }= link_to_unless_current archive[:nav_title], archive, class: position
+    - base_item = @item[:filtered] ? @item.parent : @item
+    - blog = base_item.children.find {|i| i.identifier == "#{base_item.path}blog/" }
+    - releases = base_item.children.find {|i| i.identifier == "#{base_item.path}releases/" }
+    - [base_item, blog, releases].each do |item|
+      - position = item == base_item ? "left" : (item == releases ? "right" : "")
+      %li{ class: "small" }= link_to_unless_current item[:nav_title], item, class: position

@@ -2,9 +2,11 @@
 
 %h1= link_to @item.title, @item.permalink
 
+-#= render 'article_type_nav'
+
 = render 'previous_next', list: sorted_years
 
-- sorted_news.select {|i| i.year.to_s == @item.name }.each do |article|
+- send(@item[:articles_shown]).select {|i| i.year.to_s == @item.name }.each do |article|
   = render article.layout, item: article, summary: true
 
 %hr/

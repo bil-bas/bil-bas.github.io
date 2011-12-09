@@ -32,7 +32,7 @@ compile '*' do
     case item[:extension]
       when 'md'
         # Filter through kramdown without generating heading IDs.
-        filter :kramdown, auto_ids: false
+        filter :kramdown
 
         layout item.layout if item.layout
 

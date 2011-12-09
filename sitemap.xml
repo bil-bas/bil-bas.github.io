@@ -5,24 +5,12 @@
     <lastmod>2011-12-08</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/archives/blog/</loc>
-    <lastmod>2011-12-06</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/archives/</loc>
-    <lastmod>2011-12-06</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/archives/releases/</loc>
-    <lastmod>2011-12-06</lastmod>
+    <lastmod>2011-12-09</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2011/12/set-up-new-nanoc-generated-website/</loc>
     <lastmod>2011-12-07</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/blog/</loc>
-    <lastmod>2011-12-06</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/alpha_channel/releases/</loc>
@@ -85,6 +73,10 @@
     <lastmod>2011-12-08</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/2011/12/zed-and-ginger-v0_4_0/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/games/zed_and_ginger/</loc>
     <lastmod>2011-12-06</lastmod>
   </url>
@@ -94,7 +86,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/</loc>
-    <lastmod>2011-12-06</lastmod>
+    <lastmod>2011-12-09</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/fidgit/releases/</loc>
@@ -110,10 +102,6 @@
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/</loc>
-    <lastmod>2011-12-06</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/releases/</loc>
     <lastmod>2011-12-06</lastmod>
   </url>
   <url>
@@ -149,6 +137,22 @@
     <lastmod>2011-12-06</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/tags/zed-and-ginger/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/game/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/ray/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/ruby/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/tags/nanoc/</loc>
     <lastmod>2011-12-07</lastmod>
   </url>
@@ -157,15 +161,7 @@
     <lastmod>2011-12-07</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/tags/ruby/</loc>
-    <lastmod>2011-12-08</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/tags/alpha-channel/</loc>
-    <lastmod>2011-12-08</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/game/</loc>
     <lastmod>2011-12-08</lastmod>
   </url>
   <url>
@@ -178,14 +174,6 @@
   </url>
   <url>
     <loc>http://spooner.github.com/tags/gem/</loc>
-    <lastmod>2011-12-08</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/zed-and-ginger/</loc>
-    <lastmod>2011-12-08</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/ray/</loc>
     <lastmod>2011-12-08</lastmod>
   </url>
   <url>
@@ -202,7 +190,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/2011/</loc>
-    <lastmod>2011-12-08</lastmod>
+    <lastmod>2011-12-09</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2010/</loc>
@@ -210,7 +198,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/2011/12/</loc>
-    <lastmod>2011-12-07</lastmod>
+    <lastmod>2011-12-09</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2011/11/</loc>
@@ -239,6 +227,22 @@
   <url>
     <loc>http://spooner.github.com/2010/05/</loc>
     <lastmod>2011-12-08</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/archives/blog/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/archives/releases/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/blog/</loc>
+    <lastmod>2011-12-09</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/releases/</loc>
+    <lastmod>2011-12-09</lastmod>
   </url>
 </urlset>
 

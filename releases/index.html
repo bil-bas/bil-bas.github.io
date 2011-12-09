@@ -7,10 +7,7 @@
 <meta content="Spooner's game-making blog and project portfolio, focusing on Ruby development" name='description'>
 <link href='/style/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/code_highlighting.css' media='screen' rel='stylesheet' type='text/css'>
-<title>
-Spooner
-- News
-</title>
+<title>Spooner - News</title>
 <link href='http://feeds.feedburner.com/spooner_releases' rel='alternate' title="Spooner's Releases" type='application/atom+xml'>
 </head>
 <body>
@@ -37,17 +34,52 @@ Spooner
 <div class='contents_wrap'>
 <div class='contents'><h1><a href="http://spooner.github.com/releases/">News</a></h1>
 <div class='feed'>
-<a title="Subscribe to releases xml feed" href="http://feeds.feedburner.com/spooner_releases">Subscribe to releases
-<img alt='XML feed' src='/images/feed-icon-14x14.png'>
+<a title="Subscribe to releases news feed" href="http://feeds.feedburner.com/spooner_releases">Subscribe to releases
+<img alt='News feed' src='/images/feed-icon-14x14.png'>
 </a></div>
 
 <nav class='navbar' style='font-size: 80%'>
 <ul>
 <li class='small'><a class="left" href="/">All news</a></li>
-<li class='small'><a class="" href="/blog/">Blog posts only</a></li>
+<li class='small'><a class="" href="/blog/">Blog only</a></li>
 <li class='small'><span class="right active" title="You're here." >Releases only</span></li>
 </ul>
 </nav>
+
+<article>
+<header>
+<span class='release_date'>Released Friday, 9th December 2011</span>
+<h2><a href="http://spooner.github.com/2011/12/zed-and-ginger-v0_4_0/">Zed and Ginger v0.4.0</a></h2>
+</header>
+<ul>
+  <li><a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_WIN32.zip">Windows executable</a> [4.3MB]</li>
+  <li><a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_SOURCE.zip">OS X/Linux source</a> [1.5MB]</li>
+</ul>
+
+<h3>Changelog</h3>
+
+<ul>
+  <li>Stopped lasers from moving, since they forced the player to stop and destroyed the flow of the game. Now you can jump over low beams and walk under high beams.</li>
+  <li>Added glue on the floor (prevents jumping).</li>
+  <li>Added hyper-speed pill (increases run-speed, but forces you to run as fast as you can).</li>
+  <li>Hover-board now imposes a minimum speed.</li>
+  <li>Added venus fly traps.</li>
+  <li>Added 5th level (The Garden).</li>
+  <li>More clearly showed keyboard shortcuts for buttons by highlighting the key required (shortcuts have always been there, but most people didn’t think of using them).</li>
+  <li>Added tool-tips.</li>
+  <li>Reduced speed of the really fast camera panning when you die.</li>
+  <li>Merged high-scores for each level (get bonus for inversion/hardcore, rather than storing separate scores).</li>
+  <li>Added online high scores for each level.</li>
+  <li>Fixed: Player can move at a different speed to the animation of the conveyor it is moving on.</li>
+  <li>Fixed: Time remaining added to score after death in Hardcore mode.</li>
+  <li>Fixed: Time remaining added at much to great a rate after completion of a course.</li>
+</ul>
+
+<footer>
+<div class='comments'><a data-disqus-identifier="zed_and_ginger_v0_4_0" href="/2011/12/zed-and-ginger-v0_4_0/#disqus_thread">Comments</a></div>
+<div class='tags'>Tags: <a href="/tags/zed-and-ginger/" rel="tag">zed-and-ginger</a>, <a href="/tags/game/" rel="tag">game</a>, <a href="/tags/ray/" rel="tag">ray</a>, <a href="/tags/ruby/" rel="tag">ruby</a></div>
+</footer>
+</article>
 
 <article>
 <header>
@@ -94,35 +126,6 @@ Spooner
 <footer>
 <div class='comments'><a data-disqus-identifier="fidgit_v0_1_9" href="/2011/11/fidgit-v0_1_9/#disqus_thread">Comments</a></div>
 <div class='tags'>Tags: <a href="/tags/fidgit/" rel="tag">fidgit</a>, <a href="/tags/gem/" rel="tag">gem</a>, <a href="/tags/gosu/" rel="tag">gosu</a>, <a href="/tags/ruby/" rel="tag">ruby</a></div>
-</footer>
-</article>
-
-<article>
-<header>
-<span class='release_date'>Released Wednesday, 10th August 2011</span>
-<h2><a href="http://spooner.github.com/2011/08/zed-and-ginger-v0_3_0/">Zed and Ginger v0.3.0</a></h2>
-</header>
-<ul>
-  <li><a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_3_0_WIN32.zip">Windows executable</a> [4.3MB]</li>
-  <li>[Source only for OS X/Linux] - not released.</li>
-</ul>
-
-<h3>Changelog</h3>
-
-<ul>
-  <li>Moved resolution/fullscreen controls into Settings page.</li>
-  <li>Added effects/music volume sliders in a separate Settings page.</li>
-  <li>Added particle system and other graphical improvements.</li>
-  <li>Fixed problem with gaining extra time, which also messing up animations (e.g. of green goo texture or laser movement).</li>
-  <li>Changed gravity to be more realistic.</li>
-  <li>Added intro which explains the origin of Zed.</li>
-  <li>Applied flea collars.</li>
-  <li>Added 4th level.</li>
-</ul>
-
-<footer>
-<div class='comments'><a data-disqus-identifier="zed_and_ginger_v0_3_0" href="/2011/08/zed-and-ginger-v0_3_0/#disqus_thread">Comments</a></div>
-<div class='tags'>Tags: <a href="/tags/zed-and-ginger/" rel="tag">zed-and-ginger</a>, <a href="/tags/game/" rel="tag">game</a>, <a href="/tags/ray/" rel="tag">ray</a>, <a href="/tags/ruby/" rel="tag">ruby</a></div>
 </footer>
 </article>
 
@@ -194,25 +197,26 @@ Flipped
 <nav class='tag_cloud'>
 <h3><a href="/tags/">Tags</a></h3>
 <ul>
-<li><a title="Used 3 times" style="font-size:115%" href="/tags/alpha-channel/">alpha-channel</a></li>
+<li><a title="Used 3 times" style="font-size:110%" href="/tags/alpha-channel/">alpha-channel</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/fidgit/">fidgit</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/flipped/">flipped</a></li>
-<li><a title="Used 6 times" style="font-size:183%" href="/tags/game/">game</a></li>
+<li><a title="Used 7 times" style="font-size:190%" href="/tags/game/">game</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/gem/">gem</a></li>
-<li><a title="Used 6 times" style="font-size:183%" href="/tags/gosu/">gosu</a></li>
+<li><a title="Used 6 times" style="font-size:170%" href="/tags/gosu/">gosu</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/hoops/">hoops</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/nanoc/">nanoc</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/ray/">ray</a></li>
-<li><a title="Used 9 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
+<li><a title="Used 2 times" style="font-size:90%" href="/tags/ray/">ray</a></li>
+<li><a title="Used 10 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/website/">website</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/wrath/">wrath</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/zed-and-ginger/">zed-and-ginger</a></li>
+<li><a title="Used 2 times" style="font-size:90%" href="/tags/zed-and-ginger/">zed-and-ginger</a></li>
 </ul>
 </nav>
 <nav class='archives'>
 <h3><a href="/archives/">Archives</a></h3>
 <ul>
-<li><a title="Set up new nanoc-generated website" href="/2011/12/">December 2011 (1)</a></li>
+<li><a title="Zed and Ginger v0.4.0
+Set up new nanoc-generated website" href="/2011/12/">December 2011 (2)</a></li>
 <li><a title="Alpha Channel v1.2.4
 Fidgit v0.1.9" href="/2011/11/">November 2011 (2)</a></li>
 <li><a title="Zed and Ginger v0.3.0" href="/2011/08/">August 2011 (1)</a></li>

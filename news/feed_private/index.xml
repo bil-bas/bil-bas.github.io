@@ -2,13 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://spooner.github.com/</id>
   <title>Spooner's News</title>
-  <updated>2011-12-02T23:00:00Z</updated>
+  <updated>2011-12-09T17:34:45Z</updated>
   <link rel="alternate" href="http://spooner.github.com/"/>
   <link rel="self" href="http://feeds.feedburner.com/spooner_news"/>
   <author>
     <name>Spooner (Bil Bas)</name>
     <uri>http://spooner.github.com</uri>
   </author>
+  <entry>
+    <id>tag:spooner.github.com,2011-12-09:/2011/12/zed-and-ginger-v0_4_0/</id>
+    <title type="html">Zed and Ginger v0.4.0</title>
+    <published>2011-12-09T17:34:45Z</published>
+    <updated>2011-12-09T17:34:45Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/2011/12/zed-and-ginger-v0_4_0/"/>
+    <content type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_SOURCE.zip"&gt;OS X/Linux source&lt;/a&gt; [1.5MB]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Changelog&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stopped lasers from moving, since they forced the player to stop and destroyed the flow of the game. Now you can jump over low beams and walk under high beams.&lt;/li&gt;
+  &lt;li&gt;Added glue on the floor (prevents jumping).&lt;/li&gt;
+  &lt;li&gt;Added hyper-speed pill (increases run-speed, but forces you to run as fast as you can).&lt;/li&gt;
+  &lt;li&gt;Hover-board now imposes a minimum speed.&lt;/li&gt;
+  &lt;li&gt;Added venus fly traps.&lt;/li&gt;
+  &lt;li&gt;Added 5th level (The Garden).&lt;/li&gt;
+  &lt;li&gt;More clearly showed keyboard shortcuts for buttons by highlighting the key required (shortcuts have always been there, but most people didn’t think of using them).&lt;/li&gt;
+  &lt;li&gt;Added tool-tips.&lt;/li&gt;
+  &lt;li&gt;Reduced speed of the really fast camera panning when you die.&lt;/li&gt;
+  &lt;li&gt;Merged high-scores for each level (get bonus for inversion/hardcore, rather than storing separate scores).&lt;/li&gt;
+  &lt;li&gt;Added online high scores for each level.&lt;/li&gt;
+  &lt;li&gt;Fixed: Player can move at a different speed to the animation of the conveyor it is moving on.&lt;/li&gt;
+  &lt;li&gt;Fixed: Time remaining added to score after death in Hardcore mode.&lt;/li&gt;
+  &lt;li&gt;Fixed: Time remaining added at much to great a rate after completion of a course.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:spooner.github.com,2011-12-02:/2011/12/set-up-new-nanoc-generated-website/</id>
     <title type="html">Set up new nanoc-generated website</title>
@@ -87,25 +118,6 @@
   &lt;li&gt;Added intro which explains the origin of Zed.&lt;/li&gt;
   &lt;li&gt;Applied flea collars.&lt;/li&gt;
   &lt;li&gt;Added 4th level.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:spooner.github.com,2011-07-17:/2011/07/alpha-channel-v1_2_1/</id>
-    <title type="html">Alpha Channel v1.2.1</title>
-    <published>2011-07-17T12:00:00Z</published>
-    <updated>2011-07-17T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2011/07/alpha-channel-v1_2_1/"/>
-    <content type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.3MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_2_1_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [155MB]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Changelog&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;First improved version after Lumum Dare.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

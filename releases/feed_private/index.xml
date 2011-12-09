@@ -2,13 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://spooner.github.com/</id>
   <title>Spooner's Releases</title>
-  <updated>2011-11-24T12:00:00Z</updated>
+  <updated>2011-12-09T17:34:45Z</updated>
   <link rel="alternate" href="http://spooner.github.com/"/>
   <link rel="self" href="http://feeds.feedburner.com/spooner_releases"/>
   <author>
     <name>Spooner (Bil Bas)</name>
     <uri>http://spooner.github.com</uri>
   </author>
+  <entry>
+    <id>tag:spooner.github.com,2011-12-09:/2011/12/zed-and-ginger-v0_4_0/</id>
+    <title type="html">Zed and Ginger v0.4.0</title>
+    <published>2011-12-09T17:34:45Z</published>
+    <updated>2011-12-09T17:34:45Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/2011/12/zed-and-ginger-v0_4_0/"/>
+    <content type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_SOURCE.zip"&gt;OS X/Linux source&lt;/a&gt; [1.5MB]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Changelog&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stopped lasers from moving, since they forced the player to stop and destroyed the flow of the game. Now you can jump over low beams and walk under high beams.&lt;/li&gt;
+  &lt;li&gt;Added glue on the floor (prevents jumping).&lt;/li&gt;
+  &lt;li&gt;Added hyper-speed pill (increases run-speed, but forces you to run as fast as you can).&lt;/li&gt;
+  &lt;li&gt;Hover-board now imposes a minimum speed.&lt;/li&gt;
+  &lt;li&gt;Added venus fly traps.&lt;/li&gt;
+  &lt;li&gt;Added 5th level (The Garden).&lt;/li&gt;
+  &lt;li&gt;More clearly showed keyboard shortcuts for buttons by highlighting the key required (shortcuts have always been there, but most people didn’t think of using them).&lt;/li&gt;
+  &lt;li&gt;Added tool-tips.&lt;/li&gt;
+  &lt;li&gt;Reduced speed of the really fast camera panning when you die.&lt;/li&gt;
+  &lt;li&gt;Merged high-scores for each level (get bonus for inversion/hardcore, rather than storing separate scores).&lt;/li&gt;
+  &lt;li&gt;Added online high scores for each level.&lt;/li&gt;
+  &lt;li&gt;Fixed: Player can move at a different speed to the animation of the conveyor it is moving on.&lt;/li&gt;
+  &lt;li&gt;Fixed: Time remaining added to score after death in Hardcore mode.&lt;/li&gt;
+  &lt;li&gt;Fixed: Time remaining added at much to great a rate after completion of a course.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:spooner.github.com,2011-11-24:/2011/11/alpha-channel-v1_2_4/</id>
     <title type="html">Alpha Channel v1.2.4</title>
@@ -90,51 +121,6 @@
 
 &lt;ul&gt;
   &lt;li&gt;First improved version after Lumum Dare.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:spooner.github.com,2011-06-07:/2011/06/wrath-v0_1_0/</id>
-    <title type="html">Wrath v0.1.0</title>
-    <published>2011-06-07T12:00:00Z</published>
-    <updated>2011-06-07T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2011/06/wrath-v0_1_0/"/>
-    <content type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [2.5MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_OSX_10_6.zip"&gt;OS X 10.6 executable&lt;/a&gt; [9.6MB]&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_SOURCE.zip"&gt;Source only for Linux&lt;/a&gt; [184K]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Changelog&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Changed default online player controls to same as player 1. Reset everyone’s settings to default.&lt;/li&gt;
-  &lt;li&gt;Collects game-play statistics locally (for achievements).&lt;/li&gt;
-  &lt;li&gt;Added achievements and unlocks system.&lt;/li&gt;
-  &lt;li&gt;Added some more sound effects (but nowhere near enough).&lt;/li&gt;
-  &lt;li&gt;Can’t pick up creatures that can hurt you, or the other player, unless they are knocked down first.&lt;/li&gt;
-  &lt;li&gt;Knocked back when hit by a monster, rather than taking damage-over time (fire still burns slowly, however).&lt;/li&gt;
-  &lt;li&gt;Gods love certain sacrifices at any given time, which will net greatly increased favour.&lt;/li&gt;
-  &lt;li&gt;Favour of object currently carried is indicated next to favour bars.&lt;/li&gt;
-  &lt;li&gt;Can set sound volume and window size in options (sorry, no full-screen mode yet).&lt;/li&gt;
-  &lt;li&gt;Added 2 new playable priests.&lt;/li&gt;
-  &lt;li&gt;Added creature spawning (how could I not have put it in yet?) and reduced favour value of most objects.&lt;/li&gt;
-  &lt;li&gt;Containers, such as chests, spawn items if left empty.&lt;/li&gt;
-  &lt;li&gt;Added level under the sea.&lt;/li&gt;
-  &lt;li&gt;Added level in a tech facility (AI &lt;em&gt;are&lt;/em&gt; gods, aren’t they?).&lt;/li&gt;
-  &lt;li&gt;Added level in a desert (reused lighting storm disaster effect, though, until unique one created)&lt;/li&gt;
-  &lt;li&gt;Added level on a moon with radioactive meteors.&lt;/li&gt;
-  &lt;li&gt;Network stats overlay (Ctrl-N).&lt;/li&gt;
-  &lt;li&gt;Poison/growth status effects are not properly synchronised in network play.&lt;/li&gt;
-  &lt;li&gt;Countless other things I forgot to write down.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Changelog&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Possible to juggle (continually pick up and throw) the other player, so they never get to act.&lt;/li&gt;
-  &lt;li&gt;Possible to get killed by being continually hit into a wall.&lt;/li&gt;
-  &lt;li&gt;Enemies don’t care if they are getting killed in lava, etc.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

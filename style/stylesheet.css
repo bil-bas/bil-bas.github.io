@@ -42,7 +42,7 @@ hr { background-color: #c9e6b6; border: 0; margin: 1em 0 0.5em 0; height: 4px; w
 nav.tag_cloud h3 { margin: 1em 0 0 0.75em; }
 nav.tag_cloud h3 a { text-decoration: none; color: black; }
 nav.tag_cloud h3 a:hover { text-decoration: underline; }
-nav.tag_cloud ul { background-color: #c9e6b6; list-style: none; padding: 0.5em 0.5em 0.5em 1em; }
+nav.tag_cloud ul { border-radius: 16px; background-color: #c9e6b6; list-style: none; padding: 0.5em 0.5em 0.5em 1em; }
 nav.tag_cloud ul li { display: inline; white-space: nowrap; padding-right: 0.5em; padding-bottom: 0.5em; }
 nav.tag_cloud ul li a { text-decoration: none; color: black; }
 nav.tag_cloud ul li a:hover { text-decoration: underline; }
@@ -55,8 +55,8 @@ nav.archives ul li { font-style: italic; }
 nav.archives ul li a { text-decoration: none; color: black; }
 nav.archives ul li a:hover { text-decoration: underline; }
 
-nav.menu { background-color: #a8c595; padding-top: 0.25em; margin-top: 0; }
-nav.menu hr { background-color: #a8c595; height: 1em; border: none; margin: 0 0 0 20px; padding: 0; }
+nav.menu { background-color: #a8c595; padding-top: 0.25em; margin-top: 0; border-radius: 16px; }
+nav.menu hr { background-color: #a8c595; height: 1em; border: none; margin: 0 0 0 20px; padding: 0; border-radius: 16px; width: 50%; text-align: center; }
 nav.menu ul { list-style: none; padding: 0; }
 nav.menu ul li ul { list-style: none; padding-left: 0; }
 nav.menu ul li ul li { font-style: italic; }
@@ -94,11 +94,12 @@ span.active { color: #587545; }
 nav.navbar ul { list-style: none; padding: 0; }
 nav.navbar ul li { display: inline; padding: 0; margin: 0 0.5em 0 0; }
 nav.navbar ul li a { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; text-decoration: none; background-color: #c9e6b6; color: black; }
-nav.navbar ul li a:hover { background-color: #e9f8d6; }
+nav.navbar ul li a:hover { background-color: #e9fbd6; }
 nav.navbar ul li span { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; background-color: #daf8c9; }
+nav.navbar ul li .small { padding: .25em 1em; border-radius: 8px; }
 
 nav.previous_next { height: 1em; }
 nav.previous_next .next { float: right; }
 
-article { padding: 0 1.5em 1em 1.5em; background-color: #e9f8d6; }
+article { padding: 0 1.5em 1em 1.5em; background-color: #e9fbd6; border-bottom-left-radius: 16px; border-bottom-right-radius: 16px; }
 article header { margin: 0 -1.5em 0 -1.5em; }

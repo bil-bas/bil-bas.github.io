@@ -16,9 +16,10 @@
       - previous_month = article.month
       %h3= link_to article.month_name, File.dirname(article.path)
       %ul
-        %li
-          - summary = excerptize(strip_html(article.summary), length: 140)
-          - summary = summary.split(/\s*\n\s*/m).join("\n") if article.release?
-          = link_to article.title, article, title: summary
-          \-
-          = pretty_date article.created_at
+
+    %li
+      - summary = excerptize(strip_html(article.summary), length: 140)
+      - summary = summary.split(/\s*\n\s*/m).join("\n") if article.release?
+      = link_to article.title, article, title: summary
+      \-
+      = pretty_date article.created_at

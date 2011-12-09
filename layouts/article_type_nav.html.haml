@@ -4,4 +4,4 @@
     - blog = base_page.children.find {|i| i.identifier == "#{base_page.path}blog/" }
     - releases = base_page.children.find {|i| i.identifier == "#{base_page.path}releases/" }
     - [base_page, blog, releases].each do |archive|
-      %li= link_to_unless_current archive[:nav_title], archive
+      %li= link_to_unless_current archive[:nav_title], archive, class: "small"

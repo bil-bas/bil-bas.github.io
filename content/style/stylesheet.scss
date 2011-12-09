@@ -8,7 +8,7 @@ $text_color: #000;
 $active_text_color: #587545;
 $inverted_text_color: #daf8c9;
 
-$hover_color: #e9f8d6;
+$hover_color: #e9fbd6;
 
 $image_border: 4px solid black;
 
@@ -17,6 +17,8 @@ $normal_font_size: 100%;
 $small_font_size: 80%;
 
 $sidebar_width: 220px;
+
+$corner_radius: 16px;
 
 
 @mixin underline_on_hover {
@@ -186,6 +188,8 @@ nav.tag_cloud {
     }
 
     ul {
+        border-radius: $corner_radius;
+
         background-color: $light_color;
         list-style: none;
         padding: 0.5em 0.5em 0.5em 1em;
@@ -243,6 +247,8 @@ nav.menu {
     padding-top: 0.25em;
     margin-top: 0;
 
+    border-radius: $corner_radius;
+
     hr {
         // Used as a bit of a hack
         background-color: $medium_color;
@@ -250,6 +256,9 @@ nav.menu {
         border: none;
         margin: 0 0 0 20px;
         padding: 0;
+        border-radius: $corner_radius;
+        width: 50%;
+        text-align: center;
     }
 
     ul {
@@ -402,6 +411,11 @@ nav.navbar {
                 @include navbar_button;
                 background-color: $background_color;
             }
+
+            .small {
+                padding: .25em 1em;
+                border-radius: $corner_radius / 2;
+            }
         }
     }
 }
@@ -419,9 +433,12 @@ nav.previous_next {
 
 article {
     header {
-      margin: 0 -1.5em 0 -1.5em;
+        margin: 0 -1.5em 0 -1.5em;
     }
+
     padding: 0 1.5em 1em 1.5em;
     background-color: $hover_color;
+    border-bottom-left-radius: $corner_radius;
+    border-bottom-right-radius: $corner_radius;
 }
 

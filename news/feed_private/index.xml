@@ -20,7 +20,7 @@
   &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_SOURCE.zip"&gt;OS X/Linux source&lt;/a&gt; [1.5MB]&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Stopped lasers from moving, since they forced the player to stop and destroyed the flow of the game. Now you can jump over low beams and walk under high beams.&lt;/li&gt;
@@ -33,10 +33,10 @@
   &lt;li&gt;Added tool-tips.&lt;/li&gt;
   &lt;li&gt;Reduced speed of the really fast camera panning when you die.&lt;/li&gt;
   &lt;li&gt;Merged high-scores for each level (get bonus for inversion/hardcore, rather than storing separate scores).&lt;/li&gt;
-  &lt;li&gt;Added online high scores for each level.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="/games/zed_and_ginger/#high-scores"&gt;&lt;strong&gt;Added 100 online high scores for each level.&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Fixed: Player can move at a different speed to the animation of the conveyor it is moving on.&lt;/li&gt;
   &lt;li&gt;Fixed: Time remaining added to score after death in Hardcore mode.&lt;/li&gt;
-  &lt;li&gt;Fixed: Time remaining added at much to great a rate after completion of a course.&lt;/li&gt;
+  &lt;li&gt;Fixed: Time remaining added at much too great a rate after completion of a course.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
@@ -68,7 +68,7 @@
   &lt;li&gt;For OS X, the last release was &lt;a href="/2011/07/alpha-channel-v1_2_1"&gt;v1.2.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Hopefully fixed issue with openal in ocra package (I think - thanks jlnr and dahrkael)&lt;/li&gt;
@@ -89,7 +89,7 @@
   &lt;li&gt;Ruby gem release: &lt;code&gt;gem install fidgit&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Fixed some minor issues.&lt;/li&gt;
@@ -107,7 +107,7 @@
   &lt;li&gt;[Source only for OS X/Linux] - not released.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3&gt;Changelog&lt;/h3&gt;
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Moved resolution/fullscreen controls into Settings page.&lt;/li&gt;

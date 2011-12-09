@@ -412,9 +412,25 @@ nav.navbar {
                 background-color: $background_color;
             }
 
-            .small {
+
+        } 
+        
+        li.small {
+            margin: 0;
+
+            a {
                 padding: .25em 1em;
-                border-radius: $corner_radius / 2;
+            }
+            span {
+                padding: .25em 1em;
+            }
+            .left {
+                border-top-left-radius: $corner_radius / 2;
+                border-bottom-left-radius: $corner_radius / 2;
+            }
+            .right {
+                border-top-right-radius: $corner_radius / 2;
+                border-bottom-right-radius: $corner_radius / 2;
             }
         }
     }

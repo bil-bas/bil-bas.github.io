@@ -22,7 +22,14 @@ compile '/sitemap/' do
 end
 
 compile '/style/*/' do
-  filter :sass, :syntax => :scss, :style => :compact
+  case item[:extension]
+    when 'sass'
+      filter :sass, :syntax => :sass, :style => :compact
+    when 'scss'
+      filter :sass, :syntax => :scss, :style => :compact
+    else
+      raise "bad style extension #{item[:extension]}"
+  end
 end
 
 compile '*' do
@@ -95,7 +102,7 @@ layout '*', :haml, format: :html5, ugly: true
 
 
 # -------------------------------
-preprocess do |context|
+preprocess do
   if defined? Nanoc3::CLI
     Nanoc3::CLI::Logger::ACTION_COLORS[:delete] = "\e[1m" + "\e[31m" # bold + red
     Nanoc3::CLI::Logger::ACTION_COLORS[:generate] = "\e[1m" + "\e[36m" # bold + cyan

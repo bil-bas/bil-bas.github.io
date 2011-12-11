@@ -1,0 +1,372 @@
+// Constants
+$background_color: #daf8c9
+
+$dark_color: #1a3009
+$medium_color: #a8c595
+$light_color: #c9e6b6
+
+$text_color: #000
+$active_text_color: #587545
+$inverted_text_color: #daf8c9
+
+$hover_color: #e9fbd6
+
+$image_border: 4px solid black
+
+$large_font_size: 120%
+$normal_font_size: 100%
+$small_font_size: 80%
+
+$sidebar_width: 220px
+
+$corner_radius: 16px
+
+// CSS
+
+@mixin underline_on_hover
+    text-decoration: none
+    color: $text_color
+
+    &:hover
+        text-decoration: underline
+
+body
+    background-color: $background_color
+    font-family: Helvetica,Arial,FreeSans
+    color: $text_color
+    margin: 0.5em 5% 4em 5%
+
+// Headings
+h1
+    font-size: 1.7em
+    text-align: center
+    margin-top: 0
+    color: $inverted_text_color
+    background-color: $dark_color
+    width: 100%
+    border: 0
+    padding: 4px 0
+
+h2
+    font-size: 1.2em
+    margin-bottom: .5ex
+    background-color: $light_color
+    padding: .5em
+
+h2 a, h3 a
+    text-decoration: none
+    color: #250736
+
+h1 a
+    text-decoration: none
+    color: $inverted_text_color
+
+img
+    border: 0
+    padding: 0
+
+.banner
+    height: 128px
+    background-image: url(/images/banner_background.png)
+    background-repeat: repeat-x
+    background-color: $light_color
+    border: $image_border
+    padding: 0
+
+    a
+        text-decoration: none
+
+        .banner_overlay
+            background-image: url(/images/banner_overlay.png)
+            background-repeat: no-repeat
+            height: 100%
+            width: 100%
+            margin: 0
+
+pre
+    background: #000
+    color: #fff
+    padding: 15px
+    margin-left: 2em
+
+.app
+    clear: left
+
+.links
+    margin-top: 1em
+    margin-bottom: 1em
+
+.status
+    font-style: italic
+
+span.date
+    float: right
+
+summary
+    clear: both
+
+span.release_date
+    float: right
+    font-size: $small_font_size
+    margin-top: 0.75em
+    margin-right: 0.5em
+    a
+        @include underline_on_hover
+
+.col_mask
+    position: relative		// This fixes the IE7 overflow hidden bug and stops the layout jumping out of place
+    clear: both
+    float: left
+    width: 100%
+    overflow: hidden
+
+.right_menu
+    .col_left
+        float: left
+        width: 200%
+        margin-left: -$sidebar_width
+        position: relative
+        right: 100%
+
+        .contents_wrap
+            float: left
+            width: 50%
+            position: relative
+            left: 50%
+            padding-bottom: 1em
+
+            .contents
+                margin: 0 1em 0 $sidebar_width
+                overflow: hidden
+
+    .sidebar
+        float: right
+        width: $sidebar_width
+        position: relative
+        left: $sidebar_width
+        margin: 0 0 4em 32px
+
+hr
+    background-color: $light_color
+    border: 0
+    margin: 1em 0 0.5em 0
+    height: 4px
+    width: 100%
+
+nav.tag_cloud
+    h3
+        margin: 1em 0 0 0.75em
+        a
+            @include underline_on_hover
+
+    ul
+        border-radius: $corner_radius
+
+        background-color: $light_color
+        list-style: none
+        padding: 0.5em 0.5em 0.5em 1em
+
+        li
+            display: inline
+            white-space: nowrap
+            padding-right: 0.5em
+            padding-bottom: 0.5em
+
+            a
+                @include underline_on_hover
+
+nav.archives
+    h3
+        margin: 1em 0 0 0.75em
+        a
+            @include underline_on_hover
+
+    ul
+        list-style: none
+        padding-left: 1em
+
+        li
+            font-style: italic
+            a
+                @include underline_on_hover
+
+@mixin menu_category
+    font-size: $large_font_size
+
+@mixin menu_button
+    border-left: 8px solid $dark_color
+    padding: 3px 0 3px 6px
+    margin: 0
+    margin-left: 20px
+    width: $sidebar_width - 40px
+    display: inline
+    float: left
+
+nav.menu
+    background-color: $medium_color
+    padding-top: 0.25em
+    margin-top: 0
+
+    border-radius: $corner_radius
+
+    hr
+        // Used as a bit of a hack
+        background-color: $medium_color
+        height: 1em
+        border: none
+        margin: 0 0 0 20px
+        padding: 0
+        border-radius: $corner_radius
+        width: 50%
+        text-align: center
+
+    ul
+        list-style: none
+        padding: 0
+
+        li
+            ul
+                list-style: none
+                padding-left: 0
+
+                li
+                    font-style: italic
+
+                    a
+                        font-size: $normal_font_size
+                    span.active
+                        font-size: $normal_font_size
+
+            a
+                @include menu_button
+                border-color: $medium_color // Make transparent unless hovering.
+
+                @include menu_category
+                text-decoration: none
+                color: $text_color
+
+                &:hover
+                    border-color: $dark_color
+                    background: $light_color
+            span.active
+                @include menu_button
+                @include menu_category
+
+.posted
+    font-style: italic
+    font-size: $small_font_size
+    a
+        @include underline_on_hover
+
+.tags
+    //font-size: $small_font_size
+    a
+        @include underline_on_hover
+    font-size: $small_font_size
+    margin-top: 0.5em
+
+.footer
+    text-align: center
+    margin-top: 2em
+    padding: 0.25em 0
+    font-style: italic
+    clear: both
+    float: left
+    background-color: #a8c595
+    width: 100%
+
+.feed
+    float: right
+    font-size: $small_font_size
+    a
+        text-decoration: none
+    img
+        width: 14px
+        height: 14px
+
+.breadcrumbs
+    margin-bottom: 1em
+
+    a
+        text-decoration: none
+        font-size: $small_font_size
+
+img.app_icon
+    width: 128px
+    height: 128px
+    float: right
+    margin: 0 0 2em 2em
+
+img.app_icon_small
+    width: 16px
+    height: 16px
+    margin: 0
+
+.comments
+    float: right
+
+//.more
+
+span.active
+    color: $active_text_color
+
+@mixin navbar_button
+    border: 3px solid $medium_color
+    padding: .25em 1.5em
+    width: 10em
+    text-align: center
+    white-space: nowrap
+
+nav.navbar
+    ul
+        list-style: none
+        padding: 0
+
+        li
+            display: inline
+            padding: 0
+            margin: 0 0.5em 0 0
+
+            a
+                @include navbar_button
+                text-decoration: none
+                background-color: $light_color
+                color: $text_color
+
+                &:hover
+                    background-color: $hover_color
+            span
+                @include navbar_button
+                background-color: $background_color 
+        
+        li.small
+            margin: 0
+
+            a
+                padding: .25em 1em
+            span
+                padding: .25em 1em
+            .left
+                border-top-left-radius: $corner_radius / 2
+                border-bottom-left-radius: $corner_radius / 2
+            .right
+                border-top-right-radius: $corner_radius / 2
+                border-bottom-right-radius: $corner_radius / 2
+
+nav.previous_next
+    height: 1em
+
+    //.previous
+
+    .next
+        float: right
+
+article
+    header
+        margin: 0 -1.5em 0 -1.5em
+
+    padding: 0 1.5em 1em 1.5em
+    background-color: $hover_color
+    border-bottom-left-radius: $corner_radius
+    border-bottom-right-radius: $corner_radius
+

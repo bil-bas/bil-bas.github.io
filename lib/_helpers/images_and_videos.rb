@@ -23,7 +23,6 @@ module ImagesAndVideos
         width: width,
         height: height,
         src: "http://www.youtube.com/embed/#{id}",
-        frameborder: "0",
     }
     attributes = attributes.map {|k, v| %[#{k}="#{v}"]}.join " "
 

@@ -142,6 +142,7 @@ module ItemGeneration
           title: "Releases",
           layout: "releases",
           count_comments: true,
+          extension: "md",
           mtime: sorted_releases_for(item.parent.name).max(&:mtime)
     end
   end

@@ -14,4 +14,4 @@ A rhythm-based dancing game with added cats for 2 players (locally). Full title 
 
 ![Screenshot](/images/screenshots/hoops_02.png "Two players dancing")
 
-<iframe class="youtube-player" type="text/html" width="640" height="480" src="http://www.youtube.com/embed/g2NjN9h4b8s" frameborder="0">
+<iframe class="youtube-player" type="text/html" width="420" height="315" src="http://www.youtube.com/embed/K53VoC6Bhss" frameborder="0">

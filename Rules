@@ -64,20 +64,14 @@ route '/*/feed_private/' do
   rep.item.identifier + 'index.xml'
 end
 
-route '/blog/_posts/*/' do
-  item.identifier =~ %r[(\d{4})-(\d{2})-(\d{2})_(.+)/$]
-  year, month, day, title = $1, $2, $3, $4
+route %r[^/\d{4}/\d{2}/.] do
+  year, month = item.parent.parent.name.to_i, item.parent.name.to_i
 
-  # Ensure that the created_at is consistent with the name of the file.
-  raise unless year.to_i == item.year
-  raise unless month.to_i == item.month
-  raise unless day.to_i == item.day
+  # Ensure that the created_at is consistent with the location of the file.
+  raise item.identifier unless item.year == year
+  raise item.identifier unless item.month == month
 
-  "/#{year}/#{month}/#{title}/index.html"
-end
-
-route '/*/*/releases/*/' do
-  "/#{item.year}/#{item.month.to_s.rjust(2, '0')}/#{item.full_title.downcase.tr(' .', '-_')}/index.html"
+  item.identifier + 'index.html'
 end
 
 compile '/images/screenshots/*/', rep: :thumbnail do

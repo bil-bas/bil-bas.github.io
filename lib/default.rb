@@ -31,32 +31,15 @@ def sorted_news
 end
 
 def sorted_releases
-  @sorted_releases ||= sorted_articles.select {|i| i.identifier =~ %r[^/\w+/\w+/releases/v] }
+  @sorted_releases ||= sorted_articles.select(&:release?)
+end
+
+def sorted_releases_for project
+  sorted_releases.select {|a| a.identifier =~ %r[/#{project.tr("_",'-')}-v\d] }
 end
 
 def sorted_blog_posts
-  @sorted_blog_posts ||= sorted_articles.select {|i| i.identifier =~ %r[^/blog/_posts/] }
-end
-
-def breadcrumbs_for_path(path)
-  @breadcrumbs_path_cache ||= {}
-  @breadcrumbs_path_cache[path] ||= begin
-    head = (path == '/' ? [] :  breadcrumbs_for_path(path.sub(/[^\/]+\/$/, '')) )
-    tail = [ item_with_path(path) ]
-
-    head + tail
-  end
-end
-
-def item_with_path(path)
-  @path_cache ||= {}
-  @path_cache[path] ||= begin
-    @items.find { |i| i.path == path }
-  end
-end
-
-def breadcrumbs_trail
-  breadcrumbs_for_path(@item.path)
+  @sorted_blog_posts ||= sorted_articles.select(&:blog_post?)
 end
 
 def sorted_years
@@ -67,13 +50,8 @@ def sorted_months
   @sorted_months ||= sorted_years.inject([]) { |m, y| m.push *y.children.reverse }
 end
 
-def news_by_month
-  @news_by_month ||= begin
-    sorted_months.map do |month|
-      year_num, month_num = month.parent.name.to_i, month.name.to_i
-      [month, sorted_news.select {|i| i.year == year_num and i.month == month_num }]
-    end
-  end
+def articles
+  @items.select(&:article?)
 end
 
 

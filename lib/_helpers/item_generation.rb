@@ -127,7 +127,7 @@ module ItemGeneration
   def create_article_filters
     log "Creating filtered versions of article pages..."
 
-    @items.select {|i| i[:filter_articles] }.each do |index|
+    @items.select {|i| ["/", "/archives/"].include? i.identifier }.each do |index|
       {
           blog: ["spooner_blog", "Blog", "sorted_blog_posts"],
           releases: ["spooner_releases", "Releases", "sorted_releases"]

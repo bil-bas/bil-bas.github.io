@@ -6,8 +6,9 @@
 
 = render 'previous_next', list: sorted_years
 
-- send(@item[:articles_shown]).select {|i| i.year.to_s == @item.name }.each do |article|
-  = render article.layout, item: article, summary: true
+- @item.children.reverse_each do |month|
+  - month.children.sort_by {|i| i.created_at }.reverse_each do |article|
+    = render article.layout, item: article, summary: true
 
 %hr/
 

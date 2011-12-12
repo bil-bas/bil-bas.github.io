@@ -1,8 +1,8 @@
 -# A project (e.g. a game)
 
-- last_release = @item.children.find {|i| i.name == 'releases' }.children.last
+- last_release = sorted_releases_for(@item.name.tr("_", "-")).first
 - if last_release
-  - latest_version = last_release.title.split(" ").last
+  - latest_version = last_release.name.split("-").last.tr("_", ".")
   - updated_link = link_to "Updated #{pretty_date last_release.created_at}", last_release
   - latest_version_link = link_to latest_version, last_release
 
@@ -20,7 +20,7 @@
 
       %h2= link_to @item.title, @item
 
-    = link_to @item.path do
+    = link_to @item do
       %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
 
     %p.status= status

@@ -30,10 +30,10 @@ class Nanoc3::Item
     self[:full_title] || title
   end
 
-  def article?; path =~ %r[^/\d{4}/\d{2}/[^/]+/$]; end
+  def article?; identifier =~ %r[^/\d{4}/\d{2}/[^/]+/$]; end
   def project?; identifier =~ %r[^/(?:games|libraries|utilities)/[^/]+/$]; end
-  def blog_post?; article? and layout == 'blog_post'; end
-  def release?; article? and layout == 'release'; end
+  def blog_post?; article? and not release?; end
+  def release?; article? and identifier =~ %r[v\d[_\d]+/$]; end
 
   def name; File.basename(identifier); end
 

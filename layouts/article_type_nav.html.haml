@@ -1,8 +1,8 @@
 %nav.navbar{ style: "font-size: 80%" }
   %ul
     - base_item = @item[:filtered] ? @item.parent : @item
-    - blog = base_item.children.find {|i| i.identifier == "#{base_item.path}blog/" }
-    - releases = base_item.children.find {|i| i.identifier == "#{base_item.path}releases/" }
+    - blog = base_item.children.find {|i| i.identifier == "#{base_item.identifier}blog/" }
+    - releases = base_item.children.find {|i| i.identifier == "#{base_item.identifier}releases/" }
     - [base_item, blog, releases].each do |item|
       - position = item == base_item ? "left" : (item == releases ? "right" : "")
       %li{ class: "small" }= link_to_unless_current item[:nav_title], item, class: position

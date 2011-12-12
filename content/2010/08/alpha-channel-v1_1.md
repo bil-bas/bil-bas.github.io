@@ -1,5 +1,5 @@
 ---
-title: Alpha Channel v1.1 (Ludum Dare)
+title: Alpha Channel v1.1 (Ludum Dare entry)
 kind: article
 layout: release
 created_at: 2010-08-24 12:00:00 +0000

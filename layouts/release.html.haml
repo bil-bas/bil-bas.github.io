@@ -1,5 +1,3 @@
-- comment_id = "#{@item.parent.parent.name}_#{@item.name}"
-
 %article
   - if @summary
     %header
@@ -9,8 +7,8 @@
     = @item.summary
 
     %footer
-      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => comment_id
-      .more= link_to "Release notes...", @item.path
+      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => @item.name
+      .more= link_to "Release notes...", @item
       .tags Tags: #{tags_for(@item, base_url: '/tags/')}
 
   - elsif block_given?
@@ -23,7 +21,7 @@
 
     %footer
       .tags Tags: #{tags_for(@item, base_url: '/tags/')}
-      = render "comments", comment_id: comment_id
+      = render "comments", comment_id: @item.name
 
   - else
     %header
@@ -33,6 +31,6 @@
     = @item.compiled_content
 
     %footer
-      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => comment_id
+      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => @item.name
       .tags Tags: #{tags_for(@item, base_url: '/tags/')}
 

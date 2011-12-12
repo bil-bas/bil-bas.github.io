@@ -2,5 +2,5 @@
 
 %h1=link_to "#{ @item.parent.title } - #{ @item.title }", @item.permalink
 
-- @item.children.reverse_each do |release|
+- sorted_releases_for(@item.parent.name).each do |release|
   = render release.layout, item: release, summary: true

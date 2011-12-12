@@ -18,3 +18,5 @@ An extended version was created after the competition (adding boss fights and im
 
 ![Screenshot of latest version](/images/screenshots/alpha_channel_122.png "Latest version, with simple, yet pretty, graphics" )
 
+<iframe class="youtube-player" type="text/html" width="640" height="480" src="http://www.youtube.com/embed/CmTGW4jAd_M" frameborder="0">
+

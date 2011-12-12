@@ -23,5 +23,5 @@ An extended version was created after the competition (adding boss fights and im
 
 <%= video "CmTGW4jAd_M", 420, 315 %>
 
-[original version]: 2010/08/alpha-channel-v1_1-(ludum-dare)/
+[original version]: /2010/08/alpha-channel-v1_1/
 

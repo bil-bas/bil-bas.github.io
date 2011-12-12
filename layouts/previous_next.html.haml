@@ -4,8 +4,8 @@
 %nav.previous_next
   - if @item != @list.first
     - next_item = @list[this_index - 1]
-    .next= link_to "#{next_item.full_title} >>", next_item, title: "Next"
+    .next= link_to h("#{next_item.full_title} >>"), next_item, title: "Next"
 
   - if @item != @list.last
     - previous_item = @list[this_index + 1]
-    .previous= link_to "<< #{previous_item.full_title}", previous_item, title: "Previous"
+    .previous= link_to h("<< #{previous_item.full_title}"), previous_item, title: "Previous"

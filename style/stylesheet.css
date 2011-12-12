@@ -1,8 +1,8 @@
-body { background-color: #daf8c9; font-family: Helvetica,Arial,FreeSans; color: black; margin: 0.5em 5% 4em 5%; }
+body { background-color: #daf8c9; font-family: Helvetica, Arial, FreeSans; color: black; margin: 0.5em 5% 4em 5%; }
 
 h1 { font-size: 1.7em; text-align: center; margin-top: 0; color: #daf8c9; background-color: #1a3009; width: 100%; border: 0; padding: 4px 0; }
 
-h2 { font-size: 1.2em; margin-bottom: .5ex; background-color: #c9e6b6; padding: .5em; }
+h2 { font-size: 1.2em; margin-bottom: 0.5ex; background-color: #c9e6b6; padding: 0.5em; }
 
 h2 a, h3 a { text-decoration: none; color: #250736; }
 
@@ -14,7 +14,7 @@ img { border: 0; padding: 0; }
 .banner a { text-decoration: none; }
 .banner a .banner_overlay { background-image: url(/images/banner_overlay.png); background-repeat: no-repeat; height: 100%; width: 100%; margin: 0; }
 
-pre { background: #000; color: #fff; padding: 15px; margin-left: 2em; }
+pre { background: black; color: white; padding: 15px; margin-left: 2em; }
 
 .app { clear: left; }
 
@@ -93,12 +93,12 @@ span.active { color: #587545; }
 
 nav.navbar ul { list-style: none; padding: 0; }
 nav.navbar ul li { display: inline; padding: 0; margin: 0 0.5em 0 0; }
-nav.navbar ul li a { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; text-decoration: none; background-color: #c9e6b6; color: black; }
+nav.navbar ul li a { border: 3px solid #a8c595; padding: 0.25em 1.5em; width: 10em; text-align: center; white-space: nowrap; text-decoration: none; background-color: #c9e6b6; color: black; }
 nav.navbar ul li a:hover { background-color: #e9fbd6; }
-nav.navbar ul li span { border: 3px solid #a8c595; padding: .25em 1.5em; width: 10em; text-align: center; white-space: nowrap; background-color: #daf8c9; }
+nav.navbar ul li span { border: 3px solid #a8c595; padding: 0.25em 1.5em; width: 10em; text-align: center; white-space: nowrap; background-color: #daf8c9; }
 nav.navbar ul li.small { margin: 0; }
-nav.navbar ul li.small a { padding: .25em 1em; }
-nav.navbar ul li.small span { padding: .25em 1em; }
+nav.navbar ul li.small a { padding: 0.25em 1em; }
+nav.navbar ul li.small span { padding: 0.25em 1em; }
 nav.navbar ul li.small .left { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
 nav.navbar ul li.small .right { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
 

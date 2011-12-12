@@ -12,11 +12,16 @@ A game developed in 48 hours for [Ludum Dare #18](http://www.ludumdare.com/compo
 [![Gosu forum](/images/libgosu.png)](http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=453 "Gosu forum")
 [![Github project](/images/github.png)](https://github.com/Spooner/alpha_channel "Github project")
 
-![Screenshot of competition entry](/images/screenshots/alpha_channel_linux_v1.1.png "Competition entry with simple placeholder graphics")
 
-An extended version was created after the competition (adding boss fights and improved physics and visuals):
+The [original version] was created in 48 hours, but was relatively basic.
 
-![Screenshot of latest version](/images/screenshots/alpha_channel_122.png "Latest version, with simple, yet pretty, graphics" )
+<%= screenshot "alpha_channel_linux_v1_1", "Competition entry", "Ludum Dare competition entry with simple placeholder graphics" %>
 
-<iframe class="youtube-player" type="text/html" width="420" height="315" src="http://www.youtube.com/embed/CmTGW4jAd_M" frameborder="0">
+An extended version was created after the competition (adding boss fights and improved physics and visuals).
+
+<%= screenshot "alpha_channel_122", "Latest version", "Latest version, with simple, yet pretty, graphics" %>
+
+<%= video "CmTGW4jAd_M", 420, 315 %>
+
+[original version]: 2010/08/alpha-channel-v1_1-(ludum-dare)/
 

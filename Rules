@@ -21,12 +21,18 @@ compile '/sitemap/' do
   filter :erb
 end
 
+compile '/scripts/*/' do
+  # don't filter
+end
+
 compile '/style/*/' do
   case item[:extension]
     when 'sass'
       filter :sass, :syntax => :sass, :style => :compact
     when 'scss'
       filter :sass, :syntax => :scss, :style => :compact
+    when 'css'
+      # It is fine as it is.
     else
       raise "bad style extension #{item[:extension]}"
   end
@@ -38,7 +44,7 @@ compile '*' do
   else
     case item[:extension]
       when 'md'
-        # Filter through kramdown without generating heading IDs.
+        filter :erb
         filter :kramdown
 
         layout item.layout if item.layout
@@ -74,6 +80,14 @@ route '/*/*/releases/*/' do
   "/#{item.year}/#{item.month.to_s.rjust(2, '0')}/#{item.full_title.downcase.tr(' .', '-_')}/index.html"
 end
 
+compile '/images/screenshots/*/', rep: :thumbnail do
+  filter :thumbnailize, factor: 0.25
+end
+
+route '/images/screenshots/*/', rep: :thumbnail do
+  item.identifier.chop + '-thumbnail.' + item[:extension]
+end
+
 route '/sitemap/' do
   '/sitemap.xml'
 end
@@ -84,6 +98,10 @@ end
 
 route "/errors/404/" do
   "/404.html"
+end
+
+route '/scripts/*/' do
+  item.identifier.chop + '.js'
 end
 
 route '*' do

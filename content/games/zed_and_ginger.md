@@ -23,9 +23,13 @@ This game was quite a departure for me, since I chose to implement using the [Ra
 
 When played with two players, they share the screen if they are close together, but otherwise the screen automagically splits:
 
-![Screenshot showing split-screen](/images/screenshots/zed_and_ginger_17-2-player-cameras.png "Split-screen with 2 players")
+<%=
+ gallery ["zed_and_ginger_14-2-players_close", "Split-screen close", "Split-screen mode with 2 players close"],
+         ["zed_and_ginger_15-2-players_wide", "Split-screen wide", "Split-screen mode with 2 players near, so the screen widens"],
+         ["zed_and_ginger_15-2-players_split", "Split-screen split", "Split-screen mode with 2 players far, so the screen splits"]
+%>
 
-<iframe class="youtube-player" type="text/html" width="560" height="315" src="http://www.youtube.com/embed/bg4phgKflDo" frameborder="0">
+<%= video "bg4phgKflDo", 560, 315 %>
 
 [Metro-cross]: http://en.wikipedia.org/wiki/Metro-Cross
 [Ray]: http://mon-ouie.github.com/projects/ray.html

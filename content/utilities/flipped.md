@@ -17,7 +17,7 @@ Key usage
 * Removal of dead frames generated while 'pausing' the game (e.g. taking a quick loo break while leaving the game running).
 * Viewing flip-books in continual slide-show mode.
 
-![Screenshot](/images/screenshots/flipped_01.png "Editing a flip-book")
+<%= screenshot "flipped_01", "Editing a flip-book" %>
 
 Features
 --------

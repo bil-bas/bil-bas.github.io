@@ -14,13 +14,14 @@ A game of sacrifice and wearing a chicken on your head (2 players, locally or ne
 
 The full title of the game is, 'Wrath: Appease or Die!'.
 
-The game is played on a number of maps (which are semi-randomly generated), such as the desert island, where the priests have to keep the volcano god from getting angry:
+The game is played on a number of maps (which are semi-randomly generated), such as:
 
-![Screenshot of the desert island level](/images/screenshots/wrath-22-volcano-island.png "Desert island")
-
-Or deep under the sea, where the probing tentacles of the Kraken threaten to crush the priests:
-
-![Screenshot of the undersea level](/images/screenshots/wrath-30-the_kraken.png "Under the sea")
+<%=
+ gallery ["wrath-21-lightning", "Pirate ship level", "Yarrrrrrrrr!!!!!!"],
+         ["wrath-22-volcano-island", "Desert island level", "The desert island, where the priests have to keep the volcano god from getting angry"],
+         ["wrath-29-better_craters", "Yuggoth level", "In space, no-one can hear you wear a chicken on your head"],
+         ["wrath-30-the_kraken", "Undersea level", "Deep under the sea, where the probing tentacles of the Kraken threaten to crush the priests"]
+%>
 
 
 

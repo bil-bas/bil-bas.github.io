@@ -11,3 +11,5 @@ gem "builder", "~> 3.0.0"
 gem "sass", "~> 3.1.11"
 gem "adsf", "~> 1.0.1" # For nanoc view.
 gem "fssm", "~> 0.2.7" # For nanoc watch.
+gem "chunky_png", "~> 1.2.5"
+gem "oily_png", "~> 1.0.2"

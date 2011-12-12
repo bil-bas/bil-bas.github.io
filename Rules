@@ -118,6 +118,7 @@ preprocess do
   puts
 
   remove_drafts
+  create_release_pages
   create_tags
   create_years_and_months
   create_article_filters

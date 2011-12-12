@@ -39,41 +39,25 @@ module ItemGeneration
     end
 
     years.each_pair do |year, mtime|
-      identifier = "/#{year}/"
-      @items << Nanoc3::Item.new(
-          "",
-          {
-              title: year.to_s,
-              layout: 'year',
-              count_comments: true,
-              extension: 'md',
-              articles_shown: "sorted_news",
-              #filter_articles: true,
-              mtime: mtime,
-          },
-          identifier
-      )
-
-      log identifier, :generate
+      create_item "/#{year}/", "",
+          title: year.to_s,
+          layout: 'year',
+          count_comments: true,
+          extension: 'md',
+          articles_shown: "sorted_news",
+          #filter_articles: true,
+          mtime: mtime
     end
 
     months.each_pair do |(year, month), mtime|
       month_name = Date::MONTHNAMES[month]
-      identifier = "/#{year}/#{month.to_s.rjust(2, '0')}/"
-
-      @items << Nanoc3::Item.new(
-          "",
-          {
-              title: month_name,
-              full_title: "#{month_name} #{year}",
-              layout: 'month',
-              count_comments: true,
-              extension: 'md',
-              mtime: mtime,
-          },
-          identifier
-      )
-      log identifier, :generate
+      create_item "/#{year}/#{month.to_s.rjust(2, '0')}/", "",
+          title: month_name,
+          full_title: "#{month_name} #{year}",
+          layout: 'month',
+          count_comments: true,
+          extension: 'md',
+          mtime: mtime
     end
   end
 
@@ -104,22 +88,14 @@ module ItemGeneration
     tags.each_pair do |tag, data|
       # 0 to 1 for smallest to largest.
       tag_size = (data[:count] - min_tag_count) / tag_count_range.to_f
-      identifier = "/tags/#{tag}/"
-      @items << Nanoc3::Item.new(
-          '',
-          {
-              title: tag,
-              layout: 'tag',
-              count: data[:count],
-              count_comments: true,
-              extension: 'md',
-              font_size: tag_size,
-              mtime: data[:mtime],
-          },
-          identifier
-      )
-
-      log identifier, :generate
+      create_item "/tags/#{tag}/", '',
+          title: tag,
+          layout: 'tag',
+          count: data[:count],
+          count_comments: true,
+          extension: 'md',
+          font_size: tag_size,
+          mtime: data[:mtime]
     end
   end
 
@@ -127,25 +103,19 @@ module ItemGeneration
   def create_article_filters
     log "Creating filtered versions of article pages..."
 
-    @items.select {|i| ["/", "/archives/"].include? i.identifier }.each do |index|
+    @items.select {|i| i[:filter_articles] }.each do |index|
       {
           blog: ["spooner_blog", "Blog", "sorted_blog_posts"],
           releases: ["spooner_releases", "Releases", "sorted_releases"]
       }.each_pair do |filter, (feed, title, articles)|
-        identifier = "#{index.identifier}#{filter}/"
-        @items << Nanoc3::Item.new(
-            index.raw_content,
+        create_item "#{index.identifier}#{filter}/", index.raw_content,
             index.attributes.merge(
                 title: title,
                 nav_title: "#{title} only",
                 feed_url: "http://feeds.feedburner.com/#{feed}",
                 articles_shown: articles,
                 filtered: true
-            ),
-            identifier
-        )
-
-        log identifier, :generate
+            )
       end
 
     end
@@ -161,5 +131,24 @@ module ItemGeneration
         false
       end
     end
+  end
+
+  def create_release_pages
+    log "Creating project releases pages..."
+    @items.select(&:project?).each do |item|
+      identifier = "#{item.identifier}releases/"
+
+      create_item identifier, "",
+          title: "Releases",
+          layout: "releases",
+          count_comments: true,
+          mtime: sorted_releases_for(item.parent.name).max(&:mtime)
+    end
+  end
+
+  def create_item identifier, contents, attributes
+    @items << Nanoc3::Item.new(contents, attributes, identifier)
+
+    log identifier, :generate
   end
 end

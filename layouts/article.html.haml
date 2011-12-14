@@ -5,8 +5,19 @@
 
 - social = capture do
   .blog-social
+    -# Twitter
     %a.twitter-share-button{ href: "https://twitter.com/share", "data-lang" => "en", "data-url" => @item.permalink, "data-text" => @item.full_title }
-    .fb-like{ "data-href" => @item.permalink, "data-send" => "false", "data-layout" => "button_count", "data-width" => 90, "data-height" => 25, "data-show-faces" => "false" }
+
+    .social2
+      -# Facebook
+      .fb-like{ "data-href" => @item.permalink, "data-send" => "false", "data-layout" => "button_count", "data-width" => 90, "data-height" => 25, "data-show-faces" => "false" }
+
+      -# Reddit
+      .social3
+        :javascript
+          reddit_url = "#{@item.permalink}";
+          reddit_title = "#{@item.full_title}";
+        %script{ type: "text/javascript", src: "http://www.reddit.com/static/button/button1.js" }
 
 - posted = @item.blog_post? ? "Posted" : "Released"
 
@@ -14,7 +25,6 @@
   %header
     %span.release_date #{posted} #{pretty_date @item.created_at}
     %h2= link_to @item.title, @item
-
 
 %article
   - if @summary

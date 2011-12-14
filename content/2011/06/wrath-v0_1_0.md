@@ -1,7 +1,7 @@
 ---
 title: Wrath v0.1.0
 kind: article
-layout: release
+layout: article
 created_at: 2011-06-07 12:00:00 +0000
 tags: [ 'wrath', 'game', 'gosu', 'ruby' ]
 ---

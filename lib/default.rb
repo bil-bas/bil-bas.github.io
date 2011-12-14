@@ -54,8 +54,7 @@ def articles
   @items.select(&:article?)
 end
 
-
-
-
-
+def html_attributes(options)
+  options.map {|k, v| "#{k}=#{v}"}.join "&"
+end
 

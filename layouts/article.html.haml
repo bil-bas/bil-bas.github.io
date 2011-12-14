@@ -1,0 +1,56 @@
+-# Single blog post or release.
+
+- tags = capture do
+  .tags Tags: #{tags_for(@item, base_url: '/tags/')}
+
+- social = capture do
+  .blog-social
+    %a.twitter-share-button{ href: "https://twitter.com/share", "data-lang" => "en", "data-url" => @item.permalink, "data-text" => @item.full_title }
+    .fb-like{ "data-href" => @item.permalink, "data-send" => "false", "data-layout" => "button_count", "data-width" => 90, "data-height" => 25, "data-show-faces" => "false" }
+
+- posted = @item.blog_post? ? "Posted" : "Released"
+
+- subheading = capture do
+  %header
+    %span.release_date #{posted} #{pretty_date @item.created_at}
+    %h2= link_to @item.title, @item
+
+
+%article
+  - if @summary
+    -# Summary on a list.
+    = subheading
+
+    = @item.summary
+
+    %footer
+      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => @item.name
+      .more= link_to (@item.blog_post? ? "Read more..." : "Release notes..."), @item
+      = tags
+
+  - elsif block_given?
+    -# Article's own page.
+    %header
+      %h1= link_to @item.title, @item.permalink
+
+    %p.posted Posted on #{pretty_date @item.created_at}
+
+    = yield
+
+    %footer
+      = tags
+      = social
+      = render "comments", comment_id: @item.name
+
+  - else
+    -# Full articles on a list.
+    = subheading
+
+    = @item.compiled_content
+
+    %footer
+      .comments= link_to "Comments", "#{@item.path}#disqus_thread", "data-disqus-identifier" => @item.name
+      = tags
+      = social
+
+

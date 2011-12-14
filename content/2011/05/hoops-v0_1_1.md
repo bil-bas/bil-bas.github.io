@@ -1,6 +1,6 @@
 ---
 title: Hoops v0.1.1
-layout: release
+layout: article
 kind: article
 created_at: 2011-05-17 12:00:00 +0000
 tags: [ 'hoops', 'game', 'gosu', 'ruby' ]

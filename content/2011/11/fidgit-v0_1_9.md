@@ -1,7 +1,7 @@
 ---
 title: Fidgit v0.1.9
 kind: article
-layout: release
+layout: article
 created_at: 2011-11-04 12:00:00 +0000
 tags: [ 'fidgit', 'gem', 'gosu', 'ruby' ]
 ---

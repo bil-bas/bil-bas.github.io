@@ -1,7 +1,7 @@
 ---
 title: Alpha Channel v1.2.4
 kind: article
-layout: release
+layout: article
 created_at: 2011-11-24 12:00:00 +0000
 tags: [ 'alpha-channel', 'game', 'gosu', 'ruby' ]
 ---

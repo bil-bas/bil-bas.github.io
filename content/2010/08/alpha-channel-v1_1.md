@@ -1,7 +1,7 @@
 ---
 title: Alpha Channel v1.1 (Ludum Dare entry)
 kind: article
-layout: release
+layout: article
 created_at: 2010-08-24 12:00:00 +0000
 tags: [ 'alpha-channel', 'game', 'gosu', 'ruby' ]
 ---

@@ -1,7 +1,7 @@
 ---
 title: Zed and Ginger v0.3.0
 kind: article
-layout: release
+layout: article
 created_at: 2011-08-10 12:00:00 +0000
 tags: [ 'zed-and-ginger', 'game', 'ray', 'ruby' ]
 ---

@@ -13,8 +13,8 @@
     - %w[stylesheet code_highlighting slimbox2].each do |stylesheet|
       %link{ rel: "stylesheet", type: "text/css", href: "/style/#{stylesheet}.css", media: "screen" }
 
-    - %w[jquery slimbox2].each do |script|
-      %script{ type: "text/javascript", src: "/scripts/#{script}.js" }
+    - %w[/scripts/jquery.js /scripts/slimbox2.js //connect.facebook.net/en_GB/all.js#xfbml=1 //platform.twitter.com/widgets.js].each do |script|
+      %script{ type: "text/javascript", src: script }
 
     %title= "Spooner - #{@item.full_title}"
 
@@ -55,12 +55,9 @@
     -# Script to replace special links with number of comments.
     - if @item[:count_comments]
       :javascript
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'spooner'; // required: replace example with your forum shortname
-        /* * * DON'T EDIT BELOW THIS LINE * * */
         (function () {
           var s = document.createElement('script'); s.async = true;
           s.type = 'text/javascript';
-          s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          s.src = 'http://spooner.disqus.com/count.js';
+          document.getElementsByTagName('HEAD')[0].appendChild(s);
         }());

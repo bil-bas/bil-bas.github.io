@@ -1,7 +1,7 @@
 ---
 title: Flipped v0.2.0
 kind: article
-layout: release
+layout: article
 created_at: 2010-05-17 12:00:00 +0000
 tags: [ 'flipped', 'ruby' ]
 ---

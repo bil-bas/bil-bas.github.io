@@ -1,0 +1,3 @@
+.gallery
+  - @screenshots.each do |screenshot|
+    = render "screenshot", image: screenshot[0], alt: screenshot[1], title: screenshot[2]

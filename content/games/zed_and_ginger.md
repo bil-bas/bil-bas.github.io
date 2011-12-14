@@ -29,7 +29,13 @@ When played with two players, they share the screen if they are close together, 
          ["zed_and_ginger_15-2-players_split", "Split-screen split", "Split-screen mode with 2 players far, so the screen splits"]
 %>
 
-<%= video "bg4phgKflDo", 560, 315 %>
+## Video
+
+<%= render 'video', id: "bg4phgKflDo", width: 560, height: 315 %>
+
+## Music
+
+<%= render 'music', pieces: ["http://dl.dropbox.com/u/33370854/games/zed_and_ginger/music/Space_Cat_Habitat"] %>
 
 [Metro-cross]: http://en.wikipedia.org/wiki/Metro-Cross
 [Ray]: http://mon-ouie.github.com/projects/ray.html

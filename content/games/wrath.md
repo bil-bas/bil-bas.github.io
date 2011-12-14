@@ -23,5 +23,11 @@ The game is played on a number of maps (which are semi-randomly generated), such
          ["wrath-30-the_kraken", "Undersea level", "Deep under the sea, where the probing tentacles of the Kraken threaten to crush the priests"]
 %>
 
+## Music
 
-
+<%= render 'music', pieces: [
+        "http://dl.dropbox.com/u/33370854/games/wrath/music/Give_Me_A_Map",
+        "http://dl.dropbox.com/u/33370854/games/wrath/music/No_Map",
+        "http://dl.dropbox.com/u/33370854/games/wrath/music/Turn_For_The_Worst"
+    ]
+%>

@@ -14,4 +14,6 @@ A rhythm-based dancing game with added cats for 2 players (locally). Full title 
 
 <%= screenshot "hoops_02", "Two players dancing" %>
 
-<%= video "K53VoC6Bhss", 420, 315 %>
+## Video
+
+<%= render 'video', id: "K53VoC6Bhss", width: 420, height: 315 %>

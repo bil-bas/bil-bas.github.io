@@ -21,7 +21,13 @@ An extended version was created after the competition (adding boss fights and im
 
 <%= screenshot "alpha_channel_122", "Latest version", "Latest version, with simple, yet pretty, graphics" %>
 
-<%= video "CmTGW4jAd_M", 420, 315 %>
+## Video
+
+<%= render 'video', id: "CmTGW4jAd_M", width: 420, height: 315 %>
+
+## Music
+
+<%= render 'music', pieces: ["http://dl.dropbox.com/u/33370854/games/alpha_channel/music/Alpha_Alarm"] %>
 
 [original version]: /2010/08/alpha-channel-v1_1/
 

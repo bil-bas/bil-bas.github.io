@@ -9,6 +9,7 @@ A game developed in 48 hours for [Ludum Dare #18](http://www.ludumdare.com/compo
 
 [Downloads](releases/)
 
+[![TIGSource forum](/images/tigsource.png)](http://forums.tigsource.com/index.php?topic=23309.0 "TIGSource forum")
 [![Gosu forum](/images/libgosu.png)](http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=453 "Gosu forum")
 [![Github project](/images/github.png)](https://github.com/Spooner/alpha_channel "Github project")
 

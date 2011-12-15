@@ -60,7 +60,7 @@ end
 
 def project_type(name)
   name = name.downcase.tr(" -", "_")
-  %w[games libraries utilities].find {|t| p "#{Dir.pwd}/content/#{t}/#{name}"; File.exists? "#{Dir.pwd}/content/#{t}/#{name}.md" }
+  %w[games libraries utilities].find {|t| File.exists? "#{Dir.pwd}/content/#{t}/#{name}.md" }
 end
 
 def file_size(file)

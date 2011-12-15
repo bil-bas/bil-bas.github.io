@@ -21,6 +21,11 @@
 
 - posted = @item.blog_post? ? "Posted" : "Released"
 
+- if @item.release?
+  - @item.name =~ /^(.+)-v(\d(?:_\d)+)$/
+  - project = $1.tr("-", "_")
+  - icon = "#{config[:base_url]}/images/icon/#{project}.png"
+
 - subheading = capture do
   %header
     %span.release_date #{posted} #{pretty_date @item.created_at}
@@ -45,6 +50,9 @@
 
     %p.posted Posted on #{pretty_date @item.created_at}
 
+    - if @item.release?
+      %img.app_icon{alt: "#{@item.title} icon", src: icon}
+
     = yield
 
     %footer
@@ -55,6 +63,9 @@
   - else
     -# Full articles on a list.
     = subheading
+
+    - if @item.release?
+      %img.app_icon{alt: "#{@item.title} icon", src: icon}
 
     = @item.compiled_content
 

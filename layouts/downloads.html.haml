@@ -8,6 +8,10 @@
 - download_base = "http://dl.dropbox.com/u/33370854/#{file_base}"
 - local_base = "C:/Users/Spooner/Dropbox/Public/#{file_base}"
 
+- unless @summary
+  %div{ style: "float:right" }
+    %img.app_icon{alt: "#{@item.title} icon", src: "#{config[:base_url]}/images/icon/#{name}.png"}
+
 %ul
   %li
     Windows:

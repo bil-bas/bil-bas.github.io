@@ -12,15 +12,11 @@
   %div{ style: "float:right" }
     %img.app_icon{alt: "#{@item.title} icon", src: "#{config[:base_url]}/images/icon/#{name}.png"}
 
+- win_exe = link_to "EXE", "#{download_base}_WIN32.zip", title: "Windows standalone executable with source: #{file_size "#{local_base}_WIN32.zip"}"
+- win_installer = link_to "INSTALLER", "#{download_base}_WIN32_INSTALLER.zip", title: "Windows installer with source: #{file_size "#{local_base}_WIN32_INSTALLER.zip"}"
+- os_x = link_to "APPLICATION", "#{download_base}_OSX.zip", title: "OS X application bundle (.app) with source: #{file_size "#{local_base}_OSX.zip"}"
+- source = link_to "Ruby SOURCE", "#{download_base}_SOURCE.zip", title: "Ruby source code only: #{file_size "#{local_base}_SOURCE.zip"}"
 %ul
-  %li
-    Windows:
-    = link_to "EXE", "#{download_base}_WIN32.zip", title: "Windows standalone executable with source: #{file_size "#{local_base}_WIN32.zip"}"
-    |
-    = link_to "INSTALLER", "#{download_base}_WIN32_INSTALLER.zip", title: "Windows installer with source: #{file_size "#{local_base}_WIN32_INSTALLER.zip"}"
-  %li
-    OS X:
-    = link_to "APPLICATION", "#{download_base}_OSX.zip", title: "OS X application bundle (.app) with source: #{file_size "#{local_base}_OSX.zip"}"
-  %li
-    Linux:
-    = link_to "Ruby SOURCE", "#{download_base}_SOURCE.zip", title: "Ruby source code only: #{file_size "#{local_base}_SOURCE.zip"}"
+  %li Windows: #{win_exe} | #{win_installer}
+  %li OS X: #{os_x}
+  %li Linux: #{source}

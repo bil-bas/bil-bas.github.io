@@ -58,3 +58,25 @@ def html_attributes(options)
   options.map {|k, v| "#{k}=#{v}"}.join "&"
 end
 
+def project_type(name)
+  name = name.downcase.tr(" -", "_")
+  %w[games libraries utilities].find {|t| p "#{Dir.pwd}/content/#{t}/#{name}"; File.exists? "#{Dir.pwd}/content/#{t}/#{name}.md" }
+end
+
+def file_size(file)
+  unless File.exists? file
+    puts "WARNING: unable to find size of file '#{file}'"
+    return ""
+  end
+
+  size = File.size file
+  case size
+    when 1..(2**10)
+      "#{size} B"
+    when (2**10)..(2**20)
+      "#{"%.1f" % size.fdiv(2**10)} kB"
+    else
+      "#{"%.1f" % size.fdiv(2**20)} MB"
+  end
+end
+

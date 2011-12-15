@@ -1,0 +1,22 @@
+- @item.name =~ /^(.+)-v(\d(?:_\d)+)$/
+- name, version = $1.tr("-", "_"), $2
+- type = project_type name
+
+- raise [name, version, type].inspect unless name and version and type
+
+- file_base = "#{type}/#{name}/#{name}_v#{version}"
+- download_base = "http://dl.dropbox.com/u/33370854/#{file_base}"
+- local_base = "C:/Users/Spooner/Dropbox/Public/#{file_base}"
+
+%ul
+  %li
+    Windows:
+    = link_to "EXE", "#{download_base}_WIN32.zip", title: "Windows standalone executable with source: #{file_size "#{local_base}_WIN32.zip"}"
+    |
+    = link_to "INSTALLER", "#{download_base}_WIN32_INSTALLER.zip", title: "Windows installer with source: #{file_size "#{local_base}_WIN32_INSTALLER.zip"}"
+  %li
+    OS X:
+    = link_to "APPLICATION", "#{download_base}_OSX.zip", title: "OS X application bundle (.app) with source: #{file_size "#{local_base}_OSX.zip"}"
+  %li
+    Linux:
+    = link_to "Ruby SOURCE", "#{download_base}_SOURCE.zip", title: "Ruby source code only: #{file_size "#{local_base}_SOURCE.zip"}"

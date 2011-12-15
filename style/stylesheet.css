@@ -116,7 +116,7 @@ iframe { border: 0; }
 
 iframe.youtube { margin-top: 1em; }
 
-.blog-social { clear: right; height: 25px; width: 330px; margin: 1em 0 0 auto; }
+.blog-social { height: 25px; width: 330px; margin: 1em 0 0 0; }
 .blog-social .twitter-share-button { float: left; padding-right: 10px; display: inline; }
 .blog-social .twitter-share-button .twfb { width: 120px; margin: 0 auto; }
 .blog-social .social2 { margin-left: -40px; }

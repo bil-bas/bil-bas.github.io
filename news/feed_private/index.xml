@@ -15,7 +15,10 @@
     <published>2011-12-15T14:00:00Z</published>
     <updated>2011-12-15T14:00:00Z</updated>
     <link rel="alternate" href="http://spooner.github.com/2011/12/hoops-v1_0_0/"/>
-    <content type="html">&lt;ul&gt;
+    <content type="html">&lt;div style="float:right"&gt;
+&lt;img alt="Hoops v1.0.0 icon" class="app_icon" src="http://spooner.github.com/images/icon/hoops.png" /&gt;
+&lt;/div&gt;
+&lt;ul&gt;
 &lt;li&gt;
 Windows:
 &lt;a title="Windows standalone executable with source: 8.8 MB" href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v1_0_0_WIN32.zip"&gt;EXE&lt;/a&gt;
@@ -54,7 +57,10 @@ Linux:
     <published>2011-12-15T13:00:00Z</published>
     <updated>2011-12-15T13:00:00Z</updated>
     <link rel="alternate" href="http://spooner.github.com/2011/12/alpha-channel-v1_3_0/"/>
-    <content type="html">&lt;ul&gt;
+    <content type="html">&lt;div style="float:right"&gt;
+&lt;img alt="Alpha Channel v1.3.0 icon" class="app_icon" src="http://spooner.github.com/images/icon/alpha_channel.png" /&gt;
+&lt;/div&gt;
+&lt;ul&gt;
 &lt;li&gt;
 Windows:
 &lt;a title="Windows standalone executable with source: 6.1 MB" href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_3_0_WIN32.zip"&gt;EXE&lt;/a&gt;

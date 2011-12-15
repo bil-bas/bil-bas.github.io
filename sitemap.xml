@@ -33,6 +33,14 @@
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/2011/12/alpha-channel-v1_3_0/</loc>
+    <lastmod>2011-12-15</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/2011/12/hoops-v1_0_0/</loc>
+    <lastmod>2011-12-15</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/2011/12/set-up-new-nanoc-generated-website/</loc>
     <lastmod>2011-12-14</lastmod>
   </url>
@@ -142,19 +150,31 @@
     <loc>http://spooner.github.com/utilities/flipped/releases/</loc>
   </url>
   <url>
+    <loc>http://spooner.github.com/tags/hoops/</loc>
+    <lastmod>2011-12-15</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/game/</loc>
+    <lastmod>2011-12-15</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/gosu/</loc>
+    <lastmod>2011-12-15</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/ruby/</loc>
+    <lastmod>2011-12-15</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/alpha-channel/</loc>
+    <lastmod>2011-12-15</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/tags/zed-and-ginger/</loc>
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/tags/game/</loc>
-    <lastmod>2011-12-14</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/tags/ray/</loc>
-    <lastmod>2011-12-14</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/ruby/</loc>
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
@@ -163,14 +183,6 @@
   </url>
   <url>
     <loc>http://spooner.github.com/tags/website/</loc>
-    <lastmod>2011-12-14</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/alpha-channel/</loc>
-    <lastmod>2011-12-14</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/gosu/</loc>
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
@@ -186,16 +198,12 @@
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/tags/hoops/</loc>
-    <lastmod>2011-12-14</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/tags/flipped/</loc>
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2011/</loc>
-    <lastmod>2011-12-14</lastmod>
+    <lastmod>2011-12-15</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2010/</loc>
@@ -203,7 +211,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/2011/12/</loc>
-    <lastmod>2011-12-14</lastmod>
+    <lastmod>2011-12-15</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2011/11/</loc>

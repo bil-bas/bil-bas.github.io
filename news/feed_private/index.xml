@@ -2,13 +2,87 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://spooner.github.com/</id>
   <title>Spooner's News</title>
-  <updated>2011-12-09T17:34:45Z</updated>
+  <updated>2011-12-15T14:00:00Z</updated>
   <link rel="alternate" href="http://spooner.github.com/"/>
   <link rel="self" href="http://feeds.feedburner.com/spooner_news"/>
   <author>
     <name>Spooner (Bil Bas)</name>
     <uri>http://spooner.github.com</uri>
   </author>
+  <entry>
+    <id>tag:spooner.github.com,2011-12-15:/2011/12/hoops-v1_0_0/</id>
+    <title type="html">Hoops v1.0.0</title>
+    <published>2011-12-15T14:00:00Z</published>
+    <updated>2011-12-15T14:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/2011/12/hoops-v1_0_0/"/>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;
+Windows:
+&lt;a title="Windows standalone executable with source: 8.8 MB" href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v1_0_0_WIN32.zip"&gt;EXE&lt;/a&gt;
+|
+&lt;a title="Windows installer with source: 7.9 MB" href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v1_0_0_WIN32_INSTALLER.zip"&gt;INSTALLER&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+OS X:
+&lt;a title="OS X application bundle (.app) with source: 13.0 MB" href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v1_0_0_OSX.zip"&gt;APPLICATION&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Linux:
+&lt;a title="Ruby source code only: 3.8 MB" href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v1_0_0_SOURCE.zip"&gt;Ruby SOURCE&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;All releases now include source code.&lt;/li&gt;
+  &lt;li&gt;Added Windows INSTALLER.&lt;/li&gt;
+  &lt;li&gt;Stopped spitting out more than one hoop at once, since there is a good chance that the keyboard can’t read two keys at once.&lt;/li&gt;
+  &lt;li&gt;Added menu on game-over, so you can go replay the same game or go back to menu or quit.&lt;/li&gt;
+  &lt;li&gt;Added one-player mode to allow player to control either dancer (previously only 2-player mode was available).&lt;/li&gt;
+  &lt;li&gt;Reduced font size so that it is easier to use the GUI.&lt;/li&gt;
+  &lt;li&gt;Removed beeps when you play correctly (still get buzz when you fail).&lt;/li&gt;
+  &lt;li&gt;Fixed occasional graphical glitches.&lt;/li&gt;
+  &lt;li&gt;OSX package now runs on OS X 10.5 or later.&lt;/li&gt;
+  &lt;li&gt;Linux version now works with Ruby 1.9.3&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <id>tag:spooner.github.com,2011-12-15:/2011/12/alpha-channel-v1_3_0/</id>
+    <title type="html">Alpha Channel v1.3.0</title>
+    <published>2011-12-15T13:00:00Z</published>
+    <updated>2011-12-15T13:00:00Z</updated>
+    <link rel="alternate" href="http://spooner.github.com/2011/12/alpha-channel-v1_3_0/"/>
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;
+Windows:
+&lt;a title="Windows standalone executable with source: 6.1 MB" href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_3_0_WIN32.zip"&gt;EXE&lt;/a&gt;
+|
+&lt;a title="Windows installer with source: 5.2 MB" href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_3_0_WIN32_INSTALLER.zip"&gt;INSTALLER&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+OS X:
+&lt;a title="OS X application bundle (.app) with source: 10.5 MB" href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_3_0_OSX.zip"&gt;APPLICATION&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Linux:
+&lt;a title="Ruby source code only: 1.3 MB" href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_3_0_SOURCE.zip"&gt;Ruby SOURCE&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;All releases now include source code.&lt;/li&gt;
+  &lt;li&gt;Added Windows INSTALLER.&lt;/li&gt;
+  &lt;li&gt;Added some music from KanonBaum (Brian Peppers).&lt;/li&gt;
+  &lt;li&gt;Fixed occasional graphical glitches.&lt;/li&gt;
+  &lt;li&gt;OSX package now runs on OS X 10.5 or later.&lt;/li&gt;
+  &lt;li&gt;Source (Linux) version now works with Ruby 1.9.3&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:spooner.github.com,2011-12-09:/2011/12/zed-and-ginger-v0_4_0/</id>
     <title type="html">Zed and Ginger v0.4.0</title>
@@ -76,48 +150,6 @@
   &lt;li&gt;Added message when building OSX if required file is missing.&lt;/li&gt;
   &lt;li&gt;Updated Windows executable to use Ruby 1.9.3 (should start up faster)&lt;/li&gt;
   &lt;li&gt;Fixed: Game breaks when paused (pressed ‘P’) or in help (pressed ‘F1’) (Thanks Jwosty)&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:spooner.github.com,2011-11-04:/2011/11/fidgit-v0_1_9/</id>
-    <title type="html">Fidgit v0.1.9</title>
-    <published>2011-11-04T12:00:00Z</published>
-    <updated>2011-11-04T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2011/11/fidgit-v0_1_9/"/>
-    <content type="html">&lt;ul&gt;
-  &lt;li&gt;Ruby gem release: &lt;code&gt;gem install fidgit&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Fixed some minor issues.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:spooner.github.com,2011-08-10:/2011/08/zed-and-ginger-v0_3_0/</id>
-    <title type="html">Zed and Ginger v0.3.0</title>
-    <published>2011-08-10T12:00:00Z</published>
-    <updated>2011-08-10T12:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2011/08/zed-and-ginger-v0_3_0/"/>
-    <content type="html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_3_0_WIN32.zip"&gt;Windows executable&lt;/a&gt; [4.3MB]&lt;/li&gt;
-  &lt;li&gt;[OS X/Linux - Ruby source] - not released.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Moved resolution/fullscreen controls into Settings page.&lt;/li&gt;
-  &lt;li&gt;Added effects/music volume sliders in a separate Settings page.&lt;/li&gt;
-  &lt;li&gt;Added particle system and other graphical improvements.&lt;/li&gt;
-  &lt;li&gt;Fixed problem with gaining extra time, which also messing up animations (e.g. of green goo texture or laser movement).&lt;/li&gt;
-  &lt;li&gt;Changed gravity to be more realistic.&lt;/li&gt;
-  &lt;li&gt;Added intro which explains the origin of Zed.&lt;/li&gt;
-  &lt;li&gt;Applied flea collars.&lt;/li&gt;
-  &lt;li&gt;Added 4th level.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

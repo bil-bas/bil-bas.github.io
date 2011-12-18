@@ -8,10 +8,7 @@ Alpha Channel is a single-player game which has stylised 2D graphics and a retro
 
 [Downloads](releases/)
 
-[![TIGSource forum](/images/tigsource.png)](http://forums.tigsource.com/index.php?topic=23309.0 "TIGSource forum")
-[![Gosu forum](/images/libgosu.png)](http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=453 "Gosu forum")
-[![Github project](/images/github.png)](https://github.com/Spooner/alpha_channel "Github project")
-
+<%= render "project_links", tig_source: 23309, gosu: 453 %>
 
 
 As the last of the Blue Pixels, take direct control of your enemies in order to destroy them before they obliterate you. Prevail against the hordes of malignant Red Pixels and 5 differently coloured boss Pixels so that you can return to your endless musing on the nature of the Great Electron Gun!

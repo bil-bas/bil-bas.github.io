@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Wrath
+full_title: "Wrath: Appease or Die!"
 status: Beta
 ---
 
@@ -8,11 +9,7 @@ A game of sacrifice and wearing a chicken on your head (2 players, locally or ne
 
 [Downloads](releases/)
 
-[![TIGSource forum](/images/tigsource.png)](http://forums.tigsource.com/index.php?topic=19459 "TIGSource forum")
-[![Gosu forum](/images/libgosu.png)](http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=554 "Gosu forum")
-[![Github project](/images/github.png)](https://github.com/Spooner/wrath "Github project")
-
-The full title of the game is, 'Wrath: Appease or Die!'.
+<%= render "project_links", tig_source: 19459, gosu: 554 %>
 
 The game is played on a number of maps (which are semi-randomly generated), such as:
 

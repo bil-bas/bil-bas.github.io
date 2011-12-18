@@ -16,8 +16,8 @@ A cat runs! Why does the cat run? (1 or 2 players locally; game based on [Metro-
 * [Level 4](http://gamercv.com/games/18-zed-and-ginger-level-4)
 * [Level 5](http://gamercv.com/games/19-zed-and-ginger-level-5)
 
-[![TIGSource forum](/images/tigsource.png)](http://forums.tigsource.com/index.php?topic=20797.0 "TIGSource forum")
-[![Github project](/images/github.png)](https://github.com/Spooner/zed_and_ginger "Github project")
+
+<%= render "project_links", tig_source: 20797 %>
 
 This game was quite a departure for me, since I chose to implement using the [Ray] game library. Although this enabled certain special features, such as access to GPU shaders via GLSL, it isn't widely used as more usual library, [Gosu].
 

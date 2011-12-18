@@ -6,7 +6,7 @@ status: Beta
 
 Fidgit is a GUI toolkit built on [Gosu]/[Chingu] for Ruby. It uses a system of hierarchical packing containers to hold relatively advanced controls, such as scrolling windows and file dialogs.
 
-[![Github project](/images/github.png)](https://github.com/Spooner/fidgit "Github project")
+<%= render "project_links", gosu: 489 %>
 
 Features
 --------

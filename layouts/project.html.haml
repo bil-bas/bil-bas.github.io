@@ -18,7 +18,7 @@
         - else
           Unreleased
 
-      %h2= link_to @item.title, @item
+      %h2= link_to @item.full_title, @item
 
     = link_to @item do
       %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
@@ -32,7 +32,7 @@
 
   - else
     %header
-      %h1= link_to @item.title, @item.permalink
+      %h1= link_to @item.full_title, @item.permalink
 
     %img.app_icon{alt: "#{@item.title} icon", src: "/images/icon/#{@item.name}.png"}
 

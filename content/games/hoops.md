@@ -1,23 +1,21 @@
 ---
 layout: project
-title: Hoops
+title: HOOPS
+full_title: An Indeterminate Number of HOOPS
 status: Complete
 ---
 
 
-A rhythm-based dancing game with added cats for 1 or 2 players (locally). The full title is: _An Indeterminate number of HOOPS_.
+HOOPS is a rhythm-based dancing game with added cats for 1 or 2 players (locally).
 
 [Downloads](releases/)
 
-[![TIGSource forum](/images/tigsource.png)](http://forums.tigsource.com/index.php?topic=23308.0 "TIGSource forum")
-[![Gosu forum](/images/libgosu.png)](http://www.libgosu.org/cgi-bin/mwf/topic_show.pl?tid=582 "Gosu forum")
-[![Github project](/images/github.png)](https://github.com/Spooner/hoops "Github project")
+<%= render "project_links", tig_source: 23308, gosu: 582 %>
 
 
-Play as Meow and/or Star, two dancers who do nothing better than strutting their stuff on the dance-floor and try to outdo each other. Build up an impressive score multiplier by synchronising your buttons with the rolling hoola-hoops and especially those hoops ridden by cats, who will dance with you if you impress them!
+Play as Meow and/or Star, two dancers who do nothing better than strutting their stuff on the dance-floor and try to outdo each other. Build up an impressive score multiplier by synchronising your buttons with the rolling hula-hoops and especially those hoops ridden by cats, who will dance with you if you impress them!
 
-Choose from 4 dance tracks while playing, two of which were composed especially for the game. Users can add their own tracks to be played in the game (.ogg files only). The game has 4 difficulty levels and when playing in 2-player mode, players may play on different difficulty levels, so you can more easily play with kids or with your nan, while still having a fun game.
-
+Choose from 4 dance tracks while playing, two of which were composed especially for the game or add your own tracks to be played in the game (.ogg files only). The game has 4 difficulty levels and when playing in 2-player mode, players may play on different difficulty levels, so you can more easily play with kids or with your nan, while still having a fun game.
 
 
 <%=

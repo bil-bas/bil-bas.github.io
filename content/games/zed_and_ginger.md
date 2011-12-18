@@ -31,7 +31,13 @@ When played with two players, they share the screen if they are close together, 
 
 ## Video
 
+### v0.1.0
+
 <%= render 'video', id: "bg4phgKflDo", width: 560, height: 315 %>
+
+### pre-beta
+
+<%= render 'video', id: "gahePvpKno4", width: 560, height: 315 %>
 
 ## Music
 

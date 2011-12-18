@@ -109,6 +109,7 @@ article { padding: 0 1.5em 1em 1.5em; background-color: #e9fbd6; border-bottom-l
 article header { margin: 0 -1.5em 0 -1.5em; }
 
 div.gallery { background-color: #a8c595; padding: 6px 0 0 6px; margin-bottom: 1em; }
+div.gallery a { text-decoration: none; }
 
 img.thumb { display: inline; border: 4px solid black; margin: 0 5px 5px 0; }
 
@@ -121,3 +122,8 @@ iframe.youtube { margin-top: 1em; }
 .blog-social .twitter-share-button .twfb { width: 120px; margin: 0 auto; }
 .blog-social .social2 { margin-left: -40px; }
 .blog-social .social2 .fb-like { float: left; }
+
+.project_links a { text-decoration: none; }
+.project_links img.github { height: 72; width: 35; }
+.project_links img.gosu { height: 80; width: 35; }
+.project_links img.tig_source { height: 118; width: 35; }

@@ -1,7 +1,9 @@
 - path = "/images/screenshots/#{@image}"
+- screenshot = @items.find {|i| i.identifier == "#{path}/" }
+- thumbnail = screenshot.rep_named(:thumbnail)
 
 - image = ChunkyPNG::Image.from_file("output#{path}-thumbnail.png")
 
 - @title ||= @alt
-= link_to "#{path}.png", rel: "lightbox-gallery" do
-  %img{ class: "thumb", src: "#{path}-thumbnail.png", alt: @alt, title: @title, width: image.width, height: image.height }
+= link_to screenshot.path, rel: "lightbox-gallery" do
+  %img{ class: "thumb", src: thumbnail.path, alt: @alt, title: @title, width: image.width, height: image.height }

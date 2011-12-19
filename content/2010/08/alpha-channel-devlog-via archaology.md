@@ -17,10 +17,10 @@ The competition had started too late the night before (3 am my time), so I didn�
 
 I can’t think of a name, so spooner_ld_18 becomes the working title. I have several ideas at this point and bounce them around my friends, but soon decide that I want to:
 
-Use Gosu/Chingu libraries on Ruby. I’d used these a bit for another long-term project I’d started, but that was more GUI-based than real-time.
-Pixellised (partially from style, but mainly to allow me to rapidly create graphics that didn’t look terrible).
-Not a platform game (just too many of them about).
-I wouldn’t actually start coding for a few hours, until I’d formulated a bit of a plan. I decided to make a game where you played a wizard who was being attacked by monsters, but who could somehow control those monsters in order to survive. Although the game-play didn’t change much from this initial blueprint, the concept would actually change to fit the initial “placeholder” graphics!
+* Use Gosu/Chingu libraries on Ruby. I’d used these a bit for another long-term project I’d started, but that was more GUI-based than real-time.
+* Pixellised (partially from style, but mainly to allow me to rapidly create graphics that didn’t look terrible).
+* Not a platform game (just too many of them about).
+* I wouldn’t actually start coding for a few hours, until I’d formulated a bit of a plan. I decided to make a game where you played a wizard who was being attacked by monsters, but who could somehow control those monsters in order to survive. Although the game-play didn’t change much from this initial blueprint, the concept would actually change to fit the initial “placeholder” graphics!
 
 
 

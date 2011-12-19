@@ -90,6 +90,192 @@
 </footer>
 </article>
 
+<article>
+<header>
+<span class='release_date'>Posted Sunday, 29th August 2010</span>
+<h2><a href="/2010/08/deconstructing-alpha-channel/">Deconstructing Alpha Channel</a></h2>
+</header>
+
+<p>Well, it is a week now since I started working on Alpha Channel for LD#18, my first such competition. In fact, the first time I tried to make a real-time game in nearly a decade, I think!</p>
+
+<p>I came in with no pre-conceived game-ideas, but was really happy that the theme was one that would give me ideas on how the develop game mechanics. I already wrote a journal of how the steps in development went, but I thought I’d discuss my post-competition thoughts now that I’ve had time to relax and to look at 30 other entries.</p>
+
+<p>Apologies now, in case I go on a bit (I know I will  )…</p>
+
+<h3 id="how-did-the-competition-environment-compare-with-regular-development">How did the competition environment compare with regular development?</h3>
+
+<p>One of the biggest problems with my own projects, games or not, is that I am both a perfectionist and a feature-creeper. Not particularly unusual among developers, but it does mean a lot of overly ambitious, though unfinished, projects lying around.</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/journal_bad_pixels.png"><img alt="Early version" class="thumb" height="120" src="/images/screenshots/journal_bad_pixels-thumbnail.png" title="Early version" width="160" />
+</a></p>
+
+<p>Working within the competition time constraint was frankly liberating! My ability to throw something together in the most slapdash fashion with a “That’s good enough; I’ll do it properly if I have time at the end” was great. Although I did come back to redo a few things better on the second day, the changes were more to do with directly improving game-play rather than less tangible improvements (like improving the frames per second by 0.1 through excessive attempts at optimisation  ).</p>
+
+<p>The fact that I could get out a moderately playable version so quickly, then iterate towards the final product, was great. Well, that part isn’t so far away from my regular style, but I usually end up getting more involved with re-factoring during the iterations than actually adding new things, which slows apparent progress significantly and is thus demotivating.</p>
+
+<h3 id="does-alpha-channel-have-a-future">Does Alpha Channel have a future?</h3>
+
+<p>After my testers and scorers had played my game and seemed to quite enjoy my game, as far as it went, I was seriously considering further development. I was actually surprised how much people liked it, to tell the truth. The thing is, with a bit more variety and polish, I think it would actually make a decent casual browser game. The problem is that Alpha Channel is not a browser game and I don’t have a lot of interest in learning how to re-make it as one.</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/journal_death.png"><img alt="The death of a pixel" class="thumb" height="117" src="/images/screenshots/journal_death-thumbnail.png" title="The death of a pixel" width="157" />
+</a></p>
+
+<p>So, I think I failed a little. In trying to make the game and its mechanics simple (though, I hope, elegant), so that I could largely complete it in the time frame, I sort of missed the opportunity to start making a game with depth, even if I barely managed to scratch the surface of its potential in the 48 hours. Only this sort of more involved game, I think, can have potential outside the browser environment.</p>
+
+<h3 id="where-the-graphics-stylish-or-lazy">Where the graphics stylish or lazy?</h3>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/alpha_channel_linux_v1_1.png"><img alt="Final graphics" class="thumb" height="120" src="/images/screenshots/alpha_channel_linux_v1_1-thumbnail.png" title="Final graphics" width="160" />
+</a></p>
+
+<p>Weeeell, that is a difficult question! As I mentioned in my journal, I had originally intended to use a pixellated graphical style, but instead grew attached to the place-holder block graphics and developed that style instead, changing the original concept (wizard and monsters) to one that fitted with the style I’d developed (pixel wars). The background score/level indicators, although most people felt they would be distracting before actually playing, just add to the feeling of being inside a computer screen and, since they barely change except in the top right hand corner, weren’t visually disruptive.</p>
+
+<p>I think the basic idea of going for bold colours and blocks worked to a large degree. It also allowed me to give feedback on health (via alpha channel) and energy (via blue channel) quite elegantly. I do think, however, that I could have made more effort with particles and perhaps other special effects, necessary to liven up what was otherwise a rather flat display.</p>
+
+<p>I’m honestly hoping that <a href="http://www.niallmoody.com/games/the-lair-of-fungal-wonder">Lair of Fungal Wonder</a> has inspired me to really put some real visual flair into my next game! I’d be using pastels rather than watercolours, but the idea would be the same.</p>
+
+<h3 id="what-would-you-do-differently-in-the-next-ludum-dare">What would you do differently in the next Ludum Dare?</h3>
+
+<p>Although I am not at all sure that Alpha Channel is really worth continued development effort, I like it! I really enjoyed making it and people actually enjoyed playing it, so it definitely was a success in a lot of ways.</p>
+
+<p>I don’t know that I’d have enjoyed making a barely playable game that was complex enough to have a lot of potential, so I’m not sure I would want to try that tack in future competitions. Admittedly, with experience of LD now under my belt, I probably wouldn’t have to aim so low as I did. I’d also want to learn a few of the facets of the libraries I was using that I realised I wanted to use, but knew I didn’t have time to learn or wanted to risk not being able to get working (specifically on-line high scores &amp; hooking up a proper physics engine). I’ve already started committing some improvements to libraries I’ve used (and will use) if only so I’m better prepared and less likely to find bugs when I’m in the next competition!</p>
+
+<p>The biggest thing I’d do differently is to improve the interface. A simple title screen and/or some nice instructions pages would have made a big difference (I had an instructions page, but it was just one big page with tiny writing; should ideally have been a couple of pages with large text and illustrations of how to play). I needn’t have spent much time at the end on something like that to make the game a lot more pleasant to use, considering that game-play wasn’t immediately obvious. However, having made a game-play video and the fact that the game was pretty simple once you got the hang of it, I don’t think I was crippled by lacking decent instructions in this instance.</p>
+
+<footer>
+<div class='comments'><a data-disqus-identifier="deconstructing-alpha-channel" href="/2010/08/deconstructing-alpha-channel/#disqus_thread">Comments</a></div>
+<div class='tags'>Tags: <a href="/tags/alpha-channel/" rel="tag">alpha-channel</a>, <a href="/tags/ruby/" rel="tag">ruby</a>, <a href="/tags/ludum-dare/" rel="tag">ludum-dare</a></div>
+
+<div class='blog-social'>
+<a class='twitter-share-button' data-lang='en' data-text='Deconstructing Alpha Channel' data-url='http://spooner.github.com/2010/08/deconstructing-alpha-channel/' href='https://twitter.com/share'></a>
+<div class='social2'>
+<div class='fb-like' data-height='25' data-href='http://spooner.github.com/2010/08/deconstructing-alpha-channel/' data-layout='button_count' data-send='false' data-show-faces='false' data-width='90'></div>
+<div class='social3'>
+<script>
+  //<![CDATA[
+    reddit_url = "http://spooner.github.com/2010/08/deconstructing-alpha-channel/";
+    reddit_title = "Deconstructing Alpha Channel";
+  //]]>
+</script>
+
+<script src='http://www.reddit.com/static/button/button1.js' type='text/javascript'></script>
+</div>
+</div>
+</div>
+
+</footer>
+</article>
+
+<article>
+<header>
+<span class='release_date'>Posted Wednesday, 25th August 2010</span>
+<h2><a href="/2010/08/alpha-channel-devlog-via archaology/">Alpha Channel devlog via archaeology</a></h2>
+</header>
+
+<p>Since this was my first Ludum Dare, making the game <a href="/games/alpha_channel">Alpha Channel</a>, I didn’t make an effort to post my progress as it happened. However, through the magic of git, I’ve pulled some old versions up and seen how things developed. Interesting to see how the game progressed and if you have git you could also look at the progress made throughout the development via the <a href="http://github.com/Spooner/alpha_channel">repository at github.com</a> (if you were very bored, of course).</p>
+
+<p>I’m using my local time, not that of the competition, in the entries.</p>
+
+<h3 id="day-1-846-am-created-the-project">Day 1, 8:46 am: Created the project</h3>
+
+<p>The competition had started too late the night before (3 am my time), so I didn’t stay up. I got up early to eagerly discover the theme and was really happy that it was one of those I’d voted up because it sounded potentially inspirational for a game (the more vague themes were not as interesting to me).</p>
+
+<p>I can’t think of a name, so spooner_ld_18 becomes the working title. I have several ideas at this point and bounce them around my friends, but soon decide that I want to:</p>
+
+<ul>
+  <li>Use Gosu/Chingu libraries on Ruby. I’d used these a bit for another long-term project I’d started, but that was more GUI-based than real-time.</li>
+  <li>Pixellised (partially from style, but mainly to allow me to rapidly create graphics that didn’t look terrible).</li>
+  <li>Not a platform game (just too many of them about).</li>
+  <li>I wouldn’t actually start coding for a few hours, until I’d formulated a bit of a plan. I decided to make a game where you played a wizard who was being attacked by monsters, but who could somehow control those monsters in order to survive. Although the game-play didn’t change much from this initial blueprint, the concept would actually change to fit the initial “placeholder” graphics!</li>
+</ul>
+
+<h3 id="day-1-200-pm-first-playable-version">Day 1, 2:00 pm: First “playable” version</h3>
+
+<p>The sprites would be 8×8 and zoomed out, so 1 game pixel would cover 4×4 screen pixels, but I decided to use simple blocks for prototyping; I’d be able to draw the sprites properly later…(but never would :$).</p>
+
+<p>The “monsters” were red blocks, which they stayed throughout the whole development. The wizard was white, turning grey when he was controlling a monster. A controlled monster was blue and sprites could still overlap each other, which didn’t look terrible in this “blocky” version, but I knew would be terrible when the sprites were actually drawn. I was showing health and energy (the time you could keep control of a monster) in numbers at top of the screen, but this was pretty impossible to keep track of while playing. I was, at this time, planning to replace the health/energy numbers with bars later on. The screen was initially green, to represent grass, not a computer screen!</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/journal_first.png"><img alt="First attempt" class="thumb" height="119" src="/images/screenshots/journal_first-thumbnail.png" title="First attempt" width="160" />
+</a></p>
+
+<h3 id="day-1-300-pm-sound-effects">Day 1, 3:00 pm: Sound effects</h3>
+
+<p>The first sound effects were added at this point, being created in sfxr. The main impetus for this was wanting aural feedback for taking damage. I didn’t spend a long time on this, but I felt I’d got the sounds pretty right within a short space of time. As it happened, I got some grief from people playing my game in the end, because the sound effects were too loud, mainly because I was being quite slack in how I played them (every Pixel contact generated a separate sound, so if lots of objects were touching, the sound got quite loud).</p>
+
+<h3 id="day-1-400-pm-bad-pixels">Day 1, 4:00 pm: Bad pixels</h3>
+
+<p>Because levels were a bit flat, I decided to add randomly placed obstacles, originally called Bad Pixels. They’d be something to hide behind and to avoid since they would slowly damage any Pixel pushing against them. This was also the point at which I prevented the red Pixels from overlapping. This was also the first time I considered my game objects to be Pixels, rather than wizards and monsters, I think.</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/journal_bad_pixels.png"><img alt="Bad Pixels" class="thumb" height="120" src="/images/screenshots/journal_bad_pixels-thumbnail.png" title="Bad Pixels" width="160" />
+</a></p>
+
+<h3 id="day-1-800-pm-transparency-is-life-itself">Day 1, 8:00 pm: Transparency is life itself</h3>
+
+<p>Again striving for feedback in the game, I set the alpha channel of each Pixel proportional to its current health. This made the health shown at the top of the screen irrelevant and since I had already put the large level (0001) indication in the background of the game, I was just about to move the score into the background as well. Energy would soon be indicated by the blue colour channel mainly so I could remove all those numbers on the status line.</p>
+
+<p>Also the first point that I drew a link between player and controlled enemy, which was to be a place-holder for some sort of fancy electricity or particle effect, but which I never actually got around to improving upon.</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/journal_transparency.png"><img alt="Alpha Channel acts as health meter" class="thumb" height="120" src="/images/screenshots/journal_transparency-thumbnail.png" title="Alpha Channel acts as health meter" width="161" />
+</a></p>
+
+<h3 id="day-1-1015-pm-exploding-on-death">Day 1, 10:15 pm: Exploding on death</h3>
+
+<p>Added some particle effects that made it look like the Pixel was breaking into 16 pieces that shot off in different directions. The sound effect had been there for a while, but I thought it would be nice to add an effect for this rather than just have things disappear. Unlike the rest of the visual and aural effects I added, this was more aesthetic than for improving the feedback given to the player.</p>
+
+<p>At this point, the player had a lot more health and could pretty much barge through the levels without actually using the enemy-controlling effect! I had to tone this down later, since it made the main point of the level pointless and the game pretty easy once you realised.</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/journal_death.png"><img alt="Death of a Pixel" class="thumb" height="117" src="/images/screenshots/journal_death-thumbnail.png" title="Death of a Pixel" width="157" />
+</a></p>
+
+<h3 id="day-2-130-pm-particle-effects-on-contact">Day 2, 1:30 pm: Particle effects on contact</h3>
+
+<p>To make it much more clear where contacts were being made, and therefore where damage was being done, I added some simple particles along the edges of contact. Half of the particles would be created in the colour of one contactee; the other half the other colour. Again, this was added because it needed to be added for player feedback, rather than as a flashy effect in itself.</p>
+
+<h3 id="day-2-214-pm-finally-decided-on-a-name">Day 2, 2:14 pm: Finally decided on a name</h3>
+
+<p>Struggling with a name, I’d come up with “Pixhell”, but then found that name was already used by other things. I wondered what was the most important thing to the Pixels characters in my game and that was the alpha channel (this respresents health; Pixels fade out before finally dying in a shower of particles). So…”Alpha Channel”. Not going to win any awards for great titles, but I feel it fits the game well.</p>
+
+<h3 id="day-2-501-pm-added-a-high-score-system">Day 2, 5:01 pm: Added a high score system</h3>
+
+<p>I considered adding an online high score system, since the framework for one was available in one of the libraries I was using. In the end I chickened out, since I felt that such a system would be very likely to fail as well as taking a unnecessarily long time to implement and test). In the end, I just showed the current high score at the bottom of the screen and the current score at the top, the player’s best score just being stored in a local text file. I think that implementing the online high score system was the thing I really missed out on. My friend ippa’s game used it, and I think it did encourage some players to play it more so they could beat each other. Probably the first thing I’d add if I was continuing development…</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/journal_high_score.png"><img alt="High scores" class="thumb" height="121" src="/images/screenshots/journal_high_score-thumbnail.png" title="High scores" width="160" />
+</a></p>
+
+<h3 id="day-2-1130-pm-v10-windows-only---three-and-a-half-hours-within-the-time-limit-well-that-was-when-i-committed-the-final-version-my-actual-upload-was-a-bit-later">Day 2, 11:30 pm: v1.0 (Windows only) - Three and a half hours within the time limit (well, that was when I committed the final version; my actual upload was a bit later).</h3>
+
+<p>Finally finished, though I’d barely changed anything in the evening, since I was just play-testing it and tweaking numbers here and there to correct the balance. I tweaked the difficulty as the levels progressed and replaced the font with one that was more boxy, since that was more in-keeping with the game’s aesthetic. Watch a <a href="http://www.youtube.com/watch?v=CmTGW4jAd_M">game-play video</a> of this iteration at youtube.com.</p>
+
+<h3 id="day-4-after-event-v11--entry-ported-to-linux-and-osx">Day 4 (after event): v1.1 – Entry ported to Linux and OS/X</h3>
+
+<p>Unfortunately, the very boxy font I’d chosen for the initial release, which worked fine on Windows, was so badly displayed in Linux (only the top half of the characters were actually shown) that I need to pick a new font that was consistent across all three platforms. The first font I’d used didn’t display as I wanted it to on OS/X, which is one of the reasons I’d replaced it originally, so I ended up with this one. I don’t like it as much, but it is still mostly in keeping with the overall style and ensures that all 3 OS versions look identical.</p>
+
+<p><a rel="lightbox-gallery" href="/images/screenshots/alpha_channel_os_x.png"><img alt="The game on OS X" class="thumb" height="126" src="/images/screenshots/alpha_channel_os_x-thumbnail.png" title="The game on OS X" width="160" />
+</a></p>
+
+<footer>
+<div class='comments'><a data-disqus-identifier="alpha-channel-devlog-via archaology" href="/2010/08/alpha-channel-devlog-via archaology/#disqus_thread">Comments</a></div>
+<div class='tags'>Tags: <a href="/tags/alpha-channel/" rel="tag">alpha-channel</a>, <a href="/tags/ruby/" rel="tag">ruby</a>, <a href="/tags/ludum-dare/" rel="tag">ludum-dare</a></div>
+
+<div class='blog-social'>
+<a class='twitter-share-button' data-lang='en' data-text='Alpha Channel devlog via archaeology' data-url='http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/' href='https://twitter.com/share'></a>
+<div class='social2'>
+<div class='fb-like' data-height='25' data-href='http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/' data-layout='button_count' data-send='false' data-show-faces='false' data-width='90'></div>
+<div class='social3'>
+<script>
+  //<![CDATA[
+    reddit_url = "http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/";
+    reddit_title = "Alpha Channel devlog via archaeology";
+  //]]>
+</script>
+
+<script src='http://www.reddit.com/static/button/button1.js' type='text/javascript'></script>
+</div>
+</div>
+</div>
+
+</footer>
+</article>
+
 </div>
 </div>
 <div class='sidebar'>
@@ -158,19 +344,20 @@ Flipped
 <nav class='tag_cloud'>
 <h3><a href="/tags/">Tags</a></h3>
 <ul>
-<li><a title="Used 4 times" style="font-size:119%" href="/tags/alpha-channel/">alpha-channel</a></li>
+<li><a title="Used 6 times" style="font-size:139%" href="/tags/alpha-channel/">alpha-channel</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/fidgit/">fidgit</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/flipped/">flipped</a></li>
-<li><a title="Used 9 times" style="font-size:201%" href="/tags/game/">game</a></li>
+<li><a title="Used 9 times" style="font-size:181%" href="/tags/game/">game</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/gem/">gem</a></li>
-<li><a title="Used 8 times" style="font-size:185%" href="/tags/gosu/">gosu</a></li>
-<li><a title="Used 2 times" style="font-size:86%" href="/tags/hoops/">hoops</a></li>
+<li><a title="Used 8 times" style="font-size:167%" href="/tags/gosu/">gosu</a></li>
+<li><a title="Used 2 times" style="font-size:84%" href="/tags/hoops/">hoops</a></li>
+<li><a title="Used 3 times" style="font-size:98%" href="/tags/ludum-dare/">ludum-dare</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/nanoc/">nanoc</a></li>
-<li><a title="Used 2 times" style="font-size:86%" href="/tags/ray/">ray</a></li>
-<li><a title="Used 12 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
+<li><a title="Used 2 times" style="font-size:84%" href="/tags/ray/">ray</a></li>
+<li><a title="Used 14 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/website/">website</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/wrath/">wrath</a></li>
-<li><a title="Used 2 times" style="font-size:86%" href="/tags/zed-and-ginger/">zed-and-ginger</a></li>
+<li><a title="Used 2 times" style="font-size:84%" href="/tags/zed-and-ginger/">zed-and-ginger</a></li>
 </ul>
 </nav>
 <nav class='archives'>
@@ -186,7 +373,9 @@ Fidgit v0.1.9" href="/2011/11/">November 2011 (2)</a></li>
 <li><a title="Alpha Channel v1.2.1" href="/2011/07/">July 2011 (1)</a></li>
 <li><a title="Wrath v0.1.0" href="/2011/06/">June 2011 (1)</a></li>
 <li><a title="Hoops v0.1.1" href="/2011/05/">May 2011 (1)</a></li>
-<li><a title="Alpha Channel v1.1 (Ludum Dare entry)" href="/2010/08/">August 2010 (1)</a></li>
+<li><a title="Deconstructing Alpha Channel
+Alpha Channel devlog via archaeology
+Alpha Channel v1.1 (Ludum Dare entry)" href="/2010/08/">August 2010 (3)</a></li>
 <li><a title="Flipped v0.2.0" href="/2010/05/">May 2010 (1)</a></li>
 </ul>
 </nav>

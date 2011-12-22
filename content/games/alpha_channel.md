@@ -23,7 +23,11 @@ An extended version was created after the competition (adding boss fights and im
 
 <%= screenshot "alpha_channel_122", "Latest version", "Latest version, with simple, yet pretty, graphics" %>
 
+## High scores
 
+* [Easy](http://www.gamercv.com/games/27-alpha-channel-easy)
+* [Normal](http://www.gamercv.com/games/28-alpha-channel-normal)
+* [Hard](http://www.gamercv.com/games/29-alpha-channel-hard)
 
 ## Video
 

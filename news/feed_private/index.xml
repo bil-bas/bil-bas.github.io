@@ -16,7 +16,7 @@
     <updated>2012-01-15T13:00:00Z</updated>
     <link rel="alternate" href="http://spooner.github.com/2012/01/relapse-v0_1_0/"/>
     <content type="html">&lt;ul&gt;
-  &lt;li&gt;Ruby gem release: &lt;code&gt;gem install fidgit&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Ruby gem release: &lt;code&gt;gem install relapse&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;

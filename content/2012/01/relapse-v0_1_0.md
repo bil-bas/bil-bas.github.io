@@ -6,7 +6,7 @@ created_at: 2012-01-15 13:00:00 +0000
 tags: [ 'relapse', 'ruby' ]
 ---
 
-* Ruby gem release: `gem install fidgit`
+* Ruby gem release: `gem install relapse`
 
 ### Changelog
 

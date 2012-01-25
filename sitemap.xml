@@ -65,10 +65,6 @@
     <lastmod>2011-12-15</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/2012/01/relapse-v0_1_0/</loc>
-    <lastmod>2012-01-15</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/about/</loc>
     <lastmod>2011-12-08</lastmod>
   </url>
@@ -109,8 +105,8 @@
     <lastmod>2011-12-18</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/libraries/relapse/</loc>
-    <lastmod>2012-01-15</lastmod>
+    <loc>http://spooner.github.com/libraries/releasy/</loc>
+    <lastmod>2012-01-25</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/</loc>
@@ -171,18 +167,10 @@
     <loc>http://spooner.github.com/libraries/fidgit/releases/</loc>
   </url>
   <url>
-    <loc>http://spooner.github.com/libraries/relapse/releases/</loc>
+    <loc>http://spooner.github.com/libraries/releasy/releases/</loc>
   </url>
   <url>
     <loc>http://spooner.github.com/utilities/flipped/releases/</loc>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/relapse/</loc>
-    <lastmod>2012-01-15</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/tags/ruby/</loc>
-    <lastmod>2012-01-15</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/tags/alpha-channel/</loc>
@@ -194,6 +182,10 @@
   </url>
   <url>
     <loc>http://spooner.github.com/tags/gosu/</loc>
+    <lastmod>2011-12-22</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/ruby/</loc>
     <lastmod>2011-12-22</lastmod>
   </url>
   <url>
@@ -237,20 +229,12 @@
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/2012/</loc>
-    <lastmod>2012-01-15</lastmod>
-  </url>
-  <url>
     <loc>http://spooner.github.com/2011/</loc>
     <lastmod>2011-12-22</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2010/</loc>
     <lastmod>2011-12-19</lastmod>
-  </url>
-  <url>
-    <loc>http://spooner.github.com/2012/01/</loc>
-    <lastmod>2012-01-15</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2011/12/</loc>

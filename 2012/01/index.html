@@ -3,7 +3,6 @@
 <head>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
 <meta content='nanoc 3.2.3' name='generator'>
-<meta content='wrath game gosu ruby' name='keywords'>
 <link href='/style/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/code_highlighting.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/slimbox2.css' media='screen' rel='stylesheet' type='text/css'>
@@ -11,7 +10,7 @@
 <script src='/scripts/slimbox2.js' type='text/javascript'></script>
 <script src='//connect.facebook.net/en_GB/all.js#xfbml=1' type='text/javascript'></script>
 <script src='//platform.twitter.com/widgets.js' type='text/javascript'></script>
-<title>Spooner - Wrath v0.1.0</title>
+<title>Spooner - January 2012</title>
 </head>
 <body>
 <header>
@@ -19,7 +18,7 @@
 <a title="Spooner: Ruby addict and maker of games with outrageously large pixels" href="http://spooner.github.com"><div class='banner_overlay'></div>
 </a></div>
 <div class='breadcrumbs'>
-<a href="/">Home</a> &raquo; <a href="/2011/">2011</a> &raquo; <a href="/2011/06/">June</a> &raquo; <a href="/2011/06/wrath-v0_1_0/">Wrath v0.1.0</a>
+<a href="/">Home</a> &raquo; <a href="/2012/">2012</a> &raquo; <a href="/2012/01/">January</a>
 </div>
 <nav class='navbar'>
 <ul>
@@ -35,89 +34,69 @@
 <div class='col_mask right_menu'>
 <div class='col_left'>
 <div class='contents_wrap'>
-<div class='contents'><article><header><h1><a href="http://spooner.github.com/2011/06/wrath-v0_1_0/">Wrath v0.1.0</a></h1>
-</header><p class="posted">Posted on Tuesday, 7th June 2011</p>
+<div class='contents'><h1><a href="http://spooner.github.com/2012/01/">January 2012</a></h1>
+<nav class='previous_next'>
+<div class='previous'><a title="Previous" href="/2011/12/">&lt;&lt; December 2011</a></div>
+</nav>
+
+<article>
+<header>
+<span class='release_date'>Released Saturday, 28th January 2012</span>
+<h2><a href="/2012/01/releasy-v0_2_0/">Releasy v0.2.0</a></h2>
+</header>
+
 <ul>
-<li>
-<a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_WIN32.zip">Windows executable</a> [2.5MB]</li>
-  <li>
-<a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_OSX_10_6.zip">OS X 10.6 executable</a> [9.6MB]</li>
-  <li>
-<a href="http://dl.dropbox.com/u/33370854/games/wrath/wrath_v0_1_0_SOURCE.zip">Linux - Ruby source</a> [184K]</li>
+  <li>Ruby gem release: <code>gem install releasy</code></li>
 </ul>
+
 <h3 id="changelog">Changelog</h3>
 
 <ul>
-<li>Changed default online player controls to same as player 1. Reset everyone’s settings to default.</li>
-  <li>Collects game-play statistics locally (for achievements).</li>
-  <li>Added achievements and unlocks system.</li>
-  <li>Added some more sound effects (but nowhere near enough).</li>
-  <li>Can’t pick up creatures that can hurt you, or the other player, unless they are knocked down first.</li>
-  <li>Knocked back when hit by a monster, rather than taking damage-over time (fire still burns slowly, however).</li>
-  <li>Gods love certain sacrifices at any given time, which will net greatly increased favour.</li>
-  <li>Favour of object currently carried is indicated next to favour bars.</li>
-  <li>Can set sound volume and window size in options (sorry, no full-screen mode yet).</li>
-  <li>Added 2 new playable priests.</li>
-  <li>Added creature spawning (how could I not have put it in yet?) and reduced favour value of most objects.</li>
-  <li>Containers, such as chests, spawn items if left empty.</li>
-  <li>Added level under the sea.</li>
-  <li>Added level in a tech facility (AI <em>are</em> gods, aren’t they?).</li>
-  <li>Added level in a desert (reused lighting storm disaster effect, though, until unique one created)</li>
-  <li>Added level on a moon with radioactive meteors.</li>
-  <li>Network stats overlay (Ctrl-N).</li>
-  <li>Poison/growth status effects are not properly synchronised in network play.</li>
-  <li>Countless other things I forgot to write down.</li>
+  <li>Name changed from “relapse” to “releasy” because of universal dislike and/or confusion about it :)</li>
+  <li>Warning: API changed significantly from v0.1.0 because it was dreadful :D</li>
+  <li>Allowed outputs to be configured separately from the project.</li>
+  <li>Included gems in osx-app more safely, so that no files will be missing.</li>
+  <li>Added <code>:exe</code> archive format (Windows self-extractor, used on any OS).</li>
+  <li>Added <code>:dmg</code> archive format (OS X self-extractor, used on OS X only).</li>
+  <li>Added <code>:windows_wrapped</code> output (windows folder made from a RubyInstaller archive, used on OSX/Linux).</li>
+  <li>Allowed project and outputs to have archive formats (when called on Project, affecting all outputs).</li>
+  <li>Archive formats can have a different <code>#extension</code> set.</li>
+  <li>Output formats can have a different <code>#folder_suffix</code> set.</li>
+  <li>No longer require Innosetup to be installed in order to create <code>:windows_folder</code> output.</li>
+  <li>Added command, ‘releasy install-sfx’ that installs the self-extractor package for 7z, to enable :exe archiving (non-Windows only).</li>
+  <li>Lots of other things fixes, refactors and additions, that I lost track of :$</li>
 </ul>
-<h3 id="changelog-1">Changelog</h3>
 
-<ul>
-<li>Possible to juggle (continually pick up and throw) the other player, so they never get to act.</li>
-  <li>Possible to get killed by being continually hit into a wall.</li>
-  <li>Enemies don’t care if they are getting killed in lava, etc.</li>
-</ul>
-<footer><div class="tags">Tags: <a href="/tags/wrath/" rel="tag">wrath</a>, <a href="/tags/game/" rel="tag">game</a>, <a href="/tags/gosu/" rel="tag">gosu</a>, <a href="/tags/ruby/" rel="tag">ruby</a>
-</div>
+<footer>
+<div class='comments'><a data-disqus-identifier="releasy-v0_2_0" href="/2012/01/releasy-v0_2_0/#disqus_thread">Comments</a></div>
+<div class='tags'>Tags: <a href="/tags/releasy/" rel="tag">releasy</a>, <a href="/tags/ruby/" rel="tag">ruby</a></div>
 
-<div class="blog-social">
-<a class="twitter-share-button" data-lang="en" data-text="Wrath v0.1.0" data-url="http://spooner.github.com/2011/06/wrath-v0_1_0/" href="https://twitter.com/share"></a>
-<div class="social2">
-<div class="fb-like" data-height="25" data-href="http://spooner.github.com/2011/06/wrath-v0_1_0/" data-layout="button_count" data-send="false" data-show-faces="false" data-width="90"></div>
-<div class="social3">
+<div class='blog-social'>
+<a class='twitter-share-button' data-lang='en' data-text='Releasy v0.2.0' data-url='http://spooner.github.com/2012/01/releasy-v0_2_0/' href='https://twitter.com/share'></a>
+<div class='social2'>
+<div class='fb-like' data-height='25' data-href='http://spooner.github.com/2012/01/releasy-v0_2_0/' data-layout='button_count' data-send='false' data-show-faces='false' data-width='90'></div>
+<div class='social3'>
 <script>
   //<![CDATA[
-    reddit_url = "http://spooner.github.com/2011/06/wrath-v0_1_0/";
-    reddit_title = "Wrath v0.1.0";
+    reddit_url = "http://spooner.github.com/2012/01/releasy-v0_2_0/";
+    reddit_title = "Releasy v0.2.0";
   //]]>
-</script><script src="http://www.reddit.com/static/button/button1.js" type="text/javascript"></script>
+</script>
+
+<script src='http://www.reddit.com/static/button/button1.js' type='text/javascript'></script>
 </div>
 </div>
 </div>
 
-<h2>Comments</h2>
-<div id="disqus_thread">
-<script>
-  //<![CDATA[
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = "spooner"; // required: replace example with your forum shortname
-    var disqus_identifier = "wrath-v0_1_0";
-    var disqus_url = "http://spooner.github.com/2011/06/wrath-v0_1_0/";
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  //]]>
-</script><noscript>
-Please enable JavaScript to view the
-<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>
+</footer>
+</article>
+
+<hr>
+<nav class='previous_next'>
+<div class='previous'><a title="Previous" href="/2011/12/">&lt;&lt; December 2011</a></div>
+</nav>
+
 </div>
-<a class="dsq-brlink" href="http://disqus.com">blog comments powered by
-<span class="logo-disqus">Disqus</span>
-</a>
-</footer></article></div>
 </div>
 <div class='sidebar'>
 <nav class='menu'>
@@ -209,7 +188,7 @@ Flipped
 <nav class='archives'>
 <h3><a href="/archives/">Archives</a></h3>
 <ul>
-<li><a title="Releasy v0.2.0" href="/2012/01/">January 2012 (1)</a></li>
+<li><span title="You're here." class="active" >January 2012 (1)</span></li>
 <li><a title="Alpha Channel v1.4.0
 Hoops v1.1.0
 Hoops v1.0.0
@@ -250,5 +229,15 @@ Bil Bas --- bil dot bagpuss {at} gmail dot com
 </p>
 </div>
 </footer>
+<script>
+  //<![CDATA[
+    (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://spooner.disqus.com/count.js';
+      document.getElementsByTagName('HEAD')[0].appendChild(s);
+    }());
+  //]]>
+</script>
 </body>
 </html>

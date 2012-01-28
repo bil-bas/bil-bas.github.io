@@ -3,15 +3,7 @@
 <head>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
 <meta content='nanoc 3.2.3' name='generator'>
-<script>
-  //<![CDATA[
-    var a=new Date;
-    var b=a.getHours()+a.getTimezoneOffset()/60;
-    if(a.getDate()==18&&0==a.getMonth()&&2012==a.getFullYear()) {
-      window.location="http://sopastrike.com/strike";
-    }
-  //]]>
-</script>
+<meta content='releasy ruby' name='keywords'>
 <link href='/style/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/code_highlighting.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/slimbox2.css' media='screen' rel='stylesheet' type='text/css'>
@@ -19,7 +11,7 @@
 <script src='/scripts/slimbox2.js' type='text/javascript'></script>
 <script src='//connect.facebook.net/en_GB/all.js#xfbml=1' type='text/javascript'></script>
 <script src='//platform.twitter.com/widgets.js' type='text/javascript'></script>
-<title>Spooner - relapse</title>
+<title>Spooner - Releasy v0.2.0</title>
 </head>
 <body>
 <header>
@@ -27,7 +19,7 @@
 <a title="Spooner: Ruby addict and maker of games with outrageously large pixels" href="http://spooner.github.com"><div class='banner_overlay'></div>
 </a></div>
 <div class='breadcrumbs'>
-<a href="/">Home</a> &raquo; <a href="/tags/">Tags</a> &raquo; <a href="/tags/relapse/">relapse</a>
+<a href="/">Home</a> &raquo; <a href="/2012/">2012</a> &raquo; <a href="/2012/01/">January</a> &raquo; <a href="/2012/01/releasy-v0_2_0/">Releasy v0.2.0</a>
 </div>
 <nav class='navbar'>
 <ul>
@@ -43,25 +35,72 @@
 <div class='col_mask right_menu'>
 <div class='col_left'>
 <div class='contents_wrap'>
-<div class='contents'><h1><a href="http://spooner.github.com/tags/relapse/">Tag: relapse</a></h1>
-<div>
-<article>
-<header>
-<span class='release_date'>Released Sunday, 15th January 2012</span>
-<h2><a href="/2012/01/relapse-v0_1_0/">Relapse v0.1.0</a></h2>
-</header>
+<div class='contents'><article><header><h1><a href="http://spooner.github.com/2012/01/releasy-v0_2_0/">Releasy v0.2.0</a></h1>
+</header><p class="posted">Posted on Saturday, 28th January 2012</p>
+<ul>
+<li>Ruby gem release: <code>gem install releasy</code>
+</li>
+</ul>
+<h3 id="changelog">Changelog</h3>
 
-<p>First public release.</p>
-<footer>
-<div class='comments'><a data-disqus-identifier="relapse-v0_1_0" href="/2012/01/relapse-v0_1_0/#disqus_thread">Comments</a></div>
-<div class='more'><a href="/2012/01/relapse-v0_1_0/">Release notes...</a></div>
-<div class='tags'>Tags: <a href="/tags/relapse/" rel="tag">relapse</a>, <a href="/tags/ruby/" rel="tag">ruby</a></div>
+<ul>
+<li>Name changed from “relapse” to “releasy” because of universal dislike and/or confusion about it :)</li>
+  <li>Warning: API changed significantly from v0.1.0 because it was dreadful :D</li>
+  <li>Allowed outputs to be configured separately from the project.</li>
+  <li>Included gems in osx-app more safely, so that no files will be missing.</li>
+  <li>Added <code>:exe</code> archive format (Windows self-extractor, used on any OS).</li>
+  <li>Added <code>:dmg</code> archive format (OS X self-extractor, used on OS X only).</li>
+  <li>Added <code>:windows_wrapped</code> output (windows folder made from a RubyInstaller archive, used on OSX/Linux).</li>
+  <li>Allowed project and outputs to have archive formats (when called on Project, affecting all outputs).</li>
+  <li>Archive formats can have a different <code>#extension</code> set.</li>
+  <li>Output formats can have a different <code>#folder_suffix</code> set.</li>
+  <li>No longer require Innosetup to be installed in order to create <code>:windows_folder</code> output.</li>
+  <li>Added command, ‘releasy install-sfx’ that installs the self-extractor package for 7z, to enable :exe archiving (non-Windows only).</li>
+  <li>Lots of other things fixes, refactors and additions, that I lost track of :$</li>
+</ul>
+<footer><div class="tags">Tags: <a href="/tags/releasy/" rel="tag">releasy</a>, <a href="/tags/ruby/" rel="tag">ruby</a>
+</div>
 
-</footer>
-</article>
-
+<div class="blog-social">
+<a class="twitter-share-button" data-lang="en" data-text="Releasy v0.2.0" data-url="http://spooner.github.com/2012/01/releasy-v0_2_0/" href="https://twitter.com/share"></a>
+<div class="social2">
+<div class="fb-like" data-height="25" data-href="http://spooner.github.com/2012/01/releasy-v0_2_0/" data-layout="button_count" data-send="false" data-show-faces="false" data-width="90"></div>
+<div class="social3">
+<script>
+  //<![CDATA[
+    reddit_url = "http://spooner.github.com/2012/01/releasy-v0_2_0/";
+    reddit_title = "Releasy v0.2.0";
+  //]]>
+</script><script src="http://www.reddit.com/static/button/button1.js" type="text/javascript"></script>
 </div>
 </div>
+</div>
+
+<h2>Comments</h2>
+<div id="disqus_thread">
+<script>
+  //<![CDATA[
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = "spooner"; // required: replace example with your forum shortname
+    var disqus_identifier = "releasy-v0_2_0";
+    var disqus_url = "http://spooner.github.com/2012/01/releasy-v0_2_0/";
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  //]]>
+</script><noscript>
+Please enable JavaScript to view the
+<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+</div>
+<a class="dsq-brlink" href="http://disqus.com">blog comments powered by
+<span class="logo-disqus">Disqus</span>
+</a>
+</footer></article></div>
 </div>
 <div class='sidebar'>
 <nav class='menu'>
@@ -102,8 +141,8 @@ Zed and Ginger
 Fidgit
 </a></li>
 <li>
-<a href="/libraries/relapse/"><img alt='Relapse' class='app_icon_small' src='/images/small_icon/relapse.png'>
-Relapse
+<a href="/libraries/releasy/"><img alt='Releasy' class='app_icon_small' src='/images/small_icon/releasy.png'>
+Releasy
 </a></li>
 </ul>
 </li>
@@ -143,7 +182,7 @@ Flipped
 <li><a title="Used 3 times" style="font-size:93%" href="/tags/ludum-dare/">ludum-dare</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/nanoc/">nanoc</a></li>
 <li><a title="Used 2 times" style="font-size:81%" href="/tags/ray/">ray</a></li>
-<li><span title="You're here." style="font-size:70%" class="active" >relapse</span></li>
+<li><a title="Used once" style="font-size:70%" href="/tags/releasy/">releasy</a></li>
 <li><a title="Used 17 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/website/">website</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/wrath/">wrath</a></li>
@@ -153,7 +192,7 @@ Flipped
 <nav class='archives'>
 <h3><a href="/archives/">Archives</a></h3>
 <ul>
-<li><a title="Relapse v0.1.0" href="/2012/01/">January 2012 (1)</a></li>
+<li><a title="Releasy v0.2.0" href="/2012/01/">January 2012 (1)</a></li>
 <li><a title="Alpha Channel v1.4.0
 Hoops v1.1.0
 Hoops v1.0.0
@@ -194,15 +233,5 @@ Bil Bas --- bil dot bagpuss {at} gmail dot com
 </p>
 </div>
 </footer>
-<script>
-  //<![CDATA[
-    (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = 'http://spooner.disqus.com/count.js';
-      document.getElementsByTagName('HEAD')[0].appendChild(s);
-    }());
-  //]]>
-</script>
 </body>
 </html>

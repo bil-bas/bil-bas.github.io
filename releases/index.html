@@ -5,15 +5,6 @@
 <meta content='nanoc 3.2.3' name='generator'>
 <meta content='ruby game games software development programming ai graphics' name='keywords'>
 <meta content="Spooner's game-making blog and project portfolio, focusing on Ruby development" name='description'>
-<script>
-  //<![CDATA[
-    var a=new Date;
-    var b=a.getHours()+a.getTimezoneOffset()/60;
-    if(a.getDate()==18&&0==a.getMonth()&&2012==a.getFullYear()) {
-      window.location="http://sopastrike.com/strike";
-    }
-  //]]>
-</script>
 <link href='/style/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/code_highlighting.css' media='screen' rel='stylesheet' type='text/css'>
 <link href='/style/slimbox2.css' media='screen' rel='stylesheet' type='text/css'>
@@ -59,6 +50,58 @@
 <li class='small'><span class="right active" title="You're here." >Releases only</span></li>
 </ul>
 </nav>
+
+<article>
+<header>
+<span class='release_date'>Released Saturday, 28th January 2012</span>
+<h2><a href="/2012/01/releasy-v0_2_0/">Releasy v0.2.0</a></h2>
+</header>
+
+<ul>
+  <li>Ruby gem release: <code>gem install releasy</code></li>
+</ul>
+
+<h3 id="changelog">Changelog</h3>
+
+<ul>
+  <li>Name changed from “relapse” to “releasy” because of universal dislike and/or confusion about it :)</li>
+  <li>Warning: API changed significantly from v0.1.0 because it was dreadful :D</li>
+  <li>Allowed outputs to be configured separately from the project.</li>
+  <li>Included gems in osx-app more safely, so that no files will be missing.</li>
+  <li>Added <code>:exe</code> archive format (Windows self-extractor, used on any OS).</li>
+  <li>Added <code>:dmg</code> archive format (OS X self-extractor, used on OS X only).</li>
+  <li>Added <code>:windows_wrapped</code> output (windows folder made from a RubyInstaller archive, used on OSX/Linux).</li>
+  <li>Allowed project and outputs to have archive formats (when called on Project, affecting all outputs).</li>
+  <li>Archive formats can have a different <code>#extension</code> set.</li>
+  <li>Output formats can have a different <code>#folder_suffix</code> set.</li>
+  <li>No longer require Innosetup to be installed in order to create <code>:windows_folder</code> output.</li>
+  <li>Added command, ‘releasy install-sfx’ that installs the self-extractor package for 7z, to enable :exe archiving (non-Windows only).</li>
+  <li>Lots of other things fixes, refactors and additions, that I lost track of :$</li>
+</ul>
+
+<footer>
+<div class='comments'><a data-disqus-identifier="releasy-v0_2_0" href="/2012/01/releasy-v0_2_0/#disqus_thread">Comments</a></div>
+<div class='tags'>Tags: <a href="/tags/releasy/" rel="tag">releasy</a>, <a href="/tags/ruby/" rel="tag">ruby</a></div>
+
+<div class='blog-social'>
+<a class='twitter-share-button' data-lang='en' data-text='Releasy v0.2.0' data-url='http://spooner.github.com/2012/01/releasy-v0_2_0/' href='https://twitter.com/share'></a>
+<div class='social2'>
+<div class='fb-like' data-height='25' data-href='http://spooner.github.com/2012/01/releasy-v0_2_0/' data-layout='button_count' data-send='false' data-show-faces='false' data-width='90'></div>
+<div class='social3'>
+<script>
+  //<![CDATA[
+    reddit_url = "http://spooner.github.com/2012/01/releasy-v0_2_0/";
+    reddit_title = "Releasy v0.2.0";
+  //]]>
+</script>
+
+<script src='http://www.reddit.com/static/button/button1.js' type='text/javascript'></script>
+</div>
+</div>
+</div>
+
+</footer>
+</article>
 
 <article>
 <header>
@@ -264,60 +307,6 @@
 </footer>
 </article>
 
-<article>
-<header>
-<span class='release_date'>Released Friday, 9th December 2011</span>
-<h2><a href="/2011/12/zed-and-ginger-v0_4_0/">Zed and Ginger v0.4.0</a></h2>
-</header>
-
-<ul>
-  <li><a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_WIN32.zip">Windows executable</a> [4.3MB]</li>
-  <li><a href="http://dl.dropbox.com/u/33370854/games/zed_and_ginger/zed_and_ginger_v0_4_0_SOURCE.zip">OS X/Linux - Ruby source</a> [1.5MB]</li>
-</ul>
-
-<h3 id="changelog">Changelog</h3>
-
-<ul>
-  <li>Stopped lasers from moving, since they forced the player to stop and destroyed the flow of the game. Now you can jump over low beams and walk under high beams.</li>
-  <li>Added glue on the floor (prevents jumping).</li>
-  <li>Added hyper-speed pill (increases run-speed, but forces you to run as fast as you can).</li>
-  <li>Hover-board now imposes a minimum speed.</li>
-  <li>Added venus fly traps.</li>
-  <li>Added 5th level (The Garden).</li>
-  <li>More clearly showed keyboard shortcuts for buttons by highlighting the key required (shortcuts have always been there, but most people didn’t think of using them).</li>
-  <li>Added tool-tips.</li>
-  <li>Reduced speed of the really fast camera panning when you die.</li>
-  <li>Merged high-scores for each level (get bonus for inversion/hardcore, rather than storing separate scores).</li>
-  <li><a href="/games/zed_and_ginger/#high-scores"><strong>Added 100 online high scores for each level.</strong></a></li>
-  <li>Fixed: Player can move at a different speed to the animation of the conveyor it is moving on.</li>
-  <li>Fixed: Time remaining added to score after death in Hardcore mode.</li>
-  <li>Fixed: Time remaining added at much too great a rate after completion of a course.</li>
-</ul>
-
-<footer>
-<div class='comments'><a data-disqus-identifier="zed-and-ginger-v0_4_0" href="/2011/12/zed-and-ginger-v0_4_0/#disqus_thread">Comments</a></div>
-<div class='tags'>Tags: <a href="/tags/zed-and-ginger/" rel="tag">zed-and-ginger</a>, <a href="/tags/game/" rel="tag">game</a>, <a href="/tags/ray/" rel="tag">ray</a>, <a href="/tags/ruby/" rel="tag">ruby</a></div>
-
-<div class='blog-social'>
-<a class='twitter-share-button' data-lang='en' data-text='Zed and Ginger v0.4.0' data-url='http://spooner.github.com/2011/12/zed-and-ginger-v0_4_0/' href='https://twitter.com/share'></a>
-<div class='social2'>
-<div class='fb-like' data-height='25' data-href='http://spooner.github.com/2011/12/zed-and-ginger-v0_4_0/' data-layout='button_count' data-send='false' data-show-faces='false' data-width='90'></div>
-<div class='social3'>
-<script>
-  //<![CDATA[
-    reddit_url = "http://spooner.github.com/2011/12/zed-and-ginger-v0_4_0/";
-    reddit_title = "Zed and Ginger v0.4.0";
-  //]]>
-</script>
-
-<script src='http://www.reddit.com/static/button/button1.js' type='text/javascript'></script>
-</div>
-</div>
-</div>
-
-</footer>
-</article>
-
 </div>
 </div>
 <div class='sidebar'>
@@ -390,25 +379,27 @@ Flipped
 <nav class='tag_cloud'>
 <h3><a href="/tags/">Tags</a></h3>
 <ul>
-<li><a title="Used 7 times" style="font-size:142%" href="/tags/alpha-channel/">alpha-channel</a></li>
+<li><a title="Used 7 times" style="font-size:138%" href="/tags/alpha-channel/">alpha-channel</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/fidgit/">fidgit</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/flipped/">flipped</a></li>
-<li><a title="Used 11 times" style="font-size:190%" href="/tags/game/">game</a></li>
+<li><a title="Used 11 times" style="font-size:183%" href="/tags/game/">game</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/gem/">gem</a></li>
-<li><a title="Used 10 times" style="font-size:178%" href="/tags/gosu/">gosu</a></li>
-<li><a title="Used 3 times" style="font-size:94%" href="/tags/hoops/">hoops</a></li>
-<li><a title="Used 3 times" style="font-size:94%" href="/tags/ludum-dare/">ludum-dare</a></li>
+<li><a title="Used 10 times" style="font-size:171%" href="/tags/gosu/">gosu</a></li>
+<li><a title="Used 3 times" style="font-size:93%" href="/tags/hoops/">hoops</a></li>
+<li><a title="Used 3 times" style="font-size:93%" href="/tags/ludum-dare/">ludum-dare</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/nanoc/">nanoc</a></li>
-<li><a title="Used 2 times" style="font-size:82%" href="/tags/ray/">ray</a></li>
-<li><a title="Used 16 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
+<li><a title="Used 2 times" style="font-size:81%" href="/tags/ray/">ray</a></li>
+<li><a title="Used once" style="font-size:70%" href="/tags/releasy/">releasy</a></li>
+<li><a title="Used 17 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/website/">website</a></li>
 <li><a title="Used once" style="font-size:70%" href="/tags/wrath/">wrath</a></li>
-<li><a title="Used 2 times" style="font-size:82%" href="/tags/zed-and-ginger/">zed-and-ginger</a></li>
+<li><a title="Used 2 times" style="font-size:81%" href="/tags/zed-and-ginger/">zed-and-ginger</a></li>
 </ul>
 </nav>
 <nav class='archives'>
 <h3><a href="/archives/">Archives</a></h3>
 <ul>
+<li><a title="Releasy v0.2.0" href="/2012/01/">January 2012 (1)</a></li>
 <li><a title="Alpha Channel v1.4.0
 Hoops v1.1.0
 Hoops v1.0.0

@@ -1,6 +1,6 @@
-source "http://gemcutter.org"
+source :rubygems
 
-gem "nanoc3", "~> 3.2.3"
+gem "nanoc3", "~> 3.2.4"
 #gem "nanoc", git: "git://github.com/ddfreyne/nanoc.git"
 
 gem "hpricot", "~> 0.8.5" # For xml parsing.

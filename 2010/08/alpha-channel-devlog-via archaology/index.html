@@ -1,290 +1,93 @@
-<!DOCTYPE html>
-<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
-<head>
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-<meta content='nanoc 3.2.3' name='generator'>
-<meta content='alpha-channel ruby ludum-dare' name='keywords'>
-<link href='/style/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
-<link href='/style/code_highlighting.css' media='screen' rel='stylesheet' type='text/css'>
-<link href='/style/slimbox2.css' media='screen' rel='stylesheet' type='text/css'>
-<script src='/scripts/jquery.js' type='text/javascript'></script>
-<script src='/scripts/slimbox2.js' type='text/javascript'></script>
-<script src='//connect.facebook.net/en_GB/all.js#xfbml=1' type='text/javascript'></script>
-<script src='//platform.twitter.com/widgets.js' type='text/javascript'></script>
-<title>Spooner - Alpha Channel devlog via archaeology</title>
-</head>
-<body>
-<header>
-<div class='banner'>
-<a title="Spooner: Ruby addict and maker of games with outrageously large pixels" href="http://spooner.github.com"><div class='banner_overlay'></div>
-</a></div>
-<div class='breadcrumbs'>
-<a href="/">Home</a> &raquo; <a href="/2010/">2010</a> &raquo; <a href="/2010/08/">August</a> &raquo; <a href="/2010/08/alpha-channel-devlog-via archaology/">Alpha Channel devlog via archaeology</a>
-</div>
-<nav class='navbar'>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/games/">Games</a></li>
-<li><a href="/libraries/">Libraries</a></li>
-<li><a href="/utilities/">Utilities</a></li>
-<li><a href="/about/">About</a></li>
-</ul>
-</nav>
+<!DOCTYPE html><html><head><meta>http-equiv = "Content-Type", content = "text/html; charset=UTF-8"</meta><meta>name = "generator", content = "nanoc 3.2.3"</meta><meta>name = "keywords", content = @item.meta_keywords</meta><link>rel = "stylesheet", type = "text/css", href = "/style/stylesheet.css", media = "screen"</link><link>rel = "stylesheet", type = "text/css", href = "/style/code_highlighting.css", media = "screen"</link><link>rel = "stylesheet", type = "text/css", href = "/style/slimbox2.css", media = "screen"</link><script>type = "text/javascript", src = "script"</script><script>type = "text/javascript", src = "script"</script><script>type = "text/javascript", src = "script"</script><script>type = "text/javascript", src = "script"</script><title>Spooner - Alpha Channel devlog via archaeology</title></head><body><header><div class="banner">&lt;a title=&quot;Spooner: Ruby addict and maker of games with outrageously large pixels&quot; href=&quot;http:&#47;&#47;spooner.github.com&quot;&gt;[]&lt;&#47;a&gt;</div><div class="breadcrumbs">&lt;a href=&quot;&#47;&quot;&gt;Home&lt;&#47;a&gt; &amp;raquo; &lt;a href=&quot;&#47;2010&#47;&quot;&gt;2010&lt;&#47;a&gt; &amp;raquo; &lt;a href=&quot;&#47;2010&#47;08&#47;&quot;&gt;August&lt;&#47;a&gt; &amp;raquo; &lt;a href=&quot;&#47;2010&#47;08&#47;alpha-channel-devlog-via archaology&#47;&quot;&gt;Alpha Channel devlog via archaeology&lt;&#47;a&gt;</div>&lt;nav class=&quot;navbar&quot;&gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;&amp;quot;&amp;gt;Home&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;&amp;quot;&amp;gt;Games&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;libraries&amp;#47;&amp;quot;&amp;gt;Libraries&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;utilities&amp;#47;&amp;quot;&amp;gt;Utilities&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;about&amp;#47;&amp;quot;&amp;gt;About&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;&#47;nav&gt;</header><div class="col_mask right_menu"><div class="col_left"><div class="contents_wrap"><div class="contents">&lt;article&gt;&lt;header&gt;&lt;h1&gt;&amp;lt;a href=&quot;http:&#47;&#47;spooner.github.com&#47;2010&#47;08&#47;alpha-channel-devlog-via archaology&#47;&quot;&amp;gt;Alpha Channel devlog via archaeology&amp;lt;&#47;a&amp;gt;&lt;&#47;h1&gt;&lt;&#47;header&gt;&lt;p class=&quot;posted&quot;&gt;Posted on Wednesday, 25th August 2010&lt;&#47;p&gt;&amp;lt;p&amp;gt;Since this was my first Ludum Dare, making the game &amp;lt;a href=&quot;&#47;games&#47;alpha_channel&quot;&amp;gt;Alpha Channel&amp;lt;&#47;a&amp;gt;, I didn’t make an effort to post my progress as it happened. However, through the magic of git, I’ve pulled some old versions up and seen how things developed. Interesting to see how the game progressed and if you have git you could also look at the progress made throughout the development via the &amp;lt;a href=&quot;http:&#47;&#47;github.com&#47;Spooner&#47;alpha_channel&quot;&amp;gt;repository at github.com&amp;lt;&#47;a&amp;gt; (if you were very bored, of course).&amp;lt;&#47;p&amp;gt;
 
-</header>
-<div class='col_mask right_menu'>
-<div class='col_left'>
-<div class='contents_wrap'>
-<div class='contents'><article><header><h1><a href="http://spooner.github.com/2010/08/alpha-channel-devlog-via%20archaology/">Alpha Channel devlog via archaeology</a></h1>
-</header><p class="posted">Posted on Wednesday, 25th August 2010</p>
-<p>Since this was my first Ludum Dare, making the game <a href="/games/alpha_channel">Alpha Channel</a>, I didn’t make an effort to post my progress as it happened. However, through the magic of git, I’ve pulled some old versions up and seen how things developed. Interesting to see how the game progressed and if you have git you could also look at the progress made throughout the development via the <a href="http://github.com/Spooner/alpha_channel">repository at github.com</a> (if you were very bored, of course).</p>
+&amp;lt;p&amp;gt;I’m using my local time, not that of the competition, in the entries.&amp;lt;&#47;p&amp;gt;
 
-<p>I’m using my local time, not that of the competition, in the entries.</p>
+&amp;lt;h3 id=&quot;day-1-846-am-created-the-project&quot;&amp;gt;Day 1, 8:46 am: Created the project&amp;lt;&#47;h3&amp;gt;
 
-<h3 id="day-1-846-am-created-the-project">Day 1, 8:46 am: Created the project</h3>
+&amp;lt;p&amp;gt;The competition had started too late the night before (3 am my time), so I didn’t stay up. I got up early to eagerly discover the theme and was really happy that it was one of those I’d voted up because it sounded potentially inspirational for a game (the more vague themes were not as interesting to me).&amp;lt;&#47;p&amp;gt;
 
-<p>The competition had started too late the night before (3 am my time), so I didn’t stay up. I got up early to eagerly discover the theme and was really happy that it was one of those I’d voted up because it sounded potentially inspirational for a game (the more vague themes were not as interesting to me).</p>
+&amp;lt;p&amp;gt;I can’t think of a name, so spooner_ld_18 becomes the working title. I have several ideas at this point and bounce them around my friends, but soon decide that I want to:&amp;lt;&#47;p&amp;gt;
 
-<p>I can’t think of a name, so spooner_ld_18 becomes the working title. I have several ideas at this point and bounce them around my friends, but soon decide that I want to:</p>
+&amp;lt;ul&amp;gt;
+  &amp;lt;li&amp;gt;Use Gosu&#47;Chingu libraries on Ruby. I’d used these a bit for another long-term project I’d started, but that was more GUI-based than real-time.&amp;lt;&#47;li&amp;gt;
+  &amp;lt;li&amp;gt;Pixellised (partially from style, but mainly to allow me to rapidly create graphics that didn’t look terrible).&amp;lt;&#47;li&amp;gt;
+  &amp;lt;li&amp;gt;Not a platform game (just too many of them about).&amp;lt;&#47;li&amp;gt;
+  &amp;lt;li&amp;gt;I wouldn’t actually start coding for a few hours, until I’d formulated a bit of a plan. I decided to make a game where you played a wizard who was being attacked by monsters, but who could somehow control those monsters in order to survive. Although the game-play didn’t change much from this initial blueprint, the concept would actually change to fit the initial “placeholder” graphics!&amp;lt;&#47;li&amp;gt;
+&amp;lt;&#47;ul&amp;gt;
 
-<ul>
-<li>Use Gosu/Chingu libraries on Ruby. I’d used these a bit for another long-term project I’d started, but that was more GUI-based than real-time.</li>
-  <li>Pixellised (partially from style, but mainly to allow me to rapidly create graphics that didn’t look terrible).</li>
-  <li>Not a platform game (just too many of them about).</li>
-  <li>I wouldn’t actually start coding for a few hours, until I’d formulated a bit of a plan. I decided to make a game where you played a wizard who was being attacked by monsters, but who could somehow control those monsters in order to survive. Although the game-play didn’t change much from this initial blueprint, the concept would actually change to fit the initial “placeholder” graphics!</li>
-</ul>
-<h3 id="day-1-200-pm-first-playable-version">Day 1, 2:00 pm: First “playable” version</h3>
+&amp;lt;h3 id=&quot;day-1-200-pm-first-playable-version&quot;&amp;gt;Day 1, 2:00 pm: First “playable” version&amp;lt;&#47;h3&amp;gt;
 
-<p>The sprites would be 8×8 and zoomed out, so 1 game pixel would cover 4×4 screen pixels, but I decided to use simple blocks for prototyping; I’d be able to draw the sprites properly later…(but never would :$).</p>
+&amp;lt;p&amp;gt;The sprites would be 8×8 and zoomed out, so 1 game pixel would cover 4×4 screen pixels, but I decided to use simple blocks for prototyping; I’d be able to draw the sprites properly later…(but never would :$).&amp;lt;&#47;p&amp;gt;
 
-<p>The “monsters” were red blocks, which they stayed throughout the whole development. The wizard was white, turning grey when he was controlling a monster. A controlled monster was blue and sprites could still overlap each other, which didn’t look terrible in this “blocky” version, but I knew would be terrible when the sprites were actually drawn. I was showing health and energy (the time you could keep control of a monster) in numbers at top of the screen, but this was pretty impossible to keep track of while playing. I was, at this time, planning to replace the health/energy numbers with bars later on. The screen was initially green, to represent grass, not a computer screen!</p>
+&amp;lt;p&amp;gt;The “monsters” were red blocks, which they stayed throughout the whole development. The wizard was white, turning grey when he was controlling a monster. A controlled monster was blue and sprites could still overlap each other, which didn’t look terrible in this “blocky” version, but I knew would be terrible when the sprites were actually drawn. I was showing health and energy (the time you could keep control of a monster) in numbers at top of the screen, but this was pretty impossible to keep track of while playing. I was, at this time, planning to replace the health&#47;energy numbers with bars later on. The screen was initially green, to represent grass, not a computer screen!&amp;lt;&#47;p&amp;gt;
 
-<p><a rel="lightbox-gallery" title="First attempt" href="/images/screenshots/journal_first.png"><img alt="First attempt" class="thumb" height="119" src="/images/screenshots/journal_first-thumbnail.png" title="First attempt" width="160"></a></p>
+&amp;lt;p&amp;gt;&amp;amp;lt;a rel=&amp;amp;quot;lightbox-gallery&amp;amp;quot; title=&amp;amp;quot;First attempt&amp;amp;quot; href=&amp;amp;quot;&#47;images&#47;screenshots&#47;journal_first.png&amp;amp;quot;&amp;amp;gt;[]&amp;amp;lt;&#47;a&amp;amp;gt;&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-1-300-pm-sound-effects">Day 1, 3:00 pm: Sound effects</h3>
+&amp;lt;h3 id=&quot;day-1-300-pm-sound-effects&quot;&amp;gt;Day 1, 3:00 pm: Sound effects&amp;lt;&#47;h3&amp;gt;
 
-<p>The first sound effects were added at this point, being created in sfxr. The main impetus for this was wanting aural feedback for taking damage. I didn’t spend a long time on this, but I felt I’d got the sounds pretty right within a short space of time. As it happened, I got some grief from people playing my game in the end, because the sound effects were too loud, mainly because I was being quite slack in how I played them (every Pixel contact generated a separate sound, so if lots of objects were touching, the sound got quite loud).</p>
+&amp;lt;p&amp;gt;The first sound effects were added at this point, being created in sfxr. The main impetus for this was wanting aural feedback for taking damage. I didn’t spend a long time on this, but I felt I’d got the sounds pretty right within a short space of time. As it happened, I got some grief from people playing my game in the end, because the sound effects were too loud, mainly because I was being quite slack in how I played them (every Pixel contact generated a separate sound, so if lots of objects were touching, the sound got quite loud).&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-1-400-pm-bad-pixels">Day 1, 4:00 pm: Bad pixels</h3>
+&amp;lt;h3 id=&quot;day-1-400-pm-bad-pixels&quot;&amp;gt;Day 1, 4:00 pm: Bad pixels&amp;lt;&#47;h3&amp;gt;
 
-<p>Because levels were a bit flat, I decided to add randomly placed obstacles, originally called Bad Pixels. They’d be something to hide behind and to avoid since they would slowly damage any Pixel pushing against them. This was also the point at which I prevented the red Pixels from overlapping. This was also the first time I considered my game objects to be Pixels, rather than wizards and monsters, I think.</p>
+&amp;lt;p&amp;gt;Because levels were a bit flat, I decided to add randomly placed obstacles, originally called Bad Pixels. They’d be something to hide behind and to avoid since they would slowly damage any Pixel pushing against them. This was also the point at which I prevented the red Pixels from overlapping. This was also the first time I considered my game objects to be Pixels, rather than wizards and monsters, I think.&amp;lt;&#47;p&amp;gt;
 
-<p><a rel="lightbox-gallery" title="Bad Pixels" href="/images/screenshots/journal_bad_pixels.png"><img alt="Bad Pixels" class="thumb" height="120" src="/images/screenshots/journal_bad_pixels-thumbnail.png" title="Bad Pixels" width="160"></a></p>
+&amp;lt;p&amp;gt;&amp;amp;lt;a rel=&amp;amp;quot;lightbox-gallery&amp;amp;quot; title=&amp;amp;quot;Bad Pixels&amp;amp;quot; href=&amp;amp;quot;&#47;images&#47;screenshots&#47;journal_bad_pixels.png&amp;amp;quot;&amp;amp;gt;[]&amp;amp;lt;&#47;a&amp;amp;gt;&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-1-800-pm-transparency-is-life-itself">Day 1, 8:00 pm: Transparency is life itself</h3>
+&amp;lt;h3 id=&quot;day-1-800-pm-transparency-is-life-itself&quot;&amp;gt;Day 1, 8:00 pm: Transparency is life itself&amp;lt;&#47;h3&amp;gt;
 
-<p>Again striving for feedback in the game, I set the alpha channel of each Pixel proportional to its current health. This made the health shown at the top of the screen irrelevant and since I had already put the large level (0001) indication in the background of the game, I was just about to move the score into the background as well. Energy would soon be indicated by the blue colour channel mainly so I could remove all those numbers on the status line.</p>
+&amp;lt;p&amp;gt;Again striving for feedback in the game, I set the alpha channel of each Pixel proportional to its current health. This made the health shown at the top of the screen irrelevant and since I had already put the large level (0001) indication in the background of the game, I was just about to move the score into the background as well. Energy would soon be indicated by the blue colour channel mainly so I could remove all those numbers on the status line.&amp;lt;&#47;p&amp;gt;
 
-<p>Also the first point that I drew a link between player and controlled enemy, which was to be a place-holder for some sort of fancy electricity or particle effect, but which I never actually got around to improving upon.</p>
+&amp;lt;p&amp;gt;Also the first point that I drew a link between player and controlled enemy, which was to be a place-holder for some sort of fancy electricity or particle effect, but which I never actually got around to improving upon.&amp;lt;&#47;p&amp;gt;
 
-<p><a rel="lightbox-gallery" title="Alpha Channel acts as health meter" href="/images/screenshots/journal_transparency.png"><img alt="Alpha Channel acts as health meter" class="thumb" height="120" src="/images/screenshots/journal_transparency-thumbnail.png" title="Alpha Channel acts as health meter" width="161"></a></p>
+&amp;lt;p&amp;gt;&amp;amp;lt;a rel=&amp;amp;quot;lightbox-gallery&amp;amp;quot; title=&amp;amp;quot;Alpha Channel acts as health meter&amp;amp;quot; href=&amp;amp;quot;&#47;images&#47;screenshots&#47;journal_transparency.png&amp;amp;quot;&amp;amp;gt;[]&amp;amp;lt;&#47;a&amp;amp;gt;&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-1-1015-pm-exploding-on-death">Day 1, 10:15 pm: Exploding on death</h3>
+&amp;lt;h3 id=&quot;day-1-1015-pm-exploding-on-death&quot;&amp;gt;Day 1, 10:15 pm: Exploding on death&amp;lt;&#47;h3&amp;gt;
 
-<p>Added some particle effects that made it look like the Pixel was breaking into 16 pieces that shot off in different directions. The sound effect had been there for a while, but I thought it would be nice to add an effect for this rather than just have things disappear. Unlike the rest of the visual and aural effects I added, this was more aesthetic than for improving the feedback given to the player.</p>
+&amp;lt;p&amp;gt;Added some particle effects that made it look like the Pixel was breaking into 16 pieces that shot off in different directions. The sound effect had been there for a while, but I thought it would be nice to add an effect for this rather than just have things disappear. Unlike the rest of the visual and aural effects I added, this was more aesthetic than for improving the feedback given to the player.&amp;lt;&#47;p&amp;gt;
 
-<p>At this point, the player had a lot more health and could pretty much barge through the levels without actually using the enemy-controlling effect! I had to tone this down later, since it made the main point of the level pointless and the game pretty easy once you realised.</p>
+&amp;lt;p&amp;gt;At this point, the player had a lot more health and could pretty much barge through the levels without actually using the enemy-controlling effect! I had to tone this down later, since it made the main point of the level pointless and the game pretty easy once you realised.&amp;lt;&#47;p&amp;gt;
 
-<p><a rel="lightbox-gallery" title="Death of a Pixel" href="/images/screenshots/journal_death.png"><img alt="Death of a Pixel" class="thumb" height="117" src="/images/screenshots/journal_death-thumbnail.png" title="Death of a Pixel" width="157"></a></p>
+&amp;lt;p&amp;gt;&amp;amp;lt;a rel=&amp;amp;quot;lightbox-gallery&amp;amp;quot; title=&amp;amp;quot;Death of a Pixel&amp;amp;quot; href=&amp;amp;quot;&#47;images&#47;screenshots&#47;journal_death.png&amp;amp;quot;&amp;amp;gt;[]&amp;amp;lt;&#47;a&amp;amp;gt;&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-2-130-pm-particle-effects-on-contact">Day 2, 1:30 pm: Particle effects on contact</h3>
+&amp;lt;h3 id=&quot;day-2-130-pm-particle-effects-on-contact&quot;&amp;gt;Day 2, 1:30 pm: Particle effects on contact&amp;lt;&#47;h3&amp;gt;
 
-<p>To make it much more clear where contacts were being made, and therefore where damage was being done, I added some simple particles along the edges of contact. Half of the particles would be created in the colour of one contactee; the other half the other colour. Again, this was added because it needed to be added for player feedback, rather than as a flashy effect in itself.</p>
+&amp;lt;p&amp;gt;To make it much more clear where contacts were being made, and therefore where damage was being done, I added some simple particles along the edges of contact. Half of the particles would be created in the colour of one contactee; the other half the other colour. Again, this was added because it needed to be added for player feedback, rather than as a flashy effect in itself.&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-2-214-pm-finally-decided-on-a-name">Day 2, 2:14 pm: Finally decided on a name</h3>
+&amp;lt;h3 id=&quot;day-2-214-pm-finally-decided-on-a-name&quot;&amp;gt;Day 2, 2:14 pm: Finally decided on a name&amp;lt;&#47;h3&amp;gt;
 
-<p>Struggling with a name, I’d come up with “Pixhell”, but then found that name was already used by other things. I wondered what was the most important thing to the Pixels characters in my game and that was the alpha channel (this respresents health; Pixels fade out before finally dying in a shower of particles). So…”Alpha Channel”. Not going to win any awards for great titles, but I feel it fits the game well.</p>
+&amp;lt;p&amp;gt;Struggling with a name, I’d come up with “Pixhell”, but then found that name was already used by other things. I wondered what was the most important thing to the Pixels characters in my game and that was the alpha channel (this respresents health; Pixels fade out before finally dying in a shower of particles). So…”Alpha Channel”. Not going to win any awards for great titles, but I feel it fits the game well.&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-2-501-pm-added-a-high-score-system">Day 2, 5:01 pm: Added a high score system</h3>
+&amp;lt;h3 id=&quot;day-2-501-pm-added-a-high-score-system&quot;&amp;gt;Day 2, 5:01 pm: Added a high score system&amp;lt;&#47;h3&amp;gt;
 
-<p>I considered adding an online high score system, since the framework for one was available in one of the libraries I was using. In the end I chickened out, since I felt that such a system would be very likely to fail as well as taking a unnecessarily long time to implement and test). In the end, I just showed the current high score at the bottom of the screen and the current score at the top, the player’s best score just being stored in a local text file. I think that implementing the online high score system was the thing I really missed out on. My friend ippa’s game used it, and I think it did encourage some players to play it more so they could beat each other. Probably the first thing I’d add if I was continuing development…</p>
+&amp;lt;p&amp;gt;I considered adding an online high score system, since the framework for one was available in one of the libraries I was using. In the end I chickened out, since I felt that such a system would be very likely to fail as well as taking a unnecessarily long time to implement and test). In the end, I just showed the current high score at the bottom of the screen and the current score at the top, the player’s best score just being stored in a local text file. I think that implementing the online high score system was the thing I really missed out on. My friend ippa’s game used it, and I think it did encourage some players to play it more so they could beat each other. Probably the first thing I’d add if I was continuing development…&amp;lt;&#47;p&amp;gt;
 
-<p><a rel="lightbox-gallery" title="High scores" href="/images/screenshots/journal_high_score.png"><img alt="High scores" class="thumb" height="121" src="/images/screenshots/journal_high_score-thumbnail.png" title="High scores" width="160"></a></p>
+&amp;lt;p&amp;gt;&amp;amp;lt;a rel=&amp;amp;quot;lightbox-gallery&amp;amp;quot; title=&amp;amp;quot;High scores&amp;amp;quot; href=&amp;amp;quot;&#47;images&#47;screenshots&#47;journal_high_score.png&amp;amp;quot;&amp;amp;gt;[]&amp;amp;lt;&#47;a&amp;amp;gt;&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-2-1130-pm-v10-windows-only---three-and-a-half-hours-within-the-time-limit-well-that-was-when-i-committed-the-final-version-my-actual-upload-was-a-bit-later">Day 2, 11:30 pm: v1.0 (Windows only) - Three and a half hours within the time limit (well, that was when I committed the final version; my actual upload was a bit later).</h3>
+&amp;lt;h3 id=&quot;day-2-1130-pm-v10-windows-only---three-and-a-half-hours-within-the-time-limit-well-that-was-when-i-committed-the-final-version-my-actual-upload-was-a-bit-later&quot;&amp;gt;Day 2, 11:30 pm: v1.0 (Windows only) - Three and a half hours within the time limit (well, that was when I committed the final version; my actual upload was a bit later).&amp;lt;&#47;h3&amp;gt;
 
-<p>Finally finished, though I’d barely changed anything in the evening, since I was just play-testing it and tweaking numbers here and there to correct the balance. I tweaked the difficulty as the levels progressed and replaced the font with one that was more boxy, since that was more in-keeping with the game’s aesthetic. Watch a <a href="http://www.youtube.com/watch?v=CmTGW4jAd_M">game-play video</a> of this iteration at youtube.com.</p>
+&amp;lt;p&amp;gt;Finally finished, though I’d barely changed anything in the evening, since I was just play-testing it and tweaking numbers here and there to correct the balance. I tweaked the difficulty as the levels progressed and replaced the font with one that was more boxy, since that was more in-keeping with the game’s aesthetic. Watch a &amp;lt;a href=&quot;http:&#47;&#47;www.youtube.com&#47;watch?v=CmTGW4jAd_M&quot;&amp;gt;game-play video&amp;lt;&#47;a&amp;gt; of this iteration at youtube.com.&amp;lt;&#47;p&amp;gt;
 
-<h3 id="day-4-after-event-v11--entry-ported-to-linux-and-osx">Day 4 (after event): v1.1 – Entry ported to Linux and OS/X</h3>
+&amp;lt;h3 id=&quot;day-4-after-event-v11--entry-ported-to-linux-and-osx&quot;&amp;gt;Day 4 (after event): v1.1 – Entry ported to Linux and OS&#47;X&amp;lt;&#47;h3&amp;gt;
 
-<p>Unfortunately, the very boxy font I’d chosen for the initial release, which worked fine on Windows, was so badly displayed in Linux (only the top half of the characters were actually shown) that I need to pick a new font that was consistent across all three platforms. The first font I’d used didn’t display as I wanted it to on OS/X, which is one of the reasons I’d replaced it originally, so I ended up with this one. I don’t like it as much, but it is still mostly in keeping with the overall style and ensures that all 3 OS versions look identical.</p>
+&amp;lt;p&amp;gt;Unfortunately, the very boxy font I’d chosen for the initial release, which worked fine on Windows, was so badly displayed in Linux (only the top half of the characters were actually shown) that I need to pick a new font that was consistent across all three platforms. The first font I’d used didn’t display as I wanted it to on OS&#47;X, which is one of the reasons I’d replaced it originally, so I ended up with this one. I don’t like it as much, but it is still mostly in keeping with the overall style and ensures that all 3 OS versions look identical.&amp;lt;&#47;p&amp;gt;
 
-<p><a rel="lightbox-gallery" title="The game on OS X" href="/images/screenshots/alpha_channel_os_x.png"><img alt="The game on OS X" class="thumb" height="126" src="/images/screenshots/alpha_channel_os_x-thumbnail.png" title="The game on OS X" width="160"></a></p>
+&amp;lt;p&amp;gt;&amp;amp;lt;a rel=&amp;amp;quot;lightbox-gallery&amp;amp;quot; title=&amp;amp;quot;The game on OS X&amp;amp;quot; href=&amp;amp;quot;&#47;images&#47;screenshots&#47;alpha_channel_os_x.png&amp;amp;quot;&amp;amp;gt;[]&amp;amp;lt;&#47;a&amp;amp;gt;&amp;lt;&#47;p&amp;gt;
+&lt;footer&gt;[&quot;&amp;lt;div class=\&quot;tags\&quot;&amp;gt;Tags: &amp;amp;lt;a href=&amp;amp;quot;&amp;amp;#47;tags&amp;amp;#47;alpha-channel&amp;amp;#47;&amp;amp;quot; rel=&amp;amp;quot;tag&amp;amp;quot;&amp;amp;gt;alpha-channel&amp;amp;lt;&amp;amp;#47;a&amp;amp;gt;, &amp;amp;lt;a href=&amp;amp;quot;&amp;amp;#47;tags&amp;amp;#47;ruby&amp;amp;#47;&amp;amp;quot; rel=&amp;amp;quot;tag&amp;amp;quot;&amp;amp;gt;ruby&amp;amp;lt;&amp;amp;#47;a&amp;amp;gt;, &amp;amp;lt;a href=&amp;amp;quot;&amp;amp;#47;tags&amp;amp;#47;ludum-dare&amp;amp;#47;&amp;amp;quot; rel=&amp;amp;quot;tag&amp;amp;quot;&amp;amp;gt;ludum-dare&amp;amp;lt;&amp;amp;#47;a&amp;amp;gt;&amp;lt;&#47;div&amp;gt;&quot;][&quot;&amp;lt;div class=\&quot;blog-social\&quot;&amp;gt;&quot;, &quot;&amp;lt;a class=\&quot;twitter-share-button\&quot;&amp;gt;href = \&quot;https:&#47;&#47;twitter.com&#47;share\&quot;, data-lang = \&quot;en\&quot;, data-url = @item.permalink, data-text = @item.full_title&amp;lt;&#47;a&amp;gt;&amp;lt;div class=\&quot;social2\&quot;&amp;gt;&quot;, &quot;&amp;lt;div class=\&quot;fb-like\&quot;&amp;gt;data-href = @item.permalink, data-send = \&quot;false\&quot;, data-layout = \&quot;button_count\&quot;, data-width =&amp;gt; 90, data-height =&amp;gt; 25, data-show-faces = \&quot;false\&quot;&amp;lt;&#47;div&amp;gt;&quot;, &quot;&amp;lt;div class=\&quot;social3\&quot;&amp;gt;&amp;lt;script type=\&quot;text&#47;javascript\&quot;&amp;gt;reddit_url = \&quot;http:&amp;amp;#47;&amp;amp;#47;spooner.github.com&amp;amp;#47;2010&amp;amp;#47;08&amp;amp;#47;alpha-channel-devlog-via archaology&amp;amp;#47;\&quot;;\nreddit_title = \&quot;Alpha Channel devlog via archaeology\&quot;;&amp;lt;&#47;script&amp;gt;&amp;lt;script&amp;gt;type = \&quot;text&#47;javascript\&quot;, src = \&quot;http:&#47;&#47;www.reddit.com&#47;static&#47;button&#47;button1.js\&quot;&amp;lt;&#47;script&amp;gt;&amp;lt;&#47;div&amp;gt;&amp;lt;&#47;div&amp;gt;&amp;lt;&#47;div&amp;gt;&quot;]&amp;lt;h2&amp;gt;Comments&amp;lt;&#47;h2&amp;gt;&amp;lt;disqus_thread&amp;gt;&amp;lt;script type=&quot;text&#47;javascript&quot;&amp;gt;&#47;* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * *&#47;
+var disqus_shortname = &quot;spooner&quot;; &#47;&#47; required: replace example with your forum shortname
+var disqus_identifier = &quot;alpha-channel-devlog-via archaology&quot;;
+var disqus_url = &quot;http:&amp;amp;#47;&amp;amp;#47;spooner.github.com&amp;amp;#47;2010&amp;amp;#47;08&amp;amp;#47;alpha-channel-devlog-via archaology&amp;amp;#47;&quot;;
 
-<footer><div class="tags">Tags: <a href="/tags/alpha-channel/" rel="tag">alpha-channel</a>, <a href="/tags/ruby/" rel="tag">ruby</a>, <a href="/tags/ludum-dare/" rel="tag">ludum-dare</a>
-</div>
-
-<div class="blog-social">
-<a class="twitter-share-button" data-lang="en" data-text="Alpha Channel devlog via archaeology" data-url="http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/" href="https://twitter.com/share"></a>
-<div class="social2">
-<div class="fb-like" data-height="25" data-href="http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/" data-layout="button_count" data-send="false" data-show-faces="false" data-width="90"></div>
-<div class="social3">
-<script>
-  //<![CDATA[
-    reddit_url = "http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/";
-    reddit_title = "Alpha Channel devlog via archaeology";
-  //]]>
-</script><script src="http://www.reddit.com/static/button/button1.js" type="text/javascript"></script>
-</div>
-</div>
-</div>
-
-<h2>Comments</h2>
-<div id="disqus_thread">
-<script>
-  //<![CDATA[
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = "spooner"; // required: replace example with your forum shortname
-    var disqus_identifier = "alpha-channel-devlog-via archaology";
-    var disqus_url = "http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/";
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  //]]>
-</script><noscript>
-Please enable JavaScript to view the
-<a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>
-</div>
-<a class="dsq-brlink" href="http://disqus.com">blog comments powered by
-<span class="logo-disqus">Disqus</span>
-</a>
-</footer></article></div>
-</div>
-<div class='sidebar'>
-<nav class='menu'>
-<ul>
-<li>
-<a href="/">Home</a>
-</li>
-<li>
-<a href="/games/">Games</a>
-<ul>
-<li>
-<a href="/games/alpha_channel/"><img alt='Alpha Channel' class='app_icon_small' src='/images/small_icon/alpha_channel.png'>
-Alpha Channel
-</a></li>
-<li>
-<a href="/games/hoops/"><img alt='HOOPS' class='app_icon_small' src='/images/small_icon/hoops.png'>
-HOOPS
-</a></li>
-<li>
-<a href="/games/smash_and_grab/"><img alt='Smash and Grab' class='app_icon_small' src='/images/small_icon/smash_and_grab.png'>
-Smash and Grab
-</a></li>
-<li>
-<a href="/games/wrath/"><img alt='Wrath' class='app_icon_small' src='/images/small_icon/wrath.png'>
-Wrath
-</a></li>
-<li>
-<a href="/games/zed_and_ginger/"><img alt='Zed and Ginger' class='app_icon_small' src='/images/small_icon/zed_and_ginger.png'>
-Zed and Ginger
-</a></li>
-</ul>
-</li>
-<li>
-<a href="/libraries/">Libraries</a>
-<ul>
-<li>
-<a href="/libraries/fidgit/"><img alt='Fidgit' class='app_icon_small' src='/images/small_icon/fidgit.png'>
-Fidgit
-</a></li>
-<li>
-<a href="/libraries/releasy/"><img alt='Releasy' class='app_icon_small' src='/images/small_icon/releasy.png'>
-Releasy
-</a></li>
-</ul>
-</li>
-<li>
-<a href="/utilities/">Utilities</a>
-<ul>
-<li>
-<a href="/utilities/flipped/"><img alt='Flipped' class='app_icon_small' src='/images/small_icon/flipped.png'>
-Flipped
-</a></li>
-</ul>
-</li>
-<li>
-<a href="/about/">About</a>
-<ul>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><a title="Spooner's Github profile" href="http://github.com/Spooner">Developer profile</a></li>
-<li><a title="Spooner's DeviantART portfolio" href="http://lemonsails.deviantart.com">Art</a></li>
-<li><a title="Spooner's videos" href="http://www.youtube.com/user/spoonerspon">Videos</a></li>
-</ul>
-<hr>
-</nav>
-<nav class='tag_cloud'>
-<h3><a href="/tags/">Tags</a></h3>
-<ul>
-<li><a title="Used 7 times" style="font-size:138%" href="/tags/alpha-channel/">alpha-channel</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/fidgit/">fidgit</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/flipped/">flipped</a></li>
-<li><a title="Used 11 times" style="font-size:183%" href="/tags/game/">game</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/gem/">gem</a></li>
-<li><a title="Used 10 times" style="font-size:171%" href="/tags/gosu/">gosu</a></li>
-<li><a title="Used 3 times" style="font-size:93%" href="/tags/hoops/">hoops</a></li>
-<li><a title="Used 3 times" style="font-size:93%" href="/tags/ludum-dare/">ludum-dare</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/nanoc/">nanoc</a></li>
-<li><a title="Used 2 times" style="font-size:81%" href="/tags/ray/">ray</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/releasy/">releasy</a></li>
-<li><a title="Used 17 times" style="font-size:250%" href="/tags/ruby/">ruby</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/website/">website</a></li>
-<li><a title="Used once" style="font-size:70%" href="/tags/wrath/">wrath</a></li>
-<li><a title="Used 2 times" style="font-size:81%" href="/tags/zed-and-ginger/">zed-and-ginger</a></li>
-</ul>
-</nav>
-<nav class='archives'>
-<h3><a href="/archives/">Archives</a></h3>
-<ul>
-<li><a title="Releasy v0.2.0" href="/2012/01/">January 2012 (1)</a></li>
-<li><a title="Alpha Channel v1.4.0
+&#47;* * * DON'T EDIT BELOW THIS LINE * * *&#47;
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text&#47;javascript'; dsq.async = true;
+  dsq.src = 'http:&#47;&#47;' + disqus_shortname + '.disqus.com&#47;embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();&amp;lt;&#47;script&amp;gt;&amp;lt;noscript&amp;gt;&amp;lt;Please&amp;gt;enable JavaScript to view the&amp;lt;&#47;Please&amp;gt;&amp;amp;lt;a href=&amp;amp;quot;http:&amp;amp;#47;&amp;amp;#47;disqus.com&amp;amp;#47;?ref_noscript&amp;amp;quot;&amp;amp;gt;comments powered by Disqus.&amp;amp;lt;&amp;amp;#47;a&amp;amp;gt;&amp;lt;&#47;noscript&amp;gt;&amp;lt;&#47;disqus_thread&amp;gt;&amp;amp;lt;a class=&amp;amp;quot;dsq-brlink&amp;amp;quot; href=&amp;amp;quot;http:&amp;amp;#47;&amp;amp;#47;disqus.com&amp;amp;quot;&amp;amp;gt;[]&amp;amp;lt;&amp;amp;#47;a&amp;amp;gt;&lt;&#47;footer&gt;&lt;&#47;article&gt;</div></div><div class="sidebar">&lt;nav class=&quot;menu&quot;&gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;&amp;quot;&amp;gt;Home&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;&amp;quot;&amp;gt;Games&amp;lt;&amp;#47;a&amp;gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;alpha_channel&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;hoops&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;ruby_armor&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;smash_and_grab&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;wrath&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;zed_and_ginger&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;libraries&amp;#47;&amp;quot;&amp;gt;Libraries&amp;lt;&amp;#47;a&amp;gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;libraries&amp;#47;fidgit&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;libraries&amp;#47;releasy&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;libraries&amp;#47;robin&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;utilities&amp;#47;&amp;quot;&amp;gt;Utilities&amp;lt;&amp;#47;a&amp;gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;utilities&amp;#47;flipped&amp;#47;&amp;quot;&amp;gt;[]&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;about&amp;#47;&amp;quot;&amp;gt;About&amp;lt;&amp;#47;a&amp;gt;&lt;ul&gt;&lt;&#47;ul&gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;hr &#47;&gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Spooner's Github profile&amp;quot; href=&amp;quot;http:&amp;#47;&amp;#47;github.com&amp;#47;Spooner&amp;quot;&amp;gt;Developer profile&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Spooner's DeviantART portfolio&amp;quot; href=&amp;quot;http:&amp;#47;&amp;#47;lemonsails.deviantart.com&amp;quot;&amp;gt;Art&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Spooner's videos&amp;quot; href=&amp;quot;http:&amp;#47;&amp;#47;www.youtube.com&amp;#47;user&amp;#47;spoonerspon&amp;quot;&amp;gt;Videos&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;hr &#47;&gt;&lt;&#47;nav&gt;&lt;nav class=&quot;tag_cloud&quot;&gt;&lt;h3&gt;&amp;lt;a href=&amp;quot;&amp;#47;tags&amp;#47;&amp;quot;&amp;gt;Tags&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;h3&gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 7 times&amp;quot; style=&amp;quot;font-size:138%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;alpha-channel&amp;#47;&amp;quot;&amp;gt;alpha-channel&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used once&amp;quot; style=&amp;quot;font-size:70%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;fidgit&amp;#47;&amp;quot;&amp;gt;fidgit&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used once&amp;quot; style=&amp;quot;font-size:70%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;flipped&amp;#47;&amp;quot;&amp;gt;flipped&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 11 times&amp;quot; style=&amp;quot;font-size:183%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;game&amp;#47;&amp;quot;&amp;gt;game&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used once&amp;quot; style=&amp;quot;font-size:70%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;gem&amp;#47;&amp;quot;&amp;gt;gem&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 10 times&amp;quot; style=&amp;quot;font-size:171%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;gosu&amp;#47;&amp;quot;&amp;gt;gosu&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 3 times&amp;quot; style=&amp;quot;font-size:93%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;hoops&amp;#47;&amp;quot;&amp;gt;hoops&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 3 times&amp;quot; style=&amp;quot;font-size:93%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;ludum-dare&amp;#47;&amp;quot;&amp;gt;ludum-dare&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used once&amp;quot; style=&amp;quot;font-size:70%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;nanoc&amp;#47;&amp;quot;&amp;gt;nanoc&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 2 times&amp;quot; style=&amp;quot;font-size:81%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;ray&amp;#47;&amp;quot;&amp;gt;ray&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used once&amp;quot; style=&amp;quot;font-size:70%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;releasy&amp;#47;&amp;quot;&amp;gt;releasy&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 17 times&amp;quot; style=&amp;quot;font-size:250%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;ruby&amp;#47;&amp;quot;&amp;gt;ruby&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used once&amp;quot; style=&amp;quot;font-size:70%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;website&amp;#47;&amp;quot;&amp;gt;website&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used once&amp;quot; style=&amp;quot;font-size:70%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;wrath&amp;#47;&amp;quot;&amp;gt;wrath&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Used 2 times&amp;quot; style=&amp;quot;font-size:81%&amp;quot; href=&amp;quot;&amp;#47;tags&amp;#47;zed-and-ginger&amp;#47;&amp;quot;&amp;gt;zed-and-ginger&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;&#47;nav&gt;&lt;nav class=&quot;archives&quot;&gt;&lt;h3&gt;&amp;lt;a href=&amp;quot;&amp;#47;archives&amp;#47;&amp;quot;&amp;gt;Archives&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;h3&gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Releasy v0.2.0&amp;quot; href=&amp;quot;&amp;#47;2012&amp;#47;01&amp;#47;&amp;quot;&amp;gt;January 2012 (1)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Alpha Channel v1.4.0
 Hoops v1.1.0
 Hoops v1.0.0
 Alpha Channel v1.3.0
 Zed and Ginger v0.4.0
-Set up new nanoc-generated website" href="/2011/12/">December 2011 (6)</a></li>
-<li><a title="Alpha Channel v1.2.4
-Fidgit v0.1.9" href="/2011/11/">November 2011 (2)</a></li>
-<li><a title="Zed and Ginger v0.3.0" href="/2011/08/">August 2011 (1)</a></li>
-<li><a title="Alpha Channel v1.2.1" href="/2011/07/">July 2011 (1)</a></li>
-<li><a title="Wrath v0.1.0" href="/2011/06/">June 2011 (1)</a></li>
-<li><a title="Hoops v0.1.1" href="/2011/05/">May 2011 (1)</a></li>
-<li><a title="Deconstructing Alpha Channel
+Set up new nanoc-generated website&amp;quot; href=&amp;quot;&amp;#47;2011&amp;#47;12&amp;#47;&amp;quot;&amp;gt;December 2011 (6)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Alpha Channel v1.2.4
+Fidgit v0.1.9&amp;quot; href=&amp;quot;&amp;#47;2011&amp;#47;11&amp;#47;&amp;quot;&amp;gt;November 2011 (2)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Zed and Ginger v0.3.0&amp;quot; href=&amp;quot;&amp;#47;2011&amp;#47;08&amp;#47;&amp;quot;&amp;gt;August 2011 (1)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Alpha Channel v1.2.1&amp;quot; href=&amp;quot;&amp;#47;2011&amp;#47;07&amp;#47;&amp;quot;&amp;gt;July 2011 (1)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Wrath v0.1.0&amp;quot; href=&amp;quot;&amp;#47;2011&amp;#47;06&amp;#47;&amp;quot;&amp;gt;June 2011 (1)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Hoops v0.1.1&amp;quot; href=&amp;quot;&amp;#47;2011&amp;#47;05&amp;#47;&amp;quot;&amp;gt;May 2011 (1)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Deconstructing Alpha Channel
 Alpha Channel devlog via archaeology
-Alpha Channel v1.1 (Ludum Dare entry)" href="/2010/08/">August 2010 (3)</a></li>
-<li><a title="Flipped v0.2.0" href="/2010/05/">May 2010 (1)</a></li>
-</ul>
-</nav>
-
-</div>
-</div>
-</div>
-<footer>
-<nav class='navbar'>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/games/">Games</a></li>
-<li><a href="/libraries/">Libraries</a></li>
-<li><a href="/utilities/">Utilities</a></li>
-<li><a href="/about/">About</a></li>
-</ul>
-</nav>
-
-<div class='footer'>
-<p>
-Today, Spooner was brought to you by the letter 'oo'<br />
-Bil Bas --- bil dot bagpuss {at} gmail dot com
-</p>
-</div>
-</footer>
-</body>
-</html>
+Alpha Channel v1.1 (Ludum Dare entry)&amp;quot; href=&amp;quot;&amp;#47;2010&amp;#47;08&amp;#47;&amp;quot;&amp;gt;August 2010 (3)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a title=&amp;quot;Flipped v0.2.0&amp;quot; href=&amp;quot;&amp;#47;2010&amp;#47;05&amp;#47;&amp;quot;&amp;gt;May 2010 (1)&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;&#47;nav&gt;</div></div></div><footer>&lt;nav class=&quot;navbar&quot;&gt;&lt;ul&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;&amp;quot;&amp;gt;Home&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;games&amp;#47;&amp;quot;&amp;gt;Games&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;libraries&amp;#47;&amp;quot;&amp;gt;Libraries&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;utilities&amp;#47;&amp;quot;&amp;gt;Utilities&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;li&gt;&amp;lt;a href=&amp;quot;&amp;#47;about&amp;#47;&amp;quot;&amp;gt;About&amp;lt;&amp;#47;a&amp;gt;&lt;&#47;li&gt;&lt;&#47;ul&gt;&lt;&#47;nav&gt;<div class="footer"><p>Today, Spooner was brought to you by the letter 'oo'<br /><Bil>Bas --- bil dot bagpuss {at} gmail dot com</Bil></p></div></footer></body></html>

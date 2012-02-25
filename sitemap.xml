@@ -5,7 +5,7 @@
     <lastmod>2011-12-14</lastmod>
   </url>
   <url>
-    <loc>http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/</loc>
+    <loc>http://spooner.github.com/2010/08/alpha-channel-devlog-via-archaology/</loc>
     <lastmod>2011-12-19</lastmod>
   </url>
   <url>
@@ -69,6 +69,14 @@
     <lastmod>2012-01-28</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/2012/02/releasy-v0_2_2/</loc>
+    <lastmod>2012-07-24</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/2012/07/ruby-perlin-v0_1_1/</loc>
+    <lastmod>2012-07-24</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/about/</loc>
     <lastmod>2011-12-08</lastmod>
   </url>
@@ -85,8 +93,16 @@
     <lastmod>2011-12-18</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/games/ruby_armor/</loc>
+    <lastmod>2012-02-25</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/games/smash_and_grab/</loc>
     <lastmod>2011-12-18</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/throckmorton/</loc>
+    <lastmod>2012-07-24</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/games/wrath/</loc>
@@ -105,12 +121,24 @@
     <lastmod>2011-12-09</lastmod>
   </url>
   <url>
+    <loc>http://spooner.github.com/libraries/ashton/</loc>
+    <lastmod>2012-07-24</lastmod>
+  </url>
+  <url>
     <loc>http://spooner.github.com/libraries/fidgit/</loc>
     <lastmod>2011-12-18</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/releasy/</loc>
     <lastmod>2012-01-25</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/libraries/robin/</loc>
+    <lastmod>2012-02-25</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/libraries/ruby-perlin/</loc>
+    <lastmod>2012-07-24</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/</loc>
@@ -159,7 +187,13 @@
     <loc>http://spooner.github.com/games/hoops/releases/</loc>
   </url>
   <url>
+    <loc>http://spooner.github.com/games/ruby_armor/releases/</loc>
+  </url>
+  <url>
     <loc>http://spooner.github.com/games/smash_and_grab/releases/</loc>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/games/throckmorton/releases/</loc>
   </url>
   <url>
     <loc>http://spooner.github.com/games/wrath/releases/</loc>
@@ -168,21 +202,34 @@
     <loc>http://spooner.github.com/games/zed_and_ginger/releases/</loc>
   </url>
   <url>
+    <loc>http://spooner.github.com/libraries/ashton/releases/</loc>
+  </url>
+  <url>
     <loc>http://spooner.github.com/libraries/fidgit/releases/</loc>
   </url>
   <url>
     <loc>http://spooner.github.com/libraries/releasy/releases/</loc>
   </url>
   <url>
+    <loc>http://spooner.github.com/libraries/robin/releases/</loc>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/libraries/ruby-perlin/releases/</loc>
+  </url>
+  <url>
     <loc>http://spooner.github.com/utilities/flipped/releases/</loc>
   </url>
   <url>
-    <loc>http://spooner.github.com/tags/releasy/</loc>
-    <lastmod>2012-01-28</lastmod>
+    <loc>http://spooner.github.com/tags/ruby-perlin/</loc>
+    <lastmod>2012-07-24</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/tags/ruby/</loc>
-    <lastmod>2012-01-28</lastmod>
+    <lastmod>2012-07-24</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/tags/releasy/</loc>
+    <lastmod>2012-07-24</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/tags/alpha-channel/</loc>
@@ -238,7 +285,7 @@
   </url>
   <url>
     <loc>http://spooner.github.com/2012/</loc>
-    <lastmod>2012-01-28</lastmod>
+    <lastmod>2012-07-24</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2011/</loc>
@@ -247,6 +294,14 @@
   <url>
     <loc>http://spooner.github.com/2010/</loc>
     <lastmod>2011-12-19</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/2012/07/</loc>
+    <lastmod>2012-07-24</lastmod>
+  </url>
+  <url>
+    <loc>http://spooner.github.com/2012/02/</loc>
+    <lastmod>2012-07-24</lastmod>
   </url>
   <url>
     <loc>http://spooner.github.com/2012/01/</loc>

@@ -41,8 +41,7 @@
 
 &lt;p&gt;One of the biggest problems with my own projects, games or not, is that I am both a perfectionist and a feature-creeper. Not particularly unusual among developers, but it does mean a lot of overly ambitious, though unfinished, projects lying around.&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="Early version" href="/images/screenshots/journal_bad_pixels.png"&gt;&lt;img alt="Early version" class="thumb" height="120" src="/images/screenshots/journal_bad_pixels-thumbnail.png" title="Early version" width="160" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="Early version" href="/images/screenshots/journal_bad_pixels.png"&gt;&lt;img alt="Early version" class="thumb" height="120" src="/images/screenshots/journal_bad_pixels-thumbnail.png" title="Early version" width="160" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Working within the competition time constraint was frankly liberating! My ability to throw something together in the most slapdash fashion with a “That’s good enough; I’ll do it properly if I have time at the end” was great. Although I did come back to redo a few things better on the second day, the changes were more to do with directly improving game-play rather than less tangible improvements (like improving the frames per second by 0.1 through excessive attempts at optimisation  ).&lt;/p&gt;
 
@@ -52,15 +51,13 @@
 
 &lt;p&gt;After my testers and scorers had played my game and seemed to quite enjoy my game, as far as it went, I was seriously considering further development. I was actually surprised how much people liked it, to tell the truth. The thing is, with a bit more variety and polish, I think it would actually make a decent casual browser game. The problem is that Alpha Channel is not a browser game and I don’t have a lot of interest in learning how to re-make it as one.&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="The death of a pixel" href="/images/screenshots/journal_death.png"&gt;&lt;img alt="The death of a pixel" class="thumb" height="117" src="/images/screenshots/journal_death-thumbnail.png" title="The death of a pixel" width="157" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="The death of a pixel" href="/images/screenshots/journal_death.png"&gt;&lt;img alt="The death of a pixel" class="thumb" height="117" src="/images/screenshots/journal_death-thumbnail.png" title="The death of a pixel" width="157" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;So, I think I failed a little. In trying to make the game and its mechanics simple (though, I hope, elegant), so that I could largely complete it in the time frame, I sort of missed the opportunity to start making a game with depth, even if I barely managed to scratch the surface of its potential in the 48 hours. Only this sort of more involved game, I think, can have potential outside the browser environment.&lt;/p&gt;
 
 &lt;h3 id="where-the-graphics-stylish-or-lazy"&gt;Where the graphics stylish or lazy?&lt;/h3&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="Final graphics" href="/images/screenshots/alpha_channel_linux_v1_1.png"&gt;&lt;img alt="Final graphics" class="thumb" height="120" src="/images/screenshots/alpha_channel_linux_v1_1-thumbnail.png" title="Final graphics" width="160" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="Final graphics" href="/images/screenshots/alpha_channel_linux_v1_1.png"&gt;&lt;img alt="Final graphics" class="thumb" height="120" src="/images/screenshots/alpha_channel_linux_v1_1-thumbnail.png" title="Final graphics" width="160" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Weeeell, that is a difficult question! As I mentioned in my journal, I had originally intended to use a pixellated graphical style, but instead grew attached to the place-holder block graphics and developed that style instead, changing the original concept (wizard and monsters) to one that fitted with the style I’d developed (pixel wars). The background score/level indicators, although most people felt they would be distracting before actually playing, just add to the feeling of being inside a computer screen and, since they barely change except in the top right hand corner, weren’t visually disruptive.&lt;/p&gt;
 
@@ -78,11 +75,11 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2010-08-25:/2010/08/alpha-channel-devlog-via archaology/</id>
+    <id>tag:spooner.github.com,2010-08-25:/2010/08/alpha-channel-devlog-via-archaology/</id>
     <title type="html">Alpha Channel devlog via archaeology</title>
     <published>2010-08-25T10:00:00Z</published>
     <updated>2010-08-25T10:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2010/08/alpha-channel-devlog-via archaology/"/>
+    <link rel="alternate" href="http://spooner.github.com/2010/08/alpha-channel-devlog-via-archaology/"/>
     <content type="html">&lt;p&gt;Since this was my first Ludum Dare, making the game &lt;a href="/games/alpha_channel"&gt;Alpha Channel&lt;/a&gt;, I didn’t make an effort to post my progress as it happened. However, through the magic of git, I’ve pulled some old versions up and seen how things developed. Interesting to see how the game progressed and if you have git you could also look at the progress made throughout the development via the &lt;a href="http://github.com/Spooner/alpha_channel"&gt;repository at github.com&lt;/a&gt; (if you were very bored, of course).&lt;/p&gt;
 
 &lt;p&gt;I’m using my local time, not that of the competition, in the entries.&lt;/p&gt;
@@ -106,8 +103,7 @@
 
 &lt;p&gt;The “monsters” were red blocks, which they stayed throughout the whole development. The wizard was white, turning grey when he was controlling a monster. A controlled monster was blue and sprites could still overlap each other, which didn’t look terrible in this “blocky” version, but I knew would be terrible when the sprites were actually drawn. I was showing health and energy (the time you could keep control of a monster) in numbers at top of the screen, but this was pretty impossible to keep track of while playing. I was, at this time, planning to replace the health/energy numbers with bars later on. The screen was initially green, to represent grass, not a computer screen!&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="First attempt" href="/images/screenshots/journal_first.png"&gt;&lt;img alt="First attempt" class="thumb" height="119" src="/images/screenshots/journal_first-thumbnail.png" title="First attempt" width="160" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="First attempt" href="/images/screenshots/journal_first.png"&gt;&lt;img alt="First attempt" class="thumb" height="119" src="/images/screenshots/journal_first-thumbnail.png" title="First attempt" width="160" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id="day-1-300-pm-sound-effects"&gt;Day 1, 3:00 pm: Sound effects&lt;/h3&gt;
 
@@ -117,8 +113,7 @@
 
 &lt;p&gt;Because levels were a bit flat, I decided to add randomly placed obstacles, originally called Bad Pixels. They’d be something to hide behind and to avoid since they would slowly damage any Pixel pushing against them. This was also the point at which I prevented the red Pixels from overlapping. This was also the first time I considered my game objects to be Pixels, rather than wizards and monsters, I think.&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="Bad Pixels" href="/images/screenshots/journal_bad_pixels.png"&gt;&lt;img alt="Bad Pixels" class="thumb" height="120" src="/images/screenshots/journal_bad_pixels-thumbnail.png" title="Bad Pixels" width="160" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="Bad Pixels" href="/images/screenshots/journal_bad_pixels.png"&gt;&lt;img alt="Bad Pixels" class="thumb" height="120" src="/images/screenshots/journal_bad_pixels-thumbnail.png" title="Bad Pixels" width="160" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id="day-1-800-pm-transparency-is-life-itself"&gt;Day 1, 8:00 pm: Transparency is life itself&lt;/h3&gt;
 
@@ -126,8 +121,7 @@
 
 &lt;p&gt;Also the first point that I drew a link between player and controlled enemy, which was to be a place-holder for some sort of fancy electricity or particle effect, but which I never actually got around to improving upon.&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="Alpha Channel acts as health meter" href="/images/screenshots/journal_transparency.png"&gt;&lt;img alt="Alpha Channel acts as health meter" class="thumb" height="120" src="/images/screenshots/journal_transparency-thumbnail.png" title="Alpha Channel acts as health meter" width="161" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="Alpha Channel acts as health meter" href="/images/screenshots/journal_transparency.png"&gt;&lt;img alt="Alpha Channel acts as health meter" class="thumb" height="120" src="/images/screenshots/journal_transparency-thumbnail.png" title="Alpha Channel acts as health meter" width="161" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id="day-1-1015-pm-exploding-on-death"&gt;Day 1, 10:15 pm: Exploding on death&lt;/h3&gt;
 
@@ -135,8 +129,7 @@
 
 &lt;p&gt;At this point, the player had a lot more health and could pretty much barge through the levels without actually using the enemy-controlling effect! I had to tone this down later, since it made the main point of the level pointless and the game pretty easy once you realised.&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="Death of a Pixel" href="/images/screenshots/journal_death.png"&gt;&lt;img alt="Death of a Pixel" class="thumb" height="117" src="/images/screenshots/journal_death-thumbnail.png" title="Death of a Pixel" width="157" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="Death of a Pixel" href="/images/screenshots/journal_death.png"&gt;&lt;img alt="Death of a Pixel" class="thumb" height="117" src="/images/screenshots/journal_death-thumbnail.png" title="Death of a Pixel" width="157" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id="day-2-130-pm-particle-effects-on-contact"&gt;Day 2, 1:30 pm: Particle effects on contact&lt;/h3&gt;
 
@@ -150,8 +143,7 @@
 
 &lt;p&gt;I considered adding an online high score system, since the framework for one was available in one of the libraries I was using. In the end I chickened out, since I felt that such a system would be very likely to fail as well as taking a unnecessarily long time to implement and test). In the end, I just showed the current high score at the bottom of the screen and the current score at the top, the player’s best score just being stored in a local text file. I think that implementing the online high score system was the thing I really missed out on. My friend ippa’s game used it, and I think it did encourage some players to play it more so they could beat each other. Probably the first thing I’d add if I was continuing development…&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="High scores" href="/images/screenshots/journal_high_score.png"&gt;&lt;img alt="High scores" class="thumb" height="121" src="/images/screenshots/journal_high_score-thumbnail.png" title="High scores" width="160" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="High scores" href="/images/screenshots/journal_high_score.png"&gt;&lt;img alt="High scores" class="thumb" height="121" src="/images/screenshots/journal_high_score-thumbnail.png" title="High scores" width="160" /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id="day-2-1130-pm-v10-windows-only---three-and-a-half-hours-within-the-time-limit-well-that-was-when-i-committed-the-final-version-my-actual-upload-was-a-bit-later"&gt;Day 2, 11:30 pm: v1.0 (Windows only) - Three and a half hours within the time limit (well, that was when I committed the final version; my actual upload was a bit later).&lt;/h3&gt;
 
@@ -161,8 +153,7 @@
 
 &lt;p&gt;Unfortunately, the very boxy font I’d chosen for the initial release, which worked fine on Windows, was so badly displayed in Linux (only the top half of the characters were actually shown) that I need to pick a new font that was consistent across all three platforms. The first font I’d used didn’t display as I wanted it to on OS/X, which is one of the reasons I’d replaced it originally, so I ended up with this one. I don’t like it as much, but it is still mostly in keeping with the overall style and ensures that all 3 OS versions look identical.&lt;/p&gt;
 
-&lt;p&gt;&lt;a rel="lightbox-gallery" title="The game on OS X" href="/images/screenshots/alpha_channel_os_x.png"&gt;&lt;img alt="The game on OS X" class="thumb" height="126" src="/images/screenshots/alpha_channel_os_x-thumbnail.png" title="The game on OS X" width="160" /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a rel="lightbox-gallery" title="The game on OS X" href="/images/screenshots/alpha_channel_os_x.png"&gt;&lt;img alt="The game on OS X" class="thumb" height="126" src="/images/screenshots/alpha_channel_os_x-thumbnail.png" title="The game on OS X" width="160" /&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

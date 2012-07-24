@@ -110,7 +110,7 @@ end
 
 # -----------------------------------
 # Ugly is required, lest code blocks don't indent properly.
-layout '*', :haml, format: :html5, ugly: true
+layout '*', :slim, format: :html5, pretty: true, disable_escape: true
 
 
 # -------------------------------

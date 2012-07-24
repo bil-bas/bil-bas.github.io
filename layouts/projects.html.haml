@@ -1,7 +1,0 @@
--# A list of projects.
-
-%h1
-  = link_to @item.title, @item.permalink
-
-- @item.children.sort_by {|item| item.title.downcase }.each do |item|
-  = render item.layout, item: item, summary: true

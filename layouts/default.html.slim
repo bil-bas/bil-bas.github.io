@@ -1,0 +1,62 @@
+doctype 5
+html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+  head
+    meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+    meta name="generator" content="nanoc 3.4.0"
+
+    - if @item.meta_keywords
+      meta name="keywords" content=@item.meta_keywords
+    - if @item.meta_description
+      meta name="description" content=@item.meta_description
+
+    - %w[stylesheet code_highlighting slimbox2].each do |stylesheet|
+      link rel="stylesheet" type="text/css" href="/style/#{stylesheet}.css" media="screen"
+
+    - %w[/scripts/jquery.js /scripts/slimbox2.js //connect.facebook.net/en_GB/all.js#xfbml=1 //platform.twitter.com/widgets.js].each do |script|
+      script type="text/javascript" src="script"
+
+    title == "Spooner - #{@item.full_title}"
+
+    - if @item[:feed_url]
+      link href=@item[:feed_url] rel='alternate' title="Spooner's #{@item == home ? "News" : @item.title }" type='application/atom+xml'
+
+  body
+    header
+      .banner
+        == link_to @config[:base_url], title: "Spooner: Ruby addict and maker of games with outrageously large pixels" do
+          .banner_overlay
+
+      .breadcrumbs
+        - if @item.identifier == '/errors/404/'
+          == "&nbsp;"
+        - else
+          == breadcrumbs_trail.map {|crumb| link_to(crumb.title, crumb.rep_named(:default)) }.join(" &raquo; ")
+
+      == render 'navbar'
+
+
+    .col_mask.right_menu
+      .col_left
+        .contents_wrap
+          .contents == yield
+
+        .sidebar == render 'menu'
+
+    footer
+      == render 'navbar'
+
+      .footer
+        p
+          = "Today, Spooner was brought to you by the letter 'oo'"
+          br
+          | Bil Bas --- bil dot bagpuss {at} gmail dot com
+
+    / Script to replace special links with number of comments.
+    - if @item[:count_comments]
+      javascript:
+        (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = 'http://spooner.disqus.com/count.js';
+          document.getElementsByTagName('HEAD')[0].appendChild(s);
+        }());

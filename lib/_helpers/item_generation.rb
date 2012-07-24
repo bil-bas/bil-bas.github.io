@@ -3,8 +3,6 @@ module ItemGeneration
     if defined? Nanoc3::CLI
       Nanoc3::CLI::Logger::ACTION_COLORS[:delete] = "\e[1m" + "\e[31m" # bold + red
       Nanoc3::CLI::Logger::ACTION_COLORS[:generate] = "\e[1m" + "\e[36m" # bold + cyan
-
-      Nanoc3::CLI::Logger.instance.color = true
     end
   end
 

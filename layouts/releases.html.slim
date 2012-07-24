@@ -1,0 +1,6 @@
+/ Page showing releases for a single project.
+
+h1 == link_to "#{ @item.parent.title } - #{ @item.title }", @item.permalink
+
+- sorted_releases_for(@item.parent.name).each do |release|
+  == render release.layout, item: release, summary: true

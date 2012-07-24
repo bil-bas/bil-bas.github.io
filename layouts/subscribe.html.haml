@@ -1,5 +1,0 @@
-.feed
-  - title = @item[:filtered] ? @item.title.downcase : "news"
-  = link_to @item[:feed_url], title: "Subscribe to #{title} news feed" do
-    Subscribe to #{title}
-    %img{ src: "/images/feed-icon-14x14.png", alt: "News feed" }

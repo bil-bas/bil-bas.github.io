@@ -1,0 +1,15 @@
+/ A whole year of posts
+
+h1 == link_to @item.title, @item.permalink
+
+////= render 'article_type_nav'
+
+== render 'previous_next', list: sorted_years
+
+- @item.children.reverse_each do |month|
+  - month.children.sort_by {|i| i.created_at }.reverse_each do |article|
+    == render article.layout, item: article, summary: true
+
+hr
+
+== render 'previous_next', list: sorted_years

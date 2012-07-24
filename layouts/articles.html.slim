@@ -1,0 +1,12 @@
+/ News page showing the latest posts.
+
+h1 == link_to @item.full_title, @item.permalink
+
+== render 'subscribe'
+
+== render 'article_type_nav'
+
+/ Render the first message in full - later ones in summary.
+- send(@item[:articles_shown]).take(@config[:posts_per_page]).each do |item|
+  == render item.layout, item: item, summary: true
+

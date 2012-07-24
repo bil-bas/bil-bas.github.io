@@ -1,0 +1,51 @@
+/ Vertical menus for navigation.
+
+/ Main menu
+nav.menu
+  ul
+    - nav_items.each do |item|
+      li
+        == link_to_unless_current item.title, item
+
+        - unless item == home
+          ul
+            - item.children.each do |project|
+              li
+                == link_to_unless_current project do
+                  img.app_icon_small alt=project.title src="/images/small_icon/#{project.name}.png"
+                  == project.title
+
+  hr
+
+  ul
+    / External links.
+    li == link_to "Developer profile", "http://github.com/Spooner", title: "Spooner's Github profile"
+    li == link_to "Art", "http://lemonsails.deviantart.com", title: "Spooner's DeviantART portfolio"
+    li == link_to "Videos", "http://www.youtube.com/user/spoonerspon", title: "Spooner's videos"
+
+  / I don't know why I need this, but otherwise the menu shrinks to nothing.
+  hr
+
+/ Tag cloud.
+nav.tag_cloud
+  - tags = home.children.find {|i| i.identifier == '/tags/' }
+  h3 == link_to_unless_current tags.title, tags
+
+  ul
+    - tags.children.each do |tag|
+      - title = "Used #{tag[:count] == 1 ? "once" : "#{tag[:count]} times"}"
+      - font_size = (70 + tag[:font_size] * 180).round # 70-250% of regular font size.
+      li == link_to_unless_current tag.full_title, tag, title: title, style: "font-size:#{font_size}%"
+
+/ Archive.
+nav.archives
+  - archives = @items.find {|i| i.identifier == "/archives/" }
+  h3 == link_to_unless_current archives.full_title, archives
+
+  ul
+    - sorted_years.each do |year|
+      - year.children.reverse_each do |month|
+        - articles = month.children.sort_by {|i| i.created_at }.reverse
+        li == link_to_unless_current "#{month.full_title} (#{articles.count})", month, title: articles.map(&:title).join("\n")
+
+

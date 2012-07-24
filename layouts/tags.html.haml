@@ -1,8 +1,0 @@
--# A list of all tags.
-
-%h1= link_to @item.title, @item.permalink
-
-%div
-  - @item.children.sort_by(&:identifier).each do |tag|
-    %ul.tags
-      %li= link_to "#{tag.title} (#{tag[:count]})", tag

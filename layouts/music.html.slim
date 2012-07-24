@@ -1,0 +1,20 @@
+- types = [:ogg, :mp3 ]
+
+== link_to "http://creativecommons.org/licenses/by-sa/3.0/", rel: "license", style: "float:right" do
+  img alt="Creative Commons BY-SA License" title="CC BY-SA" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" width=88 height=31
+
+' Original piece#{@pieces.one? ? "" : "s"} composed by
+== link_to "KanonBaum", "http://polyhedricpeppers.weebly.com/", "xmlns:cc" => "http://creativecommons.org/ns#", :property => "cc:attributionName", :rel => "cc:attributionURL"
+== " (Brian Peppers) &copy;&nbsp;2011, licensed under a "
+== link_to "Creative Commons Attribution-ShareAlike 3.0 Unported License.", "http://creativecommons.org/licenses/by-sa/3.0/", rel: "license"
+
+- @pieces.each do |piece|
+  h3 == File.basename(piece).tr "_", " "
+
+  audio controls="controls"
+    - types.each do |type|
+      source src="#{piece}.#{type}" type="audio/#{type}"
+
+    ' Your browser does not support the audio tag. Download as
+    - types.each do |type|
+      == link_to type.upcase, "#{piece}.#{type}"

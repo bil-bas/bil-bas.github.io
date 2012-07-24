@@ -1,10 +1,10 @@
--# Comments at the bottom of a post
+/ Comments at the bottom of a post
 
-%h2 Comments
+h2 Comments
 
-#disqus_thread
+disqus_thread
 
-  :javascript
+  javascript:
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = "spooner"; // required: replace example with your forum shortname
     var disqus_identifier = "#{@comment_id}";
@@ -17,10 +17,10 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 
-  %noscript
-    Please enable JavaScript to view the
-    = link_to "comments powered by Disqus.", "http://disqus.com/?ref_noscript"
+  noscript
+    | Please enable JavaScript to view the
+    == link_to "comments powered by Disqus.", "http://disqus.com/?ref_noscript"
 
-= link_to "http://disqus.com", class: "dsq-brlink" do
-  blog comments powered by
-  %span.logo-disqus Disqus
+== link_to "http://disqus.com", class: "dsq-brlink" do
+  ' blog comments powered by
+  span.logo-disqus Disqus

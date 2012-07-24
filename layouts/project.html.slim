@@ -1,0 +1,45 @@
+/ A project (e.g. a game)
+
+- last_release = sorted_releases_for(@item.name.tr("_", "-")).first
+- if last_release
+  - latest_version = last_release.name.split("-").last.tr("_", ".")
+  - updated_link = link_to "Updated #{pretty_date last_release.created_at}", last_release
+  - latest_version_link = link_to latest_version, last_release
+
+- status = latest_version_link ? latest_version_link : "Unreleased"
+- status += " (#{@item[:status]})"
+
+article
+  - if @summary
+    header
+      span.release_date
+        - if updated_link
+          == updated_link
+        - else
+          | Unreleased
+
+      h2 == link_to @item.full_title, @item
+
+    == link_to @item do
+      img.app_icon alt="#{@item.title} icon" src="/images/icon/#{@item.name}.png"
+
+    p.status == status
+
+    == @item.summary
+
+    footer
+      .more == link_to "More details...", @item
+
+  - else
+    header
+      h1 == link_to @item.full_title, @item.permalink
+
+    img.app_icon alt="#{@item.title} icon" src="/images/icon/#{@item.name}.png"
+
+    p.posted == updated_link
+
+    p.status == status
+
+    == yield
+
+

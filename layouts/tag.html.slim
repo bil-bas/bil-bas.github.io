@@ -1,0 +1,7 @@
+/ All posts under a specific tag.
+
+h1 == link_to "Tag: #{@item.title}", @item.permalink
+
+div
+  - sorted_articles.select {|i| i[:tags].include? @item.name }.each do |article|
+    == render article.layout, item: article, summary: true

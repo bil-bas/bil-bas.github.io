@@ -2,10 +2,10 @@
 - screenshot = @items.find {|i| i.identifier == "#{path}/" }
 - thumbnail = screenshot.rep_named(:thumbnail)
 
--# TODO: when nanoc is fixed, this should be Image.from_file("output/#{thumbnail.path}")
+/ TODO: when nanoc is fixed, this should be Image.from_file("output/#{thumbnail.path}")
 - image = ChunkyPNG::Image.from_file("content/images/screenshots/#{@image}.png")
 - width, height = (image.width * 0.25).round, (image.height * 0.25).round
 
 - @title ||= @alt
-= link_to screenshot.path, rel: "lightbox-gallery", title: @title do
-  %img{ class: "thumb", src: thumbnail.path, alt: @alt, title: @title, width: width, height: height }
+== link_to screenshot.path, rel: "lightbox-gallery", title: @title do
+  img.thumb src=thumbnail.path alt=@alt title=@title width=width height=height

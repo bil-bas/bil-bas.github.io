@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://spooner.github.com/</id>
+  <id>http://bil-bas.github.io/</id>
   <title>Spooner's News</title>
   <updated>2012-07-16T13:00:00Z</updated>
-  <link rel="alternate" href="http://spooner.github.com/"/>
+  <link rel="alternate" href="https://bil-bas.github.io/"/>
   <link rel="self" href="http://feeds.feedburner.com/spooner_news"/>
   <author>
     <name>Spooner (Bil Bas)</name>
-    <uri>http://spooner.github.com</uri>
+    <uri>http://bil-bas.github.io</uri>
   </author>
   <entry>
-    <id>tag:spooner.github.com,2012-07-16:/2012/07/ruby-perlin-v0_1_1/</id>
+    <id>tag:bil-bas.github.io,2012-07-16:/2012/07/ruby-perlin-v0_1_1/</id>
     <title type="html">Perlin v0.1.1</title>
     <published>2012-07-16T13:00:00Z</published>
     <updated>2012-07-16T13:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2012/07/ruby-perlin-v0_1_1/"/>
+    <link rel="alternate" href="https://bil-bas.github.io/2012/07/ruby-perlin-v0_1_1/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;Ruby gem release: &lt;code&gt;gem install perlin&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -27,11 +27,11 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2012-02-01:/2012/02/releasy-v0_2_2/</id>
+    <id>tag:bil-bas.github.io,2012-02-01:/2012/02/releasy-v0_2_2/</id>
     <title type="html">Releasy v0.2.2</title>
     <published>2012-02-01T13:00:00Z</published>
     <updated>2012-02-01T13:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2012/02/releasy-v0_2_2/"/>
+    <link rel="alternate" href="https://bil-bas.github.io/2012/02/releasy-v0_2_2/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;Ruby gem release: &lt;code&gt;gem install releasy&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -48,11 +48,11 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2012-01-28:/2012/01/releasy-v0_2_0/</id>
+    <id>tag:bil-bas.github.io,2012-01-28:/2012/01/releasy-v0_2_0/</id>
     <title type="html">Releasy v0.2.0</title>
     <published>2012-01-28T13:00:00Z</published>
     <updated>2012-01-28T13:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2012/01/releasy-v0_2_0/"/>
+    <link rel="alternate" href="https://bil-bas.github.io/2012/01/releasy-v0_2_0/"/>
     <content type="html">&lt;ul&gt;
   &lt;li&gt;Ruby gem release: &lt;code&gt;gem install releasy&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -77,13 +77,13 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-12-22:/2011/12/alpha-channel-v1_4_0/</id>
+    <id>tag:bil-bas.github.io,2011-12-22:/2011/12/alpha-channel-v1_4_0/</id>
     <title type="html">Alpha Channel v1.4.0</title>
     <published>2011-12-22T23:00:00Z</published>
     <updated>2011-12-22T23:00:00Z</updated>
-    <link rel="alternate" href="http://spooner.github.com/2011/12/alpha-channel-v1_4_0/"/>
+    <link rel="alternate" href="https://bil-bas.github.io/2011/12/alpha-channel-v1_4_0/"/>
     <content type="html">&lt;div style="float:right"&gt;
-  &lt;img alt="Alpha Channel v1.4.0 icon" class="app_icon" src="http://spooner.github.com/images/icon/alpha_channel.png" /&gt;
+  &lt;img alt="Alpha Channel v1.4.0 icon" class="app_icon" src="https://bil-bas.github.io/images/icon/alpha_channel.png" /&gt;
 &lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;Windows: &lt;a title="Windows executable in folder with source: 6.8 MB" href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_4_0_WIN32.zip"&gt;EXE&lt;/a&gt; | &lt;a title="Windows installer with source: 5.7 MB" href="http://dl.dropbox.com/u/33370854/games/alpha_channel/alpha_channel_v1_4_0_WIN32_INSTALLER.zip"&gt;INSTALLER&lt;/a&gt;&lt;/li&gt;
@@ -106,13 +106,13 @@
 </content>
   </entry>
   <entry>
-    <id>tag:spooner.github.com,2011-12-22:/2011/12/hoops-v1_1_0/</id>
+    <id>tag:bil-bas.github.io,2011-12-22:/2011/12/hoops-v1_1_0/</id>
     <title type="html">Hoops v1.1.0</title>
     <published>2011-12-22T22:00:00Z</published>
     <updated>2011-12-22T22:00:00Z</updated>
     <link rel="alternate" href="http://spooner.github.com/2011/12/hoops-v1_1_0/"/>
     <content type="html">&lt;div style="float:right"&gt;
-  &lt;img alt="Hoops v1.1.0 icon" class="app_icon" src="http://spooner.github.com/images/icon/hoops.png" /&gt;
+  &lt;img alt="Hoops v1.1.0 icon" class="app_icon" src="https://bil-bas.github.io/images/icon/hoops.png" /&gt;
 &lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;Windows: &lt;a title="Windows executable in folder with source: 12.4 MB" href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v1_1_0_WIN32.zip"&gt;EXE&lt;/a&gt; | &lt;a title="Windows installer with source: 11.3 MB" href="http://dl.dropbox.com/u/33370854/games/hoops/hoops_v1_1_0_WIN32_INSTALLER.zip"&gt;INSTALLER&lt;/a&gt;&lt;/li&gt;
